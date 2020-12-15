@@ -13,6 +13,7 @@ export const FooterContainer = styled.div`
   opacity: 0.9;
   margin-top: 1rem;
   background-color: #005542;
+
   /* background: linear-gradient(#005542, #ffbe00); */
 `;
 export const Info = styled.div`
@@ -20,12 +21,13 @@ export const Info = styled.div`
   h3 {
     text-align: center;
     font-size: 24px;
+    font-family: Georgia, serif;
   }
   img {
     width: 24px;
   }
   p {
-    font-size: 18px;
+    font-size: 20px;
   }
 `;
 export const Adress = styled.div`
@@ -55,9 +57,9 @@ export const Menu = styled.div`
     transition: all 0.5s ease;
     border: 5px solid white;
     border-radius: 20px;
-    padding: 1rem;
+    padding: 0.5rem;
     &:hover {
-      background-color: white;
+      background-color: #ffbe00;
       color: #005542;
     }
   }
