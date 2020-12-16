@@ -1,7 +1,4 @@
 import styled from "styled-components";
+import { device } from "../../layout/Devices";
 
-export const Adress = styled.div`
-  img {
-    width: 24px;
-  }
-`;
+export const ContactContainer = styled.div``;
