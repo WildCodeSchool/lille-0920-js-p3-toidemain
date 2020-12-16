@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from "styled-components";
 
 const SliderContent = styled.div`
@@ -7,6 +6,6 @@ const SliderContent = styled.div`
   height: 100%;
   width: ${props => props.width}px;
   display: flex;
-  background:red;
-`
+`;
+
 export default SliderContent

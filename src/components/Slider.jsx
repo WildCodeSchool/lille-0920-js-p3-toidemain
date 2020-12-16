@@ -1,20 +1,40 @@
 import React, { useState } from 'react';
-import styled from "styled-components";
+import { SliderDiv } from "./SliderCSS";
 import SliderContent from './SliderContent';
+import Slide from './Slide';
+import Arrow from './Arrow';
 
-const Sliderdiv = styled.div `
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-    margin: 0 auto;
-    overflow: hidden;
-    background: #333;
-  `;
+export default function Slider (props) {
+    const getWidth = () => window.innerWidth
+    const [state] = useState({
+    translate: 0,
+    transition: 0.45
+    })
+    const { translate, transition } = state
 
-const Slider = () => {
-    return <Sliderdiv>
-        <SliderContent />
-    </Sliderdiv>
-  }
+  return (
+    <SliderDiv>
+      <SliderContent
+        translate={translate}
+        transition={transition}
+        width={getWidth() * props.slides.length}
+        >
+        {props.slides.map((slide, i) => (
+        <Slide key={slide + i} content={slide} />
+        ))}
+      </SliderContent>
+      <Arrow direction="left"/>
+      <Arrow direction="right"/>
+    </SliderDiv>
+  )
+}
   
-export default Slider
+
+
+
+
+  
+
+
+  
+
