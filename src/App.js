@@ -13,7 +13,7 @@ export default function App() {
   return (
     <React.Fragment>
       <Reset />
-      <Slider slides={images}/>
+      <Slider slides={images} autoPlay={3} />
     </React.Fragment>
   );
 }
