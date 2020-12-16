@@ -102,6 +102,7 @@ export const Menu = styled.div`
     }
     p {
       padding-top: 0;
+      text-align: center;
     }
   }
 `;
