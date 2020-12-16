@@ -6,7 +6,7 @@ import {
 	LogoContainer,
 	ContactContainer,
 } from "./header.style";
-import Nav from "./Nav";
+import Nav from "../Nav/Nav";
 
 const Header = () => {
 	return (
