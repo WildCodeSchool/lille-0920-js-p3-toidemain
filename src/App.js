@@ -1,10 +1,11 @@
 import React from "react";
+import { Reset } from "styled-reset";
 import Footer from "./components/footer/Footer";
 
 function App() {
   return (
     <div>
-      Hello World
+      <Reset />
       <Footer />
     </div>
   );

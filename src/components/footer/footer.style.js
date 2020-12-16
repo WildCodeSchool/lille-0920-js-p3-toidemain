@@ -19,31 +19,34 @@ export const FooterContainer = styled.div`
 
   @media ${device.mobile} {
     flex-direction: column;
+    justify-content: center;
     min-height: 60vh;
     max-height: 70vh;
   }
   @media ${device.tablet} {
-    min-height: 35vh;
+    min-height: 30vh;
     max-height: 50vh;
   }
-
-  /* background: linear-gradient(#005542, #ffbe00); */
 `;
 export const Info = styled.div`
   color: white;
   margin: 0 auto;
+
   h3 {
     text-align: center;
     font-size: 22px;
     font-family: Georgia, serif;
+    margin: 2vh auto;
   }
   img {
     width: 24px;
   }
   p {
     font-size: 16px;
+    margin: 1vh auto;
   }
   @media ${device.mobile} {
+    margin-bottom: 2vh;
     h3 {
       font-size: 24px;
     }
@@ -53,6 +56,7 @@ export const Info = styled.div`
     p {
       font-size: 18px;
       text-align: center;
+      margin: 2vh auto;
     }
   }
   @media ${device.tablet} {
@@ -106,6 +110,7 @@ export const Menu = styled.div`
     border: 5px solid white;
     border-radius: 20px;
     padding: 0.5rem;
+    margin: auto;
     &:hover {
       background-color: #ffbe00;
       color: #005542;
@@ -146,6 +151,7 @@ export const Social = styled.div`
     color: white;
     border-bottom: 3px solid white;
     font-size: 26px;
+    margin: 2vh auto;
   }
   @media ${device.mobile} {
     h3 {
@@ -164,12 +170,12 @@ export const Icons = styled.div`
   align-items: center;
 
   img {
-    margin: auto 0.5vw;
+    margin: 1vh 0.5vw;
   }
   @media ${device.mobile} {
     margin-top: 1vh;
     img {
-      margin: auto 2vw;
+      margin: 2vh 2vw;
     }
   }
 `;
