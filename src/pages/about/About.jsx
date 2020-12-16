@@ -1,18 +1,18 @@
 import React from "react";
 import Member from "./Member";
 import portraitItems from "./Data";
-import { AboutContainer, Portraits } from "./about.style";
+import { AboutContainer, Cards } from "./about.style";
 
 const About = () => {
   return (
     <AboutContainer>
       <h1>L'Equipe de Toi Demain</h1>
-      <Portraits>
+      <Cards>
         {portraitItems.map((item) => (
           <Member item={item} key={item.name} />
         ))}
-      </Portraits>
-      <p>+ Une équipe de coachs partenaires, formés par Toi Demain!</p>
+      </Cards>
+      <h2>+ Une équipe de coachs partenaires, formés par Toi Demain!</h2>
     </AboutContainer>
   );
 };

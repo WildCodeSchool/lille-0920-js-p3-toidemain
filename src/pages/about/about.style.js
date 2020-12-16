@@ -1,28 +1,34 @@
 import styled from "styled-components";
 
-export const AboutContainer = styled.div``;
+export const AboutContainer = styled.div`
+  color: #4e4e4e;
+  margin: 2vh 2vw;
 
-export const Portraits = styled.div`
-  display: flex;
-  justify-content: space-around;
-  margin: 0 3vw;
-  //flex-direction: row;
-  //flex-wrap: wrap;
+  h1 {
+    font-size: 2em;
+    color: #1c819e;
+    font-weight: bold;
+  }
 
-  @media screen and (max-width: 1024px) {
-    flex-direction: column;
+  h2 {
+    font-size: 1.5em;
+    color: #005542;
+    font-weight: bold;
+  }
+
+  h3 {
+    font-size: 1.1em;
+    color: #005542;
+    font-weight: bold;
   }
 `;
 
-export const Member = styled.div`
-  margin: 0 3vw;
+export const Cards = styled.div`
+  display: flex;
+  justify-content: space-around;
+  margin: 0 5vw;
 
-  img {
-    min-width: 10vw;
-    max-width: 40vw;
-
-    @media screen and (max-width: 1024px) {
-      width: 50vw;
-    }
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
   }
 `;
