@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from "../../layout/Devices";
 
 export const FooterContainer = styled.div`
   position: absolute;
@@ -16,10 +17,14 @@ export const FooterContainer = styled.div`
   -o-background-size: cover;
   background-size: cover;
 
-  @media screen and (max-width: 600px) {
+  @media ${device.mobile} {
     flex-direction: column;
     min-height: 60vh;
     max-height: 70vh;
+  }
+  @media ${device.tablet} {
+    min-height: 35vh;
+    max-height: 50vh;
   }
 
   /* background: linear-gradient(#005542, #ffbe00); */
@@ -38,7 +43,20 @@ export const Info = styled.div`
   p {
     font-size: 16px;
   }
-  @media screen and (max-width: 600px) {
+  @media ${device.mobile} {
+    h3 {
+      font-size: 24px;
+    }
+    img {
+      width: 18px;
+    }
+    p {
+      font-size: 18px;
+      text-align: center;
+    }
+  }
+  @media ${device.tablet} {
+    width: 50%;
     h3 {
       font-size: 24px;
     }
@@ -64,7 +82,10 @@ export const Middle = styled.div`
     height: 100%;
     width: 20vw;
   }
-  @media screen and (max-width: 600px) {
+  @media ${device.mobile} {
+    display: none;
+  }
+  @media ${device.tablet} {
     display: none;
   }
 `;
@@ -94,13 +115,27 @@ export const Menu = styled.div`
     color: white;
     padding-top: 2vh;
   }
-  @media screen and (max-width: 600px) {
+  @media ${device.mobile} {
     padding: 0;
     a {
       font-size: 18px;
       margin-bottom: 1vh;
     }
     p {
+      padding-top: 0;
+      text-align: center;
+    }
+  }
+  @media ${device.tablet} {
+    padding: 0;
+    padding-right: 2vw;
+    width: 50%;
+    a {
+      font-size: 18px;
+      margin-bottom: 1vh;
+    }
+    p {
+      font-size: 14px;
       padding-top: 0;
       text-align: center;
     }
@@ -112,9 +147,14 @@ export const Social = styled.div`
     border-bottom: 3px solid white;
     font-size: 26px;
   }
-  @media screen and (max-width: 600px) {
+  @media ${device.mobile} {
     h3 {
       display: none;
+    }
+  }
+  @media ${device.tablet} {
+    h3 {
+      font-size: 20px;
     }
   }
 `;
@@ -126,7 +166,7 @@ export const Icons = styled.div`
   img {
     margin: auto 0.5vw;
   }
-  @media screen and (max-width: 600px) {
+  @media ${device.mobile} {
     margin-top: 1vh;
     img {
       margin: auto 2vw;
