@@ -10,7 +10,6 @@ export const FooterContainer = styled.div`
   width: 100%;
   min-height: 10vh;
   max-height: 30vh;
-  opacity: 0.9;
   background: #005542 no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -81,7 +80,7 @@ export const Adress = styled.div`
 export const Middle = styled.div`
   background-color: white;
   opacity: 75%;
-  margin: 0 auto;
+  margin: 0 3vw 0 auto;
   img {
     height: 100%;
     width: 20vw;
