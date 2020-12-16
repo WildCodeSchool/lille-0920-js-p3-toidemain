@@ -1,5 +1,13 @@
 import React from "react";
-import { FooterContainer, Info, Adress, Middle, Menu, Social, Icons } from "./footer.style";
+import {
+  FooterContainer,
+  Info,
+  Adress,
+  Middle,
+  Menu,
+  Social,
+  Icons,
+} from "./footer.style";
 
 const Footer = () => {
   return (
