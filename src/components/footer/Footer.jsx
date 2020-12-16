@@ -14,7 +14,7 @@ const Footer = () => {
             </span>
             3 Rue Des Freres Lefebvre{" "}
           </p>
-          <p>&nbsp;&nbsp;&nbsp; 59390 Sailly-lez-Lannoy</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 59390 Sailly-lez-Lannoy</p>
         </Adress>
 
         <p>
@@ -38,12 +38,12 @@ const Footer = () => {
         <a href="#!">Nous Contacter</a>
         <Social>
           <h3>Retrouvez-Nous sur</h3>
-          <Icons>
-            <img src="/images/icons/instagram.png" alt="instagram" />
-            <img src="/images/icons/facebook.png" alt="facebook" />
-            <img src="/images/icons/linkedin.png" alt="linkedin" />
-          </Icons>
         </Social>
+        <Icons>
+          <img src="/images/icons/instagram.png" alt="instagram" />
+          <img src="/images/icons/facebook.png" alt="facebook" />
+          <img src="/images/icons/linkedin.png" alt="linkedin" />
+        </Icons>
         <p>&#169; 2021 Tous droits réservés Association Toi Demain</p>
       </Menu>
     </FooterContainer>
