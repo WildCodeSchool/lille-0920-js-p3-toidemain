@@ -69,7 +69,7 @@ export const ContactContainer = styled.div`
 	width: 70%;
 
 	img {
-		margin-top: 25px;
+		margin-top: 27px;
 		height: 20%;
 		margin-right: 10px;
 		margin-left: 40px;
@@ -88,7 +88,7 @@ export const ContactContainer = styled.div`
 	}
 
 	p {
-		margin-top: 25px;
+		margin-top: 30px;
 		height: 20%;
 		margin-right: 20px;
 		font-family: "Roboto", sans-serif;

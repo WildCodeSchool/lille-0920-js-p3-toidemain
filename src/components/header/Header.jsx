@@ -6,7 +6,7 @@ import {
 	LogoContainer,
 	ContactContainer,
 } from "./header.style";
-import Nav from "../Nav/Nav";
+import Navbar from "../nav/Navbar";
 
 const Header = () => {
 	return (
@@ -23,7 +23,7 @@ const Header = () => {
 					<p>contact@toidemain.fr</p>
 				</ContactContainer>
 			</HeaderBackground>
-			<Nav />
+			<Navbar />
 		</HeaderContainer>
 	);
 };
