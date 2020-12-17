@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 export const NavContainer = styled.div`
 	position: absolute;
-	top: 65%;
+	bottom: 0;
 	z-index: 2;
-	height: 35%;
+	height: 50px;
 	width: 70%;
 	margin: 0 15% 0 15%;
 	background: #ffbe00;
@@ -39,7 +39,7 @@ export const NavContainer = styled.div`
 export const DropDownItems = styled.div`
 	display: none;
 	position: absolute;
-	padding-top: 1.5%;
+	padding-top: 16px;
 	background-color: #ffbe00;
 	min-width: 160px;
 	box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.05);
