@@ -13,7 +13,9 @@ export const ContactContainer = styled.div`
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  @media ${device.tablet} {
+  @media ${device.mobile} {
+    height: 100vh;
+    justify-content: flex-start;
   }
 `;
 export const Text = styled.div`
@@ -26,15 +28,29 @@ export const Text = styled.div`
     text-align: center;
     padding-top: 3vh;
   }
+  @media ${device.smallScreen} {
+    h1 {
+      font-size: 42px;
+    }
+  }
   @media ${device.tablet} {
     h1 {
       font-size: 36px;
     }
   }
+  @media ${device.mobile} {
+    height: 8vh;
+    margin: 5vh auto;
+
+    h1 {
+      font-size: 24px;
+      padding-top: 2vh;
+    }
+  }
 `;
 export const FormContainer = styled.div`
   form {
-    margin: 0 auto 7vh auto;
+    margin: 3vh auto 7vh auto;
     width: 25vw;
     min-height: 40vh;
     max-height: 60vh;
@@ -51,10 +67,19 @@ export const FormContainer = styled.div`
     -webkit-box-shadow: 0 0 13px 3px rgba(0, 0, 0, 0.5);
     box-shadow: 0 0 13px 3px rgba(0, 0, 0, 0.5);
     overflow: hidden;
+    @media ${device.smallScreen} {
+      width: 55vw;
+    }
     @media ${device.tablet} {
-      margin: 0 auto 10vh auto;
+      margin: 2vh auto 10vh auto;
       width: 45vw;
-      height: 45vh;
+      min-height: 45vh;
+      max-height: 55vh;
+    }
+    @media ${device.mobile} {
+      margin: 0 auto 2vh auto;
+      width: 70vw;
+      max-height: 65vh;
     }
   }
   textarea {
@@ -76,8 +101,16 @@ export const FormContainer = styled.div`
     margin: 2vh auto;
     margin-bottom: 3vh;
     overflow: hidden;
+    @media ${device.smallScreen} {
+      width: 55vw;
+      margin-bottom: 1vh;
+    }
     @media ${device.tablet} {
       width: 45vw;
+      margin-bottom: 1vh;
+    }
+    @media ${device.mobile} {
+      width: 70vw;
       margin-bottom: 1vh;
     }
   }
@@ -98,8 +131,16 @@ export const FormContainer = styled.div`
     color: white;
     padding: 5vh auto;
     margin: 2vh auto;
+    @media ${device.smallScreen} {
+      width: 50vw;
+      margin: 1vh auto;
+    }
     @media ${device.tablet} {
       width: 38vw;
+      margin: 1vh auto;
+    }
+    @media ${device.mobile} {
+      width: 58vw;
       margin: 1vh auto;
     }
   }
@@ -109,22 +150,16 @@ export const FormContainer = styled.div`
   input.name {
     background: rgba(255, 255, 255, 0.4) no-repeat scroll 16px 16px;
     padding-left: 45px;
-    @media ${device.tablet} {
-    }
   }
 
   input.email {
     background: rgba(255, 255, 255, 0.4) no-repeat scroll 16px 20px;
     padding-left: 45px;
-    @media ${device.tablet} {
-    }
   }
 
   input.message {
     background: rgba(255, 255, 255, 0.4) no-repeat scroll 16px 16px;
     padding-left: 45px;
-    @media ${device.tablet} {
-    }
   }
 
   ::-webkit-input-placeholder {
@@ -167,8 +202,14 @@ export const FormContainer = styled.div`
     margin: 2vh auto;
     background: rgba(255, 255, 255, 0.4) no-repeat scroll 16px 16px;
     padding-left: 45px;
+    @media ${device.smallScreen} {
+      width: 55.5vw;
+    }
     @media ${device.tablet} {
-      width: 45vw;
+      width: 45.5vw;
+    }
+    @media ${device.mobile} {
+      width: 71vw;
     }
   }
 
@@ -201,6 +242,9 @@ export const FormContainer = styled.div`
     @media ${device.tablet} {
       float: none;
     }
+    @media ${device.mobile} {
+      float: none;
+    }
   }
 
   .btn:hover {
@@ -214,8 +258,6 @@ export const FormContainer = styled.div`
     background: -o-linear-gradient(top, #77b2b0, #416b68);
     background-image: -ms-linear-gradient(top, #77b2b0 0%, #416b68 100%);
     color: #fff;
-    @media ${device.tablet} {
-    }
   }
 
   .btn:active {
@@ -233,7 +275,5 @@ export const FormContainer = styled.div`
     -webkit-box-shadow: rgba(255, 255, 255, 0) 0 1px 0, inset rgba(255, 255, 255, 0.7) 0 1px 0;
     -moz-box-shadow: rgba(255, 255, 255, 0) 0 1px 0, inset rgba(255, 255, 255, 0.7) 0 1px 0;
     box-shadow: rgba(255, 255, 255, 0) 0 1px 0, inset rgba(255, 255, 255, 0.7) 0 1px 0;
-  }
-  @media ${device.tablet} {
   }
 `;

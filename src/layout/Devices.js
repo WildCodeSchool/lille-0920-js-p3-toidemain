@@ -10,6 +10,6 @@ const size = {
 export const device = {
   mobile: `(max-width: ${size.mobile})`,
   tablet: `(min-width : ${size.minTeblet}) and (max-width: ${size.maxTeblet})`,
-  small_screen: `((min-width: ${size.MinSmallScreen})and (max-width: ${size.MaxSmallScreen}))`,
+  smallScreen: `(min-width: ${size.MinSmallScreen})and (max-width: ${size.MaxSmallScreen})`,
   desktop: `(min-width : ${size.desktop} )`,
 };
