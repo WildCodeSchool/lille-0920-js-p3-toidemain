@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  FooterContainer,
-  Info,
-  Adress,
-  Middle,
-  Menu,
-  Social,
-  Icons,
-} from "./footer.style";
+import { FooterContainer, Info, Adress, Middle, Menu, Social, Icons } from "./style";
 
 const Footer = () => {
   return (
@@ -16,25 +8,23 @@ const Footer = () => {
         <h3>Toi Demain</h3>
         <Adress>
           <p>
-            {" "}
             <span>
-              <img src="/images/icons/location-pin.png" alt="gps" />{" "}
+              <img src="/images/icons/location-pin.png" alt="gps" />
             </span>
-            3 Rue Des Freres Lefebvre{" "}
+            3 Rue Des Freres Lefebvre
           </p>
           <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 59390 Sailly-lez-Lannoy</p>
         </Adress>
 
         <p>
-          {" "}
           <span>
-            <img src="/images/icons/telephone.png" alt="tel" />{" "}
+            <img src="/images/icons/telephone.png" alt="tel" />
           </span>
           09 50 79 61 59
         </p>
         <p>
           <span>
-            <img src="/images/icons/email.png" alt="email" />{" "}
+            <img src="/images/icons/email.png" alt="email" />
           </span>
           toi-demain@gmail.com
         </p>
