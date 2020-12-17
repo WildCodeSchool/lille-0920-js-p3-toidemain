@@ -17,9 +17,30 @@ export const AboutContainer = styled.div`
   }
 
   h3 {
+    font-size: 1.2em;
+    color: #ffbe00;
+    font-weight: bold;
+  }
+
+  h4 {
     font-size: 1.1em;
     color: #005542;
     font-weight: bold;
+  }
+`;
+
+export const Pledge = styled.div`
+  margin: 5vh 0;
+
+  p {
+    font-weight: bold;
+    margin: 2vh 5vw;
+    font-size: 1.2em;
+    text-align: justify;
+  }
+
+  span {
+    color: #ffbe00;
   }
 `;
 
@@ -27,7 +48,6 @@ export const Cards = styled.div`
   display: flex;
   justify-content: space-around;
   margin: 0 5vw;
-
   @media screen and (max-width: 768px) {
     flex-direction: column;
   }
