@@ -6,7 +6,7 @@ import {
 	LogoContainer,
 	ContactContainer,
 } from "./style";
-import Navbar from "./Navbar/Navbar";
+import Navbar from "./Navbar/index";
 
 const Header = () => {
 	return (
