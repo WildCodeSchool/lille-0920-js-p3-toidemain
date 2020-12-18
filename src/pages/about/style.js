@@ -53,4 +53,18 @@ export const Cards = styled.div`
   }
 `;
 
-export const Partners = styled.div``;
+export const Partners = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  img {
+    width: 15vw;
+    height: 15vh;
+    object-fit: contain;
+    margin: 2vh 5vw;
+    @media screen and (max-width: 768px) {
+      width: 60vw;
+    }
+  }
+`;
