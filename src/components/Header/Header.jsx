@@ -5,8 +5,8 @@ import {
 	HeaderBackground,
 	LogoContainer,
 	ContactContainer,
-} from "./header.style";
-import Navbar from "../nav/Navbar";
+} from "./style";
+import Navbar from "./Navbar/Navbar";
 
 const Header = () => {
 	return (

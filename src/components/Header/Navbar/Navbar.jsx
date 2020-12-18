@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { NavContainer, DropDown, DropDownItems } from "./navbar.style";
+import { NavContainer, DropDown, DropDownItems } from "./style";
 
 class Navbar extends Component {
 	handleClick = (action) => {
