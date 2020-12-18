@@ -1,7 +1,7 @@
 import React from "react";
 import Member from "./Member";
 import portraitItems from "./Data";
-import { AboutContainer, Cards, Pledge } from "./style";
+import { AboutContainer, Cards, Pledge, Partners } from "./style";
 
 const About = () => {
   return (
@@ -32,6 +32,17 @@ const About = () => {
           ))}
         </Cards>
         <h2>+ Une équipe de coachs partenaires, formés par Toi Demain!</h2>
+      </div>
+
+      <div>
+        <h1>Nos partenaires</h1>
+        <Partners>
+          <img src="/images/idkids.png" alt="id kids" />
+          <img src="/images/kiabi.png" alt="kiabi" />
+          <img src="/images/oney.png" alt="oney" />
+          <img src="/images/orientoi.png" alt="orientoi" />
+          <img src="/images/telemarque.png" alt="télémarque" />
+        </Partners>
       </div>
     </AboutContainer>
   );

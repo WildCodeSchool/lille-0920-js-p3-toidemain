@@ -52,3 +52,5 @@ export const Cards = styled.div`
     flex-direction: column;
   }
 `;
+
+export const Partners = styled.div``;
