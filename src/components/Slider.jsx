@@ -8,13 +8,20 @@ import Dots from './Dots';
 const getWidth = () => window.innerWidth
 
 export default function Slider (props) {
+  const { slides } = props
+
+  const firstSlide = slides[0]
+  const secondSlide = slides[1]
+  const lastSlide = slides[slides.length - 1]
+
     const [state, setState] = useState({
     activeIndex: 0,
     translate: 0,
-    transition: 0.45
+    transition: 0.45,
+    _slides: [lastSlide, firstSlide, secondSlide]
     })
 
-    const { translate, transition, activeIndex } = state
+    const { translate, transition, activeIndex, _slides } = state
     const autoPlayRef = useRef()
 
     useEffect(() => {
@@ -29,47 +36,31 @@ export default function Slider (props) {
       const interval = setInterval(play, props.autoPlay * 1000)
       return () => clearInterval(interval)
     }, [])
+
+    const nextSlide = () =>
+  setState({
+    ...state,
+    translate: translate + getWidth(),
+    activeIndex: activeIndex === slides.length - 1 ? 0 : activeIndex + 1
+  })
+
+const prevSlide = () =>
+  setState({
+    ...state,
+    translate: 0,
+    activeIndex: activeIndex === 0 ? slides.length - 1 : activeIndex - 1
+  })
   
-    const nextSlide = () => {
-      if (activeIndex === props.slides.length - 1) {
-        return setState({
-          ...state,
-          translate: 0,
-          activeIndex: 0
-        })
-      }
-  
-      setState({
-        ...state,
-        activeIndex: activeIndex + 1,
-        translate: (activeIndex + 1) * getWidth()
-      })
-    }
-  
-    const prevSlide = () => {
-      if (activeIndex === 0) {
-        return setState({
-          ...state,
-          translate: (props.slides.length - 1) * getWidth(),
-          activeIndex: props.slides.length - 1
-        })
-      }
-  
-      setState({
-        ...state,
-        activeIndex: activeIndex - 1,
-        translate: (activeIndex - 1) * getWidth()
-      })
-    }
+    
     
   return (
     <SliderDiv>
       <SliderContent
         translate={translate}
         transition={transition}
-        width={getWidth() * props.slides.length}
+        width={getWidth() * _slides.length}
         >
-        {props.slides.map((slide, i) => (
+        {_slides.map((slide, i) => (
         <Slide key={slide + i} content={slide} />
         ))}
       </SliderContent>
