@@ -23,19 +23,54 @@ export default function Slider (props) {
 
     const { translate, transition, activeIndex, _slides } = state
     const autoPlayRef = useRef()
+    const transitionRef = useRef()
 
     useEffect(() => {
       autoPlayRef.current = nextSlide
+      transitionRef.current = smoothTransition
     })
   
     useEffect(() => {
       const play = () => {
         autoPlayRef.current()
       }
+
+      const smooth = () => {
+        transitionRef.current()
+      }
+
+      let interval = null
+      const transitionEnd = window.addEventListener('transitionend', smooth)
   
-      const interval = setInterval(play, props.autoPlay * 1000)
-      return () => clearInterval(interval)
-    }, [])
+      if (props.autoPlay) interval = setInterval(play, props.autoPlay * 1000)
+    
+
+      return () => {
+        window.removeEventListener('transitionend', transitionEnd)
+        if(props.autoPlay) {
+          clearInterval(interval)
+        }
+      }
+    }, [props.autoPlay])
+
+    const smoothTransition = () => {
+      let _slides = []
+    
+      // We're at the last slide.
+      if (activeIndex === slides.length - 1)
+        _slides = [slides[slides.length - 2], lastSlide, firstSlide]
+      // We're back at the first slide. Just reset to how it was on initial render
+      else if (activeIndex === 0) _slides = [lastSlide, firstSlide, secondSlide]
+      // Create an array of the previous last slide, and the next two slides that follow it.
+      else _slides = slides.slice(activeIndex - 1, activeIndex + 2)
+    
+      setState({
+        ...state,
+        _slides,
+        transition: 0,
+        translate: getWidth()
+      })
+    }
 
     const nextSlide = () =>
   setState({
@@ -65,7 +100,7 @@ const prevSlide = () =>
         ))}
       </SliderContent>
 
-      {props.autoPlay && (
+      {!props.autoPlay && (
         <>
           <Arrow direction="left" handleClick={prevSlide} />
           <Arrow direction="right" handleClick={nextSlide} />
