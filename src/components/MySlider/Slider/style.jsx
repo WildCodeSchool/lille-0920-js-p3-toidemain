@@ -2,8 +2,9 @@ import styled from "styled-components";
 
 export const SliderDiv = styled.div `
     position: relative;
-    height: 100vh;
-    width: 100vw;
+    height: 80vh;
+    width: 80vw;
+    top: 15vh;
     margin: 0 auto;
     overflow: hidden;
     `;
