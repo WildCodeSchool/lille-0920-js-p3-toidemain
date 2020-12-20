@@ -10,12 +10,13 @@ const getWidth = () => window.innerWidth
 
 const Slider = props => {
 
-  // keep slides into an array of 3 slides despite there is thousand pictures
+  // render only 3 slides at a time despite thousand pictures
   const { slides } = props
   const firstSlide = slides[0]
   const secondSlide = slides[1]
   const lastSlide = slides[slides.length - 1]
 
+  //create an array in state to store 3 slides
     const [state, setState] = useState({
     activeSlide: 0,
     translate: getWidth(),
@@ -54,7 +55,7 @@ const Slider = props => {
     const resize = () => {
       resizeRef.current()
     }
-
+//set a listener for trigger our function every time that it detects a transition has fully completed.
     const transitionEnd = slider.addEventListener('transitionend', smooth)
     const onResize = window.addEventListener('resize', resize)
 
@@ -74,6 +75,7 @@ const Slider = props => {
     }
   }, [])
 
+  // smooThtransition function remove the transition effect after an updating. We need to reset transition when valuable as change
   useEffect(() => {
     if (transition === 0) setState({ ...state, transition: 0.45 })
   }, [transition])
@@ -82,6 +84,7 @@ const Slider = props => {
       setState({ ...state, translate: getWidth(), transition: 0 })
     }
 
+   // updating th array we need to temporarily remove the transition effect when we update the array
     const smoothTransition = () => {
       let _slides = []
   
