@@ -77,7 +77,7 @@ export default function Slider (props) {
     }
     
   return (
-    <SliderDiv>
+    <SliderDiv >
       <SliderContent
         translate={translate}
         transition={transition}
