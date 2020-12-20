@@ -78,8 +78,8 @@ const Slider = props => {
     }
     
   return (
-    <SliderDiv >
-      <SliderContent
+    <SliderDiv className="Slider">
+      <SliderContent 
         translate={translate}
         transition={transition}
         width={getWidth() * props.slides.length}

@@ -3,7 +3,7 @@ import { SlideDiv } from "./SlideCSS";
 
  const Slide = ({ content }) => (
 
-    <SlideDiv content={content}/>
+    <SlideDiv className= "Slide" content={content}/>
  )
    
 export default Slide

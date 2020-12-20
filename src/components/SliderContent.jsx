@@ -9,8 +9,8 @@ const MaxContent = styled.div`
 `;
 
 const SliderContent = (props) => (
-  <MaxContent translate={props.translate} transition={props.transition} width={props.width}>
-  {props.children}  
+  <MaxContent className="SliderContent" props ={props} translate={props.translate} transition={props.transition} width={props.width}>
+  {props.children}
   </MaxContent>
   )
 
