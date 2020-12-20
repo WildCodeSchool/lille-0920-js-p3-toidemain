@@ -9,7 +9,6 @@ const getWidth = () => window.innerWidth
 
 const Slider = props => {
 
-
     const [state, setState] = useState({
     activeIndex: 0,
     translate: 0,
