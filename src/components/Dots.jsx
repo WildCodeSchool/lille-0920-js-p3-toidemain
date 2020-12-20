@@ -1,18 +1,17 @@
 import React from 'react'
 import { DotSpan, DotsDiv} from './DotsCSS'
 
-function Dot ({ active }) {
-    return (
-        <DotSpan active={active}/>
-    )
-} 
+const Dot = ({ active }) => (
+    <DotSpan active={active}/>
 
-export default function Dots ({ slides, activeIndex }) {
-    return (
+)
+
+const Dots = ({ slides, activeIndex }) => (
         <DotsDiv>
             {slides.map((slide, i) => (
             <Dot key={slide} active={activeIndex === i} />
             ))}
         </DotsDiv>
     )
-}
+
+export default Dots

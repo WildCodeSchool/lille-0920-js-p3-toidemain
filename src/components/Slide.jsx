@@ -1,9 +1,9 @@
 import React from 'react'
 import { SlideDiv } from "./SlideCSS";
 
-export default function Slide ({ content }) {
-    return (
-        <SlideDiv content={content}/>
-    )  
-}
-
+ const Slide = ({ content }) => (
+     
+    <SlideDiv content={content}/>
+ )
+   
+export default Slide

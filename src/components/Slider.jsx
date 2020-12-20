@@ -7,7 +7,9 @@ import Dots from './Dots';
 
 const getWidth = () => window.innerWidth
 
-export default function Slider (props) {
+const Slider = props => {
+
+
     const [state, setState] = useState({
     activeIndex: 0,
     translate: 0,
@@ -104,4 +106,7 @@ Slider.defaultProps = {
   slides: [],
   autoPlay: null
 }
+
+
+export default Slider
 
