@@ -1,5 +1,5 @@
 import React from 'react'
-import { ArrowContainer } from "./ArrowCSS";
+import { ArrowContainer } from "./style";
 import leftArrow from '../img/left-arrow.svg'
 import rightArrow from '../img/right-arrow.svg'
 

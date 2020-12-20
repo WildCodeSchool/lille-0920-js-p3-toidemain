@@ -1,5 +1,5 @@
 import React from 'react'
-import { DotSpan, DotsDiv} from './DotsCSS'
+import { DotSpan, DotsDiv} from './style'
 
 const Dot = ({ active }) => (
     <DotSpan active={active}/>

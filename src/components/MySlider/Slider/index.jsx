@@ -1,16 +1,17 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { SliderDiv } from "./SliderCSS";
-import SliderContent from './SliderContent';
-import Slide from './Slide';
-import Arrow from './Arrow';
-import Dots from './Dots';
+import { SliderDiv } from "./style";
+import SliderContent from '../SliderContent';
+import Slide from '../Slide';
+import Arrow from '../Arrow';
+import Dots from '../Dots';
 
+//returns the interior width of the window in pixels
 const getWidth = () => window.innerWidth
 
 const Slider = props => {
 
+  // keep slides into an array of 3 slides despite there is thousand pictures
   const { slides } = props
-
   const firstSlide = slides[0]
   const secondSlide = slides[1]
   const lastSlide = slides[slides.length - 1]
@@ -24,13 +25,14 @@ const Slider = props => {
 
     const { activeSlide, translate, _slides, transition  } = state
 
+    //useref is like a box can contain a mutable value in is current property
     const autoPlayRef = useRef()
     const transitionRef = useRef()
     const resizeRef = useRef()
     const sliderRef = useRef()
 
     useEffect(() => {
-      autoPlayRef.current = nextSlide
+    autoPlayRef.current = nextSlide
     transitionRef.current = smoothTransition
     resizeRef.current = handleResize
     })
