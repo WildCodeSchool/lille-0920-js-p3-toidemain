@@ -9,3 +9,4 @@ const SliderContent = styled.div`
 `;
 
 export default SliderContent
+
