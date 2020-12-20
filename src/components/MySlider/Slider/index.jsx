@@ -17,74 +17,71 @@ const Slider = props => {
   const lastSlide = slides[slides.length - 1]
 
   //create an array in state to store 3 slides
-    const [state, setState] = useState({
+  const [state, setState] = useState({
     activeSlide: 0,
     translate: getWidth(),
     transition: 0.45,
     _slides: [lastSlide, firstSlide, secondSlide]
     })
 
-    const { activeSlide, translate, _slides, transition  } = state
+  const { activeSlide, translate, _slides, transition  } = state
 
-    //useref is like a box can contain a mutable value in is current property
-    const autoPlayRef = useRef()
-    const transitionRef = useRef()
-    const resizeRef = useRef()
-    const sliderRef = useRef()
+  //useref is like a box can contain a mutable value in is current property
+  const autoPlayRef = useRef()
+  const transitionRef = useRef()
+  const resizeRef = useRef()
+  const sliderRef = useRef()
 
-    useEffect(() => {
+  useEffect(() => {
     autoPlayRef.current = nextSlide
     transitionRef.current = smoothTransition
     resizeRef.current = handleResize
-    })
+  })
   
-    useEffect(() => {
-      const slider = sliderRef.current
-      const play = () => {
+  useEffect(() => {
+    const slider = sliderRef.current
+    const play = () => {
         autoPlayRef.current()
-      }
+    }
 
-      const smooth = e => {
-        if (e.target.className.includes('SliderContent')) {
+    const smooth = e => {
+      if (e.target.className.includes('SliderContent')) {
           transitionRef.current()
-        }
       }
-
-
+    }
 
     const resize = () => {
       resizeRef.current()
     }
-//set a listener for trigger our function every time that it detects a transition has fully completed.
+
+    //set a listener for trigger our function every time that it detects a transition has fully completed
     const transitionEnd = slider.addEventListener('transitionend', smooth)
     const onResize = window.addEventListener('resize', resize)
 
     let interval = null
-
-    if (props.autoPlay) {
-      interval = setInterval(play, props.autoPlay * 1000)
-    }
-
-    return () => {
-      slider.removeEventListener('transitionend', transitionEnd)
-      window.removeEventListener('resize', onResize)
-
       if (props.autoPlay) {
-        clearInterval(interval)
+        interval = setInterval(play, props.autoPlay * 1000)
       }
-    }
+        return () => {
+          slider.removeEventListener('transitionend', transitionEnd)
+          window.removeEventListener('resize', onResize)
+
+          if (props.autoPlay) {
+            clearInterval(interval)
+          }
+        }
   }, [])
 
-  // smooThtransition function remove the transition effect after an updating. We need to reset transition when valuable as change
+  // smoothTransition function remove transition effect after an updating. We need to reset transition when valuable as change
   useEffect(() => {
     if (transition === 0) setState({ ...state, transition: 0.45 })
   }, [transition])
 
-    const handleResize = () => {
-      setState({ ...state, translate: getWidth(), transition: 0 })
-    }
+  const handleResize = () => {
+    setState({ ...state, translate: getWidth(), transition: 0 })
+  }
 
-   // updating th array we need to temporarily remove the transition effect when we update the array
+  // updating th array after an event detects, we need to temporarily remove the transition effect when we update the array to avoid weird effects
     const smoothTransition = () => {
       let _slides = []
   
@@ -104,7 +101,7 @@ const Slider = props => {
       })
     }
 
-    const nextSlide = () =>
+  const nextSlide = () =>
     setState({
       ...state,
       translate: translate + getWidth(),
@@ -146,7 +143,6 @@ Slider.defaultProps = {
   slides: [],
   autoPlay: null
 }
-
 
 export default Slider
 

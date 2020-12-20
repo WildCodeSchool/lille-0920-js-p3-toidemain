@@ -7,11 +7,11 @@ const Dot = ({ active }) => (
 )
 
 const Dots = ({ slides, activeSlide }) => (
-        <DotsDiv className="Dots">
-            {slides.map((slide, i) => (
-            <Dot key={slide} active={activeSlide === i} />
-            ))}
-        </DotsDiv>
-    )
+    <DotsDiv className="Dots">
+        {slides.map((slide, i) => (
+        <Dot key={slide} active={activeSlide === i} />
+        ))}
+    </DotsDiv>
+)
 
 export default Dots
