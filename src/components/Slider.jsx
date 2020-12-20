@@ -16,9 +16,11 @@ export default function Slider (props) {
 
     const { translate, transition, activeIndex } = state
     const autoPlayRef = useRef()
+    const resizeRef = useRef()
 
     useEffect(() => {
       autoPlayRef.current = nextSlide
+      resizeRef.current = handleResize
     })
   
     useEffect(() => {
@@ -26,12 +28,22 @@ export default function Slider (props) {
         autoPlayRef.current()
       }
 
-      if(props.autoPlay !== null) {
-        const interval = setInterval(play, props.autoPlay * 1000)
-        return () => clearInterval(interval)
+    const resize = () => {
+      resizeRef.current()
+    }
+
+    const interval = setInterval(play, props.autoPlay * 1000)
+    const onResize = window.addEventListener('resize', resize)
+      return () => {
+        clearInterval(interval)
+        window.removeEventListener('resize', onResize)
       }
-    }, [props.autoPlay])
-  
+    }, [])
+
+    const handleResize = () => {
+      setState({ ...state, translate: getWidth(), transition: 0 })
+    }
+
     const nextSlide = () => {
       if (activeIndex === props.slides.length - 1) {
         return setState({
@@ -76,7 +88,7 @@ export default function Slider (props) {
         ))}
       </SliderContent>
 
-      {!props.autoPlay && (
+      {props.autoPlay && (
         <>
           <Arrow direction="left" handleClick={prevSlide} />
           <Arrow direction="right" handleClick={nextSlide} />
