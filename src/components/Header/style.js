@@ -101,7 +101,6 @@ export const LogoContainer = styled.div`
   justify-content: center;
   height: 145px;
   width: 15%;
-  border: 1px solid red;
 
   @media ${device.small_screen} {
     height: 100px;
