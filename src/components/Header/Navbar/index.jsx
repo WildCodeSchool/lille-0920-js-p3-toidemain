@@ -1,74 +1,33 @@
-import React, { Component } from "react";
-import { NavContainer, DropDown, DropDownItems } from "./style";
+import React from "react";
+import { NavContainer, NavDropdown, DropdownItems } from "./style";
 
-class Navbar extends Component {
-  handleClick = (action) => {
-    if (!action) return;
+export default function Navbar() {
+  return (
+    <NavContainer>
+      <nav>
+        <NavDropdown>
+          <a href="/">Qui Sommes Nous ?</a>
 
-    if (this.props.onClick) this.props.onClick(action);
-  };
+          <DropdownItems>
+            <a href="/engagements">Notre Engagement</a>
+            <a href="/about">Notre Equipe</a>
+            <a href="/partenaires">Nos Partenaires</a>
+          </DropdownItems>
+        </NavDropdown>
+        |
+        <NavDropdown>
+          <a href="/actions">Nos Actions</a>
 
-  render = () => {
-    return (
-      <NavContainer>
-        <ul>
-          <DropDown>
-            <li>
-              <a href="./" onClick={() => this.handleClick("DropDown")}>
-                Qui Sommes Nous ?
-              </a>
-              <DropDownItems>
-                {" "}
-                <a href="./" onClick={() => this.handleClick("Link1")}>
-                  Notre Engagement
-                </a>
-                <a href="./" onClick={() => this.handleClick("Link2")}>
-                  Notre Equipe
-                </a>
-                <a href="./" onClick={() => this.handleClick("Link3")}>
-                  Nos Partenaires
-                </a>
-              </DropDownItems>
-            </li>
-          </DropDown>
-          <DropDown>
-            <li>
-              <a href="./" onClick={() => this.handleClick("DropDown")}>
-                Nos Actions
-              </a>
-              <DropDownItems>
-                {" "}
-                <a href="./" onClick={() => this.handleClick("Link1")}>
-                  Notre Pédagogie
-                </a>
-                <a href="./" onClick={() => this.handleClick("Link2")}>
-                  Nos Ateliers
-                </a>
-                <a href="./" onClick={() => this.handleClick("Link3")}>
-                  Stage-Up
-                </a>
-              </DropDownItems>
-            </li>
-          </DropDown>
-          <li>
-            <a href="./" onClick={() => this.handleClick("Home")}>
-              Nous Soutenir
-            </a>
-          </li>
-          <li>
-            <a href="./" onClick={() => this.handleClick("News")}>
-              Notre Actualité
-            </a>
-          </li>
-          <li>
-            <a href="./" onClick={() => this.handleClick("News")}>
-              Nous Contacter
-            </a>
-          </li>
-        </ul>
-      </NavContainer>
-    );
-  };
+          <DropdownItems>
+            <a href="/pedagogie">Notre Pédagogie</a>
+            <a href="/ateliers">Nos Ateliers</a>
+            <a href="/stage-up">Stage-Up</a>
+          </DropdownItems>
+        </NavDropdown>
+        |<a href="/soutien">Nous Soutenir</a>|
+        <a href="/actualite">Notre Actualité</a>|
+        <a href="/contact">Nous Contacter</a>
+      </nav>
+    </NavContainer>
+  );
 }
-
-export default Navbar;
