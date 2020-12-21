@@ -36,16 +36,20 @@ span {
             background-color: black;
         }
     }
+
+    
 }`;
 
 const Quote = () => {
   const [ current, setCurrent ] = useState(quotes[0])
   const [ active, setActive ] = useState(0)
-  const handleSetClick = () => {
-      console.log("hello")
+  
+  const handleSetClick = (event) => {
+      setCurrent(quotes[event.target.getAttribute("data-quote")])
+      setActive(event.target.getAttribute("data-quote"))
 
   }
-    console.log(current)
+
 
     return (
     <QuoteContainer>
