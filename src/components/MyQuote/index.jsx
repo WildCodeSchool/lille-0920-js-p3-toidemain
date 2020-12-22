@@ -16,13 +16,13 @@ const Quote = () => {
     <QuoteContainer >
         <p>{current.quote}</p>
         <p>{current.student}</p>
-        <QuotesContainer active={active}>
+        <QuotesContainer >
             {Object.keys(quotes).map(index => (
                 <QuoteSpan
                 onClick={event => handleSetClick(event)}
                 data-quote={index}
                 key={index}
-               
+                active={index===active}    
                 />
             ))}          
         </QuotesContainer>

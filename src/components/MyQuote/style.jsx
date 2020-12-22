@@ -30,8 +30,7 @@ export const QuoteSpan = styled.span`
             width: 6px;
             background-color:red;
             border-radius: 50%;
-            transition: background-color 0.8s ease;
-            
+            transition: background-color 0.3s ease;
             }
             &:hover{
                 &::before {
@@ -39,8 +38,6 @@ export const QuoteSpan = styled.span`
                 }
             }
             &::before {
-                ${props => props.active} {
-                    background-color: red;
-                }
+                background-color: ${(props => props.active ? "black" : "red")}
             }
             `;
