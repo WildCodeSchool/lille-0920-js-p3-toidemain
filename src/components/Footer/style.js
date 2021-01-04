@@ -121,13 +121,13 @@ export const Menu = styled.div`
   }
   @media ${device.mobile} {
     padding: 0;
-    a {
-      font-size: 18px;
-      margin-bottom: 1vh;
-    }
     p {
       padding-top: 0;
       text-align: center;
+    }
+    a {
+      font-size: 18px;
+      margin-bottom: 1vh;
     }
   }
   @media ${device.tablet} {
