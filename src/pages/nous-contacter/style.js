@@ -1,10 +1,10 @@
-import styled from "styled-components";
-import { device } from "../../layout/Devices";
+import styled from 'styled-components';
+import { device } from '../../layout/Devices';
 
 export const ContactContainer = styled.div`
   min-height: 80vh;
   max-height: 150vh;
-  background-image: url("/images/meet.png");
+  background-color: rgb(237, 249, 252);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -19,12 +19,13 @@ export const ContactContainer = styled.div`
   }
 `;
 export const Text = styled.div`
-  background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
   height: 10vh;
   h1 {
-    font-size: 50px;
-    color: white;
+    font-size: 60px;
+    color: #1c819e;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
     text-align: center;
     padding-top: 3vh;
   }
@@ -62,7 +63,7 @@ export const FormContainer = styled.div`
     -moz-background-clip: padding;
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
-    background: #1c819e;
+    background: #b3babdca;
     -moz-box-shadow: 0 0 13px 3px rgba(0, 0, 0, 0.5);
     -webkit-box-shadow: 0 0 13px 3px rgba(0, 0, 0, 0.5);
     box-shadow: 0 0 13px 3px rgba(0, 0, 0, 0.5);
@@ -83,7 +84,7 @@ export const FormContainer = styled.div`
     }
   }
   textarea {
-    background: rgba(255, 255, 255, 0.4) no-repeat scroll 16px 16px;
+    background: white no-repeat scroll 16px 16px;
     width: 25vw;
     height: 10vh;
     border: 1px solid rgba(255, 255, 255, 0.6);
@@ -94,9 +95,9 @@ export const FormContainer = styled.div`
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
     display: block;
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 18px;
-    color: white;
+    color: gray;
     padding: 1vh auto;
     margin: 2vh auto;
     margin-bottom: 3vh;
@@ -113,6 +114,9 @@ export const FormContainer = styled.div`
       width: 70vw;
       margin-bottom: 1vh;
     }
+    @media ${device.desktop} {
+      width: 52.5vw;
+    }
   }
 
   input {
@@ -126,9 +130,9 @@ export const FormContainer = styled.div`
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
     display: block;
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 18px;
-    color: white;
+    color: gray;
     padding: 5vh auto;
     margin: 2vh auto;
     @media ${device.smallScreen} {
@@ -144,16 +148,16 @@ export const FormContainer = styled.div`
       margin: 1vh auto;
     }
   }
-  input[type="submit"] {
+  input[type='submit'] {
     cursor: pointer;
   }
   input.name {
-    background: rgba(255, 255, 255, 0.4) no-repeat scroll 16px 16px;
+    background: white no-repeat scroll 16px 16px;
     padding-left: 45px;
   }
 
   input.email {
-    background: rgba(255, 255, 255, 0.4) no-repeat scroll 16px 20px;
+    background: white no-repeat scroll 16px 20px;
     padding-left: 45px;
   }
 
@@ -163,20 +167,19 @@ export const FormContainer = styled.div`
   }
 
   ::-webkit-input-placeholder {
-    color: whitesmoke;
+    color: gray;
   }
 
   :-moz-placeholder {
-    color: whitesmoke;
+    color: gray;
   }
 
   :-ms-input-placeholder {
-    color: whitesmoke;
+    color: gray;
   }
 
-  input:focus,
-  textarea:focus,
   select:focus {
+    color: white;
     background-color: rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.5);
     -webkit-box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.5);
@@ -195,12 +198,12 @@ export const FormContainer = styled.div`
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
     display: block;
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 18px;
-    color: white;
+    color: gray;
     padding: 5vh auto;
     margin: 2vh auto;
-    background: rgba(255, 255, 255, 0.4) no-repeat scroll 16px 16px;
+    background: white no-repeat scroll 16px 16px;
     padding-left: 45px;
     @media ${device.smallScreen} {
       width: 55.5vw;
@@ -210,6 +213,9 @@ export const FormContainer = styled.div`
     }
     @media ${device.mobile} {
       width: 71vw;
+    }
+    @media ${device.desktop} {
+      width: 52.5vw;
     }
   }
 
@@ -221,13 +227,13 @@ export const FormContainer = styled.div`
     border-radius: 4px;
     float: right;
     border: 1px solid #253737;
-    background: #416b68;
-    background: -webkit-gradient(linear, left top, left bottom, from(#6da5a3), to(#416b68));
-    background: -webkit-linear-gradient(top, #6da5a3, #416b68);
-    background: -moz-linear-gradient(top, #6da5a3, #416b68);
-    background: -ms-linear-gradient(top, #6da5a3, #416b68);
-    background: -o-linear-gradient(top, #6da5a3, #416b68);
-    background-image: -ms-linear-gradient(top, #6da5a3 0%, #416b68 100%);
+    background: #727373b5;
+    background: -webkit-gradient(linear, left top, left bottom, from(#727373b5), to(#c5c7c7));
+    background: -webkit-linear-gradient(top, #c5c7c7, #727373b5);
+    background: -moz-linear-gradient(top, #c5c7c7, #727373b5);
+    background: -ms-linear-gradient(top, #c5c7c7, #727373b5);
+    background: -o-linear-gradient(top, #c5c7c7, #727373b5);
+    background-image: -ms-linear-gradient(top, #c5c7c7 0%, #727373b5 100%);
     padding: 10.5px 21px;
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
@@ -235,8 +241,7 @@ export const FormContainer = styled.div`
     -webkit-box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0, inset rgba(255, 255, 255, 0.7) 0 1px 0;
     -moz-box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0, inset rgba(255, 255, 255, 0.7) 0 1px 0;
     box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0, inset rgba(255, 255, 255, 0.7) 0 1px 0;
-    text-shadow: #333333 0 1px 0;
-    color: #e1e1e1;
+    color: #373838;
   }
   input.btn {
     @media ${device.tablet} {

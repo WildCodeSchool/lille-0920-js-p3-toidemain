@@ -1,5 +1,5 @@
-import React from "react";
-import { ContactContainer, FormContainer, Text } from "./contacter.style";
+import React from 'react';
+import { ContactContainer, FormContainer, Text } from './style';
 
 const Contacter = () => {
   return (
