@@ -1,9 +1,14 @@
-import { MaxContent } from './style'
+import { MaxContent } from "./style";
 
 const SliderContent = (props) => (
-  <MaxContent className="SliderContent" translate={props.translate} transition={props.transition} width={props.width}>
+  <MaxContent
+    className="SliderContent"
+    translate={props.translate}
+    transition={props.transition}
+    width={props.width}
+  >
     {props.children}
   </MaxContent>
-  )
+);
 
-export default SliderContent
+export default SliderContent;

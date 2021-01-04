@@ -1,8 +1,6 @@
-import React from 'react'
+import React from "react";
 import { SlideDiv } from "./style";
 
- const Slide = ({ content }) => (
-    <SlideDiv className= "Slide" content={content}/>
- )
-   
-export default Slide
+const Slide = ({ content }) => <SlideDiv className="Slide" content={content} />;
+
+export default Slide;
