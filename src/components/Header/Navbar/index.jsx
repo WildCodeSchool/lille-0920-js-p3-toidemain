@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { NavContainer, NavDropdown, DropdownItems } from "./style";
 
 export default function Navbar() {
@@ -26,7 +27,7 @@ export default function Navbar() {
         </NavDropdown>
         |<a href="/soutien">Nous Soutenir</a>|
         <a href="/actualite">Notre Actualité</a>|
-        <a href="/contact">Nous Contacter</a>
+        <Link to="/contacter">Nous Contacter</Link>
       </nav>
     </NavContainer>
   );

@@ -1,10 +1,10 @@
 const size = {
-  mobile: '480px',
-  minTablet: '481px',
-  maxTablet: '768px',
-  MinSmallScreen: '769px',
-  MaxSmallScreen: '1024px',
-  desktop: '1025px',
+  mobile: "480px",
+  minTablet: "481px",
+  maxTablet: "768px",
+  MinSmallScreen: "769px",
+  MaxSmallScreen: "1024px",
+  desktop: "1025px",
 };
 
 export const device = {

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   FooterContainer,
   Info,
@@ -23,7 +24,6 @@ const Footer = () => {
           </p>
           <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 59390 Sailly-lez-Lannoy</p>
         </Adress>
-
         <p>
           <span>
             <img src="/images/icons/telephone.png" alt="tel" />
@@ -41,7 +41,7 @@ const Footer = () => {
         <img src="/images/logo.png" alt="logo" />
       </Middle>
       <Menu>
-        <a href="#!">Nous Contacter</a>
+        <Link to="/contacter">Nous Contacter</Link>
         <Social>
           <h3>Retrouvez-Nous sur</h3>
         </Social>
