@@ -1,12 +1,16 @@
 import React from "react";
 import { Reset } from "styled-reset";
-import Quotes from "./components/MyQuote";
+import About from "./pages/about/About";
+import Footer from "./components/Footer/index";
 
-export default function App() {
+function App() {
   return (
     <div>
       <Reset />
-      <Quotes />
+      <About />
+      <Footer />
     </div>
   );
 }
+
+export default App;
