@@ -10,7 +10,7 @@ import {
   Box5,
 } from "./style";
 
-const Stairs = () => {
+const AnimStairs = () => {
   return (
     <Container>
       <Stairs>
@@ -34,4 +34,5 @@ const Stairs = () => {
     </Container>
   );
 };
-export default Stairs;
+export default AnimStairs;
+
