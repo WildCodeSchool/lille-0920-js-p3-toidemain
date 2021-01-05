@@ -1,17 +1,23 @@
 import React from "react";
+import {
+  Container,
+  Title,
+  Stairs,
+  Box1, Box2, Box3, Box4, Box5,
+} from "./style";
 
 const Stairs = () => {
   return (
-    <div>
-      <div>
-        <div><p>S'INSPIRER</p></div>
-        <div><p>SE CONNAITRE</p></div>
-        <div><p>S'ORIENTER</p></div>
-        <div><p>EXPERIMENTER</p></div>
-        <div><p>SE CHALLENGER</p></div>
-      </div>
-      <h2>S'épanouir en s'amusant</h2>
-    </div>
+    <Container>
+      <Stairs>
+        <Box1><p>S'INSPIRER</p></Box1>
+        <Box2><p>SE CONNAITRE</p></Box2>
+        <Box3><p>S'ORIENTER</p></Box3>
+        <Box4><p>EXPERIMENTER</p></Box4>
+        <Box5><p>SE CHALLENGER</p></Box5>
+      </Stairs>
+      <Title>S'épanouir en s'amusant</Title>
+    </Container>
   );
 };
 export default Stairs;
