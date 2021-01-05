@@ -14,6 +14,7 @@ export const AboutContainer = styled.div`
     font-size: 1.5em;
     color: #005542;
     font-weight: bold;
+    margin-bottom: 5vh;
   }
 
   h3 {
