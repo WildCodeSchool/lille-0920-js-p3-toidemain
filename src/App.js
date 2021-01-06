@@ -8,6 +8,8 @@ import Atelier from "./components/Atelier"
 function App() {
   return (
     <div>
+      <Reset />
+      <Header />
       <Atelier />
     </div>
   );
