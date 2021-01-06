@@ -1,20 +1,20 @@
-import styled from 'styled-components'
-import { device } from '../../layout/Devices'
+import styled from "styled-components";
+import { device } from "../../layout/Devices";
 
 export const PedaContainer = styled.div`
-  font-family: 'Oswald', Gadget, sans-serif;
-  font-size: 25px;
+  font-family: "Oswald", Gadget, sans-serif;
+  font-size: 1.5rem;
   @media ${device.mobile} {
     display: flex;
     flex-direction: column;
-    font-size: 20px;
+    font-size: 1.2rem;
   }
   @media ${device.tablet} {
     display: flex;
     flex-direction: column;
-    font-size: 20px;
+    font-size: 1.2rem;
   }
-`
+`;
 
 export const Title = styled.h2`
   font-size: 4rem;
@@ -27,9 +27,9 @@ export const Title = styled.h2`
   @media ${device.tablet} {
     font-size: 3rem;
   }
-`
+`;
 export const Intro = styled.p`
-  font-family: 'Arial Black', Gadget, sans-serif;
+  font-family: "Arial Black", Gadget, sans-serif;
   width: 20vw;
   text-align: -webkit-center;
   color: white;
@@ -45,15 +45,14 @@ export const Intro = styled.p`
     width: 100vw;
     align-items: center;
   }
-
-`
+`;
 export const CapitalL = styled.span`
   font-size: 3rem;
-`
+`;
 export const Container1 = styled.div`
   display: flex;
   flex-direction: row;
-`
+`;
 export const Container2 = styled.div`
   background-color: #145264;
   background: rgba(0, 0, 0, 0.5);
@@ -68,7 +67,7 @@ export const Container2 = styled.div`
     display: flex;
     flex-direction: column;
   }
-`
+`;
 export const Objectif = styled.div`
   text-align: -webkit-center;
   padding-top: 4vh;
@@ -78,10 +77,10 @@ export const Objectif = styled.div`
     flex-direction: column;
   }
   @media ${device.tablet} {
-      display: flex;
-      flex-direction: column;
-    }
-`
+    display: flex;
+    flex-direction: column;
+  }
+`;
 export const Title2 = styled.h2`
   font-size: 5rem;
   color: #f5e01d;
@@ -91,16 +90,16 @@ export const Title2 = styled.h2`
   align-items: -webkit-center;
   margin: 20px;
   @media ${device.mobile} {
-      font-size:3rem;
+    font-size: 3rem;
     width: 80vw;
     text-align: -webkit-center;
   }
   @media ${device.tablet} {
-    font-size:4rem;
+    font-size: 4rem;
     width: 80%;
     text-align: -webkit-center;
   }
-`
+`;
 export const Liste = styled.ul`
   width: 35vw;
   text-align: -webkit-center;
@@ -110,18 +109,18 @@ export const Liste = styled.ul`
   margin-left: 3vw;
   @media ${device.mobile} {
     width: 90vw;
-    margin:3vh;
+    margin: 3vh;
   }
   @media ${device.tablet} {
     width: 90vw;
-    margin:3vh;
+    margin: 3vh;
   }
-`
+`;
 
 export const ListeElement = styled.li`
   color: white;
   padding: 10px;
-`
+`;
 export const Slogan = styled.p`
   width: 30vw;
   text-align: end;
@@ -138,31 +137,31 @@ export const Slogan = styled.p`
     text-align: -webkit-center;
     font-size: 2.6rem;
   }
-`
+`;
 export const Color = styled.span`
   font-size: 3.2rem;
   color: #145264;
-`
+`;
 export const Container3 = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 5vh;
-`
+`;
 export const Logo = styled.img`
- width: 20vw;
- @media ${device.mobile} {
-    width:30vw;
-  }
- @media ${device.tablet} {
+  width: 20vw;
+  @media ${device.mobile} {
     width: 30vw;
-    }
-`
+  }
+  @media ${device.tablet} {
+    width: 30vw;
+  }
+`;
 export const Orientoi = styled.p`
   text-align: center;
   margin: 4vw;
-`
+`;
 export const ColorB = styled.span`
   color: #f5e01d;
   font-size: 3rem;
-`
+`;
