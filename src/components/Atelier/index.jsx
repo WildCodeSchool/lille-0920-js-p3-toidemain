@@ -6,7 +6,9 @@ import { Container, ImageContainer, TextContainer, MainTitle, Paragraph, Promise
 export default function Atelier() {
   return (
     <Container>
-        <ImageContainer src={"/images/Atelier.jpg"} alt={"atelier"}width={"500px"}/>
+        <ImageContainer>
+            <img src={"/images/Atelier.jpg"} alt={"atelier"} width={"550px"}/>
+        </ImageContainer>    
     <TextContainer>
         <MainTitle>Toi Demain propose et organise des ateliers à destination des élèves 
             afin de les accompagner dans leurs démarches professionnelles</MainTitle>

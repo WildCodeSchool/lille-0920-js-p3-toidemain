@@ -4,7 +4,7 @@ const promiseItems = [
         logo: "./images/icons/compass.svg",
       },
       {
-        name: "Construction du projet professionnel",
+        name: "Projet professionnel",
         logo: "./images/icons/goal.svg",
       },
       {
