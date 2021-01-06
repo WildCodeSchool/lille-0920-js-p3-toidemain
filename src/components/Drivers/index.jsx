@@ -1,11 +1,11 @@
 import React from "react";
 import { HexGrid, Layout, Hexagon, Text, Pattern } from "react-hexgrid";
-import "./App.css";
+import { DriversStyle } from "./style";
 
 export default function Drivers() {
 	const hexagonSize = { x: 10, y: 10 };
 	return (
-		<div className="App">
+		<DriversStyle>
 			<h2>React Hexgrid v1</h2>
 			<p>
 				Constructing Hexgrid with component-based approach with custom SVG
@@ -85,6 +85,6 @@ export default function Drivers() {
 					<circle cx="65" cy="15" r="3" />
 				</g>
 			</HexGrid>
-		</div>
+		</DriversStyle>
 	);
 }
