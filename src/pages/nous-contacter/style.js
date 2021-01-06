@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { device } from "../../layout/Devices";
+import styled from 'styled-components';
+import { device } from '../../layout/Devices';
 
 export const ContactContainer = styled.div`
   min-height: 80vh;
@@ -14,8 +14,20 @@ export const ContactContainer = styled.div`
   justify-content: space-around;
   align-items: center;
   @media ${device.mobile} {
-    height: 100vh;
+    height: 120vh;
     justify-content: flex-start;
+  }
+  @media ${device.small_screen} {
+    min-height: 130vh;
+    max-height: 150vh;
+  }
+  @media ${device.tablet} {
+    min-height: 100vh;
+    max-height: 140vh;
+  }
+  @media ${device.desktop} {
+    min-height: 70vh;
+    max-height: 120vh;
   }
 `;
 export const Text = styled.div`
@@ -24,17 +36,19 @@ export const Text = styled.div`
   h1 {
     font-size: 60px;
     color: #1c819e;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: bold;
     text-align: center;
     padding-top: 3vh;
   }
   @media ${device.smallScreen} {
+    padding-bottom: 20px;
     h1 {
-      font-size: 42px;
+      font-size: 40px;
     }
   }
   @media ${device.tablet} {
+    padding-bottom: 20px;
     h1 {
       font-size: 36px;
     }
@@ -51,6 +65,10 @@ export const Text = styled.div`
 `;
 export const FormContainer = styled.div`
   form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     margin: 3vh auto 7vh auto;
     width: 25vw;
     min-height: 40vh;
@@ -69,24 +87,27 @@ export const FormContainer = styled.div`
     box-shadow: 0 0 13px 3px rgba(0, 0, 0, 0.5);
     overflow: hidden;
     @media ${device.smallScreen} {
-      width: 55vw;
+      width: 100%;
+      min-height: 80vh;
+      max-height: 110vh;
     }
     @media ${device.tablet} {
       margin: 2vh auto 10vh auto;
-      width: 45vw;
-      min-height: 45vh;
-      max-height: 55vh;
+      width: 70vw;
+      min-height: 65vh;
+      max-height: 90vh;
     }
     @media ${device.mobile} {
       margin: 0 auto 2vh auto;
       width: 70vw;
-      max-height: 65vh;
+      max-height: 35vh;
+      max-height: 45vh;
     }
   }
   textarea {
     background: white no-repeat scroll 16px 16px;
     width: 25vw;
-    height: 10vh;
+    height: 20vh;
     border: 1px solid rgba(255, 255, 255, 0.6);
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
@@ -95,7 +116,7 @@ export const FormContainer = styled.div`
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
     display: block;
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 18px;
     color: gray;
     padding: 1vh auto;
@@ -107,7 +128,7 @@ export const FormContainer = styled.div`
       margin-bottom: 1vh;
     }
     @media ${device.tablet} {
-      width: 45vw;
+      width: 66vw;
       margin-bottom: 1vh;
     }
     @media ${device.mobile} {
@@ -115,8 +136,24 @@ export const FormContainer = styled.div`
       margin-bottom: 1vh;
     }
     @media ${device.desktop} {
-      width: 52.5vw;
+      width: 53vw;
     }
+  }
+  textarea::-webkit-input-placeholder {
+    padding-top: 10px;
+    padding-left: 40px;
+  }
+  textarea::-moz-input-placeholder {
+    padding-top: 10px;
+    padding-left: 40px;
+  }
+  textarea:-moz-input-placeholder {
+    padding-top: 10px;
+    padding-left: 40px;
+  }
+  textarea:-ms-input-placeholder {
+    padding-top: 10px;
+    padding-left: 40px;
   }
 
   input {
@@ -130,7 +167,7 @@ export const FormContainer = styled.div`
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
     display: block;
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 18px;
     color: gray;
     padding: 5vh auto;
@@ -140,7 +177,7 @@ export const FormContainer = styled.div`
       margin: 1vh auto;
     }
     @media ${device.tablet} {
-      width: 38vw;
+      width: 60vw;
       margin: 1vh auto;
     }
     @media ${device.mobile} {
@@ -148,7 +185,7 @@ export const FormContainer = styled.div`
       margin: 1vh auto;
     }
   }
-  input[type="submit"] {
+  input[type='submit'] {
     cursor: pointer;
   }
   input.name {
@@ -198,7 +235,7 @@ export const FormContainer = styled.div`
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
     display: block;
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 18px;
     color: gray;
     padding: 5vh auto;
@@ -209,13 +246,13 @@ export const FormContainer = styled.div`
       width: 55.5vw;
     }
     @media ${device.tablet} {
-      width: 45.5vw;
+      width: 66vw;
     }
     @media ${device.mobile} {
       width: 71vw;
     }
     @media ${device.desktop} {
-      width: 52.5vw;
+      width: 53vw;
     }
   }
 
@@ -228,13 +265,7 @@ export const FormContainer = styled.div`
     float: right;
     border: 1px solid #253737;
     background: #727373b5;
-    background: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(#727373b5),
-      to(#c5c7c7)
-    );
+    background: -webkit-gradient(linear, left top, left bottom, from(#727373b5), to(#c5c7c7));
     background: -webkit-linear-gradient(top, #c5c7c7, #727373b5);
     background: -moz-linear-gradient(top, #c5c7c7, #727373b5);
     background: -ms-linear-gradient(top, #c5c7c7, #727373b5);
@@ -244,12 +275,9 @@ export const FormContainer = styled.div`
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     border-radius: 6px;
-    -webkit-box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0,
-      inset rgba(255, 255, 255, 0.7) 0 1px 0;
-    -moz-box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0,
-      inset rgba(255, 255, 255, 0.7) 0 1px 0;
-    box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0,
-      inset rgba(255, 255, 255, 0.7) 0 1px 0;
+    -webkit-box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0, inset rgba(255, 255, 255, 0.7) 0 1px 0;
+    -moz-box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0, inset rgba(255, 255, 255, 0.7) 0 1px 0;
+    box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0, inset rgba(255, 255, 255, 0.7) 0 1px 0;
     color: #373838;
   }
   input.btn {
@@ -265,13 +293,7 @@ export const FormContainer = styled.div`
     border: 1px solid #253737;
     text-shadow: #333333 0 1px 0;
     background: #416b68;
-    background: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(#77b2b0),
-      to(#416b68)
-    );
+    background: -webkit-gradient(linear, left top, left bottom, from(#77b2b0), to(#416b68));
     background: -webkit-linear-gradient(top, #77b2b0, #416b68);
     background: -moz-linear-gradient(top, #77b2b0, #416b68);
     background: -ms-linear-gradient(top, #77b2b0, #416b68);
@@ -285,24 +307,15 @@ export const FormContainer = styled.div`
     text-shadow: #333333 0 -1px 0;
     border: 1px solid #253737;
     background: #6da5a3;
-    background: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(#416b68),
-      to(#416b68)
-    );
+    background: -webkit-gradient(linear, left top, left bottom, from(#416b68), to(#416b68));
     background: -webkit-linear-gradient(top, #416b68, #609391);
     background: -moz-linear-gradient(top, #416b68, #6da5a3);
     background: -ms-linear-gradient(top, #416b68, #6da5a3);
     background: -o-linear-gradient(top, #416b68, #6da5a3);
     background-image: -ms-linear-gradient(top, #416b68 0%, #6da5a3 100%);
     color: #fff;
-    -webkit-box-shadow: rgba(255, 255, 255, 0) 0 1px 0,
-      inset rgba(255, 255, 255, 0.7) 0 1px 0;
-    -moz-box-shadow: rgba(255, 255, 255, 0) 0 1px 0,
-      inset rgba(255, 255, 255, 0.7) 0 1px 0;
-    box-shadow: rgba(255, 255, 255, 0) 0 1px 0,
-      inset rgba(255, 255, 255, 0.7) 0 1px 0;
+    -webkit-box-shadow: rgba(255, 255, 255, 0) 0 1px 0, inset rgba(255, 255, 255, 0.7) 0 1px 0;
+    -moz-box-shadow: rgba(255, 255, 255, 0) 0 1px 0, inset rgba(255, 255, 255, 0.7) 0 1px 0;
+    box-shadow: rgba(255, 255, 255, 0) 0 1px 0, inset rgba(255, 255, 255, 0.7) 0 1px 0;
   }
 `;

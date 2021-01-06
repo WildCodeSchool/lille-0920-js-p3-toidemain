@@ -1,14 +1,6 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import {
-  FooterContainer,
-  Info,
-  Adress,
-  Middle,
-  Menu,
-  Social,
-  Icons,
-} from "./style";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { FooterContainer, Info, Adress, Right, Menu, Social, Icons } from './style';
 
 const Footer = () => {
   return (
@@ -37,11 +29,7 @@ const Footer = () => {
           toi-demain@gmail.com
         </p>
       </Info>
-      <Middle>
-        <img src="/images/logo.png" alt="logo" />
-      </Middle>
       <Menu>
-        <Link to="/contacter">Nous Contacter</Link>
         <Social>
           <h3>Retrouvez-Nous sur</h3>
         </Social>
@@ -52,6 +40,9 @@ const Footer = () => {
         </Icons>
         <p>&#169; 2021 Tous droits réservés Association Toi Demain</p>
       </Menu>
+      <Right>
+        <Link to="/contacter">Nous Contacter</Link>
+      </Right>
     </FooterContainer>
   );
 };
