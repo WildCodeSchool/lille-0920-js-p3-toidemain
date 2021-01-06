@@ -18,3 +18,11 @@ export const Intro = styled.p `
   padding: 40px;
   margin-left: 70px;
 `
+export const CapitalL = styled.span`
+  font-size: 45px;
+`;
+export const Container1 = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-left: 140px;
+`;
