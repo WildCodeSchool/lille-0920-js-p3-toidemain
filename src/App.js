@@ -5,6 +5,7 @@ import About from "./pages/about/About";
 import Footer from "./components/Footer/index";
 import Pedagogie from "./components/Pedagogie/index";
 
+
 function App() {
   return (
     <div>

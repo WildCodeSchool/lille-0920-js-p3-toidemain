@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import AnimStairs from "../Stairs/stairs";
 import {
   Title,
   Intro,
@@ -30,6 +31,7 @@ const Pedagogie = () => {
             créer l’alliance avec les jeunes et de leur permettre d’apprendre en
             s’amusant.
           </Intro>
+          <AnimStairs />
         </Container1>
 
         <Container2>

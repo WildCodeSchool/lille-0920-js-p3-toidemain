@@ -30,6 +30,7 @@ export const Title = styled.h2`
 `;
 export const Intro = styled.p`
   font-family: "Arial Black", Gadget, sans-serif;
+  height: 80%;
   width: 20vw;
   text-align: -webkit-center;
   color: white;
@@ -37,6 +38,7 @@ export const Intro = styled.p`
   opacity: 80%;
   border-radius: 5px;
   padding: 40px;
+  margin-top: 40px;
   @media ${device.mobile} {
     width: 80vw;
     align-items: center;
@@ -51,7 +53,7 @@ export const CapitalL = styled.span`
 `;
 export const Container1 = styled.div`
   display: flex;
-  flex-direction: row;
+  justify-content: center;
 `;
 export const Container2 = styled.div`
   background-color: #145264;
