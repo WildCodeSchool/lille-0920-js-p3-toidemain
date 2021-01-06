@@ -10,11 +10,11 @@ const Member = ({ item }) => {
         <p>{item.description}</p>
       </div>
       <div>
-        <h3>Ce qui l’anime au quotidien:</h3>
+        <h4>Ce qui l’anime au quotidien:</h4>
         <p>{item.motivation}</p>
       </div>
       <div>
-        <h3>Pourquoi l’association Toi Demain ?</h3>
+        <h4>Pourquoi l’association Toi Demain ?</h4>
         <p>{item.why}</p>
       </div>
     </Card>
