@@ -1,13 +1,13 @@
 import promiseItems from "./Data";
 import List from "./promiseList"
 import React from "react";
-import { Container, ImageContainer, TextContainer, MainTitle, Paragraph, PromisesContainer } from "./style"
+import { Container, ImageContainer, Image, TextContainer, MainTitle, Paragraph, PromisesContainer } from "./style"
 
 export default function Atelier() {
   return (
     <Container>
         <ImageContainer>
-            <img src={"/images/Atelier.jpg"} alt={"atelier"} width={"550px"}/>
+            <Image src={"/images/Atelier.jpg"} alt={"atelier"} width={"550px"}/>
         </ImageContainer>    
     <TextContainer>
         <MainTitle>Toi Demain propose et organise des ateliers à destination des élèves 

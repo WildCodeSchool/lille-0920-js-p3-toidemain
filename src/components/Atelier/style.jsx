@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const Container=styled.div`
 display: flex;
 justify-content: space-around;
-border: solid 1px red;
 width: 100vw;
 height: auto;
 margin-top: 10vh;
@@ -15,6 +14,10 @@ export const ImageContainer =styled.div`
     display: flex;
     margin: 15px 0px 15px 35px;
 `;
+
+export const Image=styled.img`
+    box-shadow: 10px 5px 5px grey;
+    `;
 
 export const TextContainer=styled.div`
     display: flex;
