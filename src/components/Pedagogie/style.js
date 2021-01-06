@@ -6,29 +6,28 @@ export const PedaContainer = styled.div`
 `;
 
 export const Title = styled.h2`
-  font-size: 2.5rem;
-  padding-bottom: 20px;
+  font-size: 4rem;
+  padding-bottom: 4vh;
   color: #f5e01d;
   margin: 25px;
 `;
 export const Intro = styled.p`
   font-family: "Arial Black", Gadget, sans-serif;
   width: 20vw;
-  text-align: center;
+  text-align: -webkit-center;
   color: white;
   background-color: #005542;
   opacity: 80%;
   border-radius: 5px;
   padding: 40px;
-  margin-left: 70px;
+  
 `;
 export const CapitalL = styled.span`
-  font-size: 45px;
+  font-size: 3rem;
 `;
 export const Container1 = styled.div`
   display: flex;
-  justify-content: center;
-  margin-left: 140px;
+  
 `;
 export const Container2 = styled.div`
   background-color: #145264;
@@ -72,25 +71,25 @@ export const Slogan = styled.p`
   margin-top: 9vh;
 `;
 export const Color = styled.span`
-  font-size: 50px;
+  font-size: 3.2rem;
   color: #145264;
 `;
 export const Container3 = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 5vh;
+  margin: 5vh;
 `;
 export const Logo = styled.img`
-  font-size: 60px;
+  font-size: 6rem;
   color: #005542;
 `;
 export const Orientoi = styled.p`
   text-align: center;
-  margin-left: 14vw;
-  margin-right: 14vw;
+  margin:4vw;
+ 
 `;
 export const ColorB = styled.span`
   color: #f5e01d;
-  font-size: 50px;
+  font-size: 3rem;
 `;
