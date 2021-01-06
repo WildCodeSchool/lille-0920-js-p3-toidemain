@@ -6,12 +6,23 @@ export const KeyFactsContainer = styled.div`
 `;
 
 export const Fact = styled.div`
-  max-width: 20vw;
+  max-width: 15vw;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 
-  img {
-    width: 30px;
+  * {
+    margin: 0.5vh 0;
+  }
+
+  i {
+    color: #ffbe00;
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+    color: #005542;
   }
 `;
