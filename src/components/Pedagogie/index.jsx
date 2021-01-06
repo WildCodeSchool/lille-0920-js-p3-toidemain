@@ -1,22 +1,22 @@
 import React from "react";
-import {Link} from 'react-router-dom';
+import { Link } from "react-router-dom";
 import {
-    Title,
-    Intro,
-    Container1,
-    CapitalL,
-    Title2,
-    Slogan,
-    Container2,
-    Container3,
-    Color,
-    PedaContainer,
-    Liste,
-    ListeElement,
-    Objectif,
-    Logo,
-    Orientoi,
-    ColorB
+  Title,
+  Intro,
+  Container1,
+  CapitalL,
+  Title2,
+  Slogan,
+  Container2,
+  Container3,
+  Color,
+  PedaContainer,
+  Liste,
+  ListeElement,
+  Objectif,
+  Logo,
+  Orientoi,
+  ColorB,
 } from "./style";
 const Pedagogie = () => {
   return (
@@ -25,9 +25,9 @@ const Pedagogie = () => {
         <Title>NOTRE PEDAGOGIE</Title>
         <Container1>
           <Intro>
-            <CapitalL>Toi Demain</CapitalL> a une pédagogie d’apprentissage basée sur
-            l’expérimentation. Il est essentiel pour nos équipes de créer
-            l’alliance avec les jeunes et de leur permettre d’apprendre en
+            <CapitalL>Toi Demain</CapitalL> a une pédagogie d’apprentissage
+            basée sur l’expérimentation. Il est essentiel pour nos équipes de
+            créer l’alliance avec les jeunes et de leur permettre d’apprendre en
             s’amusant.
           </Intro>
         </Container1>
@@ -67,12 +67,13 @@ const Pedagogie = () => {
 
         <Container3>
           <Orientoi>
-            Nous sommes en partenariat avec <ColorB>ORIENTOI</ColorB> qui propose
-            des jeux au sujet de l’orientation. Les jeunes réalisent le test en
-            ligne pendant le stage.
+            Nous sommes en partenariat avec <ColorB>ORIENTOI</ColorB> qui
+            propose des jeux au sujet de l’orientation. Les jeunes réalisent le
+            test en ligne pendant le stage.
           </Orientoi>
-          <Link to= "https://app.orientoi.fr/#/welcome"><Logo src="/images/orientoi.png" alt="logo oriente Toi"/></Link>
-          
+          <Link to="https://app.orientoi.fr/#/welcome">
+            <Logo src="/images/orientoi.png" alt="logo oriente Toi" />
+          </Link>
         </Container3>
       </PedaContainer>
     </div>
