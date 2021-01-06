@@ -1,61 +1,80 @@
 import React from "react";
-
+import {Link} from 'react-router-dom';
+import {
+    Title,
+    Intro,
+    Container1,
+    CapitalL,
+    Title2,
+    Slogan,
+    Container2,
+    Container3,
+    Color,
+    PedaContainer,
+    Liste,
+    ListeElement,
+    Objectif,
+    Logo,
+    Orientoi,
+    ColorB
+} from "./style";
 const Pedagogie = () => {
   return (
     <div>
-      <div>
-        <h2>NOTRE h2</h2>
-        <div>
-          <p>
-            <span>Toi Demain</span> a une pédagogie d’apprentissage basée sur
+      <PedaContainer>
+        <Title>NOTRE PEDAGOGIE</Title>
+        <Container1>
+          <Intro>
+            <CapitalL>Toi Demain</CapitalL> a une pédagogie d’apprentissage basée sur
             l’expérimentation. Il est essentiel pour nos équipes de créer
             l’alliance avec les jeunes et de leur permettre d’apprendre en
             s’amusant.
-          </p>
-        </div>
+          </Intro>
+        </Container1>
 
-        <div>
-          <div>
-            <h2>TOUT CELA DANS L'h2 DE</h2>
-            <ul>
-              <li>
+        <Container2>
+          <Objectif>
+            <Title2>TOUT CELA DANS L'OBJECTIF DE</Title2>
+            <Liste>
+              <ListeElement>
                 Susciter des envies et affiner le projet professionnel des
                 jeunes
-              </li>
-              <li>
+              </ListeElement>
+              <ListeElement>
                 Leur permettre d’être acteur de leur stage en mettant en place
                 un projet
-              </li>
-              <li>
+              </ListeElement>
+              <ListeElement>
                 Travailler la posture à l’oral pour les présentations et les
                 entretiens
-              </li>
-              <li>S’épanouir au sein d’un collectif</li>
-              <li>
+              </ListeElement>
+              <ListeElement>S’épanouir au sein d’un collectif</ListeElement>
+              <ListeElement>
                 S’adapter aux codes de l’entreprise et découvrir toutes les
                 opportunités qu’elle offre
-              </li>
-              <li>
+              </ListeElement>
+              <ListeElement>
                 Développer la connaissance de soi et faire grandir la confiance
                 en soi
-              </li>
-            </ul>
-          </div>
-          <p>
+              </ListeElement>
+            </Liste>
+          </Objectif>
+          <Slogan>
             POUR leur permettre d’être
-            <span> libres, responsables et heureux.</span>
-          </p>
-        </div>
+            <Color> libres, responsables et heureux.</Color>
+          </Slogan>
+        </Container2>
 
-        <div>
-          <p>
-            Nous sommes en partenariat avec <span>ORIENTOI</span> qui propose
+        <Container3>
+          <Orientoi>
+            Nous sommes en partenariat avec <ColorB>ORIENTOI</ColorB> qui propose
             des jeux au sujet de l’orientation. Les jeunes réalisent le test en
             ligne pendant le stage.
-          </p>
-          <img src="/images/orientoi.png" alt="logo oriente Toi" />
-        </div>
-      </div>
+          </Orientoi>
+          <Link to= "https://app.orientoi.fr/#/welcome"><Logo src="/images/orientoi.png" alt="logo oriente Toi"/></Link>
+          
+        </Container3>
+      </PedaContainer>
     </div>
   );
 };
