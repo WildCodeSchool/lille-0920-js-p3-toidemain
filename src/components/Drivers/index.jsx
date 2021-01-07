@@ -1,12 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { HexGrid, Layout, Hexagon, Text, Pattern } from "react-hexgrid";
 import { DriversStyle } from "./style";
+import Modal from "./Modal/index";
 
 export default function Drivers() {
+	const [isOpen, setIsOpen] = useState(false);
+
+	let textDriver = "TEXT";
+
 	const hexagonSize = { x: 10, y: 10 };
 	return (
 		<DriversStyle>
-			<HexGrid width={1600} height={800} viewBox="-50 -50 100 100">
+			<HexGrid width={1600} height={800} viewBox="-120 -50 100 100">
 				{/* Main grid with bit hexagons, all manual */}
 				<Layout
 					size={hexagonSize}
@@ -51,7 +56,14 @@ export default function Drivers() {
 						s={0}
 						fill="pat-9"
 					></Hexagon>
-					<Hexagon className="hexYellow" q={-4} r={3} s={0}>
+					<Hexagon
+						className="hexYellow"
+						q={-4}
+						r={3}
+						s={0}
+						onMouseOver={() => setIsOpen(true)}
+						onMouseLeave={() => setIsOpen(false)}
+					>
 						<Text>S'INSPIRER</Text>
 					</Hexagon>
 					<Hexagon className="hexBlue" q={-5} r={3} s={0}>
@@ -72,6 +84,10 @@ export default function Drivers() {
 				<Pattern id="pat-9" link="images/vision.png" size={hexagonSize} />
 				<Pattern id="pat-12" link="images/compas.png" size={hexagonSize} />
 			</HexGrid>
+
+			<Modal open={isOpen} onClose={() => setIsOpen(false)}>
+				<p>{textDriver}</p>
+			</Modal>
 		</DriversStyle>
 	);
 }
