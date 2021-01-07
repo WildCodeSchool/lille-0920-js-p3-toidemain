@@ -15,7 +15,7 @@ export default function Atelier() {
   return (
     <Container>
       <ImageContainer>
-        <Image src={"/images/Atelier.jpg"} alt={"atelier"} width={"550px"} />
+        <Image src={"/images/Atelier.jpg"} alt={"atelier"} max-width={"3600px"} max-height={"2542px"} />
       </ImageContainer>
       <TextContainer>
         <MainTitle>
