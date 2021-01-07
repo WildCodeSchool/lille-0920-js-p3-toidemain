@@ -5,8 +5,11 @@ export const Main = styled.div`
   height: 90vh;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
+  scroll-snap-points-y: repeat(90vh);
+  overflow-x: hidden;
+  overflow-y: scroll;
   /* background-image: url('/images/background-white.jpg'); */
-  background-color: white;
+  background-color: rgb(237, 237, 237);
   /* -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -17,7 +20,7 @@ export const Main = styled.div`
 
 export const First = styled.section`
   height: 90vh;
-  scroll-snap-align: center;
+  scroll-snap-align: start;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -40,7 +43,7 @@ export const FirstUp = styled.div`
   margin-top: 10vh;
   h3 {
     text-align: center;
-    font-size: 2em;
+    font-size: 1.8em;
     width: 80%;
     margin: 5vh auto;
     line-height: 1.5em;
@@ -52,7 +55,7 @@ export const FirstUp = styled.div`
   }
 `;
 export const Firstdown = styled.div`
-  background: rgba(28, 129, 158, 0.3);
+  background: rgba(2, 82, 63, 0.7);
   border-radius: 20px;
   width: 80%;
   margin-left: 5vw;
@@ -64,8 +67,9 @@ export const Firstdown = styled.div`
     width: 90%;
     margin: auto;
     line-height: 1.5em;
-    padding: 5px;
+    padding: 15px;
     text-align: left;
+    color: white;
   }
 `;
 
@@ -80,10 +84,10 @@ export const Second = styled.section`
   }
 `;
 export const SecText = styled.div`
-  margin: auto 5vw auto 2vw;
+  margin: auto 5vw 15vh 2vw;
   width: 45%;
   span {
-    font-size: 1.5em;
+    font-size: 1.25em;
     color: #d6a002;
   }
   h2 {
@@ -115,70 +119,87 @@ export const ThirdContainer = styled.div`
   padding-bottom: 20vh;
   img {
     width: 40%;
+
+    border-radius: 20px;
   }
 `;
 
-export const ListR = styled.ul`
-  background: rgba(28, 129, 158, 0.3);
+export const ListR = styled.div`
+  background: #094459;
+
+  border-radius: 20px;
   width: 30%;
   margin: auto 0;
-  height: 100%;
-
-  li {
-    font-size: 2em;
-    width: 90%;
-    margin: 0 2vw;
-    color: #04345e;
+  height: 80%;
+  ul {
+    margin: 5vh auto;
   }
-`;
-export const ListL = styled.ul`
-  background: rgba(28, 129, 158, 0.3);
-  width: 30%;
-  height: 100%;
 
   li {
     font-size: 1.8em;
     width: 90%;
-    margin: 3vh auto;
+    margin: 3vh 2vw;
+    color: white;
+  }
+`;
+export const ListL = styled.div`
+  background: #0c6b58;
+  border-radius: 20px;
+  width: 30%;
+  height: 80%;
+
+  ul {
+    margin: 4vh auto;
+  }
+
+  li {
+    font-size: 1.8em;
+    width: 90%;
+    margin: 2vh auto;
     line-height: 1.25em;
-    color: #0f4d19;
+    color: white;
   }
 `;
 
 export const Forth = styled.section`
   height: 90vh;
-  scroll-snap-align: center;
+  scroll-snap-align: end;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
   align-items: center;
   img {
     width: 40%;
+    border-radius: 20px;
   }
 `;
 export const TextR = styled.div`
-  background: rgba(28, 129, 158, 0.3);
+  background: #d6a002;
+  border-radius: 20px;
   width: 30%;
   height: 40%;
+
   p {
     font-size: 2em;
     line-height: 1.75em;
     width: 90%;
-    margin: 10vh 2vw;
-    color: #d6a002;
+    margin: 6vh 2vw;
+    color: white;
     text-align: center;
   }
 `;
 export const TextL = styled.div`
-  background: rgba(28, 129, 158, 0.3);
+  background: #cfcbba;
+  border-radius: 20px;
   height: 40%;
   width: 30%;
+
   p {
     font-size: 2em;
     line-height: 1.75em;
     width: 90%;
-    margin: 10vh 1vw;
-    color: #04345e;
+    margin: 6vh 1vw;
+    color: #454545;
     text-align: center;
   }
 `;

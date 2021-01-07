@@ -45,16 +45,20 @@ const StageUp = () => {
 
         <ThirdContainer>
           <ListR>
-            <li>Mise à dispo d`une salle.</li>
-            <li>4 collaborateurs 3x2heures.</li>
-            <li>2h pour le porteur de projet.</li>
-            <li>1 collaborateur 1x1h : les métiers d’avenir</li>
+            <ul>
+              <li>Mise à dispo d`une salle.</li>
+              <li>4 collaborateurs 3x2heures.</li>
+              <li>2h pour le porteur de projet.</li>
+              <li>1 collaborateur 1x1h : les métiers d’avenir</li>
+            </ul>
           </ListR>
           <img src="/images/vous.png" alt="toi domain et vous" />
           <ListL>
-            <li>Recrutement des stagiaires et gestion des conventions de stages.</li>
-            <li>Encadrement et animation des jeunes pendant toute la durée du stage.</li>
-            <li> Accompagnement des collaborateurs intervenants.</li>
+            <ul>
+              <li>Recrutement des stagiaires et gestion des conventions de stages.</li>
+              <li>Encadrement et animation des jeunes pendant toute la durée du stage.</li>
+              <li> Accompagnement des collaborateurs intervenants.</li>
+            </ul>
           </ListL>
         </ThirdContainer>
       </Third>
