@@ -130,9 +130,9 @@ export const Slogan = styled.p`
   font-size: 3rem;
   margin: 9vh;
   @media ${device.mobile} {
-    width: 80vw;
+    width: 70vw;
     text-align: -webkit-center;
-    font-size: 2.6rem;
+    font-size: 2.1rem;
   }
   @media ${device.tablet} {
     width: 80vw;
