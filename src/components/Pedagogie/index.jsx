@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import AnimStairs from "../Stairs/stairs";
 import {
   Title,
@@ -73,9 +72,9 @@ const Pedagogie = () => {
             propose des jeux au sujet de l’orientation. Les jeunes réalisent le
             test en ligne pendant le stage.
           </Orientoi>
-          <Link to="https://app.orientoi.fr/#/welcome">
-            <Logo src="/images/orientoi.png" alt="logo oriente Toi" />
-          </Link>
+          <a href="https://app.orientoi.fr/#/welcome" target="blank">
+            <Logo src="/images/orientoi.png" alt="logo lien oriente Toi" />
+          </a>
         </Container3>
       </PedaContainer>
     </div>
