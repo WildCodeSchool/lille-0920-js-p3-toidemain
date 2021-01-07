@@ -3,7 +3,6 @@ import List from "./promiseList";
 import React from "react";
 import {
   Container,
-  ImageContainer,
   Image,
   TextContainer,
   MainTitle,
@@ -14,9 +13,7 @@ import {
 export default function Atelier() {
   return (
     <Container>
-      <ImageContainer>
-        <Image src={"/images/Atelier.jpg"} alt={"atelier"} max-width={"3600px"} max-height={"2542px"} />
-      </ImageContainer>
+        <Image src={"/images/Atelier.jpg"} alt={"atelier"}  />
       <TextContainer>
         <MainTitle>
           Toi Demain propose et organise des ateliers à destination des élèves

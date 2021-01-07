@@ -4,8 +4,8 @@ import { device } from "../../layout/Devices";
 export const Container = styled.div`
   display: flex;
   justify-content: space-around;
+  align-items: center;
   margin-top: 10vh;
-  border: solid 1px blue;
   @media ${device.mobile} {
     flex-direction: column;
     align-items: center;
@@ -14,49 +14,57 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: center;
   }
-`;
-
-export const ImageContainer = styled.div`
-  display: flex;
-  margin: 15px 0px 15px 35px;
-  @media ${device.mobile} {
-  justify-content: center;
-  margin: 10px 10px 10px 10px;
-  }
-  @media ${device.tablet} {
-  justify-content: center;
-  margin: 10px 10px 10px 10px;
+  @media ${device.small_screen} {
+    flex-direction: column;
+    align-items: center;
   }
 `;
 
 export const Image = styled.img`
-  width:25vw;
+max-width:550px;
+max-height:388px;
+  width:30%;
   height: auto;
-  
   box-shadow: 10px 5px 5px grey;
+  margin: 15px 0px 15px 35px;
   @media ${device.mobile} {
     width:90%;
+    height: auto;
+    justify-content: center;
+  margin: 10px 10px 10px 10px;
   }
   @media ${device.tablet} {
     width:90%;
+    height: auto;
+    justify-content: center;
+  margin: 10px 10px 10px 10px;
+  }
+  @media ${device.small_screen} {
+    width:90%;
+    height: auto;
   }
 `;
 
 export const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 25%;
+  height: auto;
   padding: 5px 35px 5px 35px;
-  border: solid 1px red;
   @media ${device.mobile} {
   width:90%;
   justify-content: center;
-  padding: 5px 5px 5px 5px;
+  padding: 5px 5px 15px 5px;
   }
   @media ${device.tablet} {
     width:90%;
   justify-content: center;
-  padding: 5px 5px 5px 5px;
+  padding: 5px 5px 15px 5px;
+  }
+  @media ${device.small_screen} {
+    width:90%;
+  justify-content: center;
+  padding: 5px 5px 15px 5px;
   }
 `;
 
@@ -87,6 +95,9 @@ export const PromisesContainer = styled.ul`
     width: 90%;
   }
   @media ${device.tablet} {
+    width: 90%;
+  }
+  @media ${device.small_screen} {
     width: 90%;
   }
 `;
