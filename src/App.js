@@ -7,8 +7,6 @@ import Header from "./components/Header/index";
 import Footer from "./components/Footer/index";
 import Pedagogie from "./components/Pedagogie/index";
 
-import images from "./components/MySlider/img/images";
-
 function App() {
   return (
     <>
