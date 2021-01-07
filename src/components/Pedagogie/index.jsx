@@ -1,5 +1,5 @@
 import React from "react";
-import AnimStairs from "../Stairs/stairs";
+import AnimStairs from "../Stairs";
 import {
   Title,
   Intro,
