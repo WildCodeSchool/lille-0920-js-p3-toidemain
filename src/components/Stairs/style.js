@@ -92,7 +92,7 @@ export const Box5 = styled.div`
   text-align: center;
   margin: 3px;
   border-radius: 9px;
-  }
+  
 `;
 export const Container = styled.div`
   display: flex;

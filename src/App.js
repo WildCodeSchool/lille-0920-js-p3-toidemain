@@ -12,8 +12,9 @@ function App() {
       <Reset />
       <Header />
       <About />
-      <Footer />
       <Pedagogie />
+      <Footer />
+      
     </div>
   );
 }

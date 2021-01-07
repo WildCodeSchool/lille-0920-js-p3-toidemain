@@ -2,8 +2,7 @@ import styled from "styled-components";
 import { device } from "../../layout/Devices";
 
 export const FooterContainer = styled.div`
-  position: absolute;
-  bottom: 0;
+
   display: flex;
   justify-content: space-around;
   align-items: center;
