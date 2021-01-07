@@ -32,16 +32,27 @@ export const AboutContainer = styled.div`
 
 export const Pledge = styled.div`
   margin: 5vh 0;
+`;
+
+export const PledgeBox = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2vh 10vw;
 
   p {
     font-weight: bold;
-    margin: 2vh 5vw;
+    padding: 4vh 5vw;
     font-size: 1.2em;
-    text-align: justify;
+    text-align: center;
   }
 
   span {
     color: #ffbe00;
+  }
+
+  img {
+    width: 20vw;
   }
 `;
 
