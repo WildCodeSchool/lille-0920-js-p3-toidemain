@@ -79,7 +79,7 @@ export const Box4 = styled.div`
 `;
 export const Box5 = styled.div`
   background-color: #f5e01d;
-  font-family: 'Oswald', Gadget, sans-serif;
+  font-family: "Oswald", Gadget, sans-serif;
   font-size: 15px;
   padding-top: 5px;
   color: white;
@@ -92,7 +92,6 @@ export const Box5 = styled.div`
   text-align: center;
   margin: 3px;
   border-radius: 9px;
-  
 `;
 export const Container = styled.div`
   display: flex;

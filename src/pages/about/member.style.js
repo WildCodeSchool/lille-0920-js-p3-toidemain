@@ -12,6 +12,10 @@ export const Card = styled.div`
 
   img {
     align-self: center;
+    width: 90%;
+    @media screen and (max-width: 768px) {
+      width: 70%;
+    }
   }
 
   * {

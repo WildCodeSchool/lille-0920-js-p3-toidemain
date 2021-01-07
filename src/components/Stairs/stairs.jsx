@@ -35,4 +35,3 @@ const AnimStairs = () => {
   );
 };
 export default AnimStairs;
-
