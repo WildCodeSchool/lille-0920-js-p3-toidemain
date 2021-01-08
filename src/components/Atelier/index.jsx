@@ -9,17 +9,18 @@ import {
   Paragraph,
   PromisesContainer,
   SpanA,
-  SpanB
+  SpanB,
 } from "./style";
 
 export default function Atelier() {
   return (
     <Container>
-        <Image src={"/images/Atelier.jpg"} alt={"atelier"}  />
+      <Image src={"/images/Atelier.jpg"} alt={"atelier"} />
       <TextContainer>
         <MainTitle>
-          <SpanA>Toi Demain </SpanA>propose et organise des ateliers à destination des élèves
-          afin de les accompagner dans leurs démarches professionnelles
+          <SpanA>Toi Demain </SpanA>propose et organise des ateliers à
+          destination des élèves afin de les accompagner dans leurs démarches
+          professionnelles
         </MainTitle>
         <Paragraph>
           Afin d'aider les élèves dans leurs recherches d'emploi et de stage,
@@ -27,8 +28,8 @@ export default function Atelier() {
           préparation de candidatures (CV, lettre de motivation, entretien). Les
           élèves ont également la possibilité de participer à des ateliers plus
           spécialisés. Au-delà des compétences développées à cette occasion, ces
-          ateliers permettent aux élèves de <SpanB>nouer des liens avec les
-          professionnels présents.</SpanB>
+          ateliers permettent aux élèves de{" "}
+          <SpanB>nouer des liens avec les professionnels présents.</SpanB>
         </Paragraph>
       </TextContainer>
       <PromisesContainer>

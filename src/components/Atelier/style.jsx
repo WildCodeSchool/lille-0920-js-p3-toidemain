@@ -21,26 +21,26 @@ export const Container = styled.div`
 `;
 
 export const Image = styled.img`
-max-width:550px;
-max-height:388px;
-  width:30%;
+  max-width: 550px;
+  max-height: 388px;
+  width: 30%;
   height: auto;
   box-shadow: 10px 5px 5px grey;
   margin: 15px 0px 15px 35px;
   @media ${device.mobile} {
-    width:90%;
+    width: 90%;
     height: auto;
     justify-content: center;
-  margin: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
   }
   @media ${device.tablet} {
-    width:90%;
+    width: 90%;
     height: auto;
     justify-content: center;
-  margin: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
   }
   @media ${device.small_screen} {
-    width:90%;
+    width: 90%;
     height: auto;
   }
 `;
@@ -52,19 +52,19 @@ export const TextContainer = styled.div`
   height: auto;
   padding: 5px 35px 5px 35px;
   @media ${device.mobile} {
-  width:90%;
-  justify-content: center;
-  padding: 5px 5px 15px 5px;
+    width: 90%;
+    justify-content: center;
+    padding: 5px 5px 15px 5px;
   }
   @media ${device.tablet} {
-    width:90%;
-  justify-content: center;
-  padding: 5px 5px 15px 5px;
+    width: 90%;
+    justify-content: center;
+    padding: 5px 5px 15px 5px;
   }
   @media ${device.small_screen} {
-    width:90%;
-  justify-content: center;
-  padding: 5px 5px 15px 5px;
+    width: 90%;
+    justify-content: center;
+    padding: 5px 5px 15px 5px;
   }
 `;
 
@@ -124,9 +124,9 @@ export const Promise = styled.li`
 export const Trait = styled.div``;
 
 export const SpanA = styled.span`
-  color: #ffbe00
+  color: #ffbe00;
 `;
 
 export const SpanB = styled.span`
-  color: #ffbe00
-  `;
+  color: #ffbe00;
+`;
