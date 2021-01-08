@@ -8,6 +8,8 @@ import {
   MainTitle,
   Paragraph,
   PromisesContainer,
+  SpanA,
+  SpanB
 } from "./style";
 
 export default function Atelier() {
@@ -16,7 +18,7 @@ export default function Atelier() {
         <Image src={"/images/Atelier.jpg"} alt={"atelier"}  />
       <TextContainer>
         <MainTitle>
-          Toi Demain propose et organise des ateliers à destination des élèves
+          <SpanA>Toi Demain </SpanA>propose et organise des ateliers à destination des élèves
           afin de les accompagner dans leurs démarches professionnelles
         </MainTitle>
         <Paragraph>
@@ -25,8 +27,8 @@ export default function Atelier() {
           préparation de candidatures (CV, lettre de motivation, entretien). Les
           élèves ont également la possibilité de participer à des ateliers plus
           spécialisés. Au-delà des compétences développées à cette occasion, ces
-          ateliers permettent aux élèves de nouer des liens avec les
-          professionnels présents.
+          ateliers permettent aux élèves de <SpanB>nouer des liens avec les
+          professionnels présents.</SpanB>
         </Paragraph>
       </TextContainer>
       <PromisesContainer>

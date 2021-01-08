@@ -122,3 +122,11 @@ export const Promise = styled.li`
 `;
 
 export const Trait = styled.div``;
+
+export const SpanA = styled.span`
+  color: #ffbe00
+`;
+
+export const SpanB = styled.span`
+  color: #ffbe00
+  `;
