@@ -2,15 +2,13 @@ import styled from "styled-components";
 import { device } from "../../layout/Devices";
 
 export const FooterContainer = styled.div`
-  position: absolute;
-  bottom: 0;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
   width: 100%;
   min-height: 10vh;
   max-height: 30vh;
-  opacity: 0.9;
   background: #005542 no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -20,17 +18,22 @@ export const FooterContainer = styled.div`
   @media ${device.mobile} {
     flex-direction: column;
     justify-content: center;
-    min-height: 60vh;
-    max-height: 70vh;
+    min-height: 40vh;
+    max-height: 50vh;
   }
   @media ${device.tablet} {
+    flex-direction: column;
+    justify-content: center;
+    min-height: 40vh;
+    max-height: 80vh;
+  }
+  @media ${device.small_screen} {
     min-height: 30vh;
-    max-height: 50vh;
+    max-height: 40vh;
   }
 `;
 export const Info = styled.div`
   color: white;
-  margin: 0 auto;
 
   h3 {
     text-align: center;
@@ -57,6 +60,7 @@ export const Info = styled.div`
       font-size: 18px;
       text-align: center;
       margin: 2vh auto;
+      padding-bottom: 1vh;
     }
   }
   @media ${device.tablet} {
@@ -70,6 +74,7 @@ export const Info = styled.div`
     p {
       font-size: 18px;
       text-align: center;
+      padding-bottom: 1vh;
     }
   }
 `;
@@ -78,29 +83,7 @@ export const Adress = styled.div`
     width: 24px;
   }
 `;
-export const Middle = styled.div`
-  background-color: white;
-  opacity: 75%;
-  margin: 0 auto;
-  img {
-    height: 100%;
-    width: 20vw;
-  }
-  @media ${device.mobile} {
-    display: none;
-  }
-  @media ${device.tablet} {
-    display: none;
-  }
-`;
-
-export const Menu = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2vh 0;
-  margin: 0 auto;
-
+export const Right = styled.div`
   a {
     font-size: 22px;
     color: white;
@@ -110,16 +93,35 @@ export const Menu = styled.div`
     border: 5px solid white;
     border-radius: 20px;
     padding: 0.5rem;
-    margin: auto;
     &:hover {
       background-color: #ffbe00;
       color: #005542;
     }
   }
+
+  @media ${device.mobile} {
+    a {
+      display: none;
+    }
+  }
+  @media ${device.tablet} {
+    a {
+      display: none;
+    }
+  }
+`;
+
+export const Menu = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2vh 0;
+
   p {
     color: white;
     padding-top: 2vh;
   }
+
   @media ${device.mobile} {
     padding: 0;
     p {
