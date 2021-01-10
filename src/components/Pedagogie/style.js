@@ -19,7 +19,7 @@ export const PedaContainer = styled.div`
 export const Title = styled.h2`
   font-size: 4rem;
   padding-bottom: 4vh;
-  color: #f5e01d;
+  color: #ffbe00;
   margin: 25px;
   @media ${device.mobile} {
     font-size: 3rem;
@@ -48,6 +48,9 @@ export const Intro = styled.p`
     align-items: center;
   }
 `;
+export const Stairs = styled.div `
+margin-top: -64px;
+`
 export const CapitalL = styled.span`
   font-size: 3rem;
 `;
@@ -85,7 +88,7 @@ export const Objectif = styled.div`
 `;
 export const Title2 = styled.h2`
   font-size: 5rem;
-  color: #f5e01d;
+  color: #ffbe00;
   width: 30vw;
   display: flex;
   justify-content: center;
@@ -164,6 +167,6 @@ export const Orientoi = styled.p`
   margin: 4vw;
 `;
 export const ColorB = styled.span`
-  color: #f5e01d;
+  color: #ffbe00;
   font-size: 3rem;
 `;

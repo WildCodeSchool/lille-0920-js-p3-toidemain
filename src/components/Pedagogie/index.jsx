@@ -17,6 +17,7 @@ import {
   Logo,
   Orientoi,
   ColorB,
+  Stairs
 } from "./style";
 const Pedagogie = () => {
   return (
@@ -30,7 +31,10 @@ const Pedagogie = () => {
             créer l’alliance avec les jeunes et de leur permettre d’apprendre en
             s’amusant.
           </Intro>
+          <Stairs>
           <AnimStairs />
+          </Stairs>
+          
         </Container1>
 
         <Container2>
