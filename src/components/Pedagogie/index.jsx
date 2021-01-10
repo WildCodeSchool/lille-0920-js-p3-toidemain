@@ -17,7 +17,7 @@ import {
   Logo,
   Orientoi,
   ColorB,
-  Stairs
+  Stairs,
 } from "./style";
 const Pedagogie = () => {
   return (
@@ -32,9 +32,8 @@ const Pedagogie = () => {
             s’amusant.
           </Intro>
           <Stairs>
-          <AnimStairs />
+            <AnimStairs />
           </Stairs>
-          
         </Container1>
 
         <Container2>

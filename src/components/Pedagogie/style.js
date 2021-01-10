@@ -48,9 +48,9 @@ export const Intro = styled.p`
     align-items: center;
   }
 `;
-export const Stairs = styled.div `
-margin-top: -64px;
-`
+export const Stairs = styled.div`
+  margin-top: -64px;
+`;
 export const CapitalL = styled.span`
   font-size: 3rem;
 `;
