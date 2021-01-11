@@ -1,27 +1,31 @@
 import React from "react";
 import Member from "./Member";
 import portraitItems from "./Data";
-import { AboutContainer, Cards, Pledge, Partners } from "./style";
+import { AboutContainer, Cards, Pledge, PledgeBox, Partners } from "./style";
 
 const About = () => {
   return (
     <AboutContainer>
       <Pledge>
         <h1>Notre Engagement</h1>
-        <div>
-          <p>
-            <span>Notre mission : accompagner</span> les jeunes dans leur
-            orientation professionnelle, <span>révèler</span> leurs talents pour
-            leur permettre d’être <span>libres, responsables et heureux</span>.
-          </p>
-          <p>
-            Ce qui nous anime : c’est permettre aux jeunes une première belle
-            rencontre avec le monde de l’entreprise qui leur donne envie.
-          </p>
-          <p>
-            Leur permettre de croire que <span>tout est possible</span>.
-          </p>
-        </div>
+        <PledgeBox>
+          <div>
+            <p>
+              <span>Notre mission : accompagner</span> les jeunes dans leur
+              orientation professionnelle, <span>révèler</span> leurs talents
+              pour leur permettre d’être
+              <span>libres, responsables et heureux</span>.
+            </p>
+            <p>
+              Ce qui nous anime : c’est permettre aux jeunes une première belle
+              rencontre avec le monde de l’entreprise qui leur donne envie.
+            </p>
+            <p>
+              Leur permettre de croire que <span>tout est possible</span>.
+            </p>
+          </div>
+          <img src="/images/atelier.jpg" alt="atelier" />
+        </PledgeBox>
       </Pledge>
 
       <div>
