@@ -130,3 +130,7 @@ export const SpanA = styled.span`
 export const SpanB = styled.span`
   color: #ffbe00;
 `;
+
+export const PromiseImg = styled.img`
+  width: 30px;
+`;
