@@ -1,90 +1,150 @@
-import React from "react";
+import React, { useState } from "react";
 import { HexGrid, Layout, Hexagon, Text, Pattern } from "react-hexgrid";
 import { DriversStyle } from "./style";
+import Modal from "./Modal/index";
 
 export default function Drivers() {
+	const [isOpen, setIsOpen] = useState(false);
+	let [driverItem, setDriverItem] = useState();
+
 	const hexagonSize = { x: 10, y: 10 };
+
+	console.log(isOpen);
+
 	return (
 		<DriversStyle>
-			<h2>React Hexgrid v1</h2>
-			<p>
-				Constructing Hexgrid with component-based approach with custom SVG
-				elements.
-			</p>
-			<HexGrid width={1600} height={800} viewBox="-50 -50 100 100">
+			<HexGrid width={1600} height={800} viewBox="-120 -50 100 100">
 				{/* Main grid with bit hexagons, all manual */}
 				<Layout
 					size={hexagonSize}
 					flat={true}
 					spacing={1}
-					origin={{ x: 0, y: 0 }}
+					origin={{ x: -0, y: -20 }}
 				>
-					<Hexagon className="hexBlue" q={0} r={0} s={0}>
-						<Text>1</Text>
+					<Hexagon className="hexBlue" q={0} r={0} s={0} fill="pat-1"></Hexagon>
+					<Hexagon
+						className="hexYellow"
+						q={-1}
+						r={0}
+						s={0}
+						onMouseEnter={() =>
+							setIsOpen(true, setDriverItem((driverItem = 1)))
+						}
+						onMouseLeave={() => setIsOpen(false)}
+					>
+						<Text>S'orienter</Text>
 					</Hexagon>
-					<Hexagon className="hexYellow" q={-1} r={0} s={0}>
-						<Text>S'ORIENTER</Text>
+					<Hexagon
+						className="hexBlue"
+						q={-2}
+						r={0}
+						s={0}
+						fill="pat-3"
+					></Hexagon>
+					<Hexagon
+						className="hexGreen"
+						q={-2}
+						r={1}
+						s={0}
+						onMouseEnter={() =>
+							setIsOpen(true, setDriverItem((driverItem = 2)))
+						}
+						onMouseLeave={() => setIsOpen(false)}
+					>
+						<Text>Se connaître</Text>
 					</Hexagon>
-					<Hexagon className="hexBlue" q={-2} r={0} s={0}>
-						<Text>3</Text>
+					<Hexagon
+						className="hexYellow"
+						q={-2}
+						r={2}
+						s={0}
+						fill="pat-5"
+					></Hexagon>
+					<Hexagon
+						className="hexBlue"
+						q={-3}
+						r={2}
+						s={0}
+						onMouseEnter={() =>
+							setIsOpen(true, setDriverItem((driverItem = 3)))
+						}
+						onMouseLeave={() => setIsOpen(false)}
+					>
+						<Text>Se challenger</Text>
 					</Hexagon>
-					<Hexagon className="hexGreen" q={-2} r={1} s={0}>
-						<Text>SE CONNAITRE</Text>
+					<Hexagon
+						className="hexYellow"
+						q={-3}
+						r={1}
+						s={0}
+						onMouseEnter={() =>
+							setIsOpen(true, setDriverItem((driverItem = 4)))
+						}
+						onMouseLeave={() => setIsOpen(false)}
+					>
+						<Text>S'épanouir</Text>
 					</Hexagon>
-					<Hexagon className="hexYellow" q={-2} r={2} s={0}>
-						<Text>5</Text>
+					<Hexagon
+						className="hexBlue"
+						q={-4}
+						r={1}
+						s={0}
+						onMouseEnter={() =>
+							setIsOpen(true, setDriverItem((driverItem = 5)))
+						}
+						onMouseLeave={() => setIsOpen(false)}
+					>
+						<Text>S'amuser</Text>
 					</Hexagon>
-					<Hexagon className="hexBlue" q={-3} r={2} s={0}>
-						<Text>SE CHALLENGER</Text>
+					<Hexagon
+						className="hexGreen"
+						q={-4}
+						r={2}
+						s={0}
+						fill="pat-9"
+					></Hexagon>
+					<Hexagon
+						className="hexYellow"
+						q={-4}
+						r={3}
+						s={0}
+						onMouseEnter={() =>
+							setIsOpen(true, setDriverItem((driverItem = 6)))
+						}
+						onMouseLeave={() => setIsOpen(false)}
+					>
+						<Text>S'inspirer</Text>
 					</Hexagon>
-					<Hexagon className="hexYellow" q={-3} r={1} s={0}>
-						<Text>S'EPANOUIR</Text>
+					<Hexagon
+						className="hexBlue"
+						q={-5}
+						r={3}
+						s={0}
+						// onMouseOver={() => setDriverItem((driverItem = 7))}
+						onMouseEnter={() =>
+							setIsOpen(true, setDriverItem((driverItem = 7)))
+						}
+						onMouseLeave={() => setIsOpen(false)}
+					>
+						<Text>Expérimenter</Text>
 					</Hexagon>
-					<Hexagon className="hexBlue" q={-4} r={1} s={0}>
-						<Text>S'AMUSER</Text>
-					</Hexagon>
-					<Hexagon className="hexGreen" q={-4} r={2} s={0}>
-						<Text>9</Text>
-					</Hexagon>
-					<Hexagon className="hexYellow" q={-4} r={3} s={0}>
-						<Text>S'INSPIRER</Text>
-					</Hexagon>
-					<Hexagon className="hexBlue" q={-5} r={3} s={0}>
-						<Text>EXPERIMENTER</Text>
-					</Hexagon>
-					<Hexagon className="hexYellow" q={-6} r={3} s={0}>
-						<Text>12</Text>
-					</Hexagon>
+					<Hexagon
+						className="hexYellow"
+						q={-6}
+						r={3}
+						s={0}
+						fill="pat-12"
+					></Hexagon>
 				</Layout>
 				{/* You can define multiple patterns and switch between them with "fill" prop on Hexagon */}
-				<Pattern
-					id="pat-1"
-					link="http://lorempixel.com/400/400/cats/1/"
-					size={hexagonSize}
-				/>
-				<Pattern
-					id="pat-2"
-					link="http://lorempixel.com/400/400/cats/2/"
-					size={hexagonSize}
-				/>
-				<g>
-					<circle cx="50" cy="0" r="10">
-						<Text>12</Text>
-					</circle>
-				</g>
-				<g>
-					<circle cx="50" cy="30" r="8" />
-				</g>
-				<g>
-					<circle cx="45" cy="20" r="6" />
-				</g>
-				<g>
-					<circle cx="65" cy="15" r="3" />
-				</g>
-				<g>
-					<circle cx="65" cy="15" r="3" />
-				</g>
+				<Pattern id="pat-1" link="images/mission.png" size={hexagonSize} />
+				<Pattern id="pat-3" link="images/game.png" size={hexagonSize} />
+				<Pattern id="pat-5" link="images/idea.png" size={hexagonSize} />
+				<Pattern id="pat-9" link="images/vision.png" size={hexagonSize} />
+				<Pattern id="pat-12" link="images/compas.png" size={hexagonSize} />
 			</HexGrid>
+
+			{isOpen && <Modal itemNumber={driverItem} />}
 		</DriversStyle>
 	);
 }
