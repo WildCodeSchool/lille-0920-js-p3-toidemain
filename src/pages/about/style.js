@@ -12,7 +12,7 @@ export const AboutContainer = styled.div`
     margin-top: 3vh;
     text-transform: uppercase;
     display: inline-block;
-    opacity: 0.8;
+    opacity: 0.7;
   }
 
   h2 {
