@@ -5,10 +5,12 @@ import Modal from "./Modal/index";
 
 export default function Drivers() {
 	const [isOpen, setIsOpen] = useState(false);
-
-	let textDriver = "TEXT";
+	let [driverItem, setDriverItem] = useState();
 
 	const hexagonSize = { x: 10, y: 10 };
+
+	console.log(isOpen);
+
 	return (
 		<DriversStyle>
 			<HexGrid width={1600} height={800} viewBox="-120 -50 100 100">
@@ -17,11 +19,20 @@ export default function Drivers() {
 					size={hexagonSize}
 					flat={true}
 					spacing={1}
-					origin={{ x: 0, y: 0 }}
+					origin={{ x: -0, y: -20 }}
 				>
 					<Hexagon className="hexBlue" q={0} r={0} s={0} fill="pat-1"></Hexagon>
-					<Hexagon className="hexYellow" q={-1} r={0} s={0}>
-						<Text>S'ORIENTER</Text>
+					<Hexagon
+						className="hexYellow"
+						q={-1}
+						r={0}
+						s={0}
+						onMouseEnter={() =>
+							setIsOpen(true, setDriverItem((driverItem = 1)))
+						}
+						onMouseLeave={() => setIsOpen(false)}
+					>
+						<Text>S'orienter</Text>
 					</Hexagon>
 					<Hexagon
 						className="hexBlue"
@@ -30,8 +41,17 @@ export default function Drivers() {
 						s={0}
 						fill="pat-3"
 					></Hexagon>
-					<Hexagon className="hexGreen" q={-2} r={1} s={0}>
-						<Text>SE CONNAITRE</Text>
+					<Hexagon
+						className="hexGreen"
+						q={-2}
+						r={1}
+						s={0}
+						onMouseEnter={() =>
+							setIsOpen(true, setDriverItem((driverItem = 2)))
+						}
+						onMouseLeave={() => setIsOpen(false)}
+					>
+						<Text>Se connaître</Text>
 					</Hexagon>
 					<Hexagon
 						className="hexYellow"
@@ -40,14 +60,41 @@ export default function Drivers() {
 						s={0}
 						fill="pat-5"
 					></Hexagon>
-					<Hexagon className="hexBlue" q={-3} r={2} s={0}>
-						<Text>SE CHALLENGER</Text>
+					<Hexagon
+						className="hexBlue"
+						q={-3}
+						r={2}
+						s={0}
+						onMouseEnter={() =>
+							setIsOpen(true, setDriverItem((driverItem = 3)))
+						}
+						onMouseLeave={() => setIsOpen(false)}
+					>
+						<Text>Se challenger</Text>
 					</Hexagon>
-					<Hexagon className="hexYellow" q={-3} r={1} s={0}>
-						<Text>S'EPANOUIR</Text>
+					<Hexagon
+						className="hexYellow"
+						q={-3}
+						r={1}
+						s={0}
+						onMouseEnter={() =>
+							setIsOpen(true, setDriverItem((driverItem = 4)))
+						}
+						onMouseLeave={() => setIsOpen(false)}
+					>
+						<Text>S'épanouir</Text>
 					</Hexagon>
-					<Hexagon className="hexBlue" q={-4} r={1} s={0}>
-						<Text>S'AMUSER</Text>
+					<Hexagon
+						className="hexBlue"
+						q={-4}
+						r={1}
+						s={0}
+						onMouseEnter={() =>
+							setIsOpen(true, setDriverItem((driverItem = 5)))
+						}
+						onMouseLeave={() => setIsOpen(false)}
+					>
+						<Text>S'amuser</Text>
 					</Hexagon>
 					<Hexagon
 						className="hexGreen"
@@ -61,13 +108,25 @@ export default function Drivers() {
 						q={-4}
 						r={3}
 						s={0}
-						onMouseOver={() => setIsOpen(true)}
+						onMouseEnter={() =>
+							setIsOpen(true, setDriverItem((driverItem = 6)))
+						}
 						onMouseLeave={() => setIsOpen(false)}
 					>
-						<Text>S'INSPIRER</Text>
+						<Text>S'inspirer</Text>
 					</Hexagon>
-					<Hexagon className="hexBlue" q={-5} r={3} s={0}>
-						<Text>EXPERIMENTER</Text>
+					<Hexagon
+						className="hexBlue"
+						q={-5}
+						r={3}
+						s={0}
+						// onMouseOver={() => setDriverItem((driverItem = 7))}
+						onMouseEnter={() =>
+							setIsOpen(true, setDriverItem((driverItem = 7)))
+						}
+						onMouseLeave={() => setIsOpen(false)}
+					>
+						<Text>Expérimenter</Text>
 					</Hexagon>
 					<Hexagon
 						className="hexYellow"
@@ -85,9 +144,7 @@ export default function Drivers() {
 				<Pattern id="pat-12" link="images/compas.png" size={hexagonSize} />
 			</HexGrid>
 
-			<Modal open={isOpen} onClose={() => setIsOpen(false)}>
-				<p>{textDriver}</p>
-			</Modal>
+			{isOpen && <Modal itemNumber={driverItem} />}
 		</DriversStyle>
 	);
 }

@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
 export const DriversStyle = styled.div`
+	background-image: url(/images/animated_background.svg);
+	font-family: "Roboto", sans-serif;
+
 	svg g {
 		fill: #1c819e;
 	}
@@ -11,14 +14,14 @@ export const DriversStyle = styled.div`
 	}
 
 	svg g polygon {
-		stroke: transparent;
-		stroke-width: 0.1;
+		stroke: #d7d7d7;
+		stroke-width: 0.5;
 		transition: fill-opacity 0.5s;
 	}
 
 	svg g text {
-		font-family: "Roboto", sans-serif;
 		font-size: 0.13em;
+		text-transform: uppercase;
 		fill: #fff;
 	}
 
