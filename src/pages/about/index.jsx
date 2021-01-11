@@ -13,7 +13,7 @@ const About = () => {
             <p>
               <span>Notre mission : accompagner</span> les jeunes dans leur
               orientation professionnelle, <span>révèler</span> leurs talents
-              pour leur permettre d’être{" "}
+              pour leur permettre d’être
               <span>libres, responsables et heureux</span>.
             </p>
             <p>
