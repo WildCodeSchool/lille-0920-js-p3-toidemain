@@ -1,12 +1,11 @@
-import styled from "styled-components";
+import styled from 'styled-components';
+export const DriversStyle = styled.div`
+  svg {
+  }
 
-export default DriversStyle = styled.div`
-	svg {
-	}
-
-	svg g {
-		fill: #0698b6;
-	}
+  svg g {
+    fill: #0698b6;
+  }
 `;
 // svg {
 // }
