@@ -6,6 +6,7 @@ import About from "./pages/about/index";
 import Header from "./components/Header/index";
 import Footer from "./components/Footer/index";
 import Pedagogie from "./components/Pedagogie/index";
+import Drivers from "./components/Drivers/index";
 
 function App() {
   return (
