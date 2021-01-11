@@ -1,5 +1,6 @@
-export const TitleStyle = styled.div`
-	width: 300px;
+import styled from "styled-components";
+
+const TitleStyle = styled.div`
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
@@ -11,11 +12,12 @@ export const TitleStyle = styled.div`
 		display: inline-block;
 		height: 0;
 		width: 0;
-		border-bottom: 40px solid #fff;
-		border-right: 40px solid transparent;
+		border-bottom: 45px solid #fff;
+		border-right: 45px solid transparent;
 	}
 
 	h2 {
+		height: 40px;
 		color: #005542;
 		font-size: 2em;
 		background-color: #fff;
@@ -25,3 +27,5 @@ export const TitleStyle = styled.div`
 		padding-right: 10px;
 	}
 `;
+
+export default TitleStyle;
