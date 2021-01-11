@@ -14,7 +14,6 @@ export default function Drivers() {
   return (
     <DriversStyle>
       <HexGrid width={1600} height={800} viewBox="-120 -50 100 100">
-        {/* Main grid with bit hexagons, all manual */}
         <Layout
           size={hexagonSize}
           flat={true}
@@ -120,7 +119,6 @@ export default function Drivers() {
             q={-5}
             r={3}
             s={0}
-            // onMouseOver={() => setDriverItem((driverItem = 7))}
             onMouseEnter={() =>
               setIsOpen(true, setDriverItem((driverItem = 7)))
             }
@@ -136,7 +134,6 @@ export default function Drivers() {
             fill="pat-12"
           ></Hexagon>
         </Layout>
-        {/* You can define multiple patterns and switch between them with "fill" prop on Hexagon */}
         <Pattern id="pat-1" link="images/mission.png" size={hexagonSize} />
         <Pattern id="pat-3" link="images/game.png" size={hexagonSize} />
         <Pattern id="pat-5" link="images/idea.png" size={hexagonSize} />
