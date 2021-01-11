@@ -1,19 +1,28 @@
-import { Reset } from 'styled-reset';
 import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { Reset } from 'styled-reset';
+import Contacter from './pages/nous-contacter/index';
+import About from './pages/about/index';
 import Header from './components/Header/index';
-import About from './pages/about/About';
 import Footer from './components/Footer/index';
+import Pedagogie from './components/Pedagogie/index';
 import Drivers from './components/Drivers/index';
 
 function App() {
   return (
-    <div>
+    <>
       <Reset />
-      <Header />
-      <Drivers />
-      <About />
-      <Footer />
-    </div>
+      <Router>
+        <Header />
+        <Switch>
+          <Route exact path="/" component={Drivers} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/contacter" component={Contacter} />
+          <Route exact path="/action/pedagogie" component={Pedagogie} />
+        </Switch>
+        <Footer />
+      </Router>
+    </>
   );
 }
 
