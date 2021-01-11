@@ -1,8 +1,8 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const DriversStyle = styled.div`
   background-image: url(/images/animated_background.svg);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 
   svg g {
     fill: #1c819e;

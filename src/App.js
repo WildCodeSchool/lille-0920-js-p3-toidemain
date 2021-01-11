@@ -1,12 +1,12 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { Reset } from 'styled-reset';
-import Contacter from './pages/nous-contacter/index';
-import About from './pages/about/index';
-import Header from './components/Header/index';
-import Footer from './components/Footer/index';
-import Pedagogie from './components/Pedagogie/index';
-import Drivers from './components/Drivers/index';
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Reset } from "styled-reset";
+import Contacter from "./pages/nous-contacter/index";
+import About from "./pages/about/index";
+import Header from "./components/Header/index";
+import Footer from "./components/Footer/index";
+import Pedagogie from "./components/Pedagogie/index";
+import Drivers from "./components/Drivers/index";
 
 function App() {
   return (

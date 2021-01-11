@@ -1,8 +1,14 @@
-import React from 'react';
-import { HeaderContainer, TopBorder, HeaderBackground, LogoContainer, ContactContainer } from './style';
-import Navbar from './Navbar/index';
-import Burger from './Burger/index';
-import { Link } from 'react-router-dom';
+import React from "react";
+import {
+  HeaderContainer,
+  TopBorder,
+  HeaderBackground,
+  LogoContainer,
+  ContactContainer,
+} from "./style";
+import Navbar from "./Navbar/index";
+import Burger from "./Burger/index";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
