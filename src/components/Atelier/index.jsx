@@ -28,7 +28,7 @@ export default function Atelier() {
           préparation de candidatures (CV, lettre de motivation, entretien). Les
           élèves ont également la possibilité de participer à des ateliers plus
           spécialisés. Au-delà des compétences développées à cette occasion, ces
-          ateliers permettent aux élèves de{" "}
+          ateliers permettent aux élèves de &nbsp;
           <SpanB>nouer des liens avec les professionnels présents.</SpanB>
         </Paragraph>
       </TextContainer>
