@@ -5,11 +5,9 @@ import Modal from "./Modal/index";
 
 export default function Drivers() {
   const [isOpen, setIsOpen] = useState(false);
-  let [driverItem, setDriverItem] = useState();
+  const [driverItem, setDriverItem] = useState();
 
   const hexagonSize = { x: 10, y: 10 };
-
-  console.log(isOpen);
 
   return (
     <DriversStyle>
