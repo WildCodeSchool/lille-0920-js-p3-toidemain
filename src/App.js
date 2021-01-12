@@ -6,7 +6,6 @@ import About from './pages/about/index';
 import Footer from './components/Footer/index';
 import Header from './components/Header/index';
 import StageUp from './pages/stageUp/index';
-import images from './components/MySlider/img/images';
 import Pedagogie from './components/Pedagogie/index';
 
 function App() {
