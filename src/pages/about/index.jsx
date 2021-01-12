@@ -24,7 +24,7 @@ const About = () => {
               Leur permettre de croire que <span>tout est possible</span>.
             </p>
           </div>
-          <img src="/images/atelier.jpg" alt="atelier" />
+          <img src="/images/atelierbis.jpg" alt="atelier" />
         </PledgeBox>
       </Pledge>
 
