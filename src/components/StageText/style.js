@@ -38,12 +38,12 @@ export const Corner = styled.div`
 	height: 30px;
 
 	&.top {
-		border-top: 2px solid #005542;
-		border-right: 2px solid #005542;
+		border-top: 3px solid #005542;
+		border-right: 3px solid #005542;
 	}
 
 	&.bottom {
-		border-bottom: 2px solid #005542;
-		border-left: 2px solid #005542;
+		border-bottom: 3px solid #005542;
+		border-left: 3px solid #005542;
 	}
 `;
