@@ -11,17 +11,17 @@ export default function Navbar() {
 
           <DropdownItems>
             <a href="/engagements">Notre Engagement</a>
-            <a href="/about">Notre Equipe</a>
+            <Link to="/about/#equipe">Notre Equipe</Link>
             <a href="/partenaires">Nos Partenaires</a>
           </DropdownItems>
         </NavDropdown>
         |
         <NavDropdown>
-          <a href="/actions">Nos Actions</a>
+          <a href="#!">Nos Actions</a>
 
           <DropdownItems>
             <Link to="/action/pedagogie">Notre Pédagogie</Link>
-            <a href="/ateliers">Nos Ateliers</a>
+            <Link to="/action/atelier">Nos Ateliers</Link>
             <Link to="/stageup">Stage-Up</Link>
           </DropdownItems>
         </NavDropdown>

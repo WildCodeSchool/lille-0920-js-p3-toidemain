@@ -7,6 +7,7 @@ import Footer from './components/Footer/index';
 import Header from './components/Header/index';
 import StageUp from './pages/stageUp/index';
 import Pedagogie from './components/Pedagogie/index';
+import Atelier from './components/Atelier';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route exact path="/contacter" component={Contacter} />
           <Route exact path="/stageup" component={StageUp} />
           <Route exact path="/action/pedagogie" component={Pedagogie} />
+          <Route exact path="/action/atelier" component={Atelier} />
         </Switch>
         <Footer />
       </Router>

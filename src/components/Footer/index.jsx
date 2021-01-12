@@ -1,14 +1,6 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import {
-  FooterContainer,
-  Info,
-  Adress,
-  Right,
-  Menu,
-  Social,
-  Icons,
-} from "./style";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { FooterContainer, Info, Adress, Right, Menu, Social, Icons } from './style';
 
 const Footer = () => {
   return (
@@ -20,21 +12,20 @@ const Footer = () => {
             <span>
               <img src="/images/icons/location-pin.png" alt="gps" />
             </span>
-            3 Rue Des Freres Lefebvre
+            &nbsp;&nbsp;59390 Sailly-lez-Lannoy
           </p>
-          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 59390 Sailly-lez-Lannoy</p>
         </Adress>
         <p>
           <span>
             <img src="/images/icons/telephone.png" alt="tel" />
           </span>
-          09 50 79 61 59
+          &nbsp;&nbsp;09 50 79 61 59
         </p>
         <p>
           <span>
             <img src="/images/icons/email.png" alt="email" />
           </span>
-          toi-demain@gmail.com
+          &nbsp;&nbsp;toi-demain@gmail.com
         </p>
       </Info>
       <Menu>

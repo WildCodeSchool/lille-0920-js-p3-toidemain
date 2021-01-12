@@ -7,25 +7,31 @@ const StageUp = () => {
       <First>
         <FirstTextContainer>
           <img src="/images/stageup.png" alt="stageup" />
-          <Firstdown>
+          <FirstUp>
             <h3>
-              Les avantages de notre programme :<br /> Permettre aux jeunes de vivre un premier contact positif avec l’entreprise.
-              <br /> Offrir à un plus grand nombre de jeunes un stage de qualité <br />
-              Permettre aux jeunes des REP, ou à ceux qui n’ont pas de réseau d’accéder à un stage en entreprise <br />
-              S’impliquer d’avantage dans l’orientation des jeunes en tant qu’entreprise Maitriser les temps d’échanges passés entre les jeunes et les collaborateurs
+              <span>Stage up</span>
+              <br /> est une solution <span>clé en main et innovante</span> pour les entreprises afin de répondre à la problématique d’accueil des jeunes lors de leur stage de découverte en entreprise.
+              <br />
+              <span>On s’occupe de tout!</span>
             </h3>
-          </Firstdown>
+          </FirstUp>
         </FirstTextContainer>
-        <FirstUp>
+        <Firstdown>
           <h3>
-            <span>Stage up</span> est une solution <span>clé en main et innovante</span> pour les entreprises afin de répondre à la problématique d’accueil des jeunes lors de leur stage de découverte en entreprise.
+            <span> Les avantages de notre programme </span>
             <br />
-            <span>On s’occupe de tout!</span>
+            <br /> Permettre aux jeunes de vivre un premier contact positif avec l’entreprise.
+            <br />
+            <br /> Offrir à un plus grand nombre de jeunes un stage de qualité. <br />
+            <br />
+            Permettre aux jeunes des REP, ou à ceux qui n’ont pas de réseau d’accéder à un stage en entreprise. <br />
+            <br />
+            S’impliquer d’avantage dans l’orientation des jeunes en tant qu’entreprise Maitriser les temps d’échanges passés entre les jeunes et les collaborateurs.
           </h3>
-        </FirstUp>
+        </Firstdown>
       </First>
       <Second>
-        <img src="/images/hands.jpg" alt="hands" />
+        <img src="/images/handsnb.jpg" alt="hands" />
         <SecText>
           <h2>
             <strong>Stage up c’est :</strong>
