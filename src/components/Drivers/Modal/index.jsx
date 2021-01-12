@@ -3,7 +3,6 @@ import driverItems from "./Data";
 import { ModalStyle } from "./style";
 
 export default function Modal({ itemNumber }) {
-  console.log(itemNumber);
 
   const item1 = driverItems.map((value) => {
     return value[itemNumber].item1;
