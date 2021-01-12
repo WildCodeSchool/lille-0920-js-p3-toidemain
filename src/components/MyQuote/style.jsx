@@ -9,7 +9,8 @@ export const QuoteContainer = styled.div`
   p {
     text-align: center;
     margin-bottom: 20px;
-    color: red;
+    color: #005542;
+    font-size: 1.5em;
   }
 `;
 
@@ -27,18 +28,18 @@ export const QuoteSpan = styled.span`
   cursor: pointer;
   &::before {
     content: "";
-    height: 6px;
-    width: 6px;
-    background-color: red;
+    height: 10px;
+    width: 10px;
+    background-color: #ffbe00;
     border-radius: 50%;
     transition: background-color 0.3s ease;
   }
   &:hover {
     &::before {
-      background-color: black;
+      background-color: #ffbe00;
     }
   }
   &::before {
-    background-color: ${(props) => (props.active ? "black" : "red")};
+    background-color: ${(props) => (props.active ? "#ffbe00" : "#005542")};
   }
 `;
