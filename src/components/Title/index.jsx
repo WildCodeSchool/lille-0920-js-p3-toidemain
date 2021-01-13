@@ -5,7 +5,7 @@ const Title = ({ titleName }) => {
 	return (
 		<TitleStyle>
 			<h2>{titleName}</h2>
-			<div class="triangle"></div>
+			<div className="triangle"></div>
 		</TitleStyle>
 	);
 };
