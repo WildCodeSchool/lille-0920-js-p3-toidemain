@@ -34,7 +34,7 @@ const StageUp = () => {
         <img src="/images/handsnb.jpg" alt="hands" />
         <SecText>
           <h2>
-            <strong>Stage up c’est :</strong>
+            <h3>Stage up c’est :</h3>
             <br /> - <span>1</span> semaine de stage collectif innovante au sein d’une entreprise
             <br /> - Pour un groupe de <sp>12 à 20</sp> collégiens / lycéens
             <br /> - Encadré <span>H24</span> par <span>2</span> coachs certifiés à l`orientation scolaire
@@ -51,6 +51,7 @@ const StageUp = () => {
 
         <ThirdContainer>
           <ListR>
+            <h3>Vos Rôle</h3>
             <ul>
               <li>Mise à dispo d`une salle.</li>
               <li>4 collaborateurs 3x2heures.</li>
@@ -60,6 +61,7 @@ const StageUp = () => {
           </ListR>
           <img src="/images/vous.png" alt="toi domain et vous" />
           <ListL>
+            <h3>Toi domain Rôle</h3>
             <ul>
               <li>Recrutement des stagiaires et gestion des conventions de stages.</li>
               <li>Encadrement et animation des jeunes pendant toute la durée du stage.</li>
@@ -70,10 +72,12 @@ const StageUp = () => {
       </Third>
       <Forth>
         <TextR>
+          <h3>Où</h3>
           <p>Une salle de réunion au sein de l’entreprise prévue pour 12 à 20 jeunes + 2 animateurs toute la semaine.</p>
         </TextR>
         <img src="/images/quand.png" alt="quand et ou" />
         <TextL>
+          <h3>Quand</h3>
           <p>Pendant les périodes de stages prévu par l’éducation nationale. Principalement novembre / décembre / janvier / février / juin</p>
         </TextL>
       </Forth>

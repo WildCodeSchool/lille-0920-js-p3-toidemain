@@ -3,17 +3,17 @@ import { device } from '../../layout/Devices';
 
 export const Main = styled.div`
   height: 90vh;
-  overflow-y: scroll;
+  /* overflow-y: scroll;
   scroll-snap-type: y mandatory;
   scroll-snap-points-y: repeat(90vh);
   overflow-x: hidden;
-  overflow-y: scroll;
+  overflow-y: scroll; */
   background-color: rgb(237, 237, 237);
   font-family: 'Roboto', sans-serif;
   color: #02523f;
   @media ${device.mobile} {
-    min-height: 200vh;
-    max-width: 400vh;
+    min-height: 400vh;
+    max-width: 480vh;
     overflow-y: none;
     scroll-snap-type: none;
     scroll-snap-points-y: none;
@@ -24,17 +24,17 @@ export const Main = styled.div`
 
 export const First = styled.section`
   height: 90vh;
-  scroll-snap-align: start;
+  /* scroll-snap-align: start; */
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   @media ${device.mobile} {
-    min-height: 150vh;
-    max-height: 180vh;
+    scroll-snap-align: none;
+    min-height: 120vh;
+    max-height: 150vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: -7vh;
   }
 `;
 export const FirstTextContainer = styled.div`
@@ -75,7 +75,7 @@ export const FirstUp = styled.div`
   }
   @media ${device.mobile} {
     h3 {
-      font-size: 1em;
+      font-size: 1.1em;
       line-height: 1.2em;
     }
     span {
@@ -111,25 +111,37 @@ export const Firstdown = styled.div`
     height: 50%;
 
     h3 {
-      font-size: 0.9em;
+      font-size: 1em;
       line-height: 1.2em;
       text-align: center;
       width: 80%;
     }
     span {
-      font-size: 1em;
+      font-size: 1.1em;
     }
   }
 `;
 
 export const Second = styled.section`
   height: 90vh;
-  scroll-snap-align: center;
+  /* scroll-snap-align: center; */
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
   img {
     width: 55%;
+  }
+  @media ${device.mobile} {
+    scroll-snap-align: none;
+    min-height: 55vh;
+    max-height: 75vh;
+    display: block;
+    border-top: dotted #d6a002 20px;
+    border-bottom: dotted #d6a002 20px;
+    margin-top: 5vh;
+    img {
+      display: none;
+    }
   }
 `;
 export const SecText = styled.div`
@@ -145,20 +157,49 @@ export const SecText = styled.div`
     line-height: 2em;
     padding-left: 3vw;
   }
+  @media ${device.mobile} {
+    width: 95%;
+    margin: auto;
+    span {
+      font-size: 1em;
+    }
+    h2 {
+      font-size: 1.2em;
+      width: 80%;
+      line-height: 1.5em;
+      margin: 5vh auto;
+    }
+    h3 {
+      text-decoration: underline;
+      text-underline-position: under;
+    }
+  }
 `;
 
 export const Third = styled.section`
   height: 90vh;
-  scroll-snap-align: center;
+  /* scroll-snap-align: center; */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  @media ${device.mobile} {
+    scroll-snap-align: none;
+    min-height: 120vh;
+    max-height: 180vh;
+    justify-content: center;
+  }
 `;
 export const Title = styled.div`
   margin: 8vh auto;
   h1 {
     font-size: 3.5em;
     text-align: center;
+  }
+  @media ${device.mobile} {
+    margin: 2vh auto;
+    h1 {
+      font-size: 2em;
+    }
   }
 `;
 export const ThirdContainer = styled.div`
@@ -170,6 +211,14 @@ export const ThirdContainer = styled.div`
   img {
     width: 40%;
     border-radius: 20px;
+  }
+  @media ${device.mobile} {
+    margin: 2vh auto;
+    flex-direction: column-reverse;
+    justify-content: center;
+    img {
+      display: none;
+    }
   }
 `;
 
@@ -189,6 +238,24 @@ export const ListR = styled.div`
     margin: 3vh 2vw;
     color: white;
   }
+  h3 {
+    display: none;
+  }
+  @media ${device.mobile} {
+    margin: 3vh auto;
+    width: 95%;
+    font-size: 0.6em;
+    height: 50%;
+    h3 {
+      display: block;
+      text-align: center;
+      color: white;
+      font-size: 2.3em;
+      margin: 2vh auto;
+      text-decoration: underline;
+      text-underline-position: under;
+    }
+  }
 `;
 export const ListL = styled.div`
   background: #0c6b58;
@@ -207,11 +274,29 @@ export const ListL = styled.div`
     line-height: 1.25em;
     color: white;
   }
+  h3 {
+    display: none;
+  }
+  @media ${device.mobile} {
+    margin: 3vh auto;
+    width: 95%;
+    font-size: 0.6em;
+    height: 50%;
+    h3 {
+      display: block;
+      text-align: center;
+      color: white;
+      font-size: 2.3em;
+      margin: 2vh auto;
+      text-decoration: underline;
+      text-underline-position: under;
+    }
+  }
 `;
 
 export const Forth = styled.section`
   height: 90vh;
-  scroll-snap-align: end;
+  /* scroll-snap-align: end; */
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
@@ -219,6 +304,17 @@ export const Forth = styled.section`
   img {
     width: 40%;
     border-radius: 20px;
+  }
+  @media ${device.mobile} {
+    scroll-snap-align: none;
+    min-height: 40vh;
+    max-height: 60vh;
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin: -25vh auto;
+    img {
+      display: none;
+    }
   }
 `;
 export const TextR = styled.div`
@@ -235,6 +331,27 @@ export const TextR = styled.div`
     color: white;
     text-align: center;
   }
+  h3 {
+    display: none;
+  }
+  @media ${device.mobile} {
+    margin: 3vh auto;
+    width: 95%;
+    font-size: 0.6em;
+    height: 50%;
+    p {
+      margin: 2vh 3vw;
+    }
+    h3 {
+      display: block;
+      text-align: center;
+      color: white;
+      font-size: 3em;
+      margin: 2vh auto;
+      text-decoration: underline;
+      text-underline-position: under;
+    }
+  }
 `;
 export const TextL = styled.div`
   background: #cfcbba;
@@ -249,5 +366,26 @@ export const TextL = styled.div`
     margin: 6vh 1vw;
     color: #454545;
     text-align: center;
+  }
+  h3 {
+    display: none;
+  }
+  @media ${device.mobile} {
+    margin: 3vh auto;
+    width: 95%;
+    font-size: 0.6em;
+    height: 50%;
+    p {
+      margin: 2vh 3vw;
+    }
+    h3 {
+      display: block;
+      text-align: center;
+      color: #454545;
+      font-size: 3em;
+      margin: 2vh auto;
+      text-decoration: underline;
+      text-underline-position: under;
+    }
   }
 `;
