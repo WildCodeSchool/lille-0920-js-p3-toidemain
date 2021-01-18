@@ -8,6 +8,7 @@ import {
 } from "./style";
 import Navbar from "./Navbar/index";
 import Burger from "./Burger/index";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -19,7 +20,9 @@ const Header = () => {
         </TopBorder>
         <HeaderBackground>
           <LogoContainer>
-            <img src="/images/logo_Header.png" alt="ToiDemain logo" />
+            <Link to="/">
+              <img src="/images/logo_Header.png" alt="ToiDemain logo" />
+            </Link>
           </LogoContainer>
           <ContactContainer>
             <img src="/images/icons/mail_icon.svg" alt="e-mail icon" />

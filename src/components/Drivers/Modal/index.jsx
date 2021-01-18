@@ -2,8 +2,6 @@ import React from "react";
 import { ModalStyle } from "./style";
 
 export default function Modal({ driverItems }) {
-	console.log(driverItems);
-
 	return (
 		<ModalStyle>
 			<ul>

@@ -149,12 +149,7 @@ export default function Drivers() {
 				<Pattern id="pat-12" link="images/compas.png" size={hexagonSize} />
 			</HexGrid>
 
-			{isOpen && (
-				<Modal
-					driverItems={driverItems[hexaNumber]}
-					txt={driverItems[hexaNumber]}
-				/>
-			)}
+			{isOpen && <Modal driverItems={driverItems[hexaNumber]} />}
 		</DriversStyle>
 	);
 }
