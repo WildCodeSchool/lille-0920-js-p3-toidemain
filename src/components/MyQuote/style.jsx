@@ -6,6 +6,7 @@ export const QuoteContainer = styled.div`
   align-items: center;
   margin: 40px auto;
   max-width: 700px;
+  font-family: "Roboto", sans-serif;
   p {
     text-align: center;
     margin-bottom: 20px;
