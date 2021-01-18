@@ -2,14 +2,13 @@ import React, { useState } from "react";
 import { HexGrid, Layout, Hexagon, Text, Pattern } from "react-hexgrid";
 import { DriversStyle } from "./style";
 import Modal from "./Modal/index";
+import driverItems from "./Modal/Data";
 
 export default function Drivers() {
 	const [isOpen, setIsOpen] = useState(false);
-	let [driverItem, setDriverItem] = useState();
+	let [hexaNumber, sethexaNumber] = useState(0);
 
 	const hexagonSize = { x: 10, y: 10 };
-
-	console.log(isOpen);
 
 	return (
 		<DriversStyle>
@@ -27,9 +26,10 @@ export default function Drivers() {
 						q={-1}
 						r={0}
 						s={0}
-						onMouseEnter={() =>
-							setIsOpen(true, setDriverItem((driverItem = 1)))
-						}
+						onMouseEnter={() => {
+							setIsOpen(true);
+							sethexaNumber(0);
+						}}
 						onMouseLeave={() => setIsOpen(false)}
 					>
 						<Text>S'orienter</Text>
@@ -46,9 +46,10 @@ export default function Drivers() {
 						q={-2}
 						r={1}
 						s={0}
-						onMouseEnter={() =>
-							setIsOpen(true, setDriverItem((driverItem = 2)))
-						}
+						onMouseEnter={() => {
+							setIsOpen(true);
+							sethexaNumber(1);
+						}}
 						onMouseLeave={() => setIsOpen(false)}
 					>
 						<Text>Se connaître</Text>
@@ -65,9 +66,10 @@ export default function Drivers() {
 						q={-3}
 						r={2}
 						s={0}
-						onMouseEnter={() =>
-							setIsOpen(true, setDriverItem((driverItem = 3)))
-						}
+						onMouseEnter={() => {
+							setIsOpen(true);
+							sethexaNumber(2);
+						}}
 						onMouseLeave={() => setIsOpen(false)}
 					>
 						<Text>Se challenger</Text>
@@ -77,9 +79,10 @@ export default function Drivers() {
 						q={-3}
 						r={1}
 						s={0}
-						onMouseEnter={() =>
-							setIsOpen(true, setDriverItem((driverItem = 4)))
-						}
+						onMouseEnter={() => {
+							setIsOpen(true);
+							sethexaNumber(3);
+						}}
 						onMouseLeave={() => setIsOpen(false)}
 					>
 						<Text>S'épanouir</Text>
@@ -89,9 +92,10 @@ export default function Drivers() {
 						q={-4}
 						r={1}
 						s={0}
-						onMouseEnter={() =>
-							setIsOpen(true, setDriverItem((driverItem = 5)))
-						}
+						onMouseEnter={() => {
+							setIsOpen(true);
+							sethexaNumber(4);
+						}}
 						onMouseLeave={() => setIsOpen(false)}
 					>
 						<Text>S'amuser</Text>
@@ -108,9 +112,10 @@ export default function Drivers() {
 						q={-4}
 						r={3}
 						s={0}
-						onMouseEnter={() =>
-							setIsOpen(true, setDriverItem((driverItem = 6)))
-						}
+						onMouseEnter={() => {
+							setIsOpen(true);
+							sethexaNumber(5);
+						}}
 						onMouseLeave={() => setIsOpen(false)}
 					>
 						<Text>S'inspirer</Text>
@@ -120,10 +125,10 @@ export default function Drivers() {
 						q={-5}
 						r={3}
 						s={0}
-						// onMouseOver={() => setDriverItem((driverItem = 7))}
-						onMouseEnter={() =>
-							setIsOpen(true, setDriverItem((driverItem = 7)))
-						}
+						onMouseEnter={() => {
+							setIsOpen(true);
+							sethexaNumber(6);
+						}}
 						onMouseLeave={() => setIsOpen(false)}
 					>
 						<Text>Expérimenter</Text>
@@ -144,7 +149,12 @@ export default function Drivers() {
 				<Pattern id="pat-12" link="images/compas.png" size={hexagonSize} />
 			</HexGrid>
 
-			{isOpen && <Modal itemNumber={driverItem} />}
+			{isOpen && (
+				<Modal
+					driverItems={driverItems[hexaNumber]}
+					txt={driverItems[hexaNumber]}
+				/>
+			)}
 		</DriversStyle>
 	);
 }
