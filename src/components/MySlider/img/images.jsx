@@ -1,7 +1,10 @@
 const images = [
-  "https://images.pexels.com/photos/237414/pexels-photo-237414.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
-  "https://images.pexels.com/photos/1181226/pexels-photo-1181226.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-  "https://images.pexels.com/photos/2422294/pexels-photo-2422294.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+  "https://i.imgur.com/xG2vMpQ.jpg",
+  "https://i.imgur.com/hw3vr8c.jpg",
+  " https://i.imgur.com/1RaLXS2.jpg",
+  "https://i.imgur.com/134fWsv.jpg",
+  "https://i.imgur.com/1T8Dh4L.jpg",
+  "https://i.imgur.com/iGe04oN.jpg",
 ];
 
 export default images;
