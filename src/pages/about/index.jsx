@@ -18,13 +18,17 @@ const About = () => {
               <span> libres, responsables et heureux</span>.
             </p>
             <p>
-              <span>Ce qui nous anime :</span>
-              <br />
-              Permettre aux jeunes une première belle rencontre avec le monde de
-              l’entreprise qui leur donne envie.
-              <br />
-              Leur permettre de croire que
-              <span> tout est possible</span>.
+              <ul>
+                <span>Ce qui nous anime :</span>
+                <li>
+                  Permettre aux jeunes une première belle rencontre avec le
+                  monde de l’entreprise qui leur donne envie.
+                </li>
+                <li className="fas fa-angle-right">
+                  Leur permettre de croire que
+                  <span> tout est possible</span>.
+                </li>
+              </ul>
             </p>
           </div>
           <img src="/images/atelierbis.jpg" alt="atelier" />
