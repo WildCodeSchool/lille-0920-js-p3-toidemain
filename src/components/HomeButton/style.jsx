@@ -6,9 +6,10 @@ export const ButtonContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  font-size: 1.8em;
+  font-size: 1.5em;
   color: white;
-  width: 25vw;
+  width: 20vw;
+  font-family: "Roboto", sans-serif;
   @media ${device.mobile} {
     width: 90%;
   }
