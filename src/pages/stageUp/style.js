@@ -15,8 +15,10 @@ export const Main = styled.div`
   }
   @media ${device.tablet} {
     min-height: 320vh;
-    max-height: 550vh;
-    display: block;
+    max-height: 900vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 `;
 
@@ -26,7 +28,6 @@ export const First = styled.section`
   flex-direction: row;
   justify-content: space-around;
   @media ${device.mobile} {
-    scroll-snap-align: none;
     min-height: 120vh;
     max-height: 150vh;
     flex-direction: column;
@@ -34,12 +35,12 @@ export const First = styled.section`
     align-items: center;
   }
   @media ${device.tablet} {
-    scroll-snap-align: none;
-    min-height: 100vh;
-    max-height: 130vh;
+    min-height: 120vh;
+    max-height: 150vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 10vh;
   }
 `;
 export const FirstTextContainer = styled.div`
@@ -66,7 +67,7 @@ export const FirstTextContainer = styled.div`
     margin-bottom: 2vh;
     img {
       width: 45vw;
-      height: 30vh;
+      height: 32vh;
     }
   }
 `;
@@ -95,11 +96,11 @@ export const FirstUp = styled.div`
   }
   @media ${device.tablet} {
     h3 {
-      font-size: 1.7em;
+      font-size: 1.5em;
       line-height: 1.2em;
     }
     span {
-      font-size: 1.1em;
+      font-size: 1em;
     }
   }
 `;
@@ -144,13 +145,13 @@ export const Firstdown = styled.div`
     margin-top: 2vh;
     height: 50%;
     h3 {
-      font-size: 1.3em;
+      font-size: 1.2em;
       line-height: 1.2em;
       text-align: center;
       width: 80%;
     }
     span {
-      font-size: 1.2em;
+      font-size: 1.1em;
     }
   }
 `;
@@ -179,12 +180,11 @@ export const Second = styled.section`
   @media ${device.tablet} {
     scroll-snap-align: none;
     min-height: 35vh;
-    max-height: 40vh;
+    max-height: 55vh;
     display: block;
     border-top: dotted #d6a002 20px;
     border-bottom: dotted #d6a002 20px;
-    margin-top: 10vh;
-    margin-bottom: 5vh;
+    margin: auto;
     img {
       display: none;
     }
@@ -254,8 +254,8 @@ export const Third = styled.section`
   }
   @media ${device.tablet} {
     scroll-snap-align: none;
-    min-height: 60vh;
-    max-height: 90vh;
+    min-height: 80vh;
+    max-height: 95vh;
     justify-content: center;
     margin-top: 15vh;
   }
@@ -276,10 +276,11 @@ export const Title = styled.div`
     }
   }
   @media ${device.tablet} {
-    margin: 2vh auto;
+    margin: 4vh auto;
     h1 {
-      font-size: 3em;
-      text-decoration: none;
+      font-size: 2em;
+      text-decoration: underline;
+      text-underline-position: under;
     }
   }
 `;
@@ -348,7 +349,7 @@ export const ListR = styled.div`
   @media ${device.tablet} {
     margin: 3vh auto;
     width: 95%;
-    font-size: 0.8em;
+    font-size: 0.6em;
     height: 50%;
     h3 {
       display: block;
@@ -397,13 +398,13 @@ export const ListL = styled.div`
   @media ${device.tablet} {
     margin: 3vh auto;
     width: 95%;
-    font-size: 0.8em;
+    font-size: 0.6em;
     height: 50%;
     h3 {
       display: block;
       text-align: center;
       color: white;
-      font-size: 2.8em;
+      font-size: 2.7em;
       margin: 2vh auto;
       text-decoration: underline;
       text-underline-position: under;
@@ -435,12 +436,12 @@ export const Forth = styled.section`
   }
   @media ${device.tablet} {
     scroll-snap-align: none;
-    min-height: 50vh;
-    max-height: 70vh;
+    min-height: 75vh;
+    max-height: 90vh;
     flex-direction: column-reverse;
     justify-content: center;
     margin-bottom: 0;
-    margin-top: -18vh;
+    margin-top: -20vh;
     img {
       display: none;
     }
@@ -482,7 +483,7 @@ export const TextR = styled.div`
   @media ${device.tablet} {
     margin: 3vh auto;
     width: 95%;
-    font-size: 0.7em;
+    font-size: 0.6em;
     height: 30%;
     p {
       margin: 2vh 3vw;
@@ -491,7 +492,7 @@ export const TextR = styled.div`
       display: block;
       text-align: center;
       color: white;
-      font-size: 3.5em;
+      font-size: 3em;
       margin: 2vh auto;
       text-decoration: underline;
       text-underline-position: under;
@@ -534,7 +535,7 @@ export const TextL = styled.div`
   @media ${device.tablet} {
     margin: 3vh auto;
     width: 95%;
-    font-size: 0.7em;
+    font-size: 0.6em;
     height: 30%;
     p {
       margin: 2vh 3vw;
@@ -543,7 +544,7 @@ export const TextL = styled.div`
       display: block;
       text-align: center;
       color: #454545;
-      font-size: 3.5em;
+      font-size: 3em;
       margin: 2vh auto;
       text-decoration: underline;
       text-underline-position: under;

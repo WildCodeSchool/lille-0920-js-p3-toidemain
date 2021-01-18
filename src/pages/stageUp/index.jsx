@@ -53,19 +53,33 @@ const StageUp = () => {
           <ListR>
             <h3>Vos Rôle</h3>
             <ul>
-              <li>Mise à dispo d`une salle.</li>
-              <li>4 collaborateurs 3x2heures.</li>
-              <li>2h pour le porteur de projet.</li>
-              <li>1 collaborateur 1x1h : les métiers d’avenir</li>
+              <li>
+                <i class="fas fa-angle-double-right"></i> Mise à dispo d`une salle.
+              </li>
+              <li>
+                <i class="fas fa-angle-double-right"></i> 4 collaborateurs 3x2heures.
+              </li>
+              <li>
+                <i class="fas fa-angle-double-right"></i> 2h pour le porteur de projet.
+              </li>
+              <li>
+                <i class="fas fa-angle-double-right"></i> 1 collaborateur 1x1h : les métiers d’avenir
+              </li>
             </ul>
           </ListR>
           <img src="/images/vous.png" alt="toi domain et vous" />
           <ListL>
             <h3>Toi domain Rôle</h3>
             <ul>
-              <li>Recrutement des stagiaires et gestion des conventions de stages.</li>
-              <li>Encadrement et animation des jeunes pendant toute la durée du stage.</li>
-              <li> Accompagnement des collaborateurs intervenants.</li>
+              <li>
+                <i class="fas fa-angle-double-right"></i> Recrutement des stagiaires et gestion des conventions de stages.
+              </li>
+              <li>
+                <i class="fas fa-angle-double-right"></i> Encadrement et animation des jeunes pendant toute la durée du stage.
+              </li>
+              <li>
+                <i class="fas fa-angle-double-right"></i> Accompagnement des collaborateurs intervenants.
+              </li>
             </ul>
           </ListL>
         </ThirdContainer>
