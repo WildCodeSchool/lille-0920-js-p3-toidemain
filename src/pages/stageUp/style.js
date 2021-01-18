@@ -20,6 +20,13 @@ export const Main = styled.div`
     flex-direction: column;
     justify-content: space-between;
   }
+  @media ${device.small_screen} {
+    min-height: 380vh;
+    max-height: 900vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 `;
 
 export const First = styled.section`
@@ -35,8 +42,16 @@ export const First = styled.section`
     align-items: center;
   }
   @media ${device.tablet} {
-    min-height: 120vh;
-    max-height: 150vh;
+    min-height: 115vh;
+    max-height: 135vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10vh;
+  }
+  @media ${device.small_screen} {
+    min-height: 100vh;
+    max-height: 125vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -70,6 +85,14 @@ export const FirstTextContainer = styled.div`
       height: 32vh;
     }
   }
+  @media ${device.small_screen} {
+    width: 100%;
+    margin-bottom: 2vh;
+    img {
+      width: 40vw;
+      height: 32vh;
+    }
+  }
 `;
 export const FirstUp = styled.div`
   width: 90%;
@@ -95,6 +118,15 @@ export const FirstUp = styled.div`
     }
   }
   @media ${device.tablet} {
+    h3 {
+      font-size: 1.5em;
+      line-height: 1.2em;
+    }
+    span {
+      font-size: 1em;
+    }
+  }
+  @media ${device.small_screen} {
     h3 {
       font-size: 1.5em;
       line-height: 1.2em;
@@ -154,6 +186,21 @@ export const Firstdown = styled.div`
       font-size: 1.1em;
     }
   }
+  @media ${device.small_screen} {
+    width: 95%;
+    margin-right: 0;
+    margin-top: 2vh;
+    height: 50%;
+    h3 {
+      font-size: 1.2em;
+      line-height: 1.2em;
+      text-align: center;
+      width: 80%;
+    }
+    span {
+      font-size: 1.1em;
+    }
+  }
 `;
 
 export const Second = styled.section`
@@ -179,8 +226,20 @@ export const Second = styled.section`
   }
   @media ${device.tablet} {
     scroll-snap-align: none;
-    min-height: 35vh;
-    max-height: 55vh;
+    min-height: 40vh;
+    max-height: 60vh;
+    display: block;
+    border-top: dotted #d6a002 20px;
+    border-bottom: dotted #d6a002 20px;
+    margin: auto;
+    img {
+      display: none;
+    }
+  }
+  @media ${device.small_screen} {
+    scroll-snap-align: none;
+    min-height: 40vh;
+    max-height: 50vh;
     display: block;
     border-top: dotted #d6a002 20px;
     border-bottom: dotted #d6a002 20px;
@@ -237,6 +296,23 @@ export const SecText = styled.div`
       text-underline-position: under;
     }
   }
+  @media ${device.small_screen} {
+    width: 95%;
+    margin: auto;
+    span {
+      font-size: 1em;
+    }
+    h2 {
+      font-size: 1.2em;
+      width: 80%;
+      line-height: 1.5em;
+      margin: 5vh auto;
+    }
+    h3 {
+      text-decoration: underline;
+      text-underline-position: under;
+    }
+  }
 `;
 
 export const Third = styled.section`
@@ -246,18 +322,22 @@ export const Third = styled.section`
   justify-content: space-around;
   margin-top: 15vh;
   @media ${device.mobile} {
-    scroll-snap-align: none;
     min-height: 60vh;
     max-height: 120vh;
     justify-content: center;
     margin-top: 4vh;
   }
   @media ${device.tablet} {
-    scroll-snap-align: none;
     min-height: 80vh;
     max-height: 95vh;
     justify-content: center;
     margin-top: 15vh;
+  }
+  @media ${device.small_screen} {
+    min-height: 70vh;
+    max-height: 85vh;
+    justify-content: center;
+    margin-top: -15vh;
   }
 `;
 export const Title = styled.div`
@@ -276,6 +356,14 @@ export const Title = styled.div`
     }
   }
   @media ${device.tablet} {
+    margin: 4vh auto;
+    h1 {
+      font-size: 2em;
+      text-decoration: underline;
+      text-underline-position: under;
+    }
+  }
+  @media ${device.small_screen} {
     margin: 4vh auto;
     h1 {
       font-size: 2em;
@@ -303,6 +391,15 @@ export const ThirdContainer = styled.div`
     }
   }
   @media ${device.tablet} {
+    margin: 2vh auto;
+    width: 100%;
+    flex-direction: column-reverse;
+    justify-content: center;
+    img {
+      display: none;
+    }
+  }
+  @media ${device.small_screen} {
     margin: 2vh auto;
     width: 100%;
     flex-direction: column-reverse;
@@ -347,6 +444,21 @@ export const ListR = styled.div`
     }
   }
   @media ${device.tablet} {
+    margin: 3vh auto;
+    width: 95%;
+    font-size: 0.6em;
+    height: 50%;
+    h3 {
+      display: block;
+      text-align: center;
+      color: white;
+      font-size: 2.8em;
+      margin: 2vh auto;
+      text-decoration: underline;
+      text-underline-position: under;
+    }
+  }
+  @media ${device.small_screen} {
     margin: 3vh auto;
     width: 95%;
     font-size: 0.6em;
@@ -410,6 +522,21 @@ export const ListL = styled.div`
       text-underline-position: under;
     }
   }
+  @media ${device.small_screen} {
+    margin: 3vh auto;
+    width: 95%;
+    font-size: 0.6em;
+    height: 50%;
+    h3 {
+      display: block;
+      text-align: center;
+      color: white;
+      font-size: 2.7em;
+      margin: 2vh auto;
+      text-decoration: underline;
+      text-underline-position: under;
+    }
+  }
 `;
 
 export const Forth = styled.section`
@@ -435,6 +562,18 @@ export const Forth = styled.section`
     }
   }
   @media ${device.tablet} {
+    scroll-snap-align: none;
+    min-height: 75vh;
+    max-height: 90vh;
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin-bottom: 0;
+    margin-top: -20vh;
+    img {
+      display: none;
+    }
+  }
+  @media ${device.small_screen} {
     scroll-snap-align: none;
     min-height: 75vh;
     max-height: 90vh;
@@ -498,6 +637,24 @@ export const TextR = styled.div`
       text-underline-position: under;
     }
   }
+  @media ${device.small_screen} {
+    margin: 3vh auto;
+    width: 95%;
+    font-size: 0.6em;
+    height: 30%;
+    p {
+      margin: 2vh 3vw;
+    }
+    h3 {
+      display: block;
+      text-align: center;
+      color: white;
+      font-size: 3em;
+      margin: 2vh auto;
+      text-decoration: underline;
+      text-underline-position: under;
+    }
+  }
 `;
 export const TextL = styled.div`
   background: #cfcbba;
@@ -533,6 +690,24 @@ export const TextL = styled.div`
     }
   }
   @media ${device.tablet} {
+    margin: 3vh auto;
+    width: 95%;
+    font-size: 0.6em;
+    height: 30%;
+    p {
+      margin: 2vh 3vw;
+    }
+    h3 {
+      display: block;
+      text-align: center;
+      color: #454545;
+      font-size: 3em;
+      margin: 2vh auto;
+      text-decoration: underline;
+      text-underline-position: under;
+    }
+  }
+  @media ${device.small_screen} {
     margin: 3vh auto;
     width: 95%;
     font-size: 0.6em;
