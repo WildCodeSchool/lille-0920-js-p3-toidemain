@@ -20,7 +20,7 @@ export default function Navbar() {
           <a href="/actions">Nos Actions</a>
 
           <DropdownItems>
-            <a href="/pedagogie">Notre Pédagogie</a>
+            <Link to="/action/pedagogie">Notre Pédagogie</Link>
             <a href="/ateliers">Nos Ateliers</a>
             <a href="/stage-up">Stage-Up</a>
           </DropdownItems>
