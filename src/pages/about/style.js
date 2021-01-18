@@ -76,10 +76,13 @@ export const PledgeBox = styled.div`
 
 export const Cards = styled.div`
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: 0 5vw;
+  //max-width: 30vw;
   @media screen and (max-width: 768px) {
     flex-direction: column;
+    //max-width: 90vw;
   }
 `;
 
