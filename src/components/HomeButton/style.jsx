@@ -11,7 +11,12 @@ export const ButtonContainer = styled.div`
   width: 20vw;
   font-family: "Roboto", sans-serif;
   @media ${device.mobile} {
-    width: 90%;
+    width: 80%;
+    font-size: 1.1em;
+  }
+  @media ${device.tablet} {
+    width: 80%;
+    font-size: 1.3em;
   }
 `;
 
@@ -29,6 +34,10 @@ export const ContainerEntreprise = styled.div`
   margin-bottom: 2px;
   height: 8%;
   width: 80%;
+  @media ${device.tablet} {
+    width: 80%;
+    font-size: 1.3em;
+  }
 `;
 
 export const ContainerEnseignant = styled.div`
@@ -37,6 +46,10 @@ export const ContainerEnseignant = styled.div`
   margin-bottom: 2px;
   height: 8%;
   width: 80%;
+  @media ${device.tablet} {
+    width: 80%;
+    font-size: 1.3em;
+  }
 `;
 
 export const ContainerLyceen = styled.div`
@@ -45,4 +58,8 @@ export const ContainerLyceen = styled.div`
   padding: 25px 5px 5px 15px;
   height: 8%;
   width: 80%;
+  @media ${device.tablet} {
+    width: 80%;
+    font-size: 1.3em;
+  }
 `;
