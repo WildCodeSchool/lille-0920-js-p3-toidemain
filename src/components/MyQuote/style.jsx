@@ -14,6 +14,10 @@ export const QuoteContainer = styled.div`
   }
 `;
 
+export const QuotePara = styled.p`
+  font-style: italic;
+`;
+
 export const QuotesContainer = styled.div`
   display: flex;
 `;
