@@ -2,12 +2,7 @@ import styled from 'styled-components';
 import { device } from '../../layout/Devices';
 
 export const Main = styled.div`
-  height: 90vh;
-  /* overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-  scroll-snap-points-y: repeat(90vh);
-  overflow-x: hidden;
-  overflow-y: scroll; */
+  height: 370vh;
   background-color: rgb(237, 237, 237);
   font-family: 'Roboto', sans-serif;
   color: #02523f;
@@ -17,11 +12,6 @@ export const Main = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* overflow-y: none;
-    scroll-snap-type: none;
-    scroll-snap-points-y: none;
-    overflow-x: none;
-    overflow-y: none; */
   }
   @media ${device.tablet} {
     min-height: 320vh;
@@ -31,8 +21,7 @@ export const Main = styled.div`
 `;
 
 export const First = styled.section`
-  height: 90vh;
-  /* scroll-snap-align: start; */
+  height: 100vh;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -60,7 +49,6 @@ export const FirstTextContainer = styled.div`
   justify-content: center;
   align-items: center;
   margin-bottom: 20vh;
-
   img {
     width: 22vw;
     height: 40vh;
@@ -84,7 +72,6 @@ export const FirstTextContainer = styled.div`
 `;
 export const FirstUp = styled.div`
   width: 90%;
-
   h3 {
     text-align: center;
     font-size: 1.8em;
@@ -121,7 +108,6 @@ export const Firstdown = styled.div`
   margin-right: 3vw;
   margin-top: 10vh;
   height: 70%;
-
   h3 {
     background: rgba(2, 82, 63, 0.7);
     border-radius: 20px;
@@ -142,7 +128,6 @@ export const Firstdown = styled.div`
     margin-right: 0;
     margin-top: 2vh;
     height: 50%;
-
     h3 {
       font-size: 1em;
       line-height: 1.2em;
@@ -158,7 +143,6 @@ export const Firstdown = styled.div`
     margin-right: 0;
     margin-top: 2vh;
     height: 50%;
-
     h3 {
       font-size: 1.3em;
       line-height: 1.2em;
@@ -173,7 +157,6 @@ export const Firstdown = styled.div`
 
 export const Second = styled.section`
   height: 90vh;
-  /* scroll-snap-align: center; */
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
@@ -257,17 +240,17 @@ export const SecText = styled.div`
 `;
 
 export const Third = styled.section`
-  height: 90vh;
-  /* scroll-snap-align: center; */
+  height: 110vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin-top: 15vh;
   @media ${device.mobile} {
     scroll-snap-align: none;
-    min-height: 70vh;
-    max-height: 200vh;
+    min-height: 60vh;
+    max-height: 120vh;
     justify-content: center;
-    margin-top: 15vh;
+    margin-top: 4vh;
   }
   @media ${device.tablet} {
     scroll-snap-align: none;
@@ -282,17 +265,21 @@ export const Title = styled.div`
   h1 {
     font-size: 3.5em;
     text-align: center;
+    text-decoration: underline;
+    text-underline-position: under;
   }
   @media ${device.mobile} {
     margin: 2vh auto;
     h1 {
       font-size: 2em;
+      text-decoration: none;
     }
   }
   @media ${device.tablet} {
     margin: 2vh auto;
     h1 {
       font-size: 3em;
+      text-decoration: none;
     }
   }
 `;
@@ -334,7 +321,6 @@ export const ListR = styled.div`
   ul {
     margin: 5vh auto;
   }
-
   li {
     font-size: 1.8em;
     width: 90%;
@@ -380,11 +366,9 @@ export const ListL = styled.div`
   border-radius: 20px;
   width: 30%;
   height: 80%;
-
   ul {
     margin: 4vh auto;
   }
-
   li {
     font-size: 1.8em;
     width: 90%;
@@ -428,8 +412,7 @@ export const ListL = styled.div`
 `;
 
 export const Forth = styled.section`
-  height: 90vh;
-  /* scroll-snap-align: end; */
+  height: 35vh;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
@@ -440,12 +423,12 @@ export const Forth = styled.section`
   }
   @media ${device.mobile} {
     scroll-snap-align: none;
-    min-height: 30vh;
-    max-height: 70vh;
+    min-height: 60vh;
+    max-height: 80vh;
     flex-direction: column-reverse;
     justify-content: center;
-    margin-bottom: 5vh;
-
+    margin-bottom: 8vh;
+    margin-top: -10vh;
     img {
       display: none;
     }
@@ -458,7 +441,6 @@ export const Forth = styled.section`
     justify-content: center;
     margin-bottom: 0;
     margin-top: -18vh;
-
     img {
       display: none;
     }
@@ -468,15 +450,13 @@ export const TextR = styled.div`
   background: #d6a002;
   border-radius: 20px;
   width: 30%;
-  height: 40%;
-
+  height: 100%;
   p {
-    font-size: 2em;
+    font-size: 1.9em;
     line-height: 1.75em;
     width: 90%;
     margin: 6vh 2vw;
     color: white;
-    text-align: center;
   }
   h3 {
     display: none;
@@ -521,16 +501,14 @@ export const TextR = styled.div`
 export const TextL = styled.div`
   background: #cfcbba;
   border-radius: 20px;
-  height: 40%;
+  height: 100%;
   width: 30%;
-
   p {
-    font-size: 2em;
+    font-size: 1.9em;
     line-height: 1.75em;
     width: 90%;
     margin: 6vh 1vw;
     color: #454545;
-    text-align: center;
   }
   h3 {
     display: none;

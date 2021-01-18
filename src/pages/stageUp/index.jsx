@@ -12,7 +12,7 @@ const StageUp = () => {
               <span>Stage up</span>
               <br /> est une solution <span>clé en main et innovante</span> pour les entreprises afin de répondre à la problématique d’accueil des jeunes lors de leur stage de découverte en entreprise.
               <br />
-              <span>On s’occupe de tout!</span>
+              <span>Toi Demain s'occupe de tout!</span>
             </h3>
           </FirstUp>
         </FirstTextContainer>
@@ -31,15 +31,15 @@ const StageUp = () => {
         </Firstdown>
       </First>
       <Second>
-        <img src="/images/handsnb.jpg" alt="hands" />
+        <img src="/images/handsbw.jpg" alt="hands" />
         <SecText>
           <h2>
             <h3>Stage up c’est :</h3>
-            <br /> - <span>1</span> semaine de stage collectif innovante au sein d’une entreprise
-            <br /> - Pour un groupe de <sp>12 à 20</sp> collégiens / lycéens
-            <br /> - Encadré <span>H24</span> par <span>2</span> coachs certifiés à l`orientation scolaire
-            <br /> - Pour l’entreprise une action <span>RSE, clé en main</span>, et aussi un avantage pour les enfants de collaborateurs
-            <br /> - L’action est finançable à <span>100%</span> via la taxe d’apprentissage
+            <br /> <i class="fas fa-angle-double-right"></i> <span>1</span> semaine de stage collectif innovante au sein d’une entreprise
+            <br /> <i class="fas fa-angle-double-right"></i> Pour un groupe de <sp>12 à 20</sp> collégiens / lycéens
+            <br /> <i class="fas fa-angle-double-right"></i> Encadré <span>H24</span> par <span>2</span> coachs certifiés à l`orientation scolaire
+            <br /> <i class="fas fa-angle-double-right"></i> Pour l’entreprise une action <span>RSE, clé en main</span>, et aussi un avantage pour les enfants de collaborateurs
+            <br /> <i class="fas fa-angle-double-right"></i> L’action est finançable à <span>100%</span> via la taxe d’apprentissage
           </h2>
         </SecText>
       </Second>
