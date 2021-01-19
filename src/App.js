@@ -7,11 +7,13 @@ import Header from "./components/Header/index";
 import Footer from "./components/Footer/index";
 import Pedagogie from "./components/Pedagogie/index";
 import Home from "./pages/home";
+import AppStyle from "./style";
 
 function App() {
   return (
     <>
       <Reset />
+      <AppStyle />
       <Router>
         <Header />
         <Switch>
