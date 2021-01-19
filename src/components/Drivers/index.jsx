@@ -7,7 +7,7 @@ import driverItems from "./Modal/Data";
 
 export default function Drivers() {
   const [isOpen, setIsOpen] = useState(false);
-  let [hexaNumber, sethexaNumber] = useState(0);
+  const [hexaNumber, sethexaNumber] = useState(0);
 
   const hexagonSize = { x: 10, y: 10 };
 
@@ -15,7 +15,6 @@ export default function Drivers() {
     <DriversStyle>
       <Title titleName={"Nos 7 Drivers"} />
       <HexGrid width={1200} height={700} viewBox="-85 -60 80 80">
-        {/* Main grid with bit hexagons, all manual */}
         <Layout
           size={hexagonSize}
           flat={true}
@@ -143,7 +142,6 @@ export default function Drivers() {
             fill="pat-12"
           ></Hexagon>
         </Layout>
-        {/* You can define multiple patterns and switch between them with "fill" prop on Hexagon */}
         <Pattern id="pat-1" link="images/mission.png" size={hexagonSize} />
         <Pattern id="pat-3" link="images/game.png" size={hexagonSize} />
         <Pattern id="pat-5" link="images/idea.png" size={hexagonSize} />
