@@ -9,7 +9,7 @@ import StageUp from './pages/stageUp/index';
 import Pedagogie from './components/Pedagogie/index';
 import Atelier from './components/Atelier';
 import Home from './pages/home';
-import AppStyle from './style.jsx';
+import { AppStyle } from './style.jsx';
 
 function App() {
   return (
