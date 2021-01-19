@@ -4,6 +4,9 @@ import {
   ContainerEntreprise,
   ContainerEnseignant,
   ContainerLyceen,
+  Button1,
+  Button2,
+  Button3
 } from "./style";
 
 const MenuButton = () => {
@@ -11,13 +14,13 @@ const MenuButton = () => {
     <ButtonContainer>
       <Title>Vous êtes</Title>
       <ContainerEntreprise>
-        <p>UNE ENTREPRISE</p>
+        <Button1>UNE ENTREPRISE</Button1>
       </ContainerEntreprise>
       <ContainerEnseignant>
-        <p>UN ENSEIGNANT</p>
+        <Button2>UN ENSEIGNANT</Button2>
       </ContainerEnseignant>
       <ContainerLyceen>
-        <p>UN LYCEEN</p>
+        <Button3>UN LYCEEN</Button3>
       </ContainerLyceen>
     </ButtonContainer>
   );
