@@ -4,20 +4,23 @@ import {
   ContainerEntreprise,
   ContainerEnseignant,
   ContainerLyceen,
+  Button1,
+  Button2,
+  Button3,
 } from "./style";
 
-const MenuButton = () => {
+const MenuButton = (handleChange) => {
   return (
     <ButtonContainer>
       <Title>Vous êtes</Title>
       <ContainerEntreprise>
-        <p>UNE ENTREPRISE</p>
+        <Button1 onClick={handleChange}>UNE ENTREPRISE</Button1>
       </ContainerEntreprise>
       <ContainerEnseignant>
-        <p>UN ENSEIGNANT</p>
+        <Button2 onClick={handleChange}>UN ENSEIGNANT</Button2>
       </ContainerEnseignant>
       <ContainerLyceen>
-        <p>UN LYCEEN</p>
+        <Button3 onClick={handleChange}>UN LYCEEN</Button3>
       </ContainerLyceen>
     </ButtonContainer>
   );
