@@ -29,11 +29,10 @@ export const Main = styled.div`
     justify-content: space-between;
   }
   @media only screen and (min-width: 1025px) and (max-width: 1280px) {
-    min-height: 280vh;
-    max-height: 290vh;
+    height: 350vh;
   }
   @media only screen and (min-width: 1281px) {
-    height: 400vh;
+    height: 450vh;
   }
 `;
 
@@ -70,7 +69,7 @@ export const First = styled.section`
     min-height: 30vh;
     max-height: 55vh;
     align-items: center;
-    padding-top: 10vh;
+    padding-top: 15vh;
   }
   @media only screen and (min-width: 1281px) {
     height: 130vh;
@@ -116,9 +115,9 @@ export const FirstTextContainer = styled.div`
     }
   }
   @media only screen and (min-width: 1025px) and (max-width: 1280px) {
-    margin-bottom: 2vh;
+    margin-bottom: 10vh;
     img {
-      width: 40vw;
+      width: 25vw;
       height: 35vh;
     }
   }
@@ -210,8 +209,8 @@ export const Firstdown = styled.div`
   h3 {
     background: rgba(2, 82, 63, 0.7);
     border-radius: 20px;
-    font-size: 1.5em;
-    width: 50%;
+    font-size: 1.2em;
+    width: 90%;
     margin: auto;
     line-height: 1.5em;
     padding: 35px;
@@ -272,9 +271,11 @@ export const Firstdown = styled.div`
     width: 50%;
     margin-right: 3vw;
     margin-top: 2vh;
+    margin-bottom: 25vh;
     height: 90%;
+
     h3 {
-      font-size: 1.2em;
+      font-size: 1em;
       width: 50%;
       margin: auto;
       line-height: 1.5em;
@@ -309,12 +310,15 @@ export const Firstdown = styled.div`
 `;
 
 export const Second = styled.section`
-  height: 90vh;
+  height: 100vh;
+  width: 90%;
   display: flex;
   flex-direction: row-reverse;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   img {
-    width: 55%;
+    width: 35%;
+    height: 90%;
   }
 
   @media ${device.mobile} {
@@ -356,7 +360,8 @@ export const Second = styled.section`
   }
   @media only screen and (min-width: 1025px) and (max-width: 1280px) {
     height: 60vh;
-    margin-top: 15vh;
+    margin-top: 25vh;
+    margin-bottom: 25vh;
   }
   @media only screen and (min-width: 1281px) {
     height: 90vh;
@@ -364,13 +369,13 @@ export const Second = styled.section`
     flex-direction: row-reverse;
     justify-content: center;
     img {
-      width: 55%;
+      width: 35%;
     }
   }
 `;
 export const SecText = styled.div`
   margin: auto 5vw 15vh 2vw;
-  width: 45%;
+  width: 55%;
   span {
     font-size: 1.25em;
     color: #d6a002;
@@ -435,10 +440,10 @@ export const SecText = styled.div`
   }
   @media only screen and (min-width: 1025px) and (max-width: 1280px) {
     span {
-      font-size: 1.15em;
+      font-size: 1.1em;
     }
     h2 {
-      font-size: 1.5em;
+      font-size: 1.2em;
       width: 90%;
       line-height: 2em;
       padding-left: 3vw;
@@ -487,6 +492,7 @@ export const Third = styled.section`
   }
   @media only screen and (min-width: 1025px) and (max-width: 1280px) {
     height: 70vh;
+    margin-top: 25vh;
   }
   @media only screen and (min-width: 1281px) {
     height: 110vh;
@@ -663,7 +669,7 @@ export const ListR = styled.div`
   @media only screen and (min-width: 1025px) and (max-width: 1280px) {
     height: 95%;
     li {
-      font-size: 1.5em;
+      font-size: 1.4em;
     }
   }
   @media only screen and (min-width: 1281px) {
@@ -753,7 +759,7 @@ export const ListL = styled.div`
   @media only screen and (min-width: 1025px) and (max-width: 1280px) {
     height: 95%;
     li {
-      font-size: 1.5em;
+      font-size: 1.4em;
     }
   }
   @media only screen and (min-width: 1281px) {
@@ -910,7 +916,7 @@ export const TextR = styled.div`
   }
   @media only screen and (min-width: 1025px) and (max-width: 1280px) {
     p {
-      font-size: 1.6em;
+      font-size: 1.5em;
     }
   }
   @media only screen and (min-width: 1281px) {
@@ -1002,7 +1008,7 @@ export const TextL = styled.div`
   }
   @media only screen and (min-width: 1025px) and (max-width: 1280px) {
     p {
-      font-size: 1.6em;
+      font-size: 1.5em;
     }
   }
   @media only screen and (min-width: 1281px) {

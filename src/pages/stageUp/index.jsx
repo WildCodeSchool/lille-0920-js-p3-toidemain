@@ -31,7 +31,7 @@ const StageUp = () => {
         </Firstdown>
       </First>
       <Second>
-        <img src="/images/handsbw.jpg" alt="hands" />
+        <img src="/images/stageup.jpeg" alt="hands" />
         <SecText>
           <h2>
             <h3>Stage up c’est :</h3>
@@ -51,7 +51,7 @@ const StageUp = () => {
 
         <ThirdContainer>
           <ListR>
-            <h3>Vos Rôle</h3>
+            <h3>Vos Rôles</h3>
             <ul>
               <li>
                 <i class="fas fa-angle-double-right"></i> Mise à dispo d`une salle.
@@ -69,7 +69,7 @@ const StageUp = () => {
           </ListR>
           <img src="/images/vous.png" alt="toi domain et vous" />
           <ListL>
-            <h3>Toi domain Rôle</h3>
+            <h3>Toi demain Rôle</h3>
             <ul>
               <li>
                 <i class="fas fa-angle-double-right"></i> Recrutement des stagiaires et gestion des conventions de stages.
