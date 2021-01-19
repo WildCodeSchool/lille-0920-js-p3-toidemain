@@ -7,10 +7,6 @@ export const DriversStyle = styled.div`
   flex-direction: row;
   justify-content: center;
 
-  svg {
-    border: 1px solid red;
-  }
-
   svg g {
     fill: #1c819e;
     border: 1px solid red;
