@@ -8,6 +8,7 @@ import KeyFacts from "../../components/KeyFacts/index";
 import Title from "../../components/Title/index";
 import EntrepriseText from "../../components/ButtonTextA";
 import EnseignantText from "../../components/ButtonTextB";
+import LycenText from "../../components/ButtonTextC";
 
 
 const Home = () => {
@@ -16,7 +17,7 @@ const Home = () => {
       <Title titleName={"Accompagner les jeunes et réveler leurs talents"} />
       <HomeContainer>
         <ColonneA>
-         <EnseignantText />
+         <LycenText />
         </ColonneA>
         <Slider slides={images} autoPlay={50} />
         <MenuButton />
