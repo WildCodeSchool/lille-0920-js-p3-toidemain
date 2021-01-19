@@ -87,10 +87,8 @@ export const Cards = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 5vw;
-  //max-width: 30vw;
   @media screen and (max-width: 768px) {
     flex-direction: column;
-    //max-width: 90vw;
   }
 `;
 
