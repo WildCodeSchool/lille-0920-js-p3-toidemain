@@ -1,5 +1,5 @@
 import React from 'react';
-import { Main, First, Second, Third, Forth, FirstTextContainer, Title, ListR, ListL, TextR, TextL, FirstUp, Firstdown, SecText, ThirdContainer } from './style';
+import { Main, First, Second, Third, Forth, FirstTextContainer, Topic, ListR, ListL, TextR, TextL, FirstUp, Firstdown, SecText, ThirdContainer } from './style';
 
 const StageUp = () => {
   return (
@@ -22,7 +22,8 @@ const StageUp = () => {
             <br />
             <br /> Permettre aux jeunes de vivre un premier contact positif avec l’entreprise.
             <br />
-            <br /> Offrir à un plus grand nombre de jeunes un stage de qualité. <br />
+            <br /> Offrir à un plus grand nombre de jeunes un stage de qualité.
+            <br />
             <br />
             Permettre aux jeunes des REP, ou à ceux qui n’ont pas de réseau d’accéder à un stage en entreprise. <br />
             <br />
@@ -33,11 +34,14 @@ const StageUp = () => {
       <Second>
         <img src="/images/stageup.jpeg" alt="hands" />
         <SecText>
+          <h3>Stage up c’est :</h3>
           <h2>
-            <h3>Stage up c’est :</h3>
-            <br /> <i class="fas fa-angle-double-right"></i> <span>1</span> semaine de stage collectif innovante au sein d’une entreprise
-            <br /> <i class="fas fa-angle-double-right"></i> Pour un groupe de <sp>12 à 20</sp> collégiens / lycéens
-            <br /> <i class="fas fa-angle-double-right"></i> Encadré <span>H24</span> par <span>2</span> coachs certifiés à l`orientation scolaire
+            <br /> <i class="fas fa-angle-double-right"></i> <span>1</span>
+            semaine de stage collectif innovante au sein d’une entreprise
+            <br /> <i class="fas fa-angle-double-right"></i> Pour un groupe de
+            <sp>12 à 20</sp> collégiens / lycéens
+            <br /> <i class="fas fa-angle-double-right"></i> Encadré
+            <span>H24</span> par <span>2</span> coachs certifiés à l`orientation scolaire
             <br /> <i class="fas fa-angle-double-right"></i> Pour l’entreprise une action <span>RSE, clé en main</span>, et aussi un avantage pour les enfants de collaborateurs
             <br /> <i class="fas fa-angle-double-right"></i> L’action est finançable à <span>100%</span> via la taxe d’apprentissage
           </h2>
@@ -45,9 +49,9 @@ const StageUp = () => {
       </Second>
 
       <Third>
-        <Title>
+        <Topic>
           <h1>Concrètement ça se passe comment?</h1>
-        </Title>
+        </Topic>
 
         <ThirdContainer>
           <ListR>

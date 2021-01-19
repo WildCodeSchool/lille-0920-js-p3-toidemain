@@ -1,6 +1,6 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { NavContainer, NavDropdown, DropdownItems } from './style';
+import React from "react";
+import { Link } from "react-router-dom";
+import { NavContainer, NavDropdown, DropdownItems } from "./style";
 
 export default function Navbar() {
   return (
@@ -25,7 +25,9 @@ export default function Navbar() {
             <Link to="/stageup">Stage-Up</Link>
           </DropdownItems>
         </NavDropdown>
-        |<a href="/soutien">Nous Soutenir</a>|<a href="/actualite">Notre Actualité</a>|<Link to="/contacter">Nous Contacter</Link>
+        |<a href="/soutien">Nous Soutenir</a>|
+        <a href="/actualite">Notre Actualité</a>|
+        <Link to="/contacter">Nous Contacter</Link>
       </nav>
     </NavContainer>
   );

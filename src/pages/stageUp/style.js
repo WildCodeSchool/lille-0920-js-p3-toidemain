@@ -1,10 +1,10 @@
-import styled from 'styled-components';
-import { device } from '../../layout/Devices';
+import styled from "styled-components";
+import { device } from "../../layout/Devices";
 
 export const Main = styled.div`
   height: 370vh;
   background-color: rgb(237, 237, 237);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #02523f;
 
   @media ${device.mobile} {
@@ -323,7 +323,7 @@ export const Second = styled.section`
 
   @media ${device.mobile} {
     scroll-snap-align: none;
-    min-height: 65vh;
+    min-height: 70vh;
     max-height: 80vh;
     display: block;
     border-top: dotted #d6a002 20px;
@@ -376,6 +376,7 @@ export const Second = styled.section`
 export const SecText = styled.div`
   margin: auto 5vw 15vh 2vw;
   width: 55%;
+  text-align: left;
   span {
     font-size: 1.25em;
     color: #d6a002;
@@ -386,6 +387,14 @@ export const SecText = styled.div`
     line-height: 2em;
     padding-left: 3vw;
   }
+  h3 {
+    font-size: 2.5em;
+    width: 80%;
+    color: white;
+    background-color: rgba(2, 82, 63, 0.7);
+    padding: 10px;
+    margin-left: 3vw;
+  }
 
   @media ${device.mobile} {
     width: 95%;
@@ -395,13 +404,13 @@ export const SecText = styled.div`
     }
     h2 {
       font-size: 1.2em;
-      width: 80%;
+      width: 95%;
       line-height: 1.5em;
-      margin: 5vh auto;
+      margin-bottom: 10vh;
     }
     h3 {
-      text-decoration: underline;
-      text-underline-position: under;
+      font-size: 1.5em;
+      margin-top: 5vh;
     }
   }
   @media ${device.tablet} {
@@ -414,11 +423,11 @@ export const SecText = styled.div`
       font-size: 1.2em;
       width: 80%;
       line-height: 1.5em;
-      margin: 5vh auto;
+      margin-bottom: 10vh;
     }
     h3 {
-      text-decoration: underline;
-      text-underline-position: under;
+      font-size: 1.5em;
+      margin-top: 5vh;
     }
   }
   @media ${device.small_screen} {
@@ -431,11 +440,11 @@ export const SecText = styled.div`
       font-size: 1.2em;
       width: 80%;
       line-height: 1.5em;
-      margin: 5vh auto;
+      margin-bottom: 10vh;
     }
     h3 {
-      text-decoration: underline;
-      text-underline-position: under;
+      font-size: 1.5em;
+      margin-top: 5vh;
     }
   }
   @media only screen and (min-width: 1025px) and (max-width: 1280px) {
@@ -461,6 +470,14 @@ export const SecText = styled.div`
       width: 80%;
       line-height: 2em;
       padding-left: 3vw;
+    }
+    h3 {
+      font-size: 2.5em;
+      width: 80%;
+      color: white;
+      background-color: rgba(2, 82, 63, 0.7);
+      padding: 10px;
+      margin-left: 3vw;
     }
   }
 `;
@@ -502,19 +519,21 @@ export const Third = styled.section`
     margin-top: 15vh;
   }
 `;
-export const Title = styled.div`
+export const Topic = styled.div`
   margin: 8vh auto;
+  width: 100%;
   h1 {
     font-size: 3.5em;
     text-align: center;
-    text-decoration: underline;
-    text-underline-position: under;
+    color: white;
+    background-color: rgba(2, 82, 63, 0.6);
+    padding: 20px;
   }
 
   @media ${device.mobile} {
-    margin: 2vh auto;
+    margin: 3vh auto;
     h1 {
-      font-size: 2em;
+      font-size: 1.6em;
       text-decoration: none;
     }
   }
@@ -522,22 +541,18 @@ export const Title = styled.div`
     margin: 4vh auto;
     h1 {
       font-size: 2em;
-      text-decoration: underline;
-      text-underline-position: under;
     }
   }
   @media ${device.small_screen} {
     margin: 4vh auto;
     h1 {
       font-size: 2em;
-      text-decoration: underline;
-      text-underline-position: under;
     }
   }
   @media only screen and (min-width: 1025px) and (max-width: 1280px) {
     margin: 8vh auto;
     h1 {
-      font-size: 3em;
+      font-size: 2.2em;
     }
   }
   @media only screen and (min-width: 1281px) {
@@ -545,8 +560,6 @@ export const Title = styled.div`
     h1 {
       font-size: 3.5em;
       text-align: center;
-      text-decoration: underline;
-      text-underline-position: under;
     }
   }
 `;
@@ -669,7 +682,7 @@ export const ListR = styled.div`
   @media only screen and (min-width: 1025px) and (max-width: 1280px) {
     height: 95%;
     li {
-      font-size: 1.4em;
+      font-size: 1.3em;
     }
   }
   @media only screen and (min-width: 1281px) {
@@ -759,7 +772,7 @@ export const ListL = styled.div`
   @media only screen and (min-width: 1025px) and (max-width: 1280px) {
     height: 95%;
     li {
-      font-size: 1.4em;
+      font-size: 1.3em;
     }
   }
   @media only screen and (min-width: 1281px) {
@@ -830,8 +843,7 @@ export const Forth = styled.section`
       display: none;
     }
   }
-  @media only screen and (min-width: 1025px) and (max-width: 1280px) {
-  }
+
   @media only screen and (min-width: 1281px) {
     height: 35vh;
     display: flex;
@@ -916,7 +928,7 @@ export const TextR = styled.div`
   }
   @media only screen and (min-width: 1025px) and (max-width: 1280px) {
     p {
-      font-size: 1.5em;
+      font-size: 1.3em;
     }
   }
   @media only screen and (min-width: 1281px) {
@@ -1008,7 +1020,7 @@ export const TextL = styled.div`
   }
   @media only screen and (min-width: 1025px) and (max-width: 1280px) {
     p {
-      font-size: 1.5em;
+      font-size: 1.3em;
     }
   }
   @media only screen and (min-width: 1281px) {

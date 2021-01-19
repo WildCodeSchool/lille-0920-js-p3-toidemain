@@ -5,7 +5,7 @@ export const DotSpan = styled.span`
   margin-right: 5px;
   cursor: pointer;
   border-radius: 50%;
-  background: ${(props) => (props.active ? "black" : "white")};
+  background: ${(props) => (props.active ? "#005542" : "#ffbe00")};
 `;
 
 export const DotsDiv = styled.div`
