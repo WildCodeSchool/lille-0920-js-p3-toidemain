@@ -8,7 +8,7 @@ const About = () => {
   return (
     <AboutContainer>
       <Pledge>
-        <Title titleName={"Notre Engagement"} />
+        <Title titleName="Notre Engagement" />
         <PledgeBox>
           <div>
             <p>
