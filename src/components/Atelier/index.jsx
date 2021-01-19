@@ -14,7 +14,7 @@ import {
 
 export default function Atelier() {
   return (
-    <Container>
+    <Container id="atelier">
       <Image src={"/images/Atelier.jpg"} alt={"atelier"} />
       <TextContainer>
         <MainTitle>
