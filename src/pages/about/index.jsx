@@ -36,7 +36,7 @@ const About = () => {
       </Pledge>
 
       <div id="equipe">
-        <Title titleName={"L'Equipe de Toi Demain"} />
+        <Title titleName="L'Equipe de Toi Demain" />
         <Cards>
           {portraitItems.map((item) => (
             <Member item={item} key={item.name} />
@@ -46,7 +46,7 @@ const About = () => {
       </div>
 
       <div>
-        <Title titleName={"Nos partenaires"} />
+        <Title titleName="Nos partenaires" />
         <Partners>
           <img src="/images/idkids.png" alt="id kids" />
           <img src="/images/kiabi.png" alt="kiabi" />
