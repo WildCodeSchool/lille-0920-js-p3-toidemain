@@ -26,6 +26,23 @@ const portraitItems = [
     why:
       "Partager mon  expérience et mon réseau  et participer à une dynamique positive pour la réussite des jeunes.",
   },
+  {
+    name: "Elizabeth Decoster",
+    description: "Secrétaire",
+    image: "/images/elizabeth.png",
+    motivation:
+      "Élargir le champ des possibles ! Permettre à des jeunes d'ouvrir leurs horizons en découvrant des entreprises, des équipes, des métiers.",
+    why: "Pour s'investir dans un projet porteur de 'bon' sens",
+  },
+  {
+    name: "Romain Mayaud",
+    description: "Trésorier",
+    image: "/images/romain.png",
+    motivation:
+      "Permettre aux personnes et aux projets de prendre leur envol. Faire partie de la naissance de projets me tiennent à coeur et qui sont utiles.",
+    why:
+      "Être le seul homme de l'équipe ;-), soutenir un projet qui se préoccupe des jeunes et de leur orientation professionnelle ! Et qui apporte une solution aux entreprises dans l’animation des stages découvertes souvent compliqués à gérer.",
+  },
 ];
 
 export default portraitItems;
