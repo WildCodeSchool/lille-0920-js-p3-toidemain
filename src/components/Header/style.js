@@ -9,7 +9,6 @@ export const HeaderContainer = styled.div`
   justify-content: center;
   height: 200px;
   width: 100%;
-  background: #e6e6e6;
 
   @media ${device.small_screen} {
     height: 140px;

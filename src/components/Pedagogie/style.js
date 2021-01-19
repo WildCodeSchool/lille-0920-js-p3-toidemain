@@ -2,8 +2,8 @@ import styled from "styled-components";
 import { device } from "../../layout/Devices";
 
 export const PedaContainer = styled.div`
-  font-family: "Oswald", Gadget, sans-serif;
-  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
   @media ${device.mobile} {
     display: flex;
     flex-direction: column;
@@ -16,22 +16,11 @@ export const PedaContainer = styled.div`
   }
 `;
 
-export const Title = styled.h2`
-  font-size: 4rem;
-  padding-bottom: 4vh;
-  color: #ffbe00;
-  margin: 25px;
-  @media ${device.mobile} {
-    font-size: 3rem;
-  }
-  @media ${device.tablet} {
-    font-size: 3rem;
-  }
-`;
 export const Intro = styled.p`
-  font-family: "Arial Black", Gadget, sans-serif;
+  font-family: "Roboto", sans-serif;
   height: 80%;
   width: 20vw;
+  font-size: 1.6rem;
   text-align: -webkit-center;
   color: white;
   background-color: #005542;
@@ -49,7 +38,7 @@ export const Intro = styled.p`
   }
 `;
 export const Stairs = styled.div`
-  margin-top: -64px;
+  margin-top: -98px;
 `;
 export const CapitalL = styled.span`
   font-size: 3rem;
@@ -57,6 +46,7 @@ export const CapitalL = styled.span`
 export const Container1 = styled.div`
   display: flex;
   justify-content: center;
+  margin-top: 5vh;
 `;
 export const Container2 = styled.div`
   background-color: #145264;
@@ -87,13 +77,14 @@ export const Objectif = styled.div`
   }
 `;
 export const Title2 = styled.h2`
-  font-size: 5rem;
+  font-size: 4rem;
   color: #ffbe00;
-  width: 30vw;
+  width: 20vw;
   display: flex;
   justify-content: center;
   align-items: -webkit-center;
   margin: 20px;
+  padding-bottom: 5vh;
   @media ${device.mobile} {
     font-size: 3rem;
     width: 80vw;
@@ -110,8 +101,8 @@ export const Liste = styled.ul`
   text-align: -webkit-center;
   display: flex;
   flex-direction: column;
-  margin-top: -4vh;
-  margin-left: 3vw;
+  margin-top: -2vh;
+  margin-left: 9vw;
   @media ${device.mobile} {
     width: 90vw;
     margin: 3vh;
@@ -125,26 +116,31 @@ export const Liste = styled.ul`
 export const ListeElement = styled.li`
   color: white;
   padding: 10px;
+  font-size: 1.3rem;
+  margin-top: 6px;
 `;
 export const Slogan = styled.p`
-  width: 30vw;
+  width: 20vw;
   text-align: end;
   color: white;
-  font-size: 3rem;
-  margin: 9vh;
+  font-size: 2.6rem;
+  margin: 10vh;
+  margin-left: 160px;
   @media ${device.mobile} {
     width: 70vw;
     text-align: -webkit-center;
+    margin: 10vw;
     font-size: 2.1rem;
   }
   @media ${device.tablet} {
     width: 80vw;
     text-align: -webkit-center;
-    font-size: 2.6rem;
+    font-size: 2rem;
+    margin: 10vw;
   }
 `;
 export const Color = styled.span`
-  font-size: 3.2rem;
+  font-size: 2.5rem;
   color: #145264;
 `;
 export const Container3 = styled.div`
@@ -165,6 +161,7 @@ export const Logo = styled.img`
 export const Orientoi = styled.p`
   text-align: center;
   margin: 4vw;
+  font-size: 1.5rem;
 `;
 export const ColorB = styled.span`
   color: #ffbe00;
