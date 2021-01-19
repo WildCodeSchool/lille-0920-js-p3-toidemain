@@ -13,17 +13,18 @@ function App() {
   return (
     <>
       <Reset />
-      <AppStyle />
-      <Router>
-        <Header />
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/about" component={About} />
-          <Route exact path="/contacter" component={Contacter} />
-          <Route exact path="/action/pedagogie" component={Pedagogie} />
-        </Switch>
-        <Footer />
-      </Router>
+      <AppStyle>
+        <Router>
+          <Header />
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/about" component={About} />
+            <Route exact path="/contacter" component={Contacter} />
+            <Route exact path="/action/pedagogie" component={Pedagogie} />
+          </Switch>
+          <Footer />
+        </Router>
+      </AppStyle>
     </>
   );
 }
