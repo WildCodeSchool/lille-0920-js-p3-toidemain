@@ -1,14 +1,6 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import {
-  FooterContainer,
-  Info,
-  Adress,
-  Right,
-  Menu,
-  Social,
-  Icons,
-} from "./style";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { FooterContainer, Info, Adress, Right, Menu, Social, Icons } from './style';
 
 const Footer = () => {
   return (
@@ -33,7 +25,7 @@ const Footer = () => {
           <span>
             <img src="/images/icons/email.png" alt="email" />
           </span>
-          &nbsp;&nbsp;toi-demain@gmail.com
+          &nbsp;&nbsp;contact@toidemain.fr
         </p>
       </Info>
       <Menu>

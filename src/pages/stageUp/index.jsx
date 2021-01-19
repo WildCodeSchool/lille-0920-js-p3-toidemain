@@ -40,8 +40,7 @@ const StageUp = () => {
             semaine de stage collectif innovante au sein d’une entreprise
             <br /> <i class="fas fa-angle-double-right"></i> Pour un groupe de
             <sp>12 à 20</sp> collégiens / lycéens
-            <br /> <i class="fas fa-angle-double-right"></i> Encadré
-            <span>H24</span> par <span>2</span> coachs certifiés à l`orientation scolaire
+            <br /> <i class="fas fa-angle-double-right"></i> Encadré par <span>2</span> coachs certifiés à l`orientation scolaire
             <br /> <i class="fas fa-angle-double-right"></i> Pour l’entreprise une action <span>RSE, clé en main</span>, et aussi un avantage pour les enfants de collaborateurs
             <br /> <i class="fas fa-angle-double-right"></i> L’action est finançable à <span>100%</span> via la taxe d’apprentissage
           </h2>
