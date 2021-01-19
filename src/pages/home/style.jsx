@@ -8,3 +8,11 @@ export const HomeContainer = styled.div`
     flex-direction: column;
   }
 `;
+
+export const ColonneA =styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    `;
