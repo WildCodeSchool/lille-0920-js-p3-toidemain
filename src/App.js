@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Reset } from "styled-reset";
+import { AppStyle } from "./style";
 import Contacter from "./pages/nous-contacter/index";
 import About from "./pages/about";
 import Header from "./components/Header/index";
@@ -10,7 +11,7 @@ import Home from "./pages/home";
 
 function App() {
   return (
-    <>
+    <AppStyle>
       <Reset />
       <Router>
         <Header />
@@ -22,7 +23,7 @@ function App() {
         </Switch>
         <Footer />
       </Router>
-    </>
+    </AppStyle>
   );
 }
 

@@ -5,12 +5,12 @@ import images from "../../components/MySlider/img/images";
 import { HomeContainer } from "./style";
 import Quote from "../../components/MyQuote/index";
 import KeyFacts from "../../components/KeyFacts/index";
-import Title from "../../components/Title/index"
+import Title from "../../components/Title/index";
 
 const Home = () => {
   return (
     <div>
-      <Title titleName={"my name"}/>
+      <Title titleName={"Accompagner les jeunes et réveler leurs talents"} />
       <HomeContainer>
         <Slider slides={images} autoPlay={50} />
         <MenuButton />
