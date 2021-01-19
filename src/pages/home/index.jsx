@@ -5,7 +5,6 @@ import images from "../../components/MySlider/img/images";
 import { HomeContainer } from "./style";
 import Quote from "../../components/MyQuote/index";
 
-
 const Home = () => {
   return (
     <div>
