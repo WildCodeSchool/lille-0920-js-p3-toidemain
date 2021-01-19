@@ -7,16 +7,16 @@ import Quote from "../../components/MyQuote/index";
 import Drivers from "../../components/Drivers/index";
 
 const Home = () => {
-	return (
-		<div>
-			<HomeContainer>
-				<Slider slides={images} autoPlay={50} />
-				<MenuButton />
-			</HomeContainer>
-			<Quote />
-			<Drivers />
-		</div>
-	);
+  return (
+    <div>
+      <HomeContainer>
+        <Slider slides={images} autoPlay={50} />
+        <MenuButton />
+      </HomeContainer>
+      <Quote />
+      <Drivers />
+    </div>
+  );
 };
 
 export default Home;

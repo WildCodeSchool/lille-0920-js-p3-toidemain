@@ -3,9 +3,17 @@ import styled from "styled-components";
 export const DriversStyle = styled.div`
   background-image: url(/images/animated_background.svg);
   font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  svg {
+    border: 1px solid red;
+  }
 
   svg g {
     fill: #1c819e;
+    border: 1px solid red;
   }
 
   svg g:hover {
