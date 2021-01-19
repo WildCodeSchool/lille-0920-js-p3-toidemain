@@ -49,6 +49,7 @@ export const Button1=styled.button`
   color: #fff;
   font-size:1em;
   font-family: "Roboto", sans-serif;
+  cursor: pointer;
     `;
 
 export const ContainerEnseignant = styled.div`
@@ -72,6 +73,7 @@ export const Button2=styled.button`
   color: #fff;
   font-size:1em;
   font-family: "Roboto", sans-serif;
+  cursor: pointer;
     `;
 
 export const ContainerLyceen = styled.div`
@@ -95,6 +97,7 @@ export const Button3=styled.button`
   color: #fff;
   font-size:1em;
   font-family: "Roboto", sans-serif;
+  cursor: pointer;
     `;
 
 
