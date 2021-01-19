@@ -134,5 +134,4 @@ export const Title = styled.h2`
   font-family: "Roboto", Gadget, sans-serif;
   font-size: 1.5rem;
   margin-top: 1vh;
-  
 `;

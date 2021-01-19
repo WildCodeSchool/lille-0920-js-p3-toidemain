@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { device } from "../../layout/Devices";
 
 export const PedaContainer = styled.div`
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1.1rem;
   @media ${device.mobile} {
     display: flex;
@@ -17,7 +17,7 @@ export const PedaContainer = styled.div`
 `;
 
 export const Intro = styled.p`
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   height: 80%;
   width: 20vw;
   font-size: 1.6rem;
@@ -46,7 +46,7 @@ export const CapitalL = styled.span`
 export const Container1 = styled.div`
   display: flex;
   justify-content: center;
-  margin-top:5vh;
+  margin-top: 5vh;
 `;
 export const Container2 = styled.div`
   background-color: #145264;
@@ -83,7 +83,7 @@ export const Title2 = styled.h2`
   display: flex;
   justify-content: center;
   align-items: -webkit-center;
-  margin:20px;
+  margin: 20px;
   padding-bottom: 5vh;
   @media ${device.mobile} {
     font-size: 3rem;
