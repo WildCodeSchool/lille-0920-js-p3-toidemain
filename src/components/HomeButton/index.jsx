@@ -9,11 +9,9 @@ import {
   Button3
 } from "./style";
 
-const MenuButton = () => {
+const MenuButton = (handleChange) => {
 
-  const handleChange = () => {
-    console.log("coucou")
-  }
+
 
   return (
     <ButtonContainer>
