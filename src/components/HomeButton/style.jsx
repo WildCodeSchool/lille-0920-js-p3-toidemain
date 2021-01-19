@@ -40,17 +40,17 @@ export const ContainerEntreprise = styled.div`
   }
 `;
 
-export const Button1=styled.button`
+export const Button1 = styled.button`
   width: 100%;
   height: 100%;
   background-color: #005542;
   border: #005542;
   border-top-left-radius: 10px;
   color: #fff;
-  font-size:1em;
+  font-size: 1em;
   font-family: "Roboto", sans-serif;
   cursor: pointer;
-    `;
+`;
 
 export const ContainerEnseignant = styled.div`
   width: 90%;
@@ -64,17 +64,17 @@ export const ContainerEnseignant = styled.div`
   }
 `;
 
-export const Button2=styled.button`
+export const Button2 = styled.button`
   width: 100%;
   height: 100%;
   background-color: #1c819e;
   border: #1c819e;
   border-top-left-radius: 10px;
   color: #fff;
-  font-size:1em;
+  font-size: 1em;
   font-family: "Roboto", sans-serif;
   cursor: pointer;
-    `;
+`;
 
 export const ContainerLyceen = styled.div`
   width: 90%;
@@ -88,16 +88,14 @@ export const ContainerLyceen = styled.div`
   }
 `;
 
-export const Button3=styled.button`
+export const Button3 = styled.button`
   width: 100%;
   height: 100%;
   background-color: #ffbe00;
   border: #ffbe00;
   border-bottom-left-radius: 10px;
   color: #fff;
-  font-size:1em;
+  font-size: 1em;
   font-family: "Roboto", sans-serif;
   cursor: pointer;
-    `;
-
-
+`;

@@ -6,13 +6,10 @@ import {
   ContainerLyceen,
   Button1,
   Button2,
-  Button3
+  Button3,
 } from "./style";
 
 const MenuButton = (handleChange) => {
-
-
-
   return (
     <ButtonContainer>
       <Title>Vous êtes</Title>
