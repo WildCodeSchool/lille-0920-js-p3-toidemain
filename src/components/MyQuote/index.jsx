@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import quotes from "./quotes";
-import { QuoteContainer, QuotesContainer, QuoteSpan } from "./style";
+import { QuoteContainer, QuotesContainer, QuoteSpan, QuotePara } from "./style";
 
 const Quote = () => {
   const [current, setCurrent] = useState(quotes[0]);
@@ -12,7 +12,7 @@ const Quote = () => {
   };
   return (
     <QuoteContainer>
-      <p>{current.quote}</p>
+      <QuotePara>{current.quote}</QuotePara>
       <p>{current.student}</p>
       <QuotesContainer>
         {Object.keys(quotes).map((index) => (
