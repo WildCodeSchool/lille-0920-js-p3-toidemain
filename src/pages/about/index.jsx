@@ -2,26 +2,33 @@ import React from "react";
 import Member from "./Member";
 import portraitItems from "./Data";
 import { AboutContainer, Cards, Pledge, PledgeBox, Partners } from "./style";
+import Title from "../../components/Title/index";
 
 const About = () => {
   return (
     <AboutContainer>
       <Pledge>
-        <h1>Notre Engagement</h1>
+        <Title titleName="Notre Engagement" />
         <PledgeBox>
           <div>
             <p>
               <span>Notre mission : accompagner</span> les jeunes dans leur
               orientation professionnelle, <span>révèler</span> leurs talents
               pour leur permettre d’être
-              <span>libres, responsables et heureux</span>.
+              <span> libres, responsables et heureux</span>.
             </p>
             <p>
-              Ce qui nous anime : c’est permettre aux jeunes une première belle
-              rencontre avec le monde de l’entreprise qui leur donne envie.
-            </p>
-            <p>
-              Leur permettre de croire que <span>tout est possible</span>.
+              <ul>
+                <span>Ce qui nous anime :</span>
+                <li>
+                  Permettre aux jeunes une première belle rencontre avec le
+                  monde de l’entreprise qui leur donne envie.
+                </li>
+                <li className="fas fa-angle-right">
+                  Leur permettre de croire que
+                  <span> tout est possible</span>.
+                </li>
+              </ul>
             </p>
           </div>
           <img src="/images/atelierbis.jpg" alt="atelier" />
@@ -29,7 +36,7 @@ const About = () => {
       </Pledge>
 
       <div id="equipe">
-        <h1>L'Equipe de Toi Demain</h1>
+        <Title titleName="L'Equipe de Toi Demain" />
         <Cards>
           {portraitItems.map((item) => (
             <Member item={item} key={item.name} />
@@ -39,7 +46,7 @@ const About = () => {
       </div>
 
       <div>
-        <h1>Nos partenaires</h1>
+        <Title titleName="Nos partenaires" />
         <Partners>
           <img src="/images/idkids.png" alt="id kids" />
           <img src="/images/kiabi.png" alt="kiabi" />

@@ -1,10 +1,10 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const TitleStyle = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   height: 40px;
   padding-top: 20px;
 

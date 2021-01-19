@@ -69,12 +69,12 @@ const Slider = (props) => {
         clearInterval(interval);
       }
     };
-  }, []);
+  }, [props.autoPlay]);
 
   // smoothTransition function remove transition effect after an updating. We need to reset transition when valuable as change
   useEffect(() => {
     if (transition === 0) setState({ ...state, transition: 0.45 });
-  }, [transition]);
+  }, [transition, state]);
 
   const handleResize = () => {
     setState({ ...state, translate: getWidth(), transition: 0 });
