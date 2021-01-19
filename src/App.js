@@ -7,21 +7,24 @@ import Header from "./components/Header/index";
 import Footer from "./components/Footer/index";
 import Pedagogie from "./components/Pedagogie/index";
 import Home from "./pages/home";
+import AppStyle from "./style";
 
 function App() {
   return (
     <>
       <Reset />
-      <Router>
-        <Header />
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/about" component={About} />
-          <Route exact path="/contacter" component={Contacter} />
-          <Route exact path="/action/pedagogie" component={Pedagogie} />
-        </Switch>
-        <Footer />
-      </Router>
+      <AppStyle>
+        <Router>
+          <Header />
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/about" component={About} />
+            <Route exact path="/contacter" component={Contacter} />
+            <Route exact path="/action/pedagogie" component={Pedagogie} />
+          </Switch>
+          <Footer />
+        </Router>
+      </AppStyle>
     </>
   );
 }
