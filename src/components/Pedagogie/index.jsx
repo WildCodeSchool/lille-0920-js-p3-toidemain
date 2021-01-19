@@ -1,7 +1,7 @@
 import React from "react";
 import AnimStairs from "../Stairs";
+import Title from "../../components/Title/index";
 import {
-  Title,
   Intro,
   Container1,
   CapitalL,
@@ -23,7 +23,7 @@ const Pedagogie = () => {
   return (
     <div>
       <PedaContainer>
-        <Title>NOTRE PEDAGOGIE</Title>
+      <Title titleName={"Notre pédagogie"} />
         <Container1>
           <Intro>
             <CapitalL>Toi Demain</CapitalL> a une pédagogie d’apprentissage

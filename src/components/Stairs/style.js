@@ -98,6 +98,7 @@ export const Box5 = styled.div`
 `;
 export const Box6 = styled.div`
   background-color: white;
+  opacity: 0;
   padding-top: 5px;
   color: white;
   width: 120px;
@@ -130,7 +131,8 @@ export const Stairs = styled.div`
   padding-top: 14vh;
 `;
 export const Title = styled.h2`
-  font-family: "Oswald", Gadget, sans-serif;
+  font-family: "Roboto", Gadget, sans-serif;
   font-size: 1.5rem;
-  margin-top: 2vh;
+  margin-top: 1vh;
+  
 `;
