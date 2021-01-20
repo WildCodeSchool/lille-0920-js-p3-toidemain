@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import MenuButton from "../../components/HomeButton";
 import Slider from "../../components/MySlider/Slider";
 import images from "../../components/MySlider/img/images";
-import { HomeContainer, ColonneA } from "./style";
+import { HomeContainer, ColonneA, PageContainer } from "./style";
 import Quote from "../../components/MyQuote/index";
 import KeyFacts from "../../components/KeyFacts/index";
 import Title from "../../components/Title/index";
@@ -22,7 +22,6 @@ const Home = () => {
   const handleChangeTab = (e) => {
     const buttonId = e.target.id;
     setActiveId(buttonId);
-    console.log(activeId);
   };
 
   const getTabContent = () => {
@@ -39,7 +38,7 @@ const Home = () => {
   };
 
   return (
-    <div>
+    <PageContainer>
       <Title titleName={"Accompagner les jeunes et réveler leurs talents"} />
       <HomeContainer>
         <ColonneA>{getTabContent()}</ColonneA>
@@ -48,7 +47,7 @@ const Home = () => {
       </HomeContainer>
       <Quote />
       <KeyFacts />
-    </div>
+    </PageContainer>
   );
 };
 

@@ -5,13 +5,13 @@ export const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 320px;
-  height: 240px;
+  width: 20vw;
+  height: 50vh;
   z-index: 2;
   p {
     font-family: "Roboto", sans-serif;
-    font-size: 1em;
-    color: #005542;
+    font-size: 1.6em;
+    color: #ffbe00;
     text-align: justify;
     line-height: 150%;
     background-color: transparent;
@@ -35,11 +35,11 @@ export const Corner = styled.div`
   width: 30px;
   height: 30px;
   &.top {
-    border-top: 3px solid #005542;
-    border-right: 3px solid #005542;
+    border-top: 3px solid #ffbe00;
+    border-right: 3px solid #ffbe00;
   }
   &.bottom {
-    border-bottom: 3px solid #005542;
-    border-left: 3px solid #005542;
+    border-bottom: 3px solid #ffbe00;
+    border-left: 3px solid #ffbe00;
   }
 `;

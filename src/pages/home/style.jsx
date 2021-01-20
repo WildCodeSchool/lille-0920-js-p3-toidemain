@@ -3,7 +3,7 @@ import { device } from "../../layout/Devices";
 
 export const HomeContainer = styled.div`
   display: flex;
-  margin-top: 10vh;
+  margin-top: 6vh;
   @media ${device.mobile} {
     flex-direction: column;
   }
@@ -16,3 +16,7 @@ export const ColonneA = styled.div`
   margin-left: 2vw;
   margin-right: 2vw;
 `;
+
+export const PageContainer=styled.div`
+    margin-top: 4vh;
+    `;

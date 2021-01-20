@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const KeyFactsContainer = styled.div`
   display: flex;
   justify-content: space-around;
+  margin-bottom: 8vh;
 `;
 
 export const Fact = styled.div`
@@ -18,11 +19,11 @@ export const Fact = styled.div`
 
   i {
     color: #ffbe00;
-    font-size: 1.5em;
+    font-size: 1.8em;
   }
 
   h2 {
-    font-size: 1.5em;
+    font-size: 1.8em;
     color: #005542;
   }
 `;

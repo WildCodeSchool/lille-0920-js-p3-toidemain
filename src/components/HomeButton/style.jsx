@@ -34,6 +34,7 @@ export const ContainerEntreprise = styled.div`
   border-top-left-radius: 10px;
   padding: 2px 2px 2px 2px;
   margin-bottom: 2px;
+  
   @media ${device.tablet} {
     width: 80%;
     font-size: 1.3em;
@@ -50,6 +51,11 @@ export const Button1 = styled.button`
   font-size: 1em;
   font-family: "Roboto", sans-serif;
   cursor: pointer;
+  &:hover {
+    -webkit-transform: scale(1.8);
+    transform: scale(1.1);
+    cursor: pointer;
+  }
 `;
 
 export const ContainerEnseignant = styled.div`
@@ -74,6 +80,11 @@ export const Button2 = styled.button`
   font-size: 1em;
   font-family: "Roboto", sans-serif;
   cursor: pointer;
+  &:hover {
+    -webkit-transform: scale(1.8);
+    transform: scale(1.1);
+    cursor: pointer;
+  }
 `;
 
 export const ContainerLyceen = styled.div`
@@ -98,4 +109,9 @@ export const Button3 = styled.button`
   font-size: 1em;
   font-family: "Roboto", sans-serif;
   cursor: pointer;
+  &:hover {
+    -webkit-transform: scale(1.8);
+    transform: scale(1.1);
+    cursor: pointer;
+  }
 `;
