@@ -9,18 +9,24 @@ import {
   Button3,
 } from "./style";
 
-const MenuButton = (handleChange) => {
+const MenuButton = ({ handleChangeTab }) => {
   return (
     <ButtonContainer>
       <Title>Vous êtes</Title>
       <ContainerEntreprise>
-        <Button1 onClick={handleChange}>UNE ENTREPRISE</Button1>
+        <Button1 id="entreprise" onClick={handleChangeTab}>
+          UNE ENTREPRISE
+        </Button1>
       </ContainerEntreprise>
       <ContainerEnseignant>
-        <Button2 onClick={handleChange}>UN ENSEIGNANT</Button2>
+        <Button2 id="enseignant" onClick={handleChangeTab}>
+          UN ENSEIGNANT
+        </Button2>
       </ContainerEnseignant>
       <ContainerLyceen>
-        <Button3 onClick={handleChange}>UN LYCEEN</Button3>
+        <Button3 id="lyceen" onClick={handleChangeTab}>
+          UN LYCEEN
+        </Button3>
       </ContainerLyceen>
     </ButtonContainer>
   );
