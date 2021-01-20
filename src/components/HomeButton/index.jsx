@@ -9,11 +9,12 @@ import {
   Button3,
 } from "./style";
 
-const MenuButton = ({activeId, handleChangeTab}) => {
+const MenuButton = ({ activeId, handleChangeTab }) => {
+  
   return (
     <ButtonContainer>
       <Title>Vous êtes</Title>
-      <ContainerEntreprise>
+      <ContainerEntreprise >
         <Button1 
         id="entreprise"
         onClick={handleChangeTab}
@@ -35,12 +36,13 @@ const MenuButton = ({activeId, handleChangeTab}) => {
         <Button3 
         id="lyceen"
         onClick={handleChangeTab}
-        className={activeId === 'lyceen' ? 'active' : ''}
+        className={activeId === 'enseignant' ? 'active' : ''}
         >
         UN LYCEEN
         </Button3>
       </ContainerLyceen>
     </ButtonContainer>
+
   );
 };
 

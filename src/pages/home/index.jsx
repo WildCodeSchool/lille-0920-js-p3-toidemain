@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import MenuButton from "../../components/HomeButton";
 import Slider from "../../components/MySlider/Slider";
 import images from "../../components/MySlider/img/images";
@@ -17,15 +17,12 @@ const Error = () => (
 );
 
 const Home = () => {
-  const [activeId, setActiveId ] = useState("entreprise")
+
+  const [activeId, setActiveId ] = useState("enseignant")
   
-  useEffect(() => {
-      getTabContent(activeId)
-    });
-  
-  const handleChangeTab = (event) => {
-    const buttonId= event.target.id;
-    setActiveId({activeId: buttonId})
+  const handleChangeTab = (e) => {
+    const buttonId = e.target.id;
+    setActiveId(buttonId)
     console.log(activeId)
     }
 
@@ -41,13 +38,13 @@ const Home = () => {
         return <Error />
       }
     }
-
+    
   return (
     <div>
       <Title titleName={"Accompagner les jeunes et réveler leurs talents"} />
       <HomeContainer>
-        <ColonneA>
-        {getTabContent()} 
+        <ColonneA >
+        {getTabContent()}
         </ColonneA>
         <Slider slides={images} autoPlay={50} />
         <MenuButton activeId={activeId} handleChangeTab={handleChangeTab} />
