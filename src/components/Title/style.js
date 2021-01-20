@@ -21,7 +21,7 @@ const TitleStyle = styled.div`
     color: #005542;
     font-size: 2em;
     background-color: #fff;
-    text-align: left;
+    text-align: right;
     padding-top: 5px;
     padding-left: 10px;
     padding-right: 10px;

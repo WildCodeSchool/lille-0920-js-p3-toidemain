@@ -18,7 +18,7 @@ const Header = () => {
           <p>Association déclarée - SIREN: 852 306 703 00012</p>
         </TopBorder>
         <HeaderBackground>
-          <LogoContainer>
+          <LogoContainer to="/">
             <img src="/images/logo_Header.png" alt="ToiDemain logo" />
           </LogoContainer>
           <ContactContainer>
