@@ -9,7 +9,6 @@ export default function Drivers() {
 	const [isOpen, setIsOpen] = useState(false);
 	const [hexaNumber, sethexaNumber] = useState(0);
 	const [widths] = useState(window.innerWidth);
-	const [SizeviewBox, setSizeviewBox] = useState("-76 -70 80 80");
 	const [sizeHexgrid, setSizeHexgrid] = useState({
 		width: 768,
 		height: 700,
@@ -17,10 +16,8 @@ export default function Drivers() {
 
 	useEffect(() => {
 		if (widths < 768) {
-			setSizeviewBox("-76 -70 80 80");
 			setSizeHexgrid({ width: 768, height: 450 });
 		} else {
-			setSizeviewBox("-76 -70 80 80");
 			setSizeHexgrid({ width: 768, height: 700 });
 		}
 	}, [widths]);
@@ -34,7 +31,7 @@ export default function Drivers() {
 				<HexGrid
 					width={sizeHexgrid.width}
 					height={sizeHexgrid.height}
-					viewBox={SizeviewBox}
+					viewBox={"-76 -70 80 80"}
 				>
 					<Layout
 						size={hexagonSize}
