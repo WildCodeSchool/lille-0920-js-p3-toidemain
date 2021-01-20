@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { setCurrent, deleteDate } from '../../../../redux/actions/DateActions';
+import { Unit } from './style';
 
 const DateItemAdmin = ({ info, setCurrent, deleteDate }) => {
   const onDelete = () => {
@@ -8,7 +9,7 @@ const DateItemAdmin = ({ info, setCurrent, deleteDate }) => {
     alert('Date Deleted');
   };
   return (
-    <li>
+    <Unit>
       <a href="#edit-date" onClick={() => setCurrent(info)}>
         <h3>{info.date}</h3>
         <h3>{info.message}</h3>
@@ -17,7 +18,7 @@ const DateItemAdmin = ({ info, setCurrent, deleteDate }) => {
         <i class="fas fa-trash-alt"></i>
       </a>
       <br />
-    </li>
+    </Unit>
   );
 };
 

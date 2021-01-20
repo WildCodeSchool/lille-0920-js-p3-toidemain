@@ -1,6 +1,6 @@
 import React from 'react';
 import DatesAdmin from './DatesAdmin/index';
-import EditDate from './DatesAdmin/EditDate';
+import EditDate from './DatesAdmin/EditDate/EditDate';
 import { Container } from './style';
 
 const Admin = () => {

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { connect } from 'react-redux';
-import { updateDate, AddDate } from '../../../redux/actions/DateActions';
+import { updateDate, AddDate } from '../../../../redux/actions/DateActions';
+import { Container } from './EditDate.Style';
 
 const EditDate = ({ current, updateDate, AddDate }) => {
   const [date, setDate] = useState('');
@@ -49,19 +50,21 @@ const EditDate = ({ current, updateDate, AddDate }) => {
   };
 
   return (
-    <div id="edit-date">
-      <h2>Enter Infos</h2>
-      <div>
+    <Container>
+      <form>
+        <h1>Enter Infos</h1>
+
         <input type="text" name="date" value={date} onChange={(e) => setDate(e.target.value)} />
-      </div>
-      <div>
+
         <input type="text" name="message" value={message} onChange={(e) => setMessage(e.target.value)} />
-      </div>
-      <div>
-        <input type="button" value={current ? 'Update' : 'Enter'} onClick={onSubmit} />
-        <input type="button" value="ADD" onClick={onAdd} />
-      </div>
-    </div>
+
+        <button onClick={onSubmit}>Update</button>
+        <button onClick={onAdd}>Add</button>
+      </form>
+
+      {/* <input type="button" value={current ? 'Update' : 'Enter'} onClick={onSubmit} />
+        <input type="button" value="ADD" onClick={onAdd} /> */}
+    </Container>
   );
 };
 
