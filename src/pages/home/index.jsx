@@ -17,35 +17,32 @@ const Error = () => (
 );
 
 const Home = () => {
+  const [activeId, setActiveId] = useState("enseignant");
 
-  const [activeId, setActiveId ] = useState("enseignant")
-  
   const handleChangeTab = (e) => {
     const buttonId = e.target.id;
-    setActiveId(buttonId)
-    console.log(activeId)
-    }
+    setActiveId(buttonId);
+    console.log(activeId);
+  };
 
-    const getTabContent = () => {
-      switch (activeId) {
-        case "entreprise":
-          return <EntrepriseText />;
-        case "enseignant" :
-          return <EnseignantText />;
-        case "lyceen" :
-          return <LyceenText />;
-        default :
-        return <Error />
-      }
+  const getTabContent = () => {
+    switch (activeId) {
+      case "entreprise":
+        return <EntrepriseText />;
+      case "enseignant":
+        return <EnseignantText />;
+      case "lyceen":
+        return <LyceenText />;
+      default:
+        return <Error />;
     }
-    
+  };
+
   return (
     <div>
       <Title titleName={"Accompagner les jeunes et réveler leurs talents"} />
       <HomeContainer>
-        <ColonneA >
-        {getTabContent()}
-        </ColonneA>
+        <ColonneA>{getTabContent()}</ColonneA>
         <Slider slides={images} autoPlay={50} />
         <MenuButton activeId={activeId} handleChangeTab={handleChangeTab} />
       </HomeContainer>

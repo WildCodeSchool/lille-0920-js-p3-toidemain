@@ -1,6 +1,6 @@
 import React from "react";
 import { TextContainer, Corner, CornerContainer } from "./style";
-import ContactButton from "../../components/ContactButton/index"
+import ContactButton from "../../components/ContactButton/index";
 
 export default function LyceenText() {
   return (

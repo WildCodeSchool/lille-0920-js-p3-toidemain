@@ -10,39 +10,37 @@ import {
 } from "./style";
 
 const MenuButton = ({ activeId, handleChangeTab }) => {
-  
   return (
     <ButtonContainer>
       <Title>Vous êtes</Title>
-      <ContainerEntreprise >
-        <Button1 
-        id="entreprise"
-        onClick={handleChangeTab}
-        className={activeId === 'entreprise' ? 'active' : ''}
+      <ContainerEntreprise>
+        <Button1
+          id="entreprise"
+          onClick={handleChangeTab}
+          className={activeId === "entreprise" ? "active" : ""}
         >
           UNE ENTREPRISE
         </Button1>
       </ContainerEntreprise>
       <ContainerEnseignant>
-        <Button2 
-        id="enseignant"
-        onClick={handleChangeTab}
-        className={activeId === 'enseignant' ? 'active' : ''}
-      >
-        UN ENSEIGNANT
+        <Button2
+          id="enseignant"
+          onClick={handleChangeTab}
+          className={activeId === "enseignant" ? "active" : ""}
+        >
+          UN ENSEIGNANT
         </Button2>
       </ContainerEnseignant>
       <ContainerLyceen>
-        <Button3 
-        id="lyceen"
-        onClick={handleChangeTab}
-        className={activeId === 'enseignant' ? 'active' : ''}
+        <Button3
+          id="lyceen"
+          onClick={handleChangeTab}
+          className={activeId === "enseignant" ? "active" : ""}
         >
-        UN LYCEEN
+          UN LYCEEN
         </Button3>
       </ContainerLyceen>
     </ButtonContainer>
-
   );
 };
 

@@ -1,6 +1,6 @@
 import React from "react";
 import { TextContainer, Corner, CornerContainer } from "./style";
-import StageUpButton from "../../components/StageUpButton/index"
+import StageUpButton from "../../components/StageUpButton/index";
 
 export default function EntrepriseText() {
   return (

@@ -9,10 +9,10 @@ export const HomeContainer = styled.div`
   }
 `;
 
-export const ColonneA =styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin-left: 2vw;
-    margin-right: 2vw;
-    `;
+export const ColonneA = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 2vw;
+  margin-right: 2vw;
+`;
