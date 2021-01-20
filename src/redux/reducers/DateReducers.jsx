@@ -1,7 +1,8 @@
-import { GET_DATES, ADD_DATE, DELETE_DATE, UPDATE_DATE, SET_LOADING, DATES_ERROR } from '../types';
+import { GET_DATES, ADD_DATE, DELETE_DATE, UPDATE_DATE, SET_LOADING, DATES_ERROR, CLEAR_CURRENT, SET_CURRENT } from '../types';
 
 const initialState = {
-  dates: null,
+  dates: [],
+  current: null,
   loading: false,
   error: null,
 };
@@ -30,6 +31,16 @@ export default (state = initialState, action) => {
       return {
         ...state,
         dates: state.dates.map((date) => (date.id === action.payload.id ? action.payload : date)),
+      };
+    case SET_CURRENT:
+      return {
+        ...state,
+        current: action.payload,
+      };
+    case CLEAR_CURRENT:
+      return {
+        ...state,
+        current: null,
       };
     case SET_LOADING:
       return {

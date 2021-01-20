@@ -5,3 +5,5 @@ export const UPDATE_DATE = 'UPDATE_DATE';
 export const CLEAR_DATES = 'CLEAR_DATES';
 export const SET_LOADING = 'SET_LOADING';
 export const DATES_ERROR = 'DATES_ERROR';
+export const SET_CURRENT = 'SET_CURRENT';
+export const CLEAR_CURRENT = 'DATES_ERROR';
