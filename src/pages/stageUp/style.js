@@ -3,7 +3,6 @@ import { device } from "../../layout/Devices";
 
 export const Main = styled.div`
   height: 370vh;
-  background-color: rgb(237, 237, 237);
   font-family: "Roboto", sans-serif;
   color: #02523f;
 

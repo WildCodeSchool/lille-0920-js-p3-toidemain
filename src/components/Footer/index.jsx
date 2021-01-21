@@ -27,13 +27,13 @@ const Footer = () => {
           <span>
             <img src="/images/icons/telephone.png" alt="tel" />
           </span>
-          &nbsp;&nbsp;09 50 79 61 59
+          &nbsp;&nbsp;07 50 99 82 88
         </p>
         <p>
           <span>
             <img src="/images/icons/email.png" alt="email" />
           </span>
-          &nbsp;&nbsp;toi-demain@gmail.com
+          &nbsp;&nbsp;contact@toidemain.fr
         </p>
       </Info>
       <Menu>

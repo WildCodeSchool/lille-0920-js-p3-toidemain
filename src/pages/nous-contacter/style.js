@@ -2,9 +2,8 @@ import styled from "styled-components";
 import { device } from "../../layout/Devices";
 
 export const ContactContainer = styled.div`
-  min-height: 80vh;
-  max-height: 150vh;
-  background-color: rgb(237, 249, 252);
+  height: 220vh;
+  background-image: url("/images/5per.jpeg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -32,14 +31,18 @@ export const ContactContainer = styled.div`
 `;
 export const Text = styled.div`
   width: 100%;
-  height: 10vh;
+  height: 8vh;
+  margin-top: 20vh;
+  margin-bottom: 10vh;
+  background-color: rgba(0, 0, 0, 0.3);
   h1 {
     font-size: 60px;
-    color: #1c819e;
+    color: white;
     font-family: "Roboto", sans-serif;
     font-weight: bold;
     text-align: center;
     padding-top: 3vh;
+    margin: auto 0;
   }
   @media ${device.smallScreen} {
     padding-bottom: 20px;
@@ -69,7 +72,7 @@ export const FormContainer = styled.div`
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    margin: 3vh auto 7vh auto;
+    margin: 3vh auto 20vh auto;
     width: 25vw;
     min-height: 40vh;
     max-height: 60vh;
