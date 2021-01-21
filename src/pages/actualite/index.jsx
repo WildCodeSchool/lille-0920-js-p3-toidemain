@@ -1,11 +1,12 @@
 import React from 'react';
 import Dates from '../../components/Dates/index';
+import { Container } from './style';
 
 const Actualite = () => {
   return (
-    <div>
+    <Container>
       <Dates />
-    </div>
+    </Container>
   );
 };
 

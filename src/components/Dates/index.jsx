@@ -3,6 +3,7 @@ import DateItem from './DateItem/index';
 import { getDates } from '../../redux/actions/DateActions';
 import { useDispatch, useSelector } from 'react-redux';
 import Spiner from '../../layout/spiner/Spiner';
+import { Events } from './style';
 
 const Dates = () => {
   const dispatch = useDispatch();
@@ -18,15 +19,15 @@ const Dates = () => {
   }
 
   return (
-    <div>
+    <Events>
       <ul>
         <li>
-          <h3>événements</h3>
+          <h2>événements</h2>
           <br />
         </li>
         {!loading && dates.length === 0 ? <p>No événements...</p> : dates.map((dat) => <DateItem {...dat} key={dat.id} />)}
       </ul>
-    </div>
+    </Events>
   );
 };
 
