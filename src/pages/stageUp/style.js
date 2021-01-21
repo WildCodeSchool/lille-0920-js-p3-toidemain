@@ -137,7 +137,7 @@ export const FirstUp = styled.div`
   width: 90%;
   h3 {
     text-align: center;
-    font-size: 1.8em;
+    font-size: 1.6em;
     width: 100%;
     margin: 2vh auto;
     line-height: 1.5em;
@@ -188,7 +188,7 @@ export const FirstUp = styled.div`
     width: 90%;
     h3 {
       text-align: center;
-      font-size: 1.8em;
+      font-size: 1.6em;
       width: 100%;
       margin: 2vh auto;
       line-height: 1.5em;
@@ -208,7 +208,7 @@ export const Firstdown = styled.div`
   h3 {
     background: rgba(2, 82, 63, 0.7);
     border-radius: 20px;
-    font-size: 1.2em;
+    font-size: 1.1em;
     width: 90%;
     margin: auto;
     line-height: 1.5em;
@@ -218,7 +218,7 @@ export const Firstdown = styled.div`
   }
   span {
     color: #ebb517;
-    font-size: 1.4em;
+    font-size: 1.3em;
   }
 
   @media ${device.mobile} {
@@ -293,7 +293,7 @@ export const Firstdown = styled.div`
     margin-top: 20vh;
     height: 70%;
     h3 {
-      font-size: 1.5em;
+      font-size: 1.4em;
       width: 50%;
       margin: auto;
       line-height: 1.5em;
@@ -303,7 +303,7 @@ export const Firstdown = styled.div`
     }
     span {
       color: #ebb517;
-      font-size: 1.4em;
+      font-size: 1.3em;
     }
   }
 `;
@@ -381,13 +381,13 @@ export const SecText = styled.div`
     color: #d6a002;
   }
   h2 {
-    font-size: 1.75em;
+    font-size: 1.65em;
     width: 80%;
     line-height: 2em;
     padding-left: 3vw;
   }
   h3 {
-    font-size: 2.5em;
+    font-size: 2.3em;
     width: 80%;
     color: white;
     background-color: rgba(2, 82, 63, 0.7);
@@ -465,13 +465,13 @@ export const SecText = styled.div`
       color: #d6a002;
     }
     h2 {
-      font-size: 1.75em;
+      font-size: 1.65em;
       width: 80%;
       line-height: 2em;
       padding-left: 3vw;
     }
     h3 {
-      font-size: 2.5em;
+      font-size: 2.3em;
       width: 80%;
       color: white;
       background-color: rgba(2, 82, 63, 0.7);
@@ -522,7 +522,7 @@ export const Topic = styled.div`
   margin: 8vh auto;
   width: 100%;
   h1 {
-    font-size: 3.5em;
+    font-size: 2.5em;
     text-align: center;
     color: white;
     background-color: rgba(2, 82, 63, 0.6);
@@ -557,7 +557,7 @@ export const Topic = styled.div`
   @media only screen and (min-width: 1281px) {
     margin: 8vh auto;
     h1 {
-      font-size: 3.5em;
+      font-size: 2.2em;
       text-align: center;
     }
   }
@@ -624,7 +624,7 @@ export const ListR = styled.div`
     margin: 5vh auto;
   }
   li {
-    font-size: 1.8em;
+    font-size: 1.4em;
     width: 90%;
     margin: 3vh 2vw;
     color: white;
@@ -694,7 +694,7 @@ export const ListR = styled.div`
       margin: 5vh auto;
     }
     li {
-      font-size: 1.8em;
+      font-size: 1.4em;
       width: 90%;
       margin: 3vh 2vw;
       color: white;
@@ -713,7 +713,7 @@ export const ListL = styled.div`
     margin: 4vh auto;
   }
   li {
-    font-size: 1.8em;
+    font-size: 1.4em;
     width: 90%;
     margin: 2vh auto;
     line-height: 1.25em;
@@ -783,7 +783,7 @@ export const ListL = styled.div`
       margin: 4vh auto;
     }
     li {
-      font-size: 1.8em;
+      font-size: 1.4em;
       width: 90%;
       margin: 2vh auto;
       line-height: 1.25em;
@@ -862,7 +862,7 @@ export const TextR = styled.div`
   height: 100%;
   p {
     font-size: 1.9em;
-    line-height: 1.75em;
+    line-height: 1.4em;
     width: 90%;
     margin: 6vh 2vw;
     color: white;
@@ -937,7 +937,7 @@ export const TextR = styled.div`
     height: 100%;
     p {
       font-size: 1.9em;
-      line-height: 1.75em;
+      line-height: 1.4em;
       width: 90%;
       margin: 6vh 2vw;
       color: white;
@@ -954,7 +954,7 @@ export const TextL = styled.div`
   width: 30%;
   p {
     font-size: 1.9em;
-    line-height: 1.75em;
+    line-height: 1.4em;
     width: 90%;
     margin: 6vh 1vw;
     color: #454545;
@@ -1029,7 +1029,7 @@ export const TextL = styled.div`
     width: 30%;
     p {
       font-size: 1.9em;
-      line-height: 1.75em;
+      line-height: 1.4em;
       width: 90%;
       margin: 6vh 1vw;
       color: #454545;
