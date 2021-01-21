@@ -54,16 +54,12 @@ const EditDate = ({ current, updateDate, AddDate }) => {
       <form>
         <h1>Enter Infos</h1>
 
-        <input type="text" name="date" value={date} onChange={(e) => setDate(e.target.value)} />
+        <input type="text" name="date" placeholder="Date" value={date} onChange={(e) => setDate(e.target.value)} />
 
-        <input type="text" name="message" value={message} onChange={(e) => setMessage(e.target.value)} />
+        <input type="text" name="message" placeholder="Message" value={message} onChange={(e) => setMessage(e.target.value)} />
 
-        <button onClick={onSubmit}>Update</button>
-        <button onClick={onAdd}>Add</button>
+        <button onClick={current ? onSubmit : onAdd}>{current ? 'Update' : 'Add'} </button>
       </form>
-
-      {/* <input type="button" value={current ? 'Update' : 'Enter'} onClick={onSubmit} />
-        <input type="button" value="ADD" onClick={onAdd} /> */}
     </Container>
   );
 };

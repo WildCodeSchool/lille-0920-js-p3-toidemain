@@ -48,17 +48,12 @@ export const Container = styled.div`
     background-size: 200px 100%;
     background-repeat: no-repeat;
     color: #02523f;
-    &:focus,
-    &:valid {
-      box-shadow: none;
-      outline: none;
-      background-position: 0 0;
-      &::-webkit-input-placeholder {
-        color: #02523f;
-        font-size: 11px;
-        transform: translateY(-20px);
-        visibility: visible !important;
-      }
+
+    &::-webkit-input-placeholder {
+      color: #02523f;
+      font-size: 11px;
+
+      visibility: visible !important;
     }
   }
 
@@ -68,7 +63,6 @@ export const Container = styled.div`
     cursor: pointer;
     border-radius: 3px;
     padding: 6px;
-    margin: 0.5vh 0;
     width: 200px;
     color: white;
     margin-left: 25px;
