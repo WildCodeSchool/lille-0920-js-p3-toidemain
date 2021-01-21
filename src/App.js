@@ -9,11 +9,7 @@ import StageUp from "./pages/stageUp/index";
 import Pedagogie from "./components/Pedagogie/index";
 import Atelier from "./components/Atelier";
 import Home from "./pages/home";
-<<<<<<< HEAD
-import { AppStyle } from "./style";
-=======
 import { AppStyle } from "./style.jsx";
->>>>>>> c8077b5187692d80e53b15881feb586477e63984
 
 function App() {
   return (
