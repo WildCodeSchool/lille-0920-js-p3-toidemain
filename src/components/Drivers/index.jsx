@@ -8,13 +8,18 @@ import driverItems from "./Modal/Data";
 export default function Drivers() {
   const [isOpen, setIsOpen] = useState(false);
   const [hexaNumber, sethexaNumber] = useState(0);
-  const [widths] = useState(window.innerWidth);
+  const [widths, setWidths] = useState(window.innerWidth);
   const [sizeHexgrid, setSizeHexgrid] = useState({
     width: 768,
     height: 700,
   });
 
+  const handleResize = (e) => {
+    setWidths(window.innerWidth);
+  };
   useEffect(() => {
+    window.addEventListener("resize", handleResize);
+
     if (widths < 768) {
       setSizeHexgrid({ width: 768, height: 450 });
     } else {
