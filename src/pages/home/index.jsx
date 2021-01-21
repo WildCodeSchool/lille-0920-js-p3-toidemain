@@ -4,6 +4,7 @@ import Slider from "../../components/MySlider/Slider";
 import images from "../../components/MySlider/img/images";
 import { HomeContainer } from "./style";
 import Quote from "../../components/MyQuote/index";
+import Drivers from "../../components/Drivers/index";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
         <MenuButton />
       </HomeContainer>
       <Quote />
+      <Drivers />
     </div>
   );
 };
