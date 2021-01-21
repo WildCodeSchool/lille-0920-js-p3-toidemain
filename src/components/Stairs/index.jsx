@@ -8,6 +8,7 @@ import {
   Box3,
   Box4,
   Box5,
+  Box6,
 } from "./style";
 
 const AnimStairs = () => {
@@ -29,6 +30,7 @@ const AnimStairs = () => {
         <Box5>
           <p>SE CHALLENGER</p>
         </Box5>
+        <Box6 />
       </Stairs>
       <Title>S'épanouir en s'amusant</Title>
     </Container>

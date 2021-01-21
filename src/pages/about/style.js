@@ -6,14 +6,20 @@ export const AboutContainer = styled.div`
 
   h1 {
     font-size: 2em;
-    color: #1c819e;
-    font-weight: bold;
+    background-color: #1c819e;
+    color: white;
+    padding: 0.2em;
+    margin-top: 3vh;
+    text-transform: uppercase;
+    display: inline-block;
+    opacity: 0.7;
   }
 
   h2 {
     font-size: 1.5em;
     color: #005542;
     font-weight: bold;
+    font-style: italic;
     margin-bottom: 5vh;
   }
 
@@ -32,22 +38,54 @@ export const AboutContainer = styled.div`
 
 export const Pledge = styled.div`
   margin: 5vh 0;
+`;
+
+export const PledgeBox = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5vh 10vw;
+  padding: 1em;
+  border-top: solid 5px #ffbe00;
+  border-bottom: solid 5px #ffbe00;
+  border-radius: 15px;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 
   p {
     font-weight: bold;
-    margin: 2vh 5vw;
+    padding: 4vh 5vw;
     font-size: 1.2em;
-    text-align: justify;
+    text-align: left;
+    line-height: 1.3em;
   }
 
   span {
     color: #ffbe00;
+    font-size: 1.2em;
+  }
+
+  li:before {
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    display: inline-block;
+    width: 1.3em;
+  }
+
+  img {
+    width: 20vw;
+    @media screen and (max-width: 768px) {
+      width: 50vw;
+    }
   }
 `;
 
 export const Cards = styled.div`
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: 0 5vw;
   @media screen and (max-width: 768px) {
     flex-direction: column;

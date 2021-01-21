@@ -1,7 +1,7 @@
 import React from "react";
 import AnimStairs from "../Stairs";
+import Title from "../../components/Title/index";
 import {
-  Title,
   Intro,
   Container1,
   CapitalL,
@@ -17,12 +17,13 @@ import {
   Logo,
   Orientoi,
   ColorB,
+  Stairs,
 } from "./style";
 const Pedagogie = () => {
   return (
     <div>
       <PedaContainer>
-        <Title>NOTRE PEDAGOGIE</Title>
+        <Title titleName="Notre pédagogie" />
         <Container1>
           <Intro>
             <CapitalL>Toi Demain</CapitalL> a une pédagogie d’apprentissage
@@ -30,7 +31,9 @@ const Pedagogie = () => {
             créer l’alliance avec les jeunes et de leur permettre d’apprendre en
             s’amusant.
           </Intro>
-          <AnimStairs />
+          <Stairs>
+            <AnimStairs />
+          </Stairs>
         </Container1>
 
         <Container2>

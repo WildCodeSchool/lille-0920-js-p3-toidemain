@@ -78,13 +78,31 @@ export const Box4 = styled.div`
   }
 `;
 export const Box5 = styled.div`
-  background-color: #f5e01d;
+  background-color: #ffbe00;
   font-family: "Oswald", Gadget, sans-serif;
   font-size: 15px;
   padding-top: 5px;
   color: white;
   width: 120px;
   height: 270px;
+  transition: height 0.5s;
+  transition-timing-function: linear;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 3px;
+  border-radius: 9px;
+  &:hover {
+    height: 330px;
+  }
+`;
+export const Box6 = styled.div`
+  background-color: white;
+  opacity: 0;
+  padding-top: 5px;
+  color: white;
+  width: 120px;
+  height: 330px;
   transition: height 0.5s;
   transition-timing-function: linear;
   display: flex;
@@ -113,7 +131,7 @@ export const Stairs = styled.div`
   padding-top: 14vh;
 `;
 export const Title = styled.h2`
-  font-family: "Oswald", Gadget, sans-serif;
+  font-family: "Roboto", Gadget, sans-serif;
   font-size: 1.5rem;
-  margin-top: 2vh;
+  margin-top: 1vh;
 `;

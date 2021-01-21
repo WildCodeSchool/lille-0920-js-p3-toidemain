@@ -21,7 +21,7 @@ export default function Navbar() {
 
           <DropdownItems>
             <Link to="/action/pedagogie">Notre Pédagogie</Link>
-            <a href="/ateliers">Nos Ateliers</a>
+            <Link to="/action/atelier">Nos Ateliers</Link>
             <a href="/stage-up">Stage-Up</a>
           </DropdownItems>
         </NavDropdown>
