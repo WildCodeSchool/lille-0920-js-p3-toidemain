@@ -7,12 +7,12 @@ export default function Navbar() {
     <NavContainer>
       <nav>
         <NavDropdown>
-          <a href="/">Qui Sommes Nous ?</a>
+          <Link href="/about">Qui Sommes Nous ?</Link>
 
           <DropdownItems>
-            <a href="/engagements">Notre Engagement</a>
-            <a href="/equipe">Notre Equipe</a>
-            <a href="/partenaires">Nos Partenaires</a>
+            <Link to="/about">Notre Engagement</Link>
+            <Link to="/about">Notre Equipe</Link>
+            <Link to="/about">Nos Partenaires</Link>
           </DropdownItems>
         </NavDropdown>
         |

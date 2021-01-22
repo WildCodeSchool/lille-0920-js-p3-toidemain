@@ -1,17 +1,17 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const TextContainer = styled.div`
   margin-top: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 320px;
-  height: 240px;
+  width: 20vw;
+  height: 50vh;
   z-index: 2;
   p {
-    font-family: "Roboto", sans-serif;
-    font-size: 1em;
-    color: #005542;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6em;
+    color: #1c819e;
     text-align: justify;
     line-height: 150%;
     background-color: transparent;
@@ -35,11 +35,11 @@ export const Corner = styled.div`
   width: 30px;
   height: 30px;
   &.top {
-    border-top: 3px solid #005542;
-    border-right: 3px solid #005542;
+    border-top: 3px solid #1c819e;
+    border-right: 3px solid #1c819e;
   }
   &.bottom {
-    border-bottom: 3px solid #005542;
-    border-left: 3px solid #005542;
+    border-bottom: 3px solid #1c819e;
+    border-left: 3px solid #1c819e;
   }
 `;
