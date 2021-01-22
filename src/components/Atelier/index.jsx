@@ -15,7 +15,7 @@ import { Link } from "react-router-dom";
 
 export default function Atelier() {
   return (
-    <Container id="atelier">
+    <Container>
       <Image src={"/images/Atelier.jpg"} alt={"atelier"} />
       <TextContainer>
         <MainTitle>

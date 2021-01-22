@@ -1,23 +1,23 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { NavContainer, NavDropdown, DropdownItems } from "./style";
-import { HashLink as Link } from "react-router-hash-link";
+import { HashLink } from "react-router-hash-link";
 
 export default function Navbar() {
   return (
     <NavContainer>
       <nav>
         <NavDropdown>
-          <a href="/">Qui Sommes Nous ?</a>
+          <Link to="/about">Qui Sommes Nous ?</Link>
 
           <DropdownItems>
             <Link to="/about">Notre Engagement</Link>
-            <Link smooth to="/about#equipe">
+            <HashLink smooth to="/about#equipe">
               Notre Equipe
-            </Link>
-            <Link smooth to="/about#partenaires">
+            </HashLink>
+            <HashLink smooth to="/about#partenaires">
               Nos Partenaires
-            </Link>
+            </HashLink>
           </DropdownItems>
         </NavDropdown>
         |
@@ -25,15 +25,13 @@ export default function Navbar() {
           <a href="#!">Nos Actions</a>
 
           <DropdownItems>
-            <Link to="/action#pedagogie">Notre Pédagogie</Link>
-            <Link smooth to="/action#atelier">
-              Nos Ateliers
-            </Link>
-            <Link to="/stageup">Stage-Up</Link>
+            <Link to="/action/pedagogie">Notre Pédagogie</Link>
+            <Link to="/action/atelier">Nos Ateliers</Link>
+            <Link to="/action/stageup">Stage-Up</Link>
           </DropdownItems>
         </NavDropdown>
-        |<a href="/soutien">Nous Soutenir</a>|
-        <a href="/actualite">Notre Actualité</a>|
+        |<Link href="/soutien">Nous Soutenir</Link>|
+        <Link href="/actualite">Notre Actualité</Link>|
         <Link to="/contacter">Nous Contacter</Link>
       </nav>
     </NavContainer>

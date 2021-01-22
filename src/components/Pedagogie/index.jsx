@@ -23,7 +23,7 @@ const Pedagogie = () => {
   return (
     <div>
       <PedaContainer>
-        <Title id="pedagogie">NOTRE PEDAGOGIE</Title>
+        <Title>NOTRE PEDAGOGIE</Title>
         <Container1>
           <Intro>
             <CapitalL>Toi Demain</CapitalL> a une pédagogie d’apprentissage
