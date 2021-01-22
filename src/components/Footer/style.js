@@ -14,7 +14,6 @@ export const FooterContainer = styled.div`
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
   @media ${device.mobile} {
     flex-direction: column;
     justify-content: center;
@@ -34,7 +33,6 @@ export const FooterContainer = styled.div`
 `;
 export const Info = styled.div`
   color: white;
-
   h3 {
     text-align: center;
     font-size: 22px;
@@ -98,7 +96,6 @@ export const Right = styled.div`
       color: #005542;
     }
   }
-
   @media ${device.mobile} {
     a {
       display: none;
@@ -116,12 +113,10 @@ export const Menu = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 2vh 0;
-
   p {
     color: white;
     padding-top: 2vh;
   }
-
   @media ${device.mobile} {
     padding: 0;
     p {
@@ -170,7 +165,6 @@ export const Icons = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-
   img {
     margin: 1vh 0.5vw;
   }

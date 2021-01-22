@@ -20,21 +20,20 @@ const Footer = () => {
             <span>
               <img src="/images/icons/location-pin.png" alt="gps" />
             </span>
-            3 Rue Des Freres Lefebvre
+            &nbsp;&nbsp;59390 Sailly-lez-Lannoy
           </p>
-          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 59390 Sailly-lez-Lannoy</p>
         </Adress>
         <p>
           <span>
             <img src="/images/icons/telephone.png" alt="tel" />
           </span>
-          09 50 79 61 59
+          &nbsp;&nbsp;07 50 99 82 88
         </p>
         <p>
           <span>
             <img src="/images/icons/email.png" alt="email" />
           </span>
-          toi-demain@gmail.com
+          &nbsp;&nbsp;contact@toidemain.fr
         </p>
       </Info>
       <Menu>
