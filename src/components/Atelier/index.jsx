@@ -11,11 +11,17 @@ import {
   SpanA,
   SpanB,
 } from "./style";
+import { Link } from "react-router-dom";
 
 export default function Atelier() {
   return (
+<<<<<<< HEAD
     <Container id="atelier">
       <Image src={"/images/Atelier.jpg"} alt={"atelier"} />
+=======
+    <Container>
+      <Image src="/images/atelierbis.jpg" alt="atelier" />
+>>>>>>> 60cdc9b2b9d5e65d8aec10d0997a981e2c2ad0fe
       <TextContainer>
         <MainTitle>
           <SpanA>Toi Demain </SpanA>propose et organise des ateliers à
@@ -23,13 +29,19 @@ export default function Atelier() {
           professionnelles
         </MainTitle>
         <Paragraph>
-          Afin d'aider les élèves dans leurs recherches d'emploi et de stage,
-          l'association toi demain met en place des ateliers d'aide à la
-          préparation de candidatures (CV, lettre de motivation, entretien). Les
-          élèves ont également la possibilité de participer à des ateliers plus
-          spécialisés. Au-delà des compétences développées à cette occasion, ces
-          ateliers permettent aux élèves de &nbsp;
-          <SpanB>nouer des liens avec les professionnels présents.</SpanB>
+          Vous êtes une association ? un établissement scolaire ? une fondation?
+          une entreprise ? une collectivité ? Toi demain propose et organise des
+          <SpanB>&nbsp;ateliers sur mesures </SpanB>pour accompagner les jeunes
+          dans leur orientation professionnelle et leur permettre de révéler
+          leurs talents ! fort de notre expérience avec le public des jeunes de
+          <SpanB>&nbsp;15 à 25 ans de tous horizons,&nbsp;</SpanB>
+          nous nous adaptons à leurs besoins. Nos coachs de terrain aiment
+          innover et co-créer de nouveaux programmes pour faire grandir les
+          jeunes en accord avec &nbsp;
+          <Link to="/action/pedagogie">notre pédagogie.</Link>&nbsp; Ils
+          interviennent régulièrement dans des grandes écoles , des universités,
+          dans des établissements scolaires et dans des associations. Nos mots
+          clés : <SpanB>apprendre en s'amusant! </SpanB>
         </Paragraph>
       </TextContainer>
       <PromisesContainer>

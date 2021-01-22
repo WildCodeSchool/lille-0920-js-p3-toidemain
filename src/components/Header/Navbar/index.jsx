@@ -11,6 +11,7 @@ export default function Navbar() {
           <a href="/">Qui Sommes Nous ?</a>
 
           <DropdownItems>
+<<<<<<< HEAD
             <Link to="/about">Notre Engagement</Link>
             <Link smooth to="/about#equipe">
               Notre Equipe
@@ -18,10 +19,16 @@ export default function Navbar() {
             <Link smooth to="/about#partenaires">
               Nos Partenaires
             </Link>
+=======
+            <a href="/engagements">Notre Engagement</a>
+            <a href="/equipe">Notre Equipe</a>
+            <a href="/partenaires">Nos Partenaires</a>
+>>>>>>> 60cdc9b2b9d5e65d8aec10d0997a981e2c2ad0fe
           </DropdownItems>
         </NavDropdown>
         |
         <NavDropdown>
+<<<<<<< HEAD
           <a href="#!">Nos Actions</a>
 
           <DropdownItems>
@@ -30,6 +37,14 @@ export default function Navbar() {
               Nos Ateliers
             </Link>
             <Link to="/stageup">Stage-Up</Link>
+=======
+          <a href="/action/pedagogie">Nos Actions</a>
+
+          <DropdownItems>
+            <Link to="/action/pedagogie">Notre Pédagogie</Link>
+            <Link to="/action/atelier">Nos Ateliers</Link>
+            <Link to="/action/stageup">Stage-Up</Link>
+>>>>>>> 60cdc9b2b9d5e65d8aec10d0997a981e2c2ad0fe
           </DropdownItems>
         </NavDropdown>
         |<a href="/soutien">Nous Soutenir</a>|

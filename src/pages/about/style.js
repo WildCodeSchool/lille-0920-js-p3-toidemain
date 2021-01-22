@@ -58,12 +58,20 @@ export const PledgeBox = styled.div`
     font-weight: bold;
     padding: 4vh 5vw;
     font-size: 1.2em;
-    text-align: center;
+    text-align: left;
+    line-height: 1.3em;
   }
 
   span {
     color: #ffbe00;
     font-size: 1.2em;
+  }
+
+  li:before {
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    display: inline-block;
+    width: 1.3em;
   }
 
   img {
@@ -76,7 +84,8 @@ export const PledgeBox = styled.div`
 
 export const Cards = styled.div`
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: 0 5vw;
   @media screen and (max-width: 768px) {
     flex-direction: column;

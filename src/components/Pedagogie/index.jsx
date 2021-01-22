@@ -1,7 +1,7 @@
 import React from "react";
 import AnimStairs from "../Stairs";
+import Title from "../../components/Title/index";
 import {
-  Title,
   Intro,
   Container1,
   CapitalL,
