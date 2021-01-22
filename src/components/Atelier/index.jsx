@@ -15,13 +15,8 @@ import { Link } from "react-router-dom";
 
 export default function Atelier() {
   return (
-<<<<<<< HEAD
     <Container id="atelier">
       <Image src={"/images/Atelier.jpg"} alt={"atelier"} />
-=======
-    <Container>
-      <Image src="/images/atelierbis.jpg" alt="atelier" />
->>>>>>> 60cdc9b2b9d5e65d8aec10d0997a981e2c2ad0fe
       <TextContainer>
         <MainTitle>
           <SpanA>Toi Demain </SpanA>propose et organise des ateliers à
