@@ -25,7 +25,7 @@ export default function Navbar() {
             <Link to="/action/stageup">Stage-Up</Link>
           </DropdownItems>
         </NavDropdown>
-        |<a href="/soutenir">Nous Soutenir</a>|
+        |<Link to="/soutenir">Nous Soutenir</Link>|
         <a href="/actualite">Notre Actualité</a>|
         <Link to="/contacter">Nous Contacter</Link>
       </nav>
