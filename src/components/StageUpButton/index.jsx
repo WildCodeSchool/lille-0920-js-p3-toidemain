@@ -1,13 +1,13 @@
-import { MainButton, Span } from "./style";
-import { Link } from "react-router-dom";
+import { MainButton, Span, Path } from "./style";
+
 
 const StageUpButton = () => {
   return (
     <MainButton>
       Découvrez notre programme <br />
-      <Link to="/contacter">
+      <Path to="/action/stageup">
         <Span>Stage Up</Span>
-      </Link>
+      </Path>
     </MainButton>
   );
 };

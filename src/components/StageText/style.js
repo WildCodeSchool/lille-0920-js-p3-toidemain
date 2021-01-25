@@ -5,13 +5,12 @@ export const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 320px;
-  height: 240px;
+  width: 20vw;
+  height: 50vh;
   z-index: 2;
-
   p {
     font-family: "Roboto", sans-serif;
-    font-size: 1em;
+    font-size: 1.6em;
     color: #005542;
     text-align: justify;
     line-height: 150%;

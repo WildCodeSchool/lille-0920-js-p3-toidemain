@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { device } from "../../layout/Devices";
+import { Link } from "react-router-dom";
 
 export const MainButton = styled.button`
   background-color: #005542;
@@ -7,7 +8,7 @@ export const MainButton = styled.button`
   border-radius: 10px 10px 10px 10px;
   color: #fff;
   font-size: 1.2em;
-  line-height: 2em;
+  line-height: 2.5em;
   letter-spacing: 1px;
   padding: 15px 10px 15px 10px;
   font-family: "Roboto", sans-serif;
@@ -25,5 +26,11 @@ export const Span = styled.span`
   color: #fff;
   border: solid white 1px;
   padding: 8px 8px 8px 8px;
-  text-decoration: none;
+  &:link {
+    text-decoration: none;
+}
+`;
+
+export const Path=styled(Link)`
+text-decoration: none;
 `;

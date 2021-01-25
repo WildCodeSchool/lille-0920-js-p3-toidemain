@@ -1,12 +1,13 @@
-import { MainButton } from "./style";
-import { Link } from "react-router-dom";
+import { MainButton, Span, Path } from "./style";
+
 
 const ContactButton = () => {
   return (
     <MainButton>
-      <Link to="/contacter">
-      Contactez-nous <br />
-      </Link>
+      En savoir plus <br/>
+      <Path to="/contacter">
+      <Span>Contactez-nous</Span>
+      </Path>
     </MainButton>
   );
 };
