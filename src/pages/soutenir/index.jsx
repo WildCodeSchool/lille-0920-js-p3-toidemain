@@ -26,7 +26,6 @@ import {
 
 const Soutenir = () => {
   return (
-    <>
       <SoutenirContainer>
         <Title titleName="Nous soutenir" />
         <SoutenirBox>
@@ -123,7 +122,6 @@ const Soutenir = () => {
           </BContainer>
         </SoutenirBox>
       </SoutenirContainer>
-    </>
   );
 };
 export default Soutenir;
