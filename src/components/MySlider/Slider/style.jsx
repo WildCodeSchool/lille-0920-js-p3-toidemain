@@ -9,7 +9,7 @@ export const SliderDiv = styled.div`
   overflow: hidden;
   @media ${device.mobile} {
     height: 60vh;
-  width: 90vw;
-  margin-top: 2vh;
+    width: 90vw;
+    margin-top: 2vh;
   }
 `;

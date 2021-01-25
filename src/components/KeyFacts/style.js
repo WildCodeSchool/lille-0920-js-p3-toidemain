@@ -37,22 +37,21 @@ export const Fact = styled.div`
     color: #ffbe00;
     font-size: 1.8em;
     @media ${device.mobile} {
-    font-size: 1.6em;
-  }
-    
+      font-size: 1.6em;
+    }
   }
 
   h2 {
     font-size: 1.8em;
     color: #005542;
     @media ${device.mobile} {
-    font-size: 1em;
-  }
+      font-size: 1em;
+    }
   }
 
   p {
     @media ${device.mobile} {
-    font-size: 0.8em;
-  }
+      font-size: 0.8em;
+    }
   }
 `;

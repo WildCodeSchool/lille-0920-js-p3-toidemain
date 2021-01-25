@@ -34,7 +34,7 @@ export const ContainerEntreprise = styled.div`
   background-color: #005542;
   border-top-left-radius: 10px;
   padding: 2px 2px 2px 2px;
-  margin-bottom: 2px; 
+  margin-bottom: 2px;
   @media ${device.tablet} {
     width: 80%;
     font-size: 1.3em;
@@ -85,7 +85,6 @@ export const Button2 = styled.button`
     transform: scale(1.1);
     cursor: pointer;
   }
-
 `;
 
 export const ContainerLyceen = styled.div`

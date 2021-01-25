@@ -12,16 +12,15 @@ export const MainButton = styled.button`
   letter-spacing: 1px;
   padding: 15px 10px 15px 10px;
   font-family: "Roboto", sans-serif;
-  
+
   @media ${device.mobile} {
     display: flex;
     justify-content: space-around;
     font-size: 0.8em;
-  letter-spacing: 1px;
-  padding: 15px 10px 15px 10px;
-  margin-top: 15px;
+    letter-spacing: 1px;
+    padding: 15px 10px 15px 10px;
+    margin-top: 15px;
   }
-
 `;
 
 export const Span = styled.span`
@@ -31,9 +30,9 @@ export const Span = styled.span`
   padding: 8px 8px 8px 8px;
   &:link {
     text-decoration: none;
-}
+  }
 `;
 
-export const Path=styled(Link)`
-text-decoration: none;
+export const Path = styled(Link)`
+  text-decoration: none;
 `;

@@ -8,7 +8,7 @@ import KeyFacts from "../../components/KeyFacts/index";
 import EntrepriseText from "../../components/ButtonTextA";
 import EnseignantText from "../../components/ButtonTextB";
 import LyceenText from "../../components/ButtonTextC";
-import StageText from "../../components/StageText"
+import StageText from "../../components/StageText";
 
 const Home = () => {
   const [activeId, setActiveId] = useState("");

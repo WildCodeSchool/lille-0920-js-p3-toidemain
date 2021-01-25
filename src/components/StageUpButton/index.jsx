@@ -1,6 +1,5 @@
 import { MainButton, Span, Path } from "./style";
 
-
 const StageUpButton = () => {
   return (
     <MainButton>

@@ -10,14 +10,14 @@ export const TextContainer = styled.div`
   height: 50vh;
   z-index: 2;
   @media ${device.mobile} {
-   width:100%;
-   height:10%;
-   margin-top: 2px;
+    width: 100%;
+    height: 10%;
+    margin-top: 2px;
   }
   @media ${device.tablet} {
-   width:100%;
-   height:10%;
-   margin-top: 2px;
+    width: 100%;
+    height: 10%;
+    margin-top: 2px;
   }
   p {
     font-family: "Roboto", sans-serif;
@@ -29,8 +29,8 @@ export const TextContainer = styled.div`
     padding-right: 30px;
     padding-left: 30px;
     @media ${device.mobile} {
-   font-size: 1em;
-  }
+      font-size: 1em;
+    }
   }
 `;
 
