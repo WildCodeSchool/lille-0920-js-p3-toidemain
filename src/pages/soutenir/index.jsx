@@ -107,14 +107,18 @@ const Soutenir = () => {
                 </Liste>
               </ul>
             </Text3>
-            <Img src="/images/stageUp.png" alt="logo Listeen Stage Up" />
+            <Link to="/action/stageup">
+              <Img src="/images/stageUp.png" alt="logo Listeen Stage Up" />
+            </Link>
           </Container3>
           <Container4>
             <TitleBox4>Vous êtes un étabListessement scolaire ?</TitleBox4>
             <Text4>
               Donnez la chance à vos élèves de participer au programme stage up!
             </Text4>
-            <Img src="/images/stageUpWhite.png" alt="logo Listeen Stage Up" />
+            <Link to="/action/stageup">
+              <Img src="/images/stageUpWhite.png" alt="logo Listeen Stage Up" />
+            </Link>
           </Container4>
         </BContainer>
       </SoutenirBox>
