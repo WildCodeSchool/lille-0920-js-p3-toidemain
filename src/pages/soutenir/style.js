@@ -103,11 +103,11 @@ export const Img = styled.img`
   margin-left: 21vw;
   margin-top: -4vh;
   @media ${device.mobile} {
-    margin-left:40vw;
+    margin-left: 40vw;
     margin-top: 1vh;
   }
   @media ${device.tablet} {
-    margin-left:40vw;
+    margin-left: 40vw;
     margin-top: 1vh;
   }
 `;
@@ -180,10 +180,9 @@ export const Button = styled.div`
   }
   @media ${device.mobile} {
     margin: 5vh;
- }
+  }
   @media ${device.tablet} {
     margin: 5vh;
-    
   }
 `;
 
@@ -203,10 +202,9 @@ export const Button1 = styled.div`
     }
   }
   @media ${device.mobile} {
-   margin: 5vh;
+    margin: 5vh;
   }
   @media ${device.tablet} {
     margin: 5vh;
   }
-
 `;
