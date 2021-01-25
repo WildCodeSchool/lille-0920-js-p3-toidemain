@@ -14,10 +14,21 @@ export const MainButton = styled.button`
   font-family: "Roboto", sans-serif;
   
   @media ${device.mobile} {
+    display: flex;
+    justify-content: space-around;
     font-size: 0.8em;
+  letter-spacing: 1px;
+  padding: 15px 10px 15px 10px;
+  margin-top: 15px;
   }
-  @media ${device.tablet} {
-    font-size: 1em;
+  @media ${device.tabletl} {
+    display: flex;
+    justify-content: space-around;
+    font-size: 0.8em;
+  letter-spacing: 1px;
+  padding: 15px 10px 15px 10px;
+  margin-top: 15px;
+  font-size:1.4em;
   }
 `;
 

@@ -11,11 +11,23 @@ export const MainButton = styled.button`
   line-height: 2.5em;
   letter-spacing: 1px;
   padding: 15px 10px 15px 10px;
+  font-family: "Roboto", sans-serif;
   @media ${device.mobile} {
-    font-size: 0.6em;
-  }
-  @media ${device.tablet} {
+    display: flex;
+    justify-content: space-around;
     font-size: 0.8em;
+  letter-spacing: 1px;
+  padding: 15px 10px 15px 10px;
+  margin-top: 15px;
+  }
+  @media ${device.tabletl} {
+    display: flex;
+    justify-content: space-around;
+    font-size: 0.8em;
+  letter-spacing: 1px;
+  padding: 15px 10px 15px 10px;
+  margin-top: 15px;
+  font-size:1.4em;
   }
   &:link {
     text-decoration: none;
