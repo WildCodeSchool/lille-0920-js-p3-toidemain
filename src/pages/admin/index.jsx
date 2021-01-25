@@ -1,13 +1,19 @@
 import React from 'react';
 import DatesAdmin from './DatesAdmin/index';
 import EditDate from './DatesAdmin/EditDate/EditDate';
-import { Container } from './style';
+import GalleryAdmin from './GalleryAdmin';
+import { Container, Venir, Passe } from './style';
 
 const Admin = () => {
   return (
     <Container>
-      <DatesAdmin />
-      <EditDate />
+      <Venir>
+        <DatesAdmin />
+        <EditDate />
+      </Venir>
+      <Passe>
+        <GalleryAdmin />
+      </Passe>
     </Container>
   );
 };
