@@ -36,7 +36,7 @@ const About = () => {
       </Pledge>
 
       <div id="equipe">
-        <Title titleName="L'Equipe de Toi Demain" />
+        <h1>L'Equipe de Toi Demain</h1>
         <Cards>
           {portraitItems.map((item) => (
             <Member item={item} key={item.name} />
@@ -45,8 +45,8 @@ const About = () => {
         <h2>+ Une équipe de coachs partenaires, formés par Toi Demain!</h2>
       </div>
 
-      <div>
-        <Title titleName="Nos partenaires" />
+      <div id="partenaires">
+        <h1>Nos partenaires</h1>
         <Partners>
           <img src="/images/idkids.png" alt="id kids" />
           <img src="/images/kiabi.png" alt="kiabi" />

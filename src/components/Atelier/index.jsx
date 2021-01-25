@@ -16,7 +16,7 @@ import { Link } from "react-router-dom";
 export default function Atelier() {
   return (
     <Container>
-      <Image src="/images/atelierbis.jpg" alt="atelier" />
+      <Image src="/images/Atelier.jpg" alt="atelier" />
       <TextContainer>
         <MainTitle>
           <SpanA>Toi Demain </SpanA>propose et organise des ateliers à
