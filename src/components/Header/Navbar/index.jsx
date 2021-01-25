@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { NavContainer, NavDropdown, DropdownItems } from './style';
+import { HashLink } from 'react-router-hash-link';
 
 export default function Navbar() {
   return (
@@ -11,13 +12,17 @@ export default function Navbar() {
 
           <DropdownItems>
             <Link to="/about">Notre Engagement</Link>
-            <Link to="/about">Notre Equipe</Link>
-            <Link to="/about">Nos Partenaires</Link>
+            <HashLink smooth to="/about#equipe">
+              Notre Equipe
+            </HashLink>
+            <HashLink smooth to="/about#partenaires">
+              Nos Partenaires
+            </HashLink>
           </DropdownItems>
         </NavDropdown>
         |
         <NavDropdown>
-          <a href="/action/pedagogie">Nos Actions</a>
+          <Link to="/action/pedagogie">Nos Actions</Link>
 
           <DropdownItems>
             <Link to="/action/pedagogie">Notre Pédagogie</Link>
@@ -25,7 +30,7 @@ export default function Navbar() {
             <Link to="/action/stageup">Stage-Up</Link>
           </DropdownItems>
         </NavDropdown>
-        |<a href="/soutien">Nous Soutenir</a>|<Link to="/actualite">Notre Actualité</Link>|<Link to="/contacter">Nous Contacter</Link>
+        |<Link to="/soutien">Nous Soutenir</Link>|<Link to="/actualite">Notre Actualité</Link>|<Link to="/contacter">Nous Contacter</Link>
       </nav>
     </NavContainer>
   );

@@ -13,32 +13,6 @@ import { AppStyle } from './style';
 import StageUp from './pages/stageUp/index';
 import Atelier from './components/Atelier';
 
-// function App() {
-//   return (
-//     <>
-//     <AppStyle>
-//       <Reset />
-//       <AppStyle>
-//         <Router>
-//           <Header />
-//           <Switch>
-//             <Route exact path="/" component={Home} />
-//             <Route exact path="/about" component={About} />
-//             <Route exact path="/contacter" component={Contacter} />
-//             <Route exact path="/action/stageup" component={StageUp} />
-//             <Route exact path="/action/pedagogie" component={Pedagogie} />
-//             <Route exact path="/actualite" component={Actualite} />
-//             <Route exact path="/admin" component={Admin} />
-//             <Route exact path="/action/atelier" component={Atelier} />
-//           </Switch>
-//           <Footer />
-//         </Router>
-//       </AppStyle>
-//     </>
-//   );
-// }
-
-// export default App;
 function App() {
   return (
     <>

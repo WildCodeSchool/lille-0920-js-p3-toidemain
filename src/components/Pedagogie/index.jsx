@@ -6,7 +6,7 @@ const Pedagogie = () => {
   return (
     <div>
       <PedaContainer>
-        <Title titleName="Notre pédagogie" />
+        <Title>NOTRE PEDAGOGIE</Title>
         <Container1>
           <Intro>
             <CapitalL>Toi Demain</CapitalL> a une pédagogie d’apprentissage basée sur l’expérimentation. Il est essentiel pour nos équipes de créer l’alliance avec les jeunes et de leur permettre d’apprendre en s’amusant.
