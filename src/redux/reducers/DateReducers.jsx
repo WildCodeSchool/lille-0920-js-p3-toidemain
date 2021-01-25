@@ -24,7 +24,7 @@ export default (state = initialState, action) => {
     case DELETE_DATE:
       return {
         ...state,
-        notes: state.dates.filter((date) => date.id !== action.payload),
+        dates: state.dates.filter((date) => date.id !== action.payload),
         loading: false,
       };
     case UPDATE_DATE:

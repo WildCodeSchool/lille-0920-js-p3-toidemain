@@ -1,11 +1,34 @@
 import React, { useState } from 'react';
+import { connect } from 'react-redux';
+import { AddGallery } from '../../../../redux/actions/GalleryActions';
 import { Container, Form, Flex } from './GalleryEditAdmin.style.js';
 
-const GalleryEditAdmin = () => {
+const GalleryEditAdmin = ({ AddGallery }) => {
   const [images, setImages] = useState(['']);
   const [title, setTitle] = useState('');
   const [date, setDate] = useState('');
   const [text, setText] = useState('');
+
+  const onAdd = () => {
+    if (images === '' || date === '' || title === '' || text === '') {
+      alert('Please enter all fields');
+    } else {
+      const newGallery = {
+        title,
+        date,
+        text,
+        images,
+      };
+      AddGallery(newGallery);
+
+      alert('Gallery added');
+      //clear fields
+      setImages('');
+      setTitle('');
+      setText('');
+      setDate('');
+    }
+  };
 
   const handleInputChange = (e, index) => {
     const { value } = e.target;
@@ -47,10 +70,10 @@ const GalleryEditAdmin = () => {
             </Flex>
           );
         })}
-        <button>Submit</button>
+        <button onClick={onAdd}>Submit</button>
       </Form>
     </Container>
   );
 };
 
-export default GalleryEditAdmin;
+export default connect(null, { AddGallery })(GalleryEditAdmin);

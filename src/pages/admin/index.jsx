@@ -9,7 +9,6 @@ const Admin = () => {
     <Container>
       <Venir>
         <DatesAdmin />
-        <EditDate />
       </Venir>
       <Passe>
         <GalleryAdmin />

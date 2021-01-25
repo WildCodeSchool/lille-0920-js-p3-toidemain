@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+  width: 50%;
   h2 {
     text-align: center;
     font-size: 24px;
