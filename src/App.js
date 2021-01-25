@@ -54,6 +54,7 @@ function App() {
             <Route exact path="/action/pedagogie" component={Pedagogie} />
             <Route exact path="/action/atelier" component={Atelier} />
             <Route exact path="/admin" component={Admin} />
+            <Route exact path="/actualite" component={Actualite} />
           </Switch>
           <Footer />
         </Router>

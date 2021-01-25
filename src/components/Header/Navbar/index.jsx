@@ -7,7 +7,7 @@ export default function Navbar() {
     <NavContainer>
       <nav>
         <NavDropdown>
-          <Link href="/about">Qui Sommes Nous ?</Link>
+          <Link to="/about">Qui Sommes Nous ?</Link>
 
           <DropdownItems>
             <Link to="/about">Notre Engagement</Link>
@@ -25,7 +25,7 @@ export default function Navbar() {
             <Link to="/action/stageup">Stage-Up</Link>
           </DropdownItems>
         </NavDropdown>
-        |<a href="/soutien">Nous Soutenir</a>|<a href="/actualite">Notre Actualité</a>|<Link to="/contacter">Nous Contacter</Link>
+        |<a href="/soutien">Nous Soutenir</a>|<Link to="/actualite">Notre Actualité</Link>|<Link to="/contacter">Nous Contacter</Link>
       </nav>
     </NavContainer>
   );

@@ -22,7 +22,7 @@ const Dates = () => {
     <Events>
       <ul>
         <li>
-          <h2>événements</h2>
+          <h2>Stages et Ateliers à Venir</h2>
           <br />
         </li>
         {!loading && dates.length === 0 ? <p>No événements...</p> : dates.map((dat) => <DateItem {...dat} key={dat.id} />)}

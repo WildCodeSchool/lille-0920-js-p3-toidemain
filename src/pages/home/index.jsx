@@ -9,6 +9,7 @@ import Title from '../../components/Title/index';
 import EntrepriseText from '../../components/ButtonTextA';
 import EnseignantText from '../../components/ButtonTextB';
 import LyceenText from '../../components/ButtonTextC';
+import Drivers from '../../components/Drivers/index';
 
 const Error = () => (
   <p>
@@ -47,6 +48,7 @@ const Home = () => {
       </HomeContainer>
       <Quote />
       <KeyFacts />
+      <Drivers />
     </PageContainer>
   );
 };
