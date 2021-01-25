@@ -6,6 +6,7 @@ export const Container = styled.div`
   justify-content: space-around;
   align-items: center;
   margin-top: 10vh;
+  font-family: "Roboto", sans-serif;
   @media ${device.mobile} {
     flex-direction: column;
     align-items: center;
@@ -21,8 +22,8 @@ export const Container = styled.div`
 `;
 
 export const Image = styled.img`
-  max-width: 550px;
-  max-height: 388px;
+  max-width: 3024px;
+  max-height: 3532px;
   width: 30%;
   height: auto;
   box-shadow: 10px 5px 5px grey;
@@ -70,17 +71,19 @@ export const TextContainer = styled.div`
 
 export const MainTitle = styled.h2`
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.7em;
   font-weight: 800;
   margin-top: 45px;
   margin-bottom: 45px;
   line-height: 1.5em;
+  color: #005542;
 `;
 
 export const Paragraph = styled.p`
   text-align: justify;
   font-size: 1.5em;
   line-height: 1.5em;
+  color: #005542;
 `;
 
 export const PromisesContainer = styled.ul`
@@ -91,6 +94,7 @@ export const PromisesContainer = styled.ul`
   background: #ffbe00;
   font-size: 1.5em;
   line-height: 35px;
+  font-family: "Roboto", sans-serif;
   @media ${device.mobile} {
     width: 90%;
   }
