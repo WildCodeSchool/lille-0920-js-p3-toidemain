@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { device } from "../../layout/Devices";
+
 
 export const SoutenirContainer = styled.div`
   width: 100vw;
@@ -11,6 +13,12 @@ background-color: white;
 border-radius: 5px;
 margin: 1vw;
 padding: 1vh;
+@media ${device.mobile} {
+    width:90vw;
+  }
+  @media ${device.tablet} {
+    width:90vw;
+  }
 }
 `;
 export const Container2 = styled.div`
@@ -19,6 +27,12 @@ export const Container2 = styled.div`
   border-radius: 5px;
   margin: 1vw;
   padding: 1vh;
+  @media ${device.mobile} {
+    width:90vw;
+  }
+  @media ${device.tablet} {
+    width:90vw;
+  }
 `;
 export const Container3 = styled.div`
   display: flex;
@@ -29,6 +43,12 @@ export const Container3 = styled.div`
   border-radius: 5px;
   margin: 1vw;
   padding: 1vh;
+  @media ${device.mobile} {
+    width:90vw;
+  }
+  @media ${device.tablet} {
+    width:90vw;
+  }
 `;
 export const Container4 = styled.div`
   border-radius: 5px;
@@ -38,6 +58,12 @@ export const Container4 = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media ${device.mobile} {
+    width:90vw;
+  }
+  @media ${device.tablet} {
+    width:90vw;
+  }
 `;
 
 export const SoutenirBox = styled.div`
@@ -46,12 +72,23 @@ export const SoutenirBox = styled.div`
   flex-direction: row;
   flex-wrap: nowrap;
   margin-top: 5vh;
+  @media ${device.mobile} {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  @media ${device.tablet} {
+    display: flex;
+    flex-direction: column;
+    
+  }
 `;
 
 export const TitleBox4 = styled.h2`
   font-size: 1.6rem;
   text-align: center;
   color: white;
+  
 `;
 export const Text4 = styled.p`
   font-size: 1.2rem;
