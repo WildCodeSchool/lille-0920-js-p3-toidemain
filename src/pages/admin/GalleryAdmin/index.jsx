@@ -4,7 +4,7 @@ import GalleryItemAdmin from './GalerryItemAdmin';
 import { useDispatch, useSelector } from 'react-redux';
 import { getGalleries } from '../../../redux/actions/GalleryActions';
 import Spiner from '../../../layout/spiner/Spiner';
-import { Container } from './style';
+import { Container, List, Plist } from './style';
 
 const GalleryAdmin = () => {
   const dispatch = useDispatch();
@@ -21,12 +21,13 @@ const GalleryAdmin = () => {
 
   return (
     <Container>
+      <h1>événements Passeé</h1>
       <div>
-        <h1>événements Passeé</h1>
-        <br />
-        <ul>{!loading && galleries.length === 0 ? <p>No événements...</p> : galleries.map((gallery) => <GalleryItemAdmin {...gallery} key={gallery.id} />)}</ul>
+        <List>
+          <Plist>{!loading && galleries.length === 0 ? <p>No événements...</p> : galleries.map((gallery) => <GalleryItemAdmin {...gallery} key={gallery.id} />)}</Plist>
+        </List>
+        <GalleryEditAdmin />
       </div>
-      <GalleryEditAdmin />
     </Container>
   );
 };

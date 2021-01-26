@@ -17,7 +17,6 @@ const DateItemAdmin = ({ info, setCurrent, deleteDate }) => {
       <a href="#!" onClick={onDelete}>
         <i class="fas fa-trash-alt"></i>
       </a>
-      <br />
     </Unit>
   );
 };

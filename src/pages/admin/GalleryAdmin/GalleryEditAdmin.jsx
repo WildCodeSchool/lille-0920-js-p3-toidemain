@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
 import { AddGallery } from '../../../redux/actions/GalleryActions';
-import { ContainerEditGallery, Form, Flex } from './style';
+import { ContainerEditGallery, Flex } from './style';
 
 const GalleryEditAdmin = ({ AddGallery }) => {
   const [images, setImages] = useState(['']);
@@ -22,7 +22,7 @@ const GalleryEditAdmin = ({ AddGallery }) => {
       AddGallery(newGallery);
 
       alert('Gallery added');
-      //clear fields
+
       setImages(['']);
       setTitle('');
       setText('');
@@ -49,29 +49,28 @@ const GalleryEditAdmin = ({ AddGallery }) => {
 
   return (
     <ContainerEditGallery>
-      <h2>Passeé</h2>
-      <Form>
-        <label>Title</label>
+      <form>
+        <h1>Info de événements Passeé </h1>
         <input type="text" name="title" placeholder="Title" value={title} onChange={(e) => setTitle(e.target.value)} />
-        <label>Date</label>
+
         <input type="text" name="date" placeholder="Date" value={date} onChange={(e) => setDate(e.target.value)} />
-        <label>Text</label>
-        <input type="text" name="text" placeholder="text" value={text} onChange={(e) => setText(e.target.value)} />
-        <label>Photo</label>
+
+        <input type="text" name="text" placeholder="Text" value={text} onChange={(e) => setText(e.target.value)} />
+
         {images.map((img, i) => {
           return (
             <Flex>
-              <input name="image" placeholder="image" value={img} onChange={(e) => handleInputChange(e, i)} />
+              <input name="image" placeholder="Image" value={img} onChange={(e) => handleInputChange(e, i)} />
 
               <div>
                 {images.length !== 1 && <i onClick={() => handleRemoveClick(i)} class="fas fa-minus-square"></i>}
-                {images.length - 1 === i && <i onClick={handleAddClick} class="fas fa-plus-square"></i>}
+                {images.length > 3 || (images.length - 1 === i && <i onClick={handleAddClick} class="fas fa-plus-square"></i>)}
               </div>
             </Flex>
           );
         })}
         <button onClick={onAdd}>Submit</button>
-      </Form>
+      </form>
     </ContainerEditGallery>
   );
 };

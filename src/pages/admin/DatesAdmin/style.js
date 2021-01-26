@@ -14,14 +14,16 @@ export const Container = styled.div`
     font-family: 'roboto', sans-serif;
     font-size: 36px;
     text-align: center;
-    color: #02523f;
+    color: white;
     background: rgba(0, 0, 0, 0.3);
   }
   div {
     height: 95%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
   }
 `;
 export const List = styled.div`
@@ -30,12 +32,7 @@ export const List = styled.div`
   flex-direction: column;
   justify-content: center;
   margin: 10vw;
-  h1 {
-    font-family: 'roboto', sans-serif;
-    font-size: 28px;
-    text-align: center;
-    color: #02523f;
-  }
+
   ul {
     width: 80%;
   }
@@ -48,7 +45,9 @@ export const Edit = styled.div`
 // Edit Date
 
 export const ContainerEditDate = styled.div`
-  width: 50%;
+  min-width: 20vw;
+  max-width: 40vw;
+
   h1,
   input::-webkit-input-placeholder,
   button {
@@ -61,29 +60,28 @@ export const ContainerEditDate = styled.div`
     width: 100%;
     font-size: 22px;
     text-align: center;
-    background: #02523f;
     color: white;
-    line-height: 120%;
     border-radius: 3px 3px 0 0;
     box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2);
+    margin-top: 3vh;
   }
 
   form {
     box-sizing: border-box;
-    width: 260px;
-    margin: 100px auto;
+    width: 100%;
+    margin: 0 auto;
     box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
     padding-bottom: 40px;
-    border-radius: 3px;
+    border-radius: 20px;
     h1 {
       box-sizing: border-box;
-      padding: 20px;
     }
   }
 
   input {
-    margin: 40px 25px;
-    width: 200px;
+    margin: 40px 0;
+    width: 100%;
+    height: 6vh;
     display: block;
     border: none;
     padding: 10px 0;
@@ -94,24 +92,28 @@ export const ContainerEditDate = styled.div`
     background-size: 200px 100%;
     background-repeat: no-repeat;
     color: #02523f;
+    font-size: 18px;
 
     &::-webkit-input-placeholder {
       color: #02523f;
-      font-size: 11px;
-
+      font-size: 16px;
+      padding-left: 1vw;
       visibility: visible !important;
     }
   }
 
   button {
     border: none;
-    background: #02523f;
+    background: #ffbe00;
     cursor: pointer;
     border-radius: 3px;
+    margin-top: 4vh;
     padding: 6px;
-    width: 200px;
+    height: 5vh;
+    width: 100%;
     color: white;
-    margin-left: 25px;
+    font-size: 24px;
+
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
     &:hover {
       transform: translateY(-3px);
@@ -127,14 +129,21 @@ export const Unit = styled.li`
   max-width: 50vh;
   width: 100%;
   display: flex;
-  justify-content: space-between;
   flex-direction: row;
+  justify-content: space-around;
   align-items: center;
   border: 1px black solid;
+  border-radius: 20px;
   a {
     color: #02523f;
     text-decoration: none;
     line-height: 20px;
-    padding-left: 2vw;
+    h3 {
+      font-size: 22px;
+      padding: 5px 0;
+    }
+    i {
+      font-size: 22px;
+    }
   }
 `;

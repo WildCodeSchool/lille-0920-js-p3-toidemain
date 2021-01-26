@@ -24,10 +24,7 @@ const DatesAdmin = () => {
       <h1>Stages et Ateliers à Venir</h1>
       <div>
         <List>
-          <ul>
-            <li></li>
-            {!loading && dates.length === 0 ? <p>No événements...</p> : dates.map((info) => <DateItemAdmin info={info} key={info.id} />)}
-          </ul>
+          <ul>{!loading && dates.length === 0 ? <p>No événements...</p> : dates.map((info) => <DateItemAdmin info={info} key={info.id} />)}</ul>
         </List>
         <Edit>
           <EditDate />
