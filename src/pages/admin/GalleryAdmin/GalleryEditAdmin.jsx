@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
-import { AddGallery } from '../../../../redux/actions/GalleryActions';
-import { Container, Form, Flex } from './GalleryEditAdmin.style.js';
+import { AddGallery } from '../../../redux/actions/GalleryActions';
+import { ContainerEditGallery, Form, Flex } from './style';
 
 const GalleryEditAdmin = ({ AddGallery }) => {
   const [images, setImages] = useState(['']);
@@ -23,7 +23,7 @@ const GalleryEditAdmin = ({ AddGallery }) => {
 
       alert('Gallery added');
       //clear fields
-      setImages('');
+      setImages(['']);
       setTitle('');
       setText('');
       setDate('');
@@ -48,7 +48,7 @@ const GalleryEditAdmin = ({ AddGallery }) => {
   };
 
   return (
-    <Container>
+    <ContainerEditGallery>
       <h2>Passeé</h2>
       <Form>
         <label>Title</label>
@@ -72,7 +72,7 @@ const GalleryEditAdmin = ({ AddGallery }) => {
         })}
         <button onClick={onAdd}>Submit</button>
       </Form>
-    </Container>
+    </ContainerEditGallery>
   );
 };
 

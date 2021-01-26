@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { setCurrent, deleteDate } from '../../../../redux/actions/DateActions';
+import { setCurrent, deleteDate } from '../../../redux/actions/DateActions';
 import { Unit } from './style';
 
 const DateItemAdmin = ({ info, setCurrent, deleteDate }) => {

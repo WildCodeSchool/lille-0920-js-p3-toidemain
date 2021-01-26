@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
-import GalleryEditAdmin from './EditGalleryAdmin/GalleryEditAdmin';
-import GalleryItemAdmin from './GalleryItemAdmin/index';
+import GalleryEditAdmin from './GalleryEditAdmin';
+import GalleryItemAdmin from './GalerryItemAdmin';
 import { useDispatch, useSelector } from 'react-redux';
 import { getGalleries } from '../../../redux/actions/GalleryActions';
 import Spiner from '../../../layout/spiner/Spiner';
@@ -24,7 +24,7 @@ const GalleryAdmin = () => {
       <div>
         <h1>événements Passeé</h1>
         <br />
-        <ul>{!loading && galleries.length === 0 ? <p>No événements...</p> : galleries.map((info) => <GalleryItemAdmin info={info} key={info.id} />)}</ul>
+        <ul>{!loading && galleries.length === 0 ? <p>No événements...</p> : galleries.map((gallery) => <GalleryItemAdmin {...gallery} key={gallery.id} />)}</ul>
       </div>
       <GalleryEditAdmin />
     </Container>

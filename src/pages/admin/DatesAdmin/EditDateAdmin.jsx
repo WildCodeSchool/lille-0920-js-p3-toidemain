@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { connect } from 'react-redux';
-import { updateDate, AddDate } from '../../../../redux/actions/DateActions';
-import { Container } from './EditDate.Style';
+import { updateDate, AddDate } from '../../../redux/actions/DateActions';
+import { ContainerEditDate } from './style.js';
 
 const EditDate = ({ current, updateDate, AddDate }) => {
   const [date, setDate] = useState('');
@@ -50,7 +50,7 @@ const EditDate = ({ current, updateDate, AddDate }) => {
   };
 
   return (
-    <Container>
+    <ContainerEditDate>
       <form>
         <h1>Enter Infos</h1>
 
@@ -60,7 +60,7 @@ const EditDate = ({ current, updateDate, AddDate }) => {
 
         <button onClick={current ? onSubmit : onAdd}>{current ? 'Update' : 'Add'} </button>
       </form>
-    </Container>
+    </ContainerEditDate>
   );
 };
 

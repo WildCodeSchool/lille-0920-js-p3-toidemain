@@ -1,6 +1,5 @@
 import React from 'react';
 import DatesAdmin from './DatesAdmin/index';
-import EditDate from './DatesAdmin/EditDate/EditDate';
 import GalleryAdmin from './GalleryAdmin';
 import { Container, Venir, Passe } from './style';
 

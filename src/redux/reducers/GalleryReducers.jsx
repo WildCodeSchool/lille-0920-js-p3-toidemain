@@ -23,7 +23,7 @@ export default (state = initialState, action) => {
     case DELETE_GALLERY:
       return {
         ...state,
-        galleries: state.dates.filter((date) => date.id !== action.payload),
+        galleries: state.galleries.filter((gallery) => gallery.id !== action.payload),
         loading: false,
       };
     case SET_LOADING:

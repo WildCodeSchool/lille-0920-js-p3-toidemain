@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import DateItemAdmin from './DateItemAdmin';
-import EditDate from './EditDate/EditDate';
+import EditDate from './EditDateAdmin';
 import { getDates } from '../../../redux/actions/DateActions';
 import { useDispatch, useSelector } from 'react-redux';
 import Spiner from '../../../layout/spiner/Spiner';
-import { Container } from './style';
+import { Container, List, Edit } from './style';
 
 const DatesAdmin = () => {
   const dispatch = useDispatch();
@@ -21,15 +21,18 @@ const DatesAdmin = () => {
 
   return (
     <Container>
+      <h1>Stages et Ateliers à Venir</h1>
       <div>
-        <h1>événements</h1>
-        <br />
-        <ul>
-          <li></li>
-          {!loading && dates.length === 0 ? <p>No événements...</p> : dates.map((info) => <DateItemAdmin info={info} key={info.id} />)}
-        </ul>
+        <List>
+          <ul>
+            <li></li>
+            {!loading && dates.length === 0 ? <p>No événements...</p> : dates.map((info) => <DateItemAdmin info={info} key={info.id} />)}
+          </ul>
+        </List>
+        <Edit>
+          <EditDate />
+        </Edit>
       </div>
-      <EditDate />
     </Container>
   );
 };
