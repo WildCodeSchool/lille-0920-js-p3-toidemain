@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { device } from "../../layout/Devices";
 
 export const PedaContainer = styled.div`
-  font-family: "Roboto", sans-serif;
   font-size: 1.1rem;
   @media ${device.mobile} {
     display: flex;
@@ -17,7 +16,6 @@ export const PedaContainer = styled.div`
 `;
 
 export const Intro = styled.p`
-  font-family: "Roboto", sans-serif;
   height: 80%;
   width: 20vw;
   font-size: 1.6rem;

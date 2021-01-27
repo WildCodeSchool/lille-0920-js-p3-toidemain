@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { device } from "../../layout/Devices";
+import { Link } from "react-router-dom";
 
 export const Container = styled.div`
   display: flex;
@@ -138,3 +139,7 @@ export const SpanB = styled.span`
 export const PromiseImg = styled.img`
   width: 30px;
 `;
+
+export const Link =styled(Link)`
+    text-decoration: none;
+    `;
