@@ -1,17 +1,27 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Events = styled.div`
   width: 20%;
-  margin: 5% auto;
+  margin: 15vh auto;
+  margin-top: 25vh;
+  padding-right: 6vw;
   ul {
     border: 2px solid;
-    border-radius: 25px;
-    h2 {
-      font-size: 1.8rem;
-      color: #005542;
-      padding: 15px;
-      margin-top: 2px;
-      text-align: center;
-    }
+    border-top: none;
+    border-bottom: 0.5px solid;
+  }
+`;
+
+export const Title = styled.div`
+  background-color: #005542;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  h2 {
+    font-size: 1.8rem;
+    color: white;
+    padding: 30px;
+    margin-top: 2px;
+    text-align: center;
+    line-height: 40px;
   }
 `;
