@@ -1,5 +1,6 @@
 import React from "react";
 import { TextContainer, Corner, CornerContainer } from "./style";
+import Button from "../../components/InfoButton/index";
 
 export default function EnseignantText() {
   return (
@@ -14,6 +15,7 @@ export default function EnseignantText() {
       <CornerContainer>
         <Corner className="bottom" />
       </CornerContainer>
+      <Button />
     </TextContainer>
   );
 }
