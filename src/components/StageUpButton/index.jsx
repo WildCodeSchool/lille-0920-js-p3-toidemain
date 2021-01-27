@@ -1,10 +1,12 @@
-import { MainButton, Span } from "./style";
+import { MainButton, Span, Path } from "./style";
 
 const StageUpButton = () => {
   return (
     <MainButton>
       Découvrez notre programme <br />
-      <Span>Stage Up</Span>
+      <Path to="/action/stageup">
+        <Span>Stage Up</Span>
+      </Path>
     </MainButton>
   );
 };

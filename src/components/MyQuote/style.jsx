@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from "../../layout/Devices";
 
 export const QuoteContainer = styled.div`
   display: flex;
@@ -12,6 +13,9 @@ export const QuoteContainer = styled.div`
     margin-bottom: 20px;
     color: #005542;
     font-size: 1.5em;
+    @media ${device.mobile} {
+      font-size: 1em;
+    }
   }
 `;
 
