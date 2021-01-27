@@ -50,8 +50,8 @@ const StageUp = () => {
             d’accéder à un stage en entreprise. <br />
             <br />
             S’impliquer d’avantage dans l’orientation des jeunes en tant
-            qu’entreprise. Maitriser les temps d’échanges passés entre les jeunes
-            et les collaborateurs.
+            qu’entreprise. Maitriser les temps d’échanges passés entre les
+            jeunes et les collaborateurs.
           </h3>
         </Firstdown>
       </First>
@@ -61,12 +61,11 @@ const StageUp = () => {
           <h3>Stage up c’est :</h3>
           <h2>
             <br /> <i class="fas fa-angle-double-right"></i> <span>1 </span>
-             semaine de stage collectif innovante au sein d’une entreprise
+            semaine de stage collectif innovante au sein d’une entreprise
             <br /> <i class="fas fa-angle-double-right"></i> Pour un groupe de
             <sp>12 à 20</sp> collégiens / lycéens
-            <br /> <i class="fas fa-angle-double-right"></i> Encadré
-            par <span>2</span> coachs certifiés à l`orientation
-            scolaire
+            <br /> <i class="fas fa-angle-double-right"></i> Encadré par{" "}
+            <span>2</span> coachs certifiés à l`orientation scolaire
             <br /> <i class="fas fa-angle-double-right"></i> Pour l’entreprise,
             une action <span>RSE clé en main</span> ainsi qu'un avantage pour
             les enfants de collaborateurs
@@ -86,20 +85,20 @@ const StageUp = () => {
             <h3>Vos Rôles</h3>
             <ul>
               <li>
-                <i class="fas fa-angle-double-right"></i> Mise à disposition d'une
-                salle.
+                <i class="fas fa-angle-double-right"></i> Mise à disposition
+                d'une salle.
               </li>
               <li>
-                <i class="fas fa-angle-double-right"></i> 4 collaborateurs
-                3 x 2 heures.
+                <i class="fas fa-angle-double-right"></i> 4 collaborateurs 3 x 2
+                heures.
               </li>
               <li>
-                <i class="fas fa-angle-double-right"></i> 2 heures pour le porteur de
-                projet.
+                <i class="fas fa-angle-double-right"></i> 2 heures pour le
+                porteur de projet.
               </li>
               <li>
-                <i class="fas fa-angle-double-right"></i> 1 collaborateur 1 x 1 heure :
-                les métiers d’avenir.
+                <i class="fas fa-angle-double-right"></i> 1 collaborateur 1 x 1
+                heure : les métiers d’avenir.
               </li>
             </ul>
           </ListR>

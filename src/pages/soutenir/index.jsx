@@ -98,8 +98,8 @@ const Soutenir = () => {
                 <Liste>
                   Vous pouvez accueillir le programme "stage up" pour permettre
                   aux enfants de vos collaborateurs d'accèder à un stage de
-                  qualité dans votre entreprise ou dans celle de l'un
-                  de nos partenaires.
+                  qualité dans votre entreprise ou dans celle de l'un de nos
+                  partenaires.
                 </Liste>
                 <Liste>
                   Ce programme est finançable à 100% via la taxe
@@ -114,7 +114,8 @@ const Soutenir = () => {
           <Container4>
             <TitleBox4>Vous êtes un étabListessement scolaire ?</TitleBox4>
             <Text4>
-              Donnez la chance à vos élèves de participer au programme stage up !
+              Donnez la chance à vos élèves de participer au programme stage up
+              !
             </Text4>
             <Link to="/action/stageup">
               <Img src="/images/stageUpWhite.png" alt="logo Listeen Stage Up" />

@@ -26,9 +26,9 @@ const Pedagogie = () => {
         <Title titleName="Notre Pédagogie"></Title>
         <Container1>
           <Intro>
-            <CapitalL>Toi Demain</CapitalL> une pédagogie d’apprentissage
-            basée sur l’expérimentation. Il est essentiel pour nos équipes de
-            créer l’alliance avec les jeunes et de leur permettre d’apprendre en
+            <CapitalL>Toi Demain</CapitalL> une pédagogie d’apprentissage basée
+            sur l’expérimentation. Il est essentiel pour nos équipes de créer
+            l’alliance avec les jeunes et de leur permettre d’apprendre en
             s’amusant.
           </Intro>
           <Stairs>
@@ -72,8 +72,8 @@ const Pedagogie = () => {
         <Container3>
           <Orientoi>
             Nous sommes en partenariat avec <ColorB>ORIENTOI</ColorB> qui
-            propose des jeux sur le thème de l’orientation. Les jeunes réalisent un
-            test en ligne pendant le stage.
+            propose des jeux sur le thème de l’orientation. Les jeunes réalisent
+            un test en ligne pendant le stage.
           </Orientoi>
           <a href="https://app.orientoi.fr/#/welcome" target="blank">
             <Logo src="/images/orientoi.png" alt="logo lien oriente Toi" />

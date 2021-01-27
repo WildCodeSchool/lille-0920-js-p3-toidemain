@@ -8,28 +8,24 @@ const KeyFacts = () => {
       <Fact>
         <i class="far fa-comments"></i>
         <h2>100 %</h2>
-        <p>
-          de nos partenaires renouvellent l'action l'année suivante.
-        </p>
+        <p>de nos partenaires renouvellent l'action l'année suivante.</p>
       </Fact>
       <Fact>
         <i class="fas fa-search"></i>
         <h2>97 %</h2>
-        <p>
-          des stagiaires recommandent STAGE UP à leurs amis.
-        </p>
+        <p>des stagiaires recommandent STAGE UP à leurs amis.</p>
       </Fact>
       <Fact>
         <i class="fas fa-plus"></i>
         <h2>96 %</h2>
-        <p>
-          des stagiaires sont capables de mener une présentation orale.
-        </p>
+        <p>des stagiaires sont capables de mener une présentation orale.</p>
       </Fact>
       <Fact>
         <i class="fas fa-check"></i>
         <h2>100 %</h2>
-        <p>des stagiaires prennent conscience de leurs talents durant le stage.</p>
+        <p>
+          des stagiaires prennent conscience de leurs talents durant le stage.
+        </p>
       </Fact>
     </KeyFactsContainer>
   );
