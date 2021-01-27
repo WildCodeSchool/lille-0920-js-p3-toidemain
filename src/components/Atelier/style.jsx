@@ -140,6 +140,6 @@ export const PromiseImg = styled.img`
   width: 30px;
 `;
 
-export const Link =styled(Link)`
-    text-decoration: none;
+export const Path =styled(Link)`
+    color: #005542;
     `;

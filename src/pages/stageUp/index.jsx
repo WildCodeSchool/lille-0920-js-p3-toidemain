@@ -44,11 +44,11 @@ const StageUp = () => {
             <br /> Offrir à un plus grand nombre de jeunes un stage de qualité.
             <br />
             <br />
-            Permettre aux jeunes des REP, ou à ceux qui n’ont pas de réseau
+            Permettre aux jeunes des REP ou à ceux qui n’ont pas de réseau
             d’accéder à un stage en entreprise. <br />
             <br />
             S’impliquer d’avantage dans l’orientation des jeunes en tant
-            qu’entreprise Maitriser les temps d’échanges passés entre les jeunes
+            qu’entreprise. Maitriser les temps d’échanges passés entre les jeunes
             et les collaborateurs.
           </h3>
         </Firstdown>
@@ -58,15 +58,15 @@ const StageUp = () => {
         <SecText>
           <h3>Stage up c’est :</h3>
           <h2>
-            <br /> <i class="fas fa-angle-double-right"></i> <span>1</span>
-            semaine de stage collectif innovante au sein d’une entreprise
+            <br /> <i class="fas fa-angle-double-right"></i> <span>1 </span>
+             semaine de stage collectif innovante au sein d’une entreprise
             <br /> <i class="fas fa-angle-double-right"></i> Pour un groupe de
             <sp>12 à 20</sp> collégiens / lycéens
             <br /> <i class="fas fa-angle-double-right"></i> Encadré
-            <span>H24</span> par <span>2</span> coachs certifiés à l`orientation
+            par <span>2</span> coachs certifiés à l`orientation
             scolaire
-            <br /> <i class="fas fa-angle-double-right"></i> Pour l’entreprise
-            une action <span>RSE, clé en main</span>, et aussi un avantage pour
+            <br /> <i class="fas fa-angle-double-right"></i> Pour l’entreprise,
+            une action <span>RSE clé en main</span> ainsi qu'un avantage pour
             les enfants de collaborateurs
             <br /> <i class="fas fa-angle-double-right"></i> L’action est
             finançable à <span>100%</span> via la taxe d’apprentissage
@@ -76,7 +76,7 @@ const StageUp = () => {
 
       <Third>
         <Topic>
-          <h1>Concrètement ça se passe comment?</h1>
+          <h1>Concrètement ça se passe comment ?</h1>
         </Topic>
 
         <ThirdContainer>
@@ -84,20 +84,20 @@ const StageUp = () => {
             <h3>Vos Rôles</h3>
             <ul>
               <li>
-                <i class="fas fa-angle-double-right"></i> Mise à dispo d`une
+                <i class="fas fa-angle-double-right"></i> Mise à disposition d'une
                 salle.
               </li>
               <li>
                 <i class="fas fa-angle-double-right"></i> 4 collaborateurs
-                3x2heures.
+                3 x 2 heures.
               </li>
               <li>
-                <i class="fas fa-angle-double-right"></i> 2h pour le porteur de
+                <i class="fas fa-angle-double-right"></i> 2 heures pour le porteur de
                 projet.
               </li>
               <li>
-                <i class="fas fa-angle-double-right"></i> 1 collaborateur 1x1h :
-                les métiers d’avenir
+                <i class="fas fa-angle-double-right"></i> 1 collaborateur 1 x 1 heure :
+                les métiers d’avenir.
               </li>
             </ul>
           </ListR>

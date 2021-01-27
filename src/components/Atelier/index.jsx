@@ -10,7 +10,7 @@ import {
   PromisesContainer,
   SpanA,
   SpanB,
-  Link
+  Path
 } from "./style";
 
 
@@ -34,7 +34,7 @@ export default function Atelier() {
           nous nous adaptons à leurs besoins. Nos coachs de terrain aiment
           innover et co-créer de nouveaux programmes pour faire grandir les
           jeunes en accord avec &nbsp;
-          <Link to="/action/pedagogie">notre pédagogie.</Link>&nbsp; Ils
+          <Path to="/action/pedagogie">notre pédagogie.</Path>&nbsp; Ils
           interviennent régulièrement dans des grandes écoles , des universités,
           dans des établissements scolaires et dans des associations. Nos mots
           clés : <SpanB>apprendre en s'amusant ! </SpanB>

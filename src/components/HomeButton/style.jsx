@@ -11,8 +11,9 @@ export const ButtonContainer = styled.div`
   font-size: 1.5em;
   color: white;
   @media ${device.mobile} {
-    width: 80%;
+    width: 90%;
     font-size: 1.1em;
+    margin-top: 3vh;
   }
   @media ${device.tablet} {
     width: 80%;
@@ -50,6 +51,11 @@ export const Button1 = styled.button`
   font-size: 1em;
   font-family: "Roboto", sans-serif;
   cursor: pointer;
+  &:hover {
+    -webkit-transform: scale(1.8);
+    transform: scale(1.1);
+    cursor: pointer;
+  }
 `;
 
 export const ContainerEnseignant = styled.div`
@@ -74,6 +80,11 @@ export const Button2 = styled.button`
   font-size: 1em;
   font-family: "Roboto", sans-serif;
   cursor: pointer;
+  &:hover {
+    -webkit-transform: scale(1.8);
+    transform: scale(1.1);
+    cursor: pointer;
+  }
 `;
 
 export const ContainerLyceen = styled.div`
@@ -98,4 +109,9 @@ export const Button3 = styled.button`
   font-size: 1em;
   font-family: "Roboto", sans-serif;
   cursor: pointer;
+  &:hover {
+    -webkit-transform: scale(1.8);
+    transform: scale(1.1);
+    cursor: pointer;
+  }
 `;

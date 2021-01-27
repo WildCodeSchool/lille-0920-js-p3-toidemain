@@ -13,23 +13,21 @@ import { AppStyle } from "./style.jsx";
 
 function App() {
   return (
-    <>
+    <AppStyle>
       <Reset />
-      <AppStyle>
-        <Router>
-          <Header />
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/about" component={About} />
-            <Route exact path="/contacter" component={Contacter} />
-            <Route exact path="/action/stageup" component={StageUp} />
-            <Route exact path="/action/pedagogie" component={Pedagogie} />
-            <Route exact path="/action/atelier" component={Atelier} />
-          </Switch>
-          <Footer />
-        </Router>
-      </AppStyle>
-    </>
+      <Router>
+        <Header />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/contacter" component={Contacter} />
+          <Route exact path="/action/stageup" component={StageUp} />
+          <Route exact path="/action/pedagogie" component={Pedagogie} />
+          <Route exact path="/action/atelier" component={Atelier} />
+        </Switch>
+        <Footer />
+      </Router>
+    </AppStyle>
   );
 }
 
