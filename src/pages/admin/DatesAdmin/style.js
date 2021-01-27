@@ -8,7 +8,7 @@ export const Container = styled.div`
   align-items: center;
   h1 {
     height: 5%;
-    width: 100%;
+    width: 90%;
     margin: 10vh auto;
     padding: 2vh;
     font-family: 'roboto', sans-serif;

@@ -2,23 +2,16 @@ import React, { useState } from 'react';
 import MenuButton from '../../components/HomeButton';
 import Slider from '../../components/MySlider/Slider';
 import images from '../../components/MySlider/img/images';
-import { HomeContainer, ColonneA, PageContainer } from './style';
+import { HomeContainer, ColonneA, PageContainer, H1, Trait } from './style';
 import Quote from '../../components/MyQuote/index';
 import KeyFacts from '../../components/KeyFacts/index';
-import Title from '../../components/Title/index';
 import EntrepriseText from '../../components/ButtonTextA';
 import EnseignantText from '../../components/ButtonTextB';
 import LyceenText from '../../components/ButtonTextC';
-import Drivers from '../../components/Drivers/index';
-
-const Error = () => (
-  <p>
-    Something went <strong>wrong</strong>!
-  </p>
-);
+import StageText from '../../components/StageText';
 
 const Home = () => {
-  const [activeId, setActiveId] = useState('enseignant');
+  const [activeId, setActiveId] = useState('');
 
   const handleChangeTab = (e) => {
     const buttonId = e.target.id;
@@ -34,13 +27,14 @@ const Home = () => {
       case 'lyceen':
         return <LyceenText />;
       default:
-        return <Error />;
+        return <StageText />;
     }
   };
 
   return (
     <PageContainer>
-      <Title titleName={'Accompagner les jeunes et réveler leurs talents'} />
+      <H1>Accompagner les jeunes et réveler leurs talents</H1>
+      <Trait></Trait>
       <HomeContainer>
         <ColonneA>{getTabContent()}</ColonneA>
         <Slider slides={images} autoPlay={50} />
@@ -48,7 +42,6 @@ const Home = () => {
       </HomeContainer>
       <Quote />
       <KeyFacts />
-      <Drivers />
     </PageContainer>
   );
 };

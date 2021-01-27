@@ -1,13 +1,14 @@
-import { MainButton } from "./style";
-import { Link } from "react-router-dom";
+import { MainButton, Span, Path } from "./style";
 
 const Button = () => {
-  return <MainButton>
-    EN SAVOIR PLUS <br />
-    <Link to="/action/pedagogie">
-    Notre Pédagogie
-    </Link>
-    </MainButton>;
+  return (
+    <MainButton>
+      En savoir plus <br />
+      <Path to="/action/pedagogie">
+        <Span>Notre Pédagogie</Span>
+      </Path>
+    </MainButton>
+  );
 };
 
 export default Button;

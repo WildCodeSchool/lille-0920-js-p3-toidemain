@@ -11,8 +11,9 @@ export const ButtonContainer = styled.div`
   font-size: 1.5em;
   color: white;
   @media ${device.mobile} {
-    width: 80%;
+    width: 90%;
     font-size: 1.1em;
+    margin-top: 3vh;
   }
   @media ${device.tablet} {
     width: 80%;
@@ -34,7 +35,6 @@ export const ContainerEntreprise = styled.div`
   border-top-left-radius: 10px;
   padding: 2px 2px 2px 2px;
   margin-bottom: 2px;
-
   @media ${device.tablet} {
     width: 80%;
     font-size: 1.3em;
