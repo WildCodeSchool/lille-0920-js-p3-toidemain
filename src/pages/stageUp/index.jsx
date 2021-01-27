@@ -1,6 +1,22 @@
-import React from 'react';
-import { Main, First, Second, Third, Forth, FirstTextContainer, Topic, ListR, ListL, TextR, TextL, FirstUp, Firstdown, SecText, ThirdContainer } from './style';
-import Title from '../../components/Title/index';
+import React from "react";
+import {
+  Main,
+  First,
+  Second,
+  Third,
+  Forth,
+  FirstTextContainer,
+  Topic,
+  ListR,
+  ListL,
+  TextR,
+  TextL,
+  FirstUp,
+  Firstdown,
+  SecText,
+  ThirdContainer,
+} from "./style";
+import Title from "../../components/Title/index";
 
 const StageUp = () => {
   return (
@@ -12,7 +28,9 @@ const StageUp = () => {
           <FirstUp>
             <h3>
               <span>Stage up</span>
-              <br /> est une solution <span>clé en main et innovante</span> pour les entreprises afin de répondre à la problématique d’accueil des jeunes lors de leur stage de découverte en entreprise.
+              <br /> est une solution <span>clé en main et innovante</span> pour
+              les entreprises afin de répondre à la problématique d’accueil des
+              jeunes lors de leur stage de découverte en entreprise.
               <br />
               <span>Toi Demain s'occupe de tout!</span>
             </h3>
@@ -22,14 +40,18 @@ const StageUp = () => {
           <h3>
             <span> Les avantages de notre programme </span>
             <br />
-            <br /> Permettre aux jeunes de vivre un premier contact positif avec l’entreprise.
+            <br /> Permettre aux jeunes de vivre un premier contact positif avec
+            l’entreprise.
             <br />
             <br /> Offrir à un plus grand nombre de jeunes un stage de qualité.
             <br />
             <br />
-            Permettre aux jeunes des REP ou à ceux qui n’ont pas de réseau d’accéder à un stage en entreprise. <br />
+            Permettre aux jeunes des REP ou à ceux qui n’ont pas de réseau
+            d’accéder à un stage en entreprise. <br />
             <br />
-            S’impliquer d’avantage dans l’orientation des jeunes en tant qu’entreprise. Maitriser les temps d’échanges passés entre les jeunes et les collaborateurs.
+            S’impliquer d’avantage dans l’orientation des jeunes en tant
+            qu’entreprise. Maitriser les temps d’échanges passés entre les
+            jeunes et les collaborateurs.
           </h3>
         </Firstdown>
       </First>
@@ -44,8 +66,11 @@ const StageUp = () => {
             <sp>12 à 20</sp> collégiens / lycéens
             <br /> <i class="fas fa-angle-double-right"></i> Encadré par
             <span>2</span> coachs certifiés à l`orientation scolaire
-            <br /> <i class="fas fa-angle-double-right"></i> Pour l’entreprise, une action <span>RSE clé en main</span> ainsi qu'un avantage pour les enfants de collaborateurs
-            <br /> <i class="fas fa-angle-double-right"></i> L’action est finançable à <span>100%</span> via la taxe d’apprentissage
+            <br /> <i class="fas fa-angle-double-right"></i> Pour l’entreprise,
+            une action <span>RSE clé en main</span> ainsi qu'un avantage pour
+            les enfants de collaborateurs
+            <br /> <i class="fas fa-angle-double-right"></i> L’action est
+            finançable à <span>100%</span> via la taxe d’apprentissage
           </h2>
         </SecText>
       </Second>
@@ -60,16 +85,20 @@ const StageUp = () => {
             <h3>Vos Rôles</h3>
             <ul>
               <li>
-                <i class="fas fa-angle-double-right"></i> Mise à disposition d'une salle.
+                <i class="fas fa-angle-double-right"></i> Mise à disposition
+                d'une salle.
               </li>
               <li>
-                <i class="fas fa-angle-double-right"></i> 4 collaborateurs 3 x 2 heures.
+                <i class="fas fa-angle-double-right"></i> 4 collaborateurs 3 x 2
+                heures.
               </li>
               <li>
-                <i class="fas fa-angle-double-right"></i> 2 heures pour le porteur de projet.
+                <i class="fas fa-angle-double-right"></i> 2 heures pour le
+                porteur de projet.
               </li>
               <li>
-                <i class="fas fa-angle-double-right"></i> 1 collaborateur 1 x 1 heure : les métiers d’avenir.
+                <i class="fas fa-angle-double-right"></i> 1 collaborateur 1 x 1
+                heure : les métiers d’avenir.
               </li>
             </ul>
           </ListR>
@@ -78,13 +107,16 @@ const StageUp = () => {
             <h3>Toi demain Rôle</h3>
             <ul>
               <li>
-                <i class="fas fa-angle-double-right"></i> Recrutement des stagiaires et gestion des conventions de stages.
+                <i class="fas fa-angle-double-right"></i> Recrutement des
+                stagiaires et gestion des conventions de stages.
               </li>
               <li>
-                <i class="fas fa-angle-double-right"></i> Encadrement et animation des jeunes pendant toute la durée du stage.
+                <i class="fas fa-angle-double-right"></i> Encadrement et
+                animation des jeunes pendant toute la durée du stage.
               </li>
               <li>
-                <i class="fas fa-angle-double-right"></i> Accompagnement des collaborateurs intervenants.
+                <i class="fas fa-angle-double-right"></i> Accompagnement des
+                collaborateurs intervenants.
               </li>
             </ul>
           </ListL>
@@ -93,12 +125,18 @@ const StageUp = () => {
       <Forth>
         <TextR>
           <h3>Où</h3>
-          <p>Une salle de réunion au sein de l’entreprise prévue pour 12 à 20 jeunes + 2 animateurs toute la semaine.</p>
+          <p>
+            Une salle de réunion au sein de l’entreprise prévue pour 12 à 20
+            jeunes + 2 animateurs toute la semaine.
+          </p>
         </TextR>
         <img src="/images/quand.png" alt="quand et ou" />
         <TextL>
           <h3>Quand</h3>
-          <p>Pendant les périodes de stages prévues par l’éducation nationale. Principalement novembre / décembre / janvier / février / juin</p>
+          <p>
+            Pendant les périodes de stages prévues par l’éducation nationale.
+            Principalement novembre / décembre / janvier / février / juin
+          </p>
         </TextL>
       </Forth>
     </Main>
