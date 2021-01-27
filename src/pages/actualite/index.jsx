@@ -1,6 +1,6 @@
-import React from 'react';
-import Dates from '../../components/Dates/index';
-import { Container } from './style';
+import React from "react";
+import Dates from "../../components/Dates/index";
+import { Container } from "./style";
 
 const Actualite = () => {
   return (

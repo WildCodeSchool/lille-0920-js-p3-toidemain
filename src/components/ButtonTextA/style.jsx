@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { device } from '../../layout/Devices';
+import styled from "styled-components";
+import { device } from "../../layout/Devices";
 
 export const TextContainer = styled.div`
   margin-top: 20px;
@@ -20,7 +20,7 @@ export const TextContainer = styled.div`
     margin-top: 2px;
   }
   p {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.6em;
     color: #005542;
     text-align: justify;

@@ -1,17 +1,17 @@
-import React, { useState } from 'react';
-import MenuButton from '../../components/HomeButton';
-import Slider from '../../components/MySlider/Slider';
-import images from '../../components/MySlider/img/images';
-import { HomeContainer, ColonneA, PageContainer, H1, Trait } from './style';
-import Quote from '../../components/MyQuote/index';
-import KeyFacts from '../../components/KeyFacts/index';
-import EntrepriseText from '../../components/ButtonTextA';
-import EnseignantText from '../../components/ButtonTextB';
-import LyceenText from '../../components/ButtonTextC';
-import StageText from '../../components/StageText';
+import React, { useState } from "react";
+import MenuButton from "../../components/HomeButton";
+import Slider from "../../components/MySlider/Slider";
+import images from "../../components/MySlider/img/images";
+import { HomeContainer, ColonneA, PageContainer, H1, Trait } from "./style";
+import Quote from "../../components/MyQuote/index";
+import KeyFacts from "../../components/KeyFacts/index";
+import EntrepriseText from "../../components/ButtonTextA";
+import EnseignantText from "../../components/ButtonTextB";
+import LyceenText from "../../components/ButtonTextC";
+import StageText from "../../components/StageText";
 
 const Home = () => {
-  const [activeId, setActiveId] = useState('');
+  const [activeId, setActiveId] = useState("home");
 
   const handleChangeTab = (e) => {
     const buttonId = e.target.id;
@@ -20,12 +20,14 @@ const Home = () => {
 
   const getTabContent = () => {
     switch (activeId) {
-      case 'entreprise':
+      case "entreprise":
         return <EntrepriseText />;
-      case 'enseignant':
+      case "enseignant":
         return <EnseignantText />;
-      case 'lyceen':
+      case "lyceen":
         return <LyceenText />;
+      case "home":
+        return <StageText />;
       default:
         return <StageText />;
     }

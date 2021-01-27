@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { device } from '../../layout/Devices';
+import styled from "styled-components";
+import { device } from "../../layout/Devices";
 
 export const ButtonContainer = styled.div`
   width: 20vw;
@@ -7,7 +7,7 @@ export const ButtonContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1.5em;
   color: white;
   @media ${device.mobile} {
@@ -49,7 +49,7 @@ export const Button1 = styled.button`
   border-top-left-radius: 10px;
   color: #fff;
   font-size: 1em;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   cursor: pointer;
   &:hover {
     -webkit-transform: scale(1.8);
@@ -78,7 +78,7 @@ export const Button2 = styled.button`
   border-top-left-radius: 10px;
   color: #fff;
   font-size: 1em;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   cursor: pointer;
   &:hover {
     -webkit-transform: scale(1.8);
@@ -107,7 +107,7 @@ export const Button3 = styled.button`
   border-bottom-left-radius: 10px;
   color: #fff;
   font-size: 1em;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   cursor: pointer;
   &:hover {
     -webkit-transform: scale(1.8);

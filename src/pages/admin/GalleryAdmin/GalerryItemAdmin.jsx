@@ -1,12 +1,12 @@
-import React from 'react';
-import { connect } from 'react-redux';
-import { deleteGallery } from '../../../redux/actions/GalleryActions';
-import { ContainerGalleryItem, Img, Box, Del } from './style';
+import React from "react";
+import { connect } from "react-redux";
+import { deleteGallery } from "../../../redux/actions/GalleryActions";
+import { ContainerGalleryItem, Img, Box, Del } from "./style";
 
 const GalleryItemAdmin = ({ id, images, title, date, text, deleteGallery }) => {
   const onDelete = () => {
     deleteGallery(id);
-    alert('Gallery Deleted');
+    alert("Gallery Deleted");
   };
 
   return (

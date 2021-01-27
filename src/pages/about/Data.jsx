@@ -32,16 +32,16 @@ const portraitItems = [
     image: "/images/elizabeth.png",
     motivation:
       "Élargir le champ des possibles ! Permettre à des jeunes d'ouvrir leurs horizons en découvrant des entreprises, des équipes, des métiers.",
-    why: "Pour s'investir dans un projet porteur de 'bon' sens",
+    why: "Pour s'investir dans un projet porteur de 'bon' sens.",
   },
   {
     name: "Romain Mayaud",
     description: "Trésorier",
     image: "/images/romain.png",
     motivation:
-      "Permettre aux personnes et aux projets de prendre leur envol. Faire partie de la naissance de projets me tiennent à coeur et qui sont utiles.",
+      "Permettre aux personnes et aux projets de prendre leur envol. Faire partie de la naissance de projets qui me tiennent à coeur et utiles.",
     why:
-      "Être le seul homme de l'équipe ;-), soutenir un projet qui se préoccupe des jeunes et de leur orientation professionnelle ! Et qui apporte une solution aux entreprises dans l’animation des stages découvertes souvent compliqués à gérer.",
+      "Être le seul homme de l'équipe ;-) Soutenir un projet qui se préoccupe des jeunes et de leur orientation professionnelle ! Et qui apporte une solution aux entreprises dans l’animation des stages découverte souvent compliqués à gérer.",
   },
 ];
 

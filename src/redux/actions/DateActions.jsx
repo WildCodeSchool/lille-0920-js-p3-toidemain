@@ -1,10 +1,19 @@
-import { GET_DATES, ADD_DATE, DELETE_DATE, UPDATE_DATE, SET_LOADING, DATES_ERROR, CLEAR_CURRENT, SET_CURRENT } from '../types';
-import axios from 'axios';
+import {
+  GET_DATES,
+  ADD_DATE,
+  DELETE_DATE,
+  UPDATE_DATE,
+  SET_LOADING,
+  DATES_ERROR,
+  CLEAR_CURRENT,
+  SET_CURRENT,
+} from "../types";
+import axios from "axios";
 
 export const getDates = () => async (dispatch) => {
   try {
     setLoading();
-    const { data } = await axios.get('/dates');
+    const { data } = await axios.get("/dates");
 
     dispatch({
       type: GET_DATES,
@@ -22,7 +31,7 @@ export const AddDate = (newDate) => async (dispatch) => {
   try {
     setLoading();
 
-    const { data } = await axios.post('/dates', newDate);
+    const { data } = await axios.post("/dates", newDate);
 
     dispatch({
       type: ADD_DATE,

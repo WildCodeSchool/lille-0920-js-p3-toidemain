@@ -1,11 +1,17 @@
-import { GET_GALLERIES, ADD_GALLERY, DELETE_GALLERY, GALLERIES_ERROR, SET_LOADING } from '../types';
-import axios from 'axios';
+import {
+  GET_GALLERIES,
+  ADD_GALLERY,
+  DELETE_GALLERY,
+  GALLERIES_ERROR,
+  SET_LOADING,
+} from "../types";
+import axios from "axios";
 
 export const getGalleries = () => async (dispatch) => {
   try {
     setLoading();
 
-    const { data } = await axios.get('/galleries');
+    const { data } = await axios.get("/galleries");
 
     dispatch({
       type: GET_GALLERIES,
@@ -23,7 +29,7 @@ export const AddGallery = (newGallery) => async (dispatch) => {
   try {
     setLoading();
 
-    const { data } = await axios.post('/galleries', newGallery);
+    const { data } = await axios.post("/galleries", newGallery);
 
     dispatch({
       type: ADD_GALLERY,

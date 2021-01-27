@@ -1,7 +1,7 @@
-import React from 'react';
-import DatesAdmin from './DatesAdmin/index';
-import GalleryAdmin from './GalleryAdmin';
-import { Container, Venir, Passe } from './style';
+import React from "react";
+import DatesAdmin from "./DatesAdmin/index";
+import GalleryAdmin from "./GalleryAdmin";
+import { Container, Venir, Passe } from "./style";
 
 const Admin = () => {
   return (

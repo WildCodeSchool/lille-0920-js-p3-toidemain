@@ -1,5 +1,5 @@
-import React from 'react';
-import { Item } from './style';
+import React from "react";
+import { Item } from "./style";
 
 const DateItem = ({ date, message }) => {
   return (
