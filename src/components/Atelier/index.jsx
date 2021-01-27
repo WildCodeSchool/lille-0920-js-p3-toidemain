@@ -12,11 +12,15 @@ import {
   SpanB,
   Path
 } from "./style";
+import Title from "../../components/Title/index";
 
 
 export default function Atelier() {
   return (
+    <>
+    <Title titleName="Nos Ateliers"></Title>
     <Container>
+    
       <Image src="/images/Atelier.jpg" alt="atelier" />
       <TextContainer>
         <MainTitle>
@@ -46,5 +50,6 @@ export default function Atelier() {
         })}
       </PromisesContainer>
     </Container>
+    </>
   );
 }

@@ -16,10 +16,12 @@ import {
   SecText,
   ThirdContainer,
 } from "./style";
+import Title from "../../components/Title/index";
 
 const StageUp = () => {
   return (
     <Main>
+      <Title titleName="Stage Up"></Title>
       <First>
         <FirstTextContainer>
           <img src="/images/stageup.png" alt="stageup" />
@@ -133,7 +135,7 @@ const StageUp = () => {
         <TextL>
           <h3>Quand</h3>
           <p>
-            Pendant les périodes de stages prévu par l’éducation nationale.
+            Pendant les périodes de stages prévues par l’éducation nationale.
             Principalement novembre / décembre / janvier / février / juin
           </p>
         </TextL>
