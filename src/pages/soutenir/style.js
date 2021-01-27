@@ -22,7 +22,6 @@ padding: 1vh;
   @media ${device.tablet} {
     width:95%;
   }
-}
 `;
 export const Container2 = styled.div`
   display: flex;
