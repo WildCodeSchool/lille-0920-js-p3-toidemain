@@ -7,20 +7,19 @@ export const SoutenirContainer = styled.div`
 `;
 
 export const Container1 = styled.div`
-display: flex;
-flex-direction: column;
-align-items: center;
-width: 32%;
-background-color: white;
-border-radius: 5px;
-margin: 1vw;
-padding: 1vh;
-@media ${device.mobile} {
-    width:95%;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 32%;
+  background-color: white;
+  border-radius: 5px;
+  margin: 1vw;
+  padding: 1vh;
+  @media ${device.mobile} {
+    width: 95%;
   }
   @media ${device.tablet} {
-    width:95%;
+    width: 95%;
   }
 `;
 export const Container2 = styled.div`
