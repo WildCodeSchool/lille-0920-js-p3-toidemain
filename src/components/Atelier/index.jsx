@@ -41,7 +41,7 @@ export default function Atelier() {
             <Path to="/action/pedagogie">notre pédagogie.</Path>&nbsp; Ils
             interviennent régulièrement dans des grandes écoles , des
             universités, dans des établissements scolaires et dans des
-            associations. Nos mots clés :{" "}
+            associations. Nos mots clés :&nbsp;
             <SpanB>apprendre en s'amusant ! </SpanB>
           </Paragraph>
         </TextContainer>
