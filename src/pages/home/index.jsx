@@ -11,7 +11,7 @@ import LyceenText from "../../components/ButtonTextC";
 import StageText from "../../components/StageText";
 
 const Home = () => {
-  const [activeId, setActiveId] = useState("");
+  const [activeId, setActiveId] = useState("home");
 
   const handleChangeTab = (e) => {
     const buttonId = e.target.id;
@@ -26,6 +26,8 @@ const Home = () => {
         return <EnseignantText />;
       case "lyceen":
         return <LyceenText />;
+      case "home":
+        return <StageText />;
       default:
         return <StageText />;
     }
