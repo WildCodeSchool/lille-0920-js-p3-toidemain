@@ -42,8 +42,6 @@ export const Edit = styled.div`
   margin: 10vw;
 `;
 
-// Edit Date
-
 export const ContainerEditDate = styled.div`
   min-width: 20vw;
   max-width: 40vw;
@@ -122,18 +120,18 @@ export const ContainerEditDate = styled.div`
   }
 `;
 
-// DATE ITEM
-
 export const Unit = styled.li`
   min-height: 8vh;
   max-width: 50vh;
   width: 100%;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   border: 1px black solid;
   border-radius: 20px;
+  padding: 10px;
   a {
     color: #02523f;
     text-decoration: none;
@@ -141,6 +139,10 @@ export const Unit = styled.li`
     h3 {
       font-size: 22px;
       padding: 5px 0;
+
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+      hyphens: auto;
     }
     i {
       font-size: 22px;

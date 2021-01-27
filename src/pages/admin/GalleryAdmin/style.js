@@ -40,8 +40,6 @@ export const Plist = styled.ul`
   flex-wrap: wrap;
 `;
 
-// Galery Item
-
 export const ContainerGalleryItem = styled.div`
   min-height: 20vh;
   max-height: 50vh;
@@ -76,6 +74,9 @@ export const Box = styled.div`
     padding: 10px;
     width: 100%;
     margin: 0.5vh auto;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
   }
   p {
     font-size: 20px;
@@ -98,8 +99,6 @@ export const Img = styled.div`
     padding: 10px;
   }
 `;
-
-// Gallery Edit
 
 export const ContainerEditGallery = styled.div`
   width: 40%;
@@ -142,7 +141,7 @@ export const ContainerEditGallery = styled.div`
     height: 6vh;
     display: block;
     border: none;
-    padding: 10px 0;
+    padding: 8px 0;
     border-bottom: solid 1px #02523f;
     transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
     background: rgba(255, 255, 255, 0);

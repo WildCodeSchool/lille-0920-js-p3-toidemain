@@ -1,11 +1,6 @@
 {
   "dates": [
     {
-      "id": 9,
-      "date": "2021-01-04",
-      "message": "formation toi demain"
-    },
-    {
       "date": "2021-01-21",
       "message": "come here now",
       "id": 10
@@ -19,6 +14,21 @@
       "date": "2021-01-11",
       "message": "come here now",
       "id": 12
+    },
+    {
+      "date": "2021-01-07",
+      "message": "come here now",
+      "id": 17
+    },
+    {
+      "date": "2021-06-10",
+      "message": "formation Wild code school",
+      "id": 18
+    },
+    {
+      "date": "2021-01-15",
+      "message": "On pourrait vous dire que vous avez besoin de changement, de réconfort, de bons petits plats livrés rapidement chez vous.",
+      "id": 19
     }
   ],
   "galleries": [
@@ -34,12 +44,18 @@
     },
     {
       "title": "Wilder in Lille",
-      "date": "2021-01-21",
-      "text": "shduqhdjqdjqsndjqsdjnjchdndsqcn   hhdsnqjdjqskdjqskdjhhfjn     jdjjdjnjdnjhdjjdnsjqdjdnjncjscjsqqncc   jhfjhfjfjchfnejdncjhcsdcscsc",
+      "date": "2021-01-11",
+      "text": "stage at wild code school",
       "images": [
-        "https://i.ibb.co/ydx5f6B/ABT5-D0-BF1-B26328-B0-A3991-FC22-FC0-AC2912-DE1-A6-BD9-FF1-EF81-E47121-C652042-B667.jpg",
-        "https://i.ibb.co/ydx5f6B/ABT5-D0-BF1-B26328-B0-A3991-FC22-FC0-AC2912-DE1-A6-BD9-FF1-EF81-E47121-C652042-B667.jpg",
-        "https://i.ibb.co/ydx5f6B/ABT5-D0-BF1-B26328-B0-A3991-FC22-FC0-AC2912-DE1-A6-BD9-FF1-EF81-E47121-C652042-B667.jpg",
+        "https://i.ibb.co/ydx5f6B/ABT5-D0-BF1-B26328-B0-A3991-FC22-FC0-AC2912-DE1-A6-BD9-FF1-EF81-E47121-C652042-B667.jpg"
+      ],
+      "id": 2
+    },
+    {
+      "title": "Wilder in Lille",
+      "date": "2021-01-22",
+      "text": " Cette promo se suffit à elle-même. On pourrait vous dire que vous avez besoin de changement, de réconfort, de bons petits plats livrés rapidement chez vous.  Mais avez-vous vraiment besoin d'être convaincu ?  On vous régale avec 12€ de réduction* sur votre prochaine commande. Voilà.  Profitez-en vite avec le code promo :",
+      "images": [
         "https://i.ibb.co/ydx5f6B/ABT5-D0-BF1-B26328-B0-A3991-FC22-FC0-AC2912-DE1-A6-BD9-FF1-EF81-E47121-C652042-B667.jpg"
       ],
       "id": 3

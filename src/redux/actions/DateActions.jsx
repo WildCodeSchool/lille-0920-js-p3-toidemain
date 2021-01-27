@@ -1,14 +1,10 @@
 import { GET_DATES, ADD_DATE, DELETE_DATE, UPDATE_DATE, SET_LOADING, DATES_ERROR, CLEAR_CURRENT, SET_CURRENT } from '../types';
 import axios from 'axios';
 
-// GET Dates from server
 export const getDates = () => async (dispatch) => {
   try {
-    // const { data } = await axios.get('/dates');
     setLoading();
-
-    const res = await fetch('/dates');
-    const data = await res.json();
+    const { data } = await axios.get('/dates');
 
     dispatch({
       type: GET_DATES,
@@ -22,21 +18,11 @@ export const getDates = () => async (dispatch) => {
   }
 };
 
-// POST Dates from server
 export const AddDate = (newDate) => async (dispatch) => {
   try {
-    // const { data } = await axios.post('/dates');
-
     setLoading();
 
-    const res = await fetch('/dates', {
-      method: 'POST',
-      body: JSON.stringify(newDate),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    });
-    const data = await res.json();
+    const { data } = await axios.post('/dates', newDate);
 
     dispatch({
       type: ADD_DATE,
@@ -50,15 +36,11 @@ export const AddDate = (newDate) => async (dispatch) => {
   }
 };
 
-// DELETE Dates from server
 export const deleteDate = (id) => async (dispatch) => {
   try {
-    // await axios.delete(`/dates/${id}`);
     setLoading();
 
-    await fetch(`/dates/${id}`, {
-      method: 'DELETE',
-    });
+    await axios.delete(`/dates/${id}`);
 
     dispatch({
       type: DELETE_DATE,
@@ -72,21 +54,12 @@ export const deleteDate = (id) => async (dispatch) => {
   }
 };
 
-// PUT Date from server
 export const updateDate = (updDate) => async (dispatch) => {
   try {
-    // const { data } = await axios.put(`/dates/${updDate.id}`);
     setLoading();
 
-    const res = await fetch(`/dates/${updDate.id}`, {
-      method: 'PUT',
-      body: JSON.stringify(updDate),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    });
+    const { data } = await axios.put(`/dates/${updDate.id}`, updDate);
 
-    const data = await res.json();
     dispatch({
       type: UPDATE_DATE,
       payload: data,
@@ -99,7 +72,6 @@ export const updateDate = (updDate) => async (dispatch) => {
   }
 };
 
-//Set current note
 export const setCurrent = (info) => {
   return {
     type: SET_CURRENT,
@@ -107,14 +79,12 @@ export const setCurrent = (info) => {
   };
 };
 
-//Clear current note
 export const clearCurrent = () => {
   return {
     type: CLEAR_CURRENT,
   };
 };
 
-// Set loading to true
 export const setLoading = () => {
   return {
     type: SET_LOADING,

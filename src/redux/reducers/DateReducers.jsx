@@ -48,7 +48,6 @@ export default (state = initialState, action) => {
         loading: true,
       };
     case DATES_ERROR:
-      console.log(action.payload);
       return {
         ...state,
         error: action.payload,

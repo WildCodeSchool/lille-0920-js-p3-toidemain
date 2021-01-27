@@ -1,14 +1,11 @@
 import { GET_GALLERIES, ADD_GALLERY, DELETE_GALLERY, GALLERIES_ERROR, SET_LOADING } from '../types';
 import axios from 'axios';
 
-// GET Gallerries from server
 export const getGalleries = () => async (dispatch) => {
   try {
-    // const { data } = await axios.get('/dates');
     setLoading();
 
-    const res = await fetch('/galleries');
-    const data = await res.json();
+    const { data } = await axios.get('/galleries');
 
     dispatch({
       type: GET_GALLERIES,
@@ -22,21 +19,11 @@ export const getGalleries = () => async (dispatch) => {
   }
 };
 
-// POST Gallerries from server
 export const AddGallery = (newGallery) => async (dispatch) => {
   try {
-    // const { data } = await axios.post('/dates');
-
     setLoading();
 
-    const res = await fetch('/galleries', {
-      method: 'POST',
-      body: JSON.stringify(newGallery),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    });
-    const data = await res.json();
+    const { data } = await axios.post('/galleries', newGallery);
 
     dispatch({
       type: ADD_GALLERY,
@@ -50,15 +37,11 @@ export const AddGallery = (newGallery) => async (dispatch) => {
   }
 };
 
-// DELETE Gallerries from server
 export const deleteGallery = (id) => async (dispatch) => {
   try {
-    // await axios.delete(`/dates/${id}`);
     setLoading();
 
-    await fetch(`/galleries/${id}`, {
-      method: 'DELETE',
-    });
+    await axios.delete(`/galleries/${id}`);
 
     dispatch({
       type: DELETE_GALLERY,
@@ -72,7 +55,6 @@ export const deleteGallery = (id) => async (dispatch) => {
   }
 };
 
-// Set loading to true
 export const setLoading = () => {
   return {
     type: SET_LOADING,

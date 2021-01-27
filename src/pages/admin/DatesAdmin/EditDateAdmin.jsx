@@ -26,7 +26,6 @@ const EditDate = ({ current, updateDate, AddDate }) => {
 
       updateDate(updDate);
 
-      //clear fields
       setMessage('');
       setDate('');
     }
@@ -43,7 +42,7 @@ const EditDate = ({ current, updateDate, AddDate }) => {
       AddDate(newDate);
 
       alert('Date added');
-      //clear fields
+
       setMessage('');
       setDate('');
     }
@@ -54,7 +53,7 @@ const EditDate = ({ current, updateDate, AddDate }) => {
       <form>
         <h1>Enter Infos</h1>
 
-        <input type="text" name="date" placeholder="Date" value={date} onChange={(e) => setDate(e.target.value)} />
+        <input type="date" name="date" placeholder="Date" value={date} onChange={(e) => setDate(e.target.value)} />
 
         <input type="text" name="message" placeholder="Message" value={message} onChange={(e) => setMessage(e.target.value)} />
 

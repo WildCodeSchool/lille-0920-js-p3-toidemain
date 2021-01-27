@@ -32,7 +32,6 @@ export default (state = initialState, action) => {
         loading: true,
       };
     case GALLERIES_ERROR:
-      console.log(action.payload);
       return {
         ...state,
         error: action.payload,
