@@ -9,25 +9,29 @@ import StageUp from "./pages/stageUp/index";
 import Pedagogie from "./components/Pedagogie/index";
 import Atelier from "./components/Atelier";
 import Home from "./pages/home";
-import { AppStyle } from "./style.jsx";
+import Soutenir from "./pages/soutenir";
+import { AppStyle } from "./style";
 
 function App() {
   return (
-    <AppStyle>
+    <>
       <Reset />
-      <Router>
-        <Header />
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/about" component={About} />
-          <Route exact path="/contacter" component={Contacter} />
-          <Route exact path="/action/stageup" component={StageUp} />
-          <Route exact path="/action/pedagogie" component={Pedagogie} />
-          <Route exact path="/action/atelier" component={Atelier} />
-        </Switch>
-        <Footer />
-      </Router>
-    </AppStyle>
+      <AppStyle>
+        <Router>
+          <Header />
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/about" component={About} />
+            <Route exact path="/contacter" component={Contacter} />
+            <Route exact path="/action/stageup" component={StageUp} />
+            <Route exact path="/action/pedagogie" component={Pedagogie} />
+            <Route exact path="/soutenir" component={Soutenir} />
+            <Route exact path="/action/atelier" component={Atelier} />
+          </Switch>
+          <Footer />
+        </Router>
+      </AppStyle>
+    </>
   );
 }
 
