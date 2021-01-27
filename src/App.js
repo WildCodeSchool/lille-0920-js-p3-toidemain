@@ -11,6 +11,8 @@ import Atelier from './components/Atelier';
 import Home from './pages/home';
 import Soutenir from './pages/soutenir';
 import { AppStyle } from './style';
+import Admin from './pages/admin';
+import Actualite from './pages/actualite';
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
             <Route exact path="/action/pedagogie" component={Pedagogie} />
             <Route exact path="/soutenir" component={Soutenir} />
             <Route exact path="/action/atelier" component={Atelier} />
+            <Route exact path="/admin" component={Admin} />
+            <Route exact path="/actualite" component={Actualite} />
           </Switch>
           <Footer />
         </Router>

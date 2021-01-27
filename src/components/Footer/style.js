@@ -36,7 +36,6 @@ export const Info = styled.div`
   h3 {
     text-align: center;
     font-size: 22px;
-    font-family: Georgia, serif;
     margin: 2vh auto;
   }
   img {

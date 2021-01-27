@@ -24,7 +24,7 @@ const About = () => {
                   Permettre aux jeunes une première belle rencontre avec le
                   monde de l’entreprise qui leur donne envie.
                 </li>
-                <li className="fas fa-angle-right">
+                <li>
                   Leur permettre de croire que
                   <span> tout est possible</span>.
                 </li>
@@ -36,17 +36,17 @@ const About = () => {
       </Pledge>
 
       <div id="equipe">
-        <h1>L'Equipe de Toi Demain</h1>
+        <Title titleName="L'Equipe de Toi Demain"></Title>
         <Cards>
           {portraitItems.map((item) => (
             <Member item={item} key={item.name} />
           ))}
         </Cards>
-        <h2>+ Une équipe de coachs partenaires, formés par Toi Demain!</h2>
+        <h3>+ Une équipe de coachs partenaires, formés par Toi Demain!</h3>
       </div>
 
       <div id="partenaires">
-        <h1>Nos partenaires</h1>
+        <Title titleName="Nos partenaires"></Title>
         <Partners>
           <img src="/images/idkids.png" alt="id kids" />
           <img src="/images/kiabi.png" alt="kiabi" />

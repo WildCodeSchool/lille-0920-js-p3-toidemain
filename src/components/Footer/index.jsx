@@ -38,7 +38,7 @@ const Footer = () => {
       </Info>
       <Menu>
         <Social>
-          <h3>Retrouvez-Nous sur</h3>
+          <h3>Retrouvez-nous sur</h3>
         </Social>
         <Icons>
           <img src="/images/icons/instagram.png" alt="instagram" />
