@@ -1,9 +1,12 @@
-import { MainButton } from "./style";
+import { MainButton, Span, Path } from "./style";
 
 const ContactButton = () => {
   return (
     <MainButton>
-      Contactez-nous <br />
+      En savoir plus <br />
+      <Path to="/contacter">
+        <Span>Contactez-nous</Span>
+      </Path>
     </MainButton>
   );
 };

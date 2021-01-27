@@ -1,5 +1,6 @@
 import React from "react";
 import { TextContainer, Corner, CornerContainer } from "./style";
+import StageUpButton from "../../components/StageUpButton/index";
 
 export default function EntrepriseText() {
   return (
@@ -14,6 +15,7 @@ export default function EntrepriseText() {
       <CornerContainer>
         <Corner className="bottom" />
       </CornerContainer>
+      <StageUpButton />
     </TextContainer>
   );
 }
