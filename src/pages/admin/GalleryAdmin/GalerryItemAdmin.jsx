@@ -12,9 +12,15 @@ const GalleryItemAdmin = ({ id, images, title, date, text, deleteGallery }) => {
   return (
     <ContainerGalleryItem>
       <Box>
-        <h3>{title}</h3>
-        <p>{date}</p>
-        <p>{text}</p>
+        <h3>
+          <span>Title:</span> {title}
+        </h3>
+        <p>
+          <span>Date:</span> {date}
+        </p>
+        <p>
+          <span>Description:</span> {text}
+        </p>
         <Img>
           {images.map((img) => (
             <img src={img} alt="img" />

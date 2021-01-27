@@ -33,8 +33,8 @@ export const List = styled.div`
   justify-content: center;
   margin: 10vw;
 `;
-export const Plist = styled.div`
-  width: 100%;
+export const Plist = styled.ul`
+  width: 40vw;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -48,18 +48,18 @@ export const ContainerGalleryItem = styled.div`
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   border: 1px black solid;
   border-radius: 20px;
-  margin: 0.5vh auto;
+  margin-bottom: 0.5vh;
 `;
 
 export const Del = styled.div`
   width: 15%;
   a {
     text-decoration: none;
-    color: #02523f;
+    color: #1c819e;
     i {
       font-size: 30px;
     }
@@ -73,18 +73,26 @@ export const Box = styled.div`
 
   h3 {
     font-size: 24px;
-    padding: 5px;
+    padding: 10px;
     width: 100%;
-    text-align: center;
+    margin: 0.5vh auto;
   }
   p {
     font-size: 20px;
-    padding: 5px;
+    padding: 10px;
     width: 100%;
+    margin: 0.5vh;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+  }
+  span {
+    color: #1c819e;
   }
 `;
 
 export const Img = styled.div`
+  margin: 1vh auto;
   img {
     width: 125px;
     padding: 10px;

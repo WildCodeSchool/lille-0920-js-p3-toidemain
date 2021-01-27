@@ -55,7 +55,7 @@ const GalleryEditAdmin = ({ AddGallery }) => {
 
         <input type="text" name="date" placeholder="Date" value={date} onChange={(e) => setDate(e.target.value)} />
 
-        <input type="text" name="text" placeholder="Text" value={text} onChange={(e) => setText(e.target.value)} />
+        <input type="text" name="text" placeholder="Description" value={text} onChange={(e) => setText(e.target.value)} />
 
         {images.map((img, i) => {
           return (
