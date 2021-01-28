@@ -1,17 +1,6 @@
 import styled from "styled-components";
 import { device } from "../../layout/Devices";
 
-// mobile: "480px",
-// minTablet: "481px",
-// maxTablet: "768px",
-// MinSmallScreen: "769px",
-// MaxSmallScreen: "1024px",
-// desktop: "1025px",
-// mobile:
-// tablet:
-// small_screen:
-// desktop:
-
 export const Container = styled.div`
 	display: flex;
 	justify-content: center;
