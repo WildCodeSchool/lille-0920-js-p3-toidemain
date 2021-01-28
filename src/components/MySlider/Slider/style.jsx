@@ -4,7 +4,7 @@ import { device } from "../../../layout/Devices";
 export const SliderDiv = styled.div`
   position: relative;
   height: 60vh;
-  width: 50vw;
+  width: 55vw;
   margin: 0 auto;
   overflow: hidden;
   @media ${device.mobile} {

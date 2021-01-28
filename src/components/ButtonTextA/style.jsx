@@ -3,11 +3,12 @@ import { device } from "../../layout/Devices";
 
 export const TextContainer = styled.div`
   margin-top: 20px;
+  margin-bottom: 2vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 20vw;
-  height: 50vh;
+  width: 20%;
+  height: 100%;
   z-index: 2;
   @media ${device.mobile} {
     width: 100%;
