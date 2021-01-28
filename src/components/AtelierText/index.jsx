@@ -9,7 +9,7 @@ export default function AtelierText() {
       </CornerContainer>
       <p>
         Toi Demain propose et organise des <Span>ateliers</Span> à destination
-        des élèves afin de les accompagner dans leurs{" "}
+        des élèves afin de les accompagner dans leurs&nbsp;
         <Span>démarches professionnelles</Span>
       </p>
       <CornerContainer>
