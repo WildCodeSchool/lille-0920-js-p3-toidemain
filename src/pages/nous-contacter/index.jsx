@@ -25,7 +25,6 @@ const Contacter = () => {
       message: message,
       entity: type,
     };
-    console.log(templateParams);
     emailjs.send(
       "service_2etpuqa",
       "template_v0o2cnd",
