@@ -5,7 +5,6 @@ export const Item = styled.li`
   flex-direction: column;
   justify-content: space-around;
   padding: 10px;
-  border-bottom: 2px solid;
   width: 90%;
   h3 {
     font-size: 1.5rem;

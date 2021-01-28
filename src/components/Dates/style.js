@@ -1,13 +1,18 @@
 import styled from 'styled-components';
 
+export const Container = styled.div`
+  margin-top: 5vh;
+`;
+
 export const Events = styled.div`
-  width: 20%;
-  margin: 15vh auto;
-  margin-top: 25vh;
+  width: 90%;
+  margin: 10vh auto;
   padding-right: 6vw;
+
   ul {
-    width: 100%;
+    width: 40%;
     border: 2px solid;
+    margin: 0 auto;
     border-top: none;
     border-bottom: 0.5px solid;
     border-bottom-left-radius: 25px;
@@ -15,7 +20,10 @@ export const Events = styled.div`
   }
 `;
 
-export const Title = styled.div`
+export const Titl = styled.div`
+  width: 40%;
+  border: 2px solid;
+  margin: 0 auto;
   background-color: #005542;
   border-top-right-radius: 25px;
   border-top-left-radius: 25px;
