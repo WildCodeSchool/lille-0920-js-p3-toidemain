@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { device } from "../layout/Devices";
+import { device } from "../../layout/Devices";
 
 export const TextContainer = styled.div`
   margin-top: 20px;

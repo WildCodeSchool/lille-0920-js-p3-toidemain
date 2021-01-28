@@ -12,7 +12,7 @@ import {
   HeaderContainer,
 } from "./style";
 import Title from "../../components/Title/index";
-import AtelierText from "../../AtelierText";
+import AtelierText from "../AtelierText";
 
 export default function Atelier() {
   return (
