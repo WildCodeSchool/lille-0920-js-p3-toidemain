@@ -23,7 +23,7 @@ const Dates = () => {
       <Title>
         <h2>Stages et Ateliers à Venir</h2>
       </Title>
-      <ul>{!loading && dates.length === 0 ? <p>No événements...</p> : dates.map((dat) => <DateItem {...dat} key={dat.id} />)}</ul>
+      <ul>{!loading && dates.length === 0 ? <p>No événements...</p> : dates.map((dat) => <DateItem dat={dat} key={dat.id} />)}</ul>
     </Events>
   );
 };

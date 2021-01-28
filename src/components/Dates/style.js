@@ -6,9 +6,12 @@ export const Events = styled.div`
   margin-top: 25vh;
   padding-right: 6vw;
   ul {
+    width: 100%;
     border: 2px solid;
     border-top: none;
     border-bottom: 0.5px solid;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
   }
 `;
 

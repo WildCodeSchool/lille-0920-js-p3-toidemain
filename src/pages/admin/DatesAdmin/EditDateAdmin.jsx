@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from "react";
-import { connect } from "react-redux";
-import { updateDate, AddDate } from "../../../redux/actions/DateActions";
-import { ContainerEditDate } from "./style.js";
+import React, { useState, useEffect } from 'react';
+import { connect } from 'react-redux';
+import { updateDate, AddDate } from '../../../redux/actions/DateActions';
+import { ContainerEditDate } from './style.js';
 
 const EditDate = ({ current, updateDate, AddDate }) => {
-  const [date, setDate] = useState("");
-  const [message, setMessage] = useState("");
+  const [date, setDate] = useState('');
+  const [message, setMessage] = useState('');
 
   useEffect(() => {
     if (current) {
@@ -15,8 +15,8 @@ const EditDate = ({ current, updateDate, AddDate }) => {
   }, [current]);
 
   const onSubmit = () => {
-    if (message === "" || date === "") {
-      alert("Please enter message and date");
+    if (message === '' || date === '') {
+      alert('Please enter message and date');
     } else {
       const updDate = {
         id: current.id,
@@ -26,14 +26,14 @@ const EditDate = ({ current, updateDate, AddDate }) => {
 
       updateDate(updDate);
 
-      setMessage("");
-      setDate("");
+      setMessage('');
+      setDate('');
     }
   };
 
   const onAdd = () => {
-    if (message === "" || date === "") {
-      alert("Please enter message and date");
+    if (message === '' || date === '') {
+      alert('Please enter message and date');
     } else {
       const newDate = {
         date,
@@ -41,10 +41,10 @@ const EditDate = ({ current, updateDate, AddDate }) => {
       };
       AddDate(newDate);
 
-      alert("Date added");
+      alert('Date added');
 
-      setMessage("");
-      setDate("");
+      setMessage('');
+      setDate('');
     }
   };
 
@@ -53,25 +53,11 @@ const EditDate = ({ current, updateDate, AddDate }) => {
       <form>
         <h1>Enter Infos</h1>
 
-        <input
-          type="date"
-          name="date"
-          placeholder="Date"
-          value={date}
-          onChange={(e) => setDate(e.target.value)}
-        />
+        <input type="date" name="date" placeholder="Date" value={date} onChange={(e) => setDate(e.target.value)} />
 
-        <input
-          type="text"
-          name="message"
-          placeholder="Message"
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-        />
+        <input type="text" name="message" placeholder="Message" value={message} onChange={(e) => setMessage(e.target.value)} />
 
-        <button onClick={current ? onSubmit : onAdd}>
-          {current ? "Update" : "Add"}{" "}
-        </button>
+        <button onClick={current ? onSubmit : onAdd}>{current ? 'Update' : 'Add'} </button>
       </form>
     </ContainerEditDate>
   );

@@ -14,5 +14,7 @@ export const Item = styled.li`
   }
   .date {
     font-weight: bold;
+    color: #1c819e;
+    font-size: 1.2rem;
   }
 `;

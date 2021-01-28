@@ -21,7 +21,7 @@ const Gallery = () => {
 
   return (
     <Container>
-      <Title titleName="Evénements Passés"></Title>
+      <Title titleName="Nos Evénements"></Title>
       <ul>{!loading && galleries.length === 0 ? <p>No événements...</p> : galleries.map((gallery) => <GalleryItem {...gallery} key={gallery.id} />)}</ul>
     </Container>
   );
