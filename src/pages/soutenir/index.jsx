@@ -124,6 +124,6 @@ const Soutenir = () => {
         </BContainer>
       </SoutenirBox>
     </SoutenirContainer>
-  );
+  )
 };
 export default Soutenir;

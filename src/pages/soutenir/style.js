@@ -112,12 +112,12 @@ export const Img = styled.img`
 export const Text1 = styled.p`
   font-size: 1.2rem;
   margin: 2vw;
-  margin-top: 6vh;
+  margin-top: 3vh;
   text-align: justify;
 `;
 export const Text2 = styled.p`
   margin: 2vw;
-  margin-top: 6vh;
+  margin-top: 3vh;
   font-size: 1.2rem;
   text-align: justify;
 `;
@@ -161,7 +161,7 @@ export const BigLetter = styled.li`
   text-decoration: underline;
 `;
 export const Button = styled.div`
-  margin-top: 13vh;
+  margin-top: 16vh;
   a {
     font-size: 22px;
     color: #005542;
@@ -185,6 +185,7 @@ export const Button = styled.div`
 `;
 
 export const Button1 = styled.div`
+  margin-top: 3vh;
   a {
     font-size: 22px;
     color: #005542;
