@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { HomeContainer, ColonneA, PageContainer, H1, Trait } from "./style";
+import { HomeContainer, PageContainer, H1, Trait } from "./style";
 import StageText from "../../components/StageText";
 import Slider from "../../components/MySlider/Slider";
 import images from "../../components/MySlider/img/images";

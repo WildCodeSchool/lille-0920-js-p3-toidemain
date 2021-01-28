@@ -45,7 +45,7 @@ export default function Atelier() {
         </TextContainer>
         <PromisesContainer>
           {promiseItems.map(({ index, name, logo }) => {
-            return <List key={index} name={name} logo={logo} />;
+            return <List key={name} name={name} logo={logo} />;
           })}
         </PromisesContainer>
       </Container>
