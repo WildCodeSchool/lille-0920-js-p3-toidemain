@@ -17,6 +17,9 @@ This is the front-end content of the website. You will find the back-end content
 
 # TECHNOLOGIES :
   - react: 17.0.1
+  - react-redux: 7.2.2
+  - redux: 4.0.5
+  - redux-thunk: 2.3.0
   - react-burger-menu: 3.0.2
   - react-hexgrid: 1.0.3
   - react-router-dom: 5.2.0
