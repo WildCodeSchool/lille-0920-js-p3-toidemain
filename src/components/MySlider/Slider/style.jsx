@@ -12,4 +12,5 @@ export const SliderDiv = styled.div`
     width: 90vw;
     margin-top: 2vh;
   }
+  
 `;

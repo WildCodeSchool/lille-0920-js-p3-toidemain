@@ -5,30 +5,28 @@ import {
   Container,
   Image,
   TextContainer,
-  MainTitle,
   Paragraph,
   PromisesContainer,
-  SpanA,
   SpanB,
   Path,
+  HeaderContainer
 } from "./style";
 import Title from "../../components/Title/index";
+import AtelierText from "../../AtelierText";
 
 export default function Atelier() {
   return (
     <>
       <Title titleName="Nos Ateliers"></Title>
-      <Container>
-        <Image src="/images/Atelier.jpg" alt="atelier" />
+      <HeaderContainer>
+         <AtelierText />
+          <Image src="/images/Atelier.jpg" alt="atelier" />
+        </HeaderContainer>
+      <Container> 
         <TextContainer>
-          <MainTitle>
-            <SpanA>Toi Demain </SpanA>propose et organise des ateliers à
-            destination des élèves afin de les accompagner dans leurs démarches
-            professionnelles
-          </MainTitle>
           <Paragraph>
             Vous êtes une association ? un établissement scolaire ? une
-            fondation? une entreprise ? une collectivité ? Toi demain propose et
+            fondation ? une entreprise ? une collectivité ? demain propose et
             organise des
             <SpanB>&nbsp;ateliers sur mesure </SpanB>pour accompagner les jeunes
             dans leur orientation professionnelle et leur permettre de révéler
@@ -39,7 +37,7 @@ export default function Atelier() {
             innover et co-créer de nouveaux programmes pour faire grandir les
             jeunes en accord avec &nbsp;
             <Path to="/action/pedagogie">notre pédagogie.</Path>&nbsp; Ils
-            interviennent régulièrement dans des grandes écoles , des
+            interviennent régulièrement dans des grandes écoles et des
             universités, dans des établissements scolaires et dans des
             associations. Nos mots clés :&nbsp;
             <SpanB>apprendre en s'amusant ! </SpanB>
