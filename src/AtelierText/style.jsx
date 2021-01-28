@@ -14,7 +14,6 @@ export const TextContainer = styled.div`
     height: 10%;
     margin-top: 2px;
     font-size: 1.5em;
-
   }
   @media ${device.tablet} {
     width: 98%;
@@ -32,7 +31,6 @@ export const TextContainer = styled.div`
     margin-top: 2px;
   }
   @media only screen and (min-width: 1281px) {
- 
   }
   p {
     font-family: "Roboto", sans-serif;
@@ -80,6 +78,6 @@ export const Corner = styled.div`
   }
 `;
 
-export const Span=styled.span`
-color: #ffbe00;
+export const Span = styled.span`
+  color: #ffbe00;
 `;

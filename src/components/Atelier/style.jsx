@@ -24,8 +24,7 @@ export const Container = styled.div`
   @media only screen and (min-width: 1025px) and (max-width: 1280px) {
     flex-direction: column;
     align-items: center;
-  } 
-  
+  }
 `;
 
 export const Image = styled.img`
@@ -54,8 +53,7 @@ export const Image = styled.img`
   @media only screen and (min-width: 1025px) and (max-width: 1280px) {
     width: 90%;
     height: auto;
-  } 
-  
+  }
 `;
 
 export const TextContainer = styled.div`
@@ -83,9 +81,8 @@ export const TextContainer = styled.div`
     width: 90%;
     justify-content: center;
     padding: 5px 5px 15px 5px;
-  } 
+  }
 `;
-
 
 export const Paragraph = styled.p`
   text-align: justify;
@@ -152,27 +149,24 @@ export const Path = styled(Link)`
   color: #005542;
 `;
 
-export const HeaderContainer=styled.div`
+export const HeaderContainer = styled.div`
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
   margin-top: 2vh;
   width: 100%;
   @media ${device.mobile} {
-    flex-direction:column-reverse;
+    flex-direction: column-reverse;
   }
   @media ${device.tablet} {
-    flex-direction:column-reverse;
+    flex-direction: column-reverse;
   }
   @media ${device.small_screen} {
-    flex-direction:column-reverse;
+    flex-direction: column-reverse;
   }
   @media only screen and (min-width: 1025px) and (max-width: 1280px) {
-    flex-direction:column-reverse;
-  } 
-  @media only screen and (min-width: 1281px) {
- 
+    flex-direction: column-reverse;
   }
-  `;
-
-  
+  @media only screen and (min-width: 1281px) {
+  }
+`;

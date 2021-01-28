@@ -9,7 +9,7 @@ import {
   PromisesContainer,
   SpanB,
   Path,
-  HeaderContainer
+  HeaderContainer,
 } from "./style";
 import Title from "../../components/Title/index";
 import AtelierText from "../../AtelierText";
@@ -19,10 +19,10 @@ export default function Atelier() {
     <>
       <Title titleName="Nos Ateliers"></Title>
       <HeaderContainer>
-         <AtelierText />
-          <Image src="/images/Atelier.jpg" alt="atelier" />
-        </HeaderContainer>
-      <Container> 
+        <AtelierText />
+        <Image src="/images/Atelier.jpg" alt="atelier" />
+      </HeaderContainer>
+      <Container>
         <TextContainer>
           <Paragraph>
             Vous êtes une association ? un établissement scolaire ? une
