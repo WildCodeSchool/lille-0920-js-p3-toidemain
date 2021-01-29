@@ -936,7 +936,7 @@ export const TextR = styled.div`
     width: 30%;
     height: 100%;
     p {
-      font-size: 1.9em;
+      font-size: 1.6em;
       line-height: 1.4em;
       width: 90%;
       margin: 6vh 2vw;
@@ -1028,7 +1028,7 @@ export const TextL = styled.div`
     height: 100%;
     width: 30%;
     p {
-      font-size: 1.9em;
+      font-size: 1.6em;
       line-height: 1.4em;
       width: 90%;
       margin: 6vh 1vw;
