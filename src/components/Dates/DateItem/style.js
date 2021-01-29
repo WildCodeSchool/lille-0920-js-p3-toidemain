@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { device } from '../../../layout/Devices';
 
 export const Item = styled.li`
   display: flex;
@@ -15,5 +16,15 @@ export const Item = styled.li`
     font-weight: bold;
     color: #1c819e;
     font-size: 1.2rem;
+  }
+  @media ${device.mobile} {
+    width: 95%;
+    h3 {
+      font-size: 1.2rem;
+      padding: 3px;
+    }
+    .date {
+      font-size: 1rem;
+    }
   }
 `;
