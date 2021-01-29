@@ -11,7 +11,7 @@ export const getGalleries = () => async (dispatch) => {
   try {
     setLoading();
 
-    const { data } = await axios.get("/galleries");
+    const { data } = await axios.get("http://localhost:5050/auth/evenements");
 
     dispatch({
       type: GET_GALLERIES,

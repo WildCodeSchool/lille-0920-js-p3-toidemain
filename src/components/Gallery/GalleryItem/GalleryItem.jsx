@@ -11,7 +11,7 @@ moment.locale('fr');
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
-const GalleryItem = ({ title, text, images, date }) => {
+const GalleryItem = ({ title, text, image1, image2, image3, image4, date }) => {
   return (
     <Card>
       <h2>{title}</h2>
@@ -19,11 +19,20 @@ const GalleryItem = ({ title, text, images, date }) => {
       <p> {text} </p>
       <Img>
         <Swiper spaceBetween={30} slidesPerView={1} navigation pagination={{ clickable: true }} scrollbar={{ draggable: true }} onSwiper={(swiper) => console.log(swiper)} onSlideChange={() => console.log('slide change')}>
-          {images.map((img) => (
+          
             <SwiperSlide>
-              <img src={img} alt="slid" />
+              <img src={image1} alt="slid" />
             </SwiperSlide>
-          ))}
+            <SwiperSlide>
+              <img src={image2} alt="slid" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={image3} alt="slid" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={image4} alt="slid" />
+            </SwiperSlide>
+          
         </Swiper>
       </Img>
     </Card>

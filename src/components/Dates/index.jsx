@@ -5,6 +5,7 @@ import { getDates } from '../../redux/actions/DateActions';
 import { useDispatch, useSelector } from 'react-redux';
 import Spiner from '../../layout/spiner/Spiner';
 import { Events, Titl, Container } from './style';
+//import axios from 'axios';
 
 const Dates = () => {
   const dispatch = useDispatch();
@@ -12,7 +13,7 @@ const Dates = () => {
   const { dates, loading } = datesList;
 
   useEffect(() => {
-    dispatch(getDates());
+    dispatch(getDates());    
   }, [dispatch]);
 
   if (loading) {
