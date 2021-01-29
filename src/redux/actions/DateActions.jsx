@@ -13,7 +13,7 @@ import axios from "axios";
 export const getDates = () => async (dispatch) => {
   try {
     setLoading();
-    const { data } = await axios.get("/dates");
+    const { data } = await axios.get("http://localhost:5050/ateliers");
 
     dispatch({
       type: GET_DATES,
