@@ -60,16 +60,18 @@ const StageUp = () => {
         <SecText>
           <h3>Stage up c’est :</h3>
           <h2>
-            <br /> <i class="fas fa-angle-double-right"></i> <span>1 </span>
+            <br /> <i className="fas fa-angle-double-right"></i> <span>1 </span>
             semaine de stage collectif innovante au sein d’une entreprise
-            <br /> <i class="fas fa-angle-double-right"></i> Pour un groupe de
-            <sp>12 à 20</sp> collégiens / lycéens
-            <br /> <i class="fas fa-angle-double-right"></i> Encadré par{" "}
-            <span>2</span> coachs certifiés à l`orientation scolaire
-            <br /> <i class="fas fa-angle-double-right"></i> Pour l’entreprise,
-            une action <span>RSE clé en main</span> ainsi qu'un avantage pour
-            les enfants de collaborateurs
-            <br /> <i class="fas fa-angle-double-right"></i> L’action est
+            <br /> <i className="fas fa-angle-double-right"></i> Pour un groupe
+            de
+            <span>12 à 20</span> collégiens / lycéens
+            <br /> <i className="fas fa-angle-double-right"></i> Encadré
+            par&nbsp;
+            <span>2</span> coachs certifiés à l'orientation scolaire
+            <br /> <i className="fas fa-angle-double-right"></i> Pour
+            l’entreprise, une action <span>RSE clé en main</span> ainsi qu'un
+            avantage pour les enfants de collaborateurs
+            <br /> <i className="fas fa-angle-double-right"></i> L’action est
             finançable à <span>100%</span> via la taxe d’apprentissage
           </h2>
         </SecText>
@@ -85,20 +87,20 @@ const StageUp = () => {
             <h3>Vos Rôles</h3>
             <ul>
               <li>
-                <i class="fas fa-angle-double-right"></i> Mise à disposition
+                <i className="fas fa-angle-double-right"></i> Mise à disposition
                 d'une salle.
               </li>
               <li>
-                <i class="fas fa-angle-double-right"></i> 4 collaborateurs 3 x 2
-                heures.
+                <i className="fas fa-angle-double-right"></i> 4 collaborateurs 3
+                x 2 heures.
               </li>
               <li>
-                <i class="fas fa-angle-double-right"></i> 2 heures pour le
+                <i className="fas fa-angle-double-right"></i> 2 heures pour le
                 porteur de projet.
               </li>
               <li>
-                <i class="fas fa-angle-double-right"></i> 1 collaborateur 1 x 1
-                heure : les métiers d’avenir.
+                <i className="fas fa-angle-double-right"></i> 1 collaborateur 1
+                x 1 heure : les métiers d’avenir.
               </li>
             </ul>
           </ListR>
@@ -107,15 +109,15 @@ const StageUp = () => {
             <h3>Toi demain Rôle</h3>
             <ul>
               <li>
-                <i class="fas fa-angle-double-right"></i> Recrutement des
+                <i className="fas fa-angle-double-right"></i> Recrutement des
                 stagiaires et gestion des conventions de stages.
               </li>
               <li>
-                <i class="fas fa-angle-double-right"></i> Encadrement et
+                <i className="fas fa-angle-double-right"></i> Encadrement et
                 animation des jeunes pendant toute la durée du stage.
               </li>
               <li>
-                <i class="fas fa-angle-double-right"></i> Accompagnement des
+                <i className="fas fa-angle-double-right"></i> Accompagnement des
                 collaborateurs intervenants.
               </li>
             </ul>
