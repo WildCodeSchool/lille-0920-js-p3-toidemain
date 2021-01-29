@@ -27,6 +27,18 @@ export const Events = styled.div`
       width: 90%;
     }
   }
+  @media ${device.tablet} {
+    width: 95%;
+    ul {
+      width: 90%;
+    }
+  }
+  @media ${device.small_screen} {
+    width: 75%;
+    ul {
+      width: 70%;
+    }
+  }
 `;
 
 export const Titl = styled.div`
@@ -49,6 +61,20 @@ export const Titl = styled.div`
     h2 {
       width: 88%;
       font-size: 1.3rem;
+    }
+  }
+  @media ${device.tablet} {
+    width: 90%;
+    h2 {
+      width: 88%;
+      font-size: 1.6rem;
+    }
+  }
+  @media ${device.small_screen} {
+    width: 70%;
+    h2 {
+      width: 88%;
+      font-size: 1.6rem;
     }
   }
 `;

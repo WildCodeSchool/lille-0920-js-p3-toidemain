@@ -13,4 +13,10 @@ export const Container = styled.div`
   @media ${device.mobile} {
     width: 97%;
   }
+  @media ${device.tablet} {
+    width: 97%;
+  }
+  @media ${device.small_screen} {
+    width: 97%;
+  }
 `;

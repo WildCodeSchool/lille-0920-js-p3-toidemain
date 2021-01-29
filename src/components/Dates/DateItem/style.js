@@ -27,4 +27,24 @@ export const Item = styled.li`
       font-size: 1rem;
     }
   }
+  @media ${device.tablet} {
+    width: 95%;
+    h3 {
+      font-size: 1.2rem;
+      padding: 3px;
+    }
+    .date {
+      font-size: 1rem;
+    }
+  }
+  @media ${device.small_screen} {
+    width: 75%;
+    h3 {
+      font-size: 1.2rem;
+      padding: 3px;
+    }
+    .date {
+      font-size: 1rem;
+    }
+  }
 `;

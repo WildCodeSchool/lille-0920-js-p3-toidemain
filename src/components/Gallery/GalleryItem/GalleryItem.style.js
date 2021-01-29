@@ -39,6 +39,28 @@ export const Card = styled.div`
       margin-top: 2vh;
     }
   }
+  @media ${device.tablet} {
+    width: 95%;
+    p,
+    h2,
+    h4 {
+      margin-left: 4vw;
+    }
+    h2 {
+      margin-top: 2vh;
+    }
+  }
+  @media ${device.small_screen} {
+    width: 95%;
+    p,
+    h2,
+    h4 {
+      margin-left: 4vw;
+    }
+    h2 {
+      margin-top: 2vh;
+    }
+  }
 `;
 export const Img = styled.div`
   height: 55vh;
@@ -53,10 +75,29 @@ export const Img = styled.div`
   @media ${device.mobile} {
     width: 90%;
     height: 35vh;
+    img {
+      width: 100%;
+      height: 34vh;
+      margin: 0 auto;
+    }
   }
-  img {
-    width: 100%;
-    height: 34vh;
-    margin: 0 auto;
+
+  @media ${device.tablet} {
+    width: 90%;
+    height: 45vh;
+    img {
+      width: 100%;
+      height: 42vh;
+      margin: 0 auto;
+    }
+  }
+  @media ${device.small_screen} {
+    width: 90%;
+    height: 50vh;
+    img {
+      width: 100%;
+      height: 47vh;
+      margin: 0 auto;
+    }
   }
 `;
