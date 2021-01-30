@@ -1,0 +1,14 @@
+export const GET_DATES = "GET_DATES";
+export const ADD_DATE = "ADD_DATE";
+export const DELETE_DATE = "DELETE_DATE";
+export const UPDATE_DATE = "UPDATE_DATE";
+export const CLEAR_DATES = "CLEAR_DATES";
+export const SET_LOADING = "SET_LOADING";
+export const DATES_ERROR = "DATES_ERROR";
+export const SET_CURRENT = "SET_CURRENT";
+export const CLEAR_CURRENT = "DATES_ERROR";
+export const GET_GALLERIES = "GET_GALLERIES";
+export const ADD_GALLERY = "ADD_GALLERY";
+export const DELETE_GALLERY = "DELETE_GALLERY";
+export const CLEAR_GALLERIES = "CLEAR_GALLERIES";
+export const GALLERIES_ERROR = "DATES_ERROR";
