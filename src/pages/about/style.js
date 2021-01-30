@@ -15,14 +15,6 @@ export const AboutContainer = styled.div`
     opacity: 0.7;
   }
 
-  h2 {
-    font-size: 1.5em;
-    color: #005542;
-    font-weight: bold;
-    font-style: italic;
-    margin-bottom: 5vh;
-  }
-
   h3 {
     font-size: 1.2em;
     color: #ffbe00;
@@ -49,7 +41,7 @@ export const PledgeBox = styled.div`
   border-top: solid 5px #ffbe00;
   border-bottom: solid 5px #ffbe00;
   border-radius: 15px;
-
+  font-family: "Roboto", sans-serif;
   @media screen and (max-width: 768px) {
     flex-direction: column;
   }
