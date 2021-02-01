@@ -1,9 +1,9 @@
-import styled from 'styled-components';
-import { device } from '../../layout/Devices';
+import styled from "styled-components";
+import { device } from "../../layout/Devices";
 
 export const Main = styled.div`
   height: 370vh;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #02523f;
 
   @media ${device.mobile} {
