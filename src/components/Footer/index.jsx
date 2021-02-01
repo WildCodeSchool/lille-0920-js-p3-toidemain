@@ -20,7 +20,7 @@ const Footer = () => {
             <span>
               <img src="/images/icons/location-pin.png" alt="gps" />
             </span>
-            &nbsp;&nbsp;59390 Sailly-lez-Lannoy
+            &nbsp;&nbsp;Hem 59510
           </p>
         </Adress>
         <p>
