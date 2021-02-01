@@ -96,6 +96,10 @@ export const Box5 = styled.div`
   &:hover {
     height: 330px;
   }
+  @media ${device.small_screen} {
+   padding: 6px;
+  
+  }
 `;
 export const Box6 = styled.div`
   background-color: white;
@@ -122,6 +126,11 @@ export const Container = styled.div`
   }
   @media ${device.tablet} {
     display: none;
+  }
+  @media ${device.small_screen} {
+   width:50vw;
+   margin-right: -11vw;
+  
   }
 `;
 export const Stairs = styled.div`
