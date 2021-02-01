@@ -51,7 +51,7 @@ const About = () => {
             <Member item={item} key={item.name} />
           ))}
         </Cards>
-        <h5>+ Une équipe de coachs partenaires, formés par Toi Demain!</h5>
+        <h5>+ Une équipe de coachs partenaires, formés par Toi Demain !</h5>
       </div>
 
       <div id="partenaires">
