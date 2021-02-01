@@ -10,8 +10,8 @@ export const Container1 = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 32%;
-  background-color: white;
+  width: 30%;
+  background-color: rgba(255, 255, 255, 0.375);
   border-radius: 5px;
   margin: 1vw;
   padding: 1vh;
@@ -20,14 +20,16 @@ export const Container1 = styled.div`
   }
   @media ${device.tablet} {
     width: 95%;
+  }
+  @media ${device.small_screen} {
   }
 `;
 export const Container2 = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 32%;
-  background-color: white;
+  width: 30%;
+  background-color: rgba(255, 255, 255, 0.375);
   border-radius: 5px;
   margin: 1vw;
   padding: 1vh;
@@ -36,13 +38,16 @@ export const Container2 = styled.div`
   }
   @media ${device.tablet} {
     width: 95%;
+  }
+  @media ${device.small_screen} {
   }
 `;
 export const Container3 = styled.div`
+  background-color: rgba(255, 255, 255, 0.375);
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: white;
+
   border-radius: 5px;
   margin: 1vw;
   padding: 1vh;
@@ -51,6 +56,8 @@ export const Container3 = styled.div`
   }
   @media ${device.tablet} {
     width: 95%;
+  }
+  @media ${device.small_screen} {
   }
 `;
 export const Container4 = styled.div`
@@ -68,6 +75,7 @@ export const Container4 = styled.div`
   @media ${device.tablet} {
     width: 95%;
   }
+  
 `;
 
 export const SoutenirBox = styled.div`
@@ -84,6 +92,8 @@ export const SoutenirBox = styled.div`
     display: flex;
     flex-direction: column;
   }
+  @media ${device.small_screen} {
+  }
 `;
 
 export const TitleBox4 = styled.h2`
@@ -94,7 +104,7 @@ export const TitleBox4 = styled.h2`
 export const Text4 = styled.p`
   font-size: 1.2rem;
   margin: 2vw;
-  text-align: justify;
+  text-align: center;
 `;
 export const Img = styled.img`
   width: 20%;
@@ -108,39 +118,57 @@ export const Img = styled.img`
     margin-left: 40vw;
     margin-top: 1vh;
   }
+  
 `;
 export const Text1 = styled.p`
   font-size: 1.2rem;
   margin: 2vw;
-  margin-top: 6vh;
-  text-align: justify;
+  margin-top: 3vh;
+  text-align: center;
 `;
 export const Text2 = styled.p`
   margin: 2vw;
-  margin-top: 6vh;
+  margin-top: 3vh;
   font-size: 1.2rem;
-  text-align: justify;
+  text-align: center;
 `;
 export const Text3 = styled.p`
   margin: 2vw;
   font-size: 1.2rem;
   margin-top: 3vh;
-  text-align: justify;
+  text-align: center;
 `;
 export const TitleBox3 = styled.h2`
-  color: #145264;
+  background-color: #145264;
+  padding: 2.75vw;
+  color: white;
   text-align: center;
   font-size: 1.6rem;
+  @media ${device.small_screen} {
+  height: 11vh;
+    
+  }
 `;
 export const TitleBox2 = styled.h2`
-  color: #1c819e;
+  background-color: #1c819e;
+  padding: 2vw;
+  color: white;
   text-align: center;
   font-size: 1.6rem;
+  @media ${device.small_screen} {
+  height: 13vh;
+  }
 `;
 export const TitleBox1 = styled.h2`
-  color: #005542;
+  background-color: #005542;
+  padding: 2.9vw;
+  color: white;
   text-align: center;
   font-size: 1.6rem;
+  @media ${device.small_screen} {
+  height: 10.5vh;
+    
+  }
 `;
 export const BContainer = styled.div`
   width: 32%;
@@ -152,16 +180,16 @@ export const BContainer = styled.div`
   }
 `;
 export const Liste = styled.li`
-  margin-top: 3vh;
+  margin-top: 4vh;
 `;
 
 export const BigLetter = styled.li`
-  margin-top: 6vh;
-  font-size: 1.4rem;
-  text-decoration: underline;
+  margin-top: 4vh;
+  font-size: 1rem;
+ 
 `;
 export const Button = styled.div`
-  margin-top: 13vh;
+  margin-top: 17vh;
   a {
     font-size: 22px;
     color: #005542;
@@ -181,10 +209,15 @@ export const Button = styled.div`
   }
   @media ${device.tablet} {
     margin: 5vh;
+  }
+  @media ${device.small_screen} {
+    margin-top: 17.5vh;
+    
   }
 `;
 
 export const Button1 = styled.div`
+  margin-top: 3vh;
   a {
     font-size: 22px;
     color: #005542;
@@ -204,5 +237,9 @@ export const Button1 = styled.div`
   }
   @media ${device.tablet} {
     margin: 5vh;
+  }
+  @media ${device.small_screen} {
+    margin-top: 2.5vh;
+    
   }
 `;

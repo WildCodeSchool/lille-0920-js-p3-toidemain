@@ -1,10 +1,21 @@
 import styled from "styled-components";
+import { device } from "../../../layout/Devices";
 
 export const SlideDiv = styled.div`
   height: 100%;
-  width: 100%;
+  width: 50vw;
   background-image: url("${(props) => props.content}");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  @media ${device.mobile} {
+    height: 100%;
+    width: 100vw;
+    margin-top: 2vh;
+  }
+  @media ${device.tablet} {
+    height: 100%;
+    width: 100vw;
+    margin-top: 2vh;
+  }
 `;
