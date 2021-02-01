@@ -2,7 +2,8 @@ import styled from "styled-components";
 import { device } from "../../layout/Devices";
 
 export const Box1 = styled.div`
-  background-color: #cfd7d6;
+  background-color: #145264;
+  background: rgba(0, 0, 0, 0.5);
   font-family: "Oswald", Gadget, sans-serif;
   font-size: 15px;
   padding-top: 5px;

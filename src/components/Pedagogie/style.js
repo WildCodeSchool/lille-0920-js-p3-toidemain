@@ -52,6 +52,7 @@ export const Container2 = styled.div`
   width: 100vw;
   margin-top: 8vh;
   display: flex;
+  flex-direction: column;
   @media ${device.mobile} {
     display: flex;
     flex-direction: column;
@@ -65,6 +66,7 @@ export const Objectif = styled.div`
   text-align: -webkit-center;
   padding-top: 4vh;
   display: flex;
+  flex-direction: column;
   @media ${device.mobile} {
     display: flex;
     flex-direction: column;
@@ -75,13 +77,11 @@ export const Objectif = styled.div`
   }
 `;
 export const Title2 = styled.h2`
+margin: 3vh;
   font-size: 4rem;
   color: #ffbe00;
-  width: 20vw;
   display: flex;
   justify-content: center;
-  align-items: -webkit-center;
-  margin: 20px;
   padding-bottom: 5vh;
   @media ${device.mobile} {
     font-size: 3rem;
@@ -95,12 +95,9 @@ export const Title2 = styled.h2`
   }
 `;
 export const Liste = styled.ul`
-  width: 35vw;
-  text-align: -webkit-center;
+  text-align: center;
   display: flex;
   flex-direction: column;
-  margin-top: -2vh;
-  margin-left: 9vw;
   @media ${device.mobile} {
     width: 90vw;
     margin: 3vh;
@@ -118,8 +115,7 @@ export const ListeElement = styled.li`
   margin-top: 6px;
 `;
 export const Slogan = styled.p`
-  width: 20vw;
-  text-align: end;
+  text-align: center;
   color: white;
   font-size: 2.6rem;
   margin: 10vh;

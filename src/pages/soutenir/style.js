@@ -1,16 +1,13 @@
 import styled from "styled-components";
 import { device } from "../../layout/Devices";
 
-export const SoutenirContainer = styled.div`
-  width: 100vw;
-  margin-bottom: 5vh;
-`;
+export const SoutenirContainer = styled.div``;
 
 export const Container1 = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 30%;
+  width: 33%;
   background-color: rgba(255, 255, 255, 0.375);
   border-radius: 5px;
   margin: 1vw;
@@ -28,7 +25,7 @@ export const Container2 = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 30%;
+  width: 33%;
   background-color: rgba(255, 255, 255, 0.375);
   border-radius: 5px;
   margin: 1vw;
@@ -47,7 +44,7 @@ export const Container3 = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  width: 33%;
   border-radius: 5px;
   margin: 1vw;
   padding: 1vh;
@@ -61,9 +58,11 @@ export const Container3 = styled.div`
   }
 `;
 export const Container4 = styled.div`
+width: 100vw;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  justify-content: space-around ;
+  
   border-radius: 5px;
   background-color: rgb(255, 190, 0);
   margin: 1vw;
@@ -75,7 +74,6 @@ export const Container4 = styled.div`
   @media ${device.tablet} {
     width: 95%;
   }
-  
 `;
 
 export const SoutenirBox = styled.div`
@@ -92,14 +90,14 @@ export const SoutenirBox = styled.div`
     display: flex;
     flex-direction: column;
   }
-  @media ${device.small_screen} {
-  }
 `;
 
 export const TitleBox4 = styled.h2`
   font-size: 1.6rem;
   text-align: center;
+  width: 20%;
   color: white;
+  margin-top: 3vh;
 `;
 export const Text4 = styled.p`
   font-size: 1.2rem;
@@ -107,9 +105,7 @@ export const Text4 = styled.p`
   text-align: center;
 `;
 export const Img = styled.img`
-  width: 20%;
-  margin-left: 21vw;
-  margin-top: -4vh;
+  width: 7vw;
   @media ${device.mobile} {
     margin-left: 40vw;
     margin-top: 1vh;
@@ -118,7 +114,6 @@ export const Img = styled.img`
     margin-left: 40vw;
     margin-top: 1vh;
   }
-  
 `;
 export const Text1 = styled.p`
   font-size: 1.2rem;
@@ -145,8 +140,7 @@ export const TitleBox3 = styled.h2`
   text-align: center;
   font-size: 1.6rem;
   @media ${device.small_screen} {
-  height: 11vh;
-    
+    height: 11vh;
   }
 `;
 export const TitleBox2 = styled.h2`
@@ -156,7 +150,7 @@ export const TitleBox2 = styled.h2`
   text-align: center;
   font-size: 1.6rem;
   @media ${device.small_screen} {
-  height: 13vh;
+    height: 13vh;
   }
 `;
 export const TitleBox1 = styled.h2`
@@ -166,12 +160,12 @@ export const TitleBox1 = styled.h2`
   text-align: center;
   font-size: 1.6rem;
   @media ${device.small_screen} {
-  height: 10.5vh;
-    
+    height: 10.5vh;
   }
 `;
 export const BContainer = styled.div`
-  width: 32%;
+display: flex;
+margin-bottom: 3vh;
   @media ${device.mobile} {
     width: 100%;
   }
@@ -180,66 +174,21 @@ export const BContainer = styled.div`
   }
 `;
 export const Liste = styled.li`
-  margin-top: 4vh;
+  margin-top: 3vh;
 `;
 
-export const BigLetter = styled.li`
+export const BigLetter = styled.span`
   margin-top: 4vh;
   font-size: 1rem;
- 
+  
 `;
-export const Button = styled.div`
-  margin-top: 17vh;
-  a {
-    font-size: 22px;
-    color: #005542;
-    text-decoration: none;
-    background-color: transparent;
-    transition: all 0.5s ease;
-    border: 5px solid #005542;
-    border-radius: 20px;
-    padding: 0.5rem;
-    &:hover {
-      background-color: #ffbe00;
-      color: #005542;
-    }
-  }
-  @media ${device.mobile} {
-    margin: 5vh;
-  }
-  @media ${device.tablet} {
-    margin: 5vh;
-  }
-  @media ${device.small_screen} {
-    margin-top: 17.5vh;
-    
-  }
+export const Stage = styled.p`
+  margin-top: 2vh ;
+  margin-right: 9vw;
 `;
 
-export const Button1 = styled.div`
-  margin-top: 3vh;
-  a {
-    font-size: 22px;
-    color: #005542;
-    text-decoration: none;
-    background-color: transparent;
-    transition: all 0.5s ease;
-    border: 5px solid #005542;
-    border-radius: 20px;
-    padding: 0.5rem;
-    &:hover {
-      background-color: #ffbe00;
-      color: #005542;
-    }
-  }
-  @media ${device.mobile} {
-    margin: 5vh;
-  }
-  @media ${device.tablet} {
-    margin: 5vh;
-  }
-  @media ${device.small_screen} {
-    margin-top: 2.5vh;
-    
-  }
+export const Contact = styled.div`
+text-decoration:none;
+font-size: 17px;
+margin-top:3vh;
 `;
