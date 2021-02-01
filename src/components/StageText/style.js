@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { device } from "../../layout/Devices";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 export const TextContainer = styled.div`
   display: flex;

@@ -29,13 +29,14 @@ export default function Atelier() {
             fondation ? une entreprise ? une collectivité ? Toi demain conçoit
             des <SpanB>ateliers</SpanB>&nbsp;pour accompagner des jeunes de 15 à
             25 ans, de tous horizons dans leur orientation professionnelle et
-            leur permettre de révéler leurs talents ! <br/>Nos coachs de terrain
-            aiment innover et co-créer de nouveaux programmes pour faire grandir
-            les jeunes en accord avec notre
+            leur permettre de révéler leurs talents ! <br />
+            Nos coachs de terrain aiment innover et co-créer de nouveaux
+            programmes pour faire grandir les jeunes en accord avec notre
             <Path to="/action/pedagogie">&nbsp;notre pédagogie.</Path>&nbsp; Ils
             interviennent régulièrement dans des grandes écoles et des
             universités, dans des établissements scolaires et dans des
-            associations. <br/>Nos mots clés :&nbsp;
+            associations. <br />
+            Nos mots clés :&nbsp;
             <SpanB>apprendre en s'amusant ! </SpanB>
           </Paragraph>
         </TextContainer>
