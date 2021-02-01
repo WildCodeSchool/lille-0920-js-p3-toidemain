@@ -75,7 +75,6 @@ export const Container4 = styled.div`
   @media ${device.tablet} {
     width: 95%;
   }
-  
 `;
 
 export const SoutenirBox = styled.div`
@@ -118,7 +117,6 @@ export const Img = styled.img`
     margin-left: 40vw;
     margin-top: 1vh;
   }
-  
 `;
 export const Text1 = styled.p`
   font-size: 1.2rem;
@@ -145,8 +143,7 @@ export const TitleBox3 = styled.h2`
   text-align: center;
   font-size: 1.6rem;
   @media ${device.small_screen} {
-  height: 11vh;
-    
+    height: 11vh;
   }
 `;
 export const TitleBox2 = styled.h2`
@@ -156,7 +153,7 @@ export const TitleBox2 = styled.h2`
   text-align: center;
   font-size: 1.6rem;
   @media ${device.small_screen} {
-  height: 13vh;
+    height: 13vh;
   }
 `;
 export const TitleBox1 = styled.h2`
@@ -166,8 +163,7 @@ export const TitleBox1 = styled.h2`
   text-align: center;
   font-size: 1.6rem;
   @media ${device.small_screen} {
-  height: 10.5vh;
-    
+    height: 10.5vh;
   }
 `;
 export const BContainer = styled.div`
@@ -186,7 +182,6 @@ export const Liste = styled.li`
 export const BigLetter = styled.li`
   margin-top: 4vh;
   font-size: 1rem;
- 
 `;
 export const Button = styled.div`
   margin-top: 17vh;
@@ -212,7 +207,6 @@ export const Button = styled.div`
   }
   @media ${device.small_screen} {
     margin-top: 17.5vh;
-    
   }
 `;
 
@@ -240,6 +234,5 @@ export const Button1 = styled.div`
   }
   @media ${device.small_screen} {
     margin-top: 2.5vh;
-    
   }
 `;
