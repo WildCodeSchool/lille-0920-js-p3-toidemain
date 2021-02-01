@@ -8,7 +8,7 @@ export const TextContainer = styled.div`
   justify-content: space-between;
   width: 20%;
   height: 100%;
-  z-index: 2;
+  z-index: 1;
   @media ${device.mobile} {
     width: 100%;
     height: 10%;
