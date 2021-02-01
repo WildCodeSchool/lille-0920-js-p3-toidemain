@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { device } from "../../layout/Devices";
+import { Link } from "react-router-dom";
 
 export const TextContainer = styled.div`
   display: flex;
@@ -20,7 +21,7 @@ export const TextContainer = styled.div`
   }
   p {
     font-family: "Roboto", sans-serif;
-    font-size: 1.4em;
+    font-size: 1.2em;
     color: #005542;
     text-align: justify;
     line-height: 2em;
@@ -58,4 +59,8 @@ export const Corner = styled.div`
     border-bottom: 3px solid #005542;
     border-left: 3px solid #005542;
   }
+`;
+
+export const Path = styled(Link)`
+  color: #005542;
 `;

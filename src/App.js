@@ -6,6 +6,7 @@ import About from "./pages/about";
 import Header from "./components/Header/index";
 import Footer from "./components/Footer/index";
 import Pedagogie from "./components/Pedagogie/index";
+import Login from "./pages/login";
 import Home from "./pages/home";
 import Admin from "./pages/admin";
 import Actualite from "./pages/actualite";
@@ -29,6 +30,7 @@ function App() {
             <Route exact path="/action/pedagogie" component={Pedagogie} />
             <Route exact path="/soutenir" component={Soutenir} />
             <Route exact path="/action/atelier" component={Atelier} />
+            <Route exact path="/login" component={Login} />
             <Route exact path="/admin" component={Admin} />
             <Route exact path="/actualite" component={Actualite} />
           </Switch>
