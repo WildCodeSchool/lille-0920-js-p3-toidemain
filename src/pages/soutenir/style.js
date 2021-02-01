@@ -36,8 +36,7 @@ export const Container2 = styled.div`
   @media ${device.tablet} {
     width: 95%;
   }
-  @media ${device.small_screen} {
-  }
+  
 `;
 export const Container3 = styled.div`
   background-color: rgba(255, 255, 255, 0.375);
@@ -54,25 +53,28 @@ export const Container3 = styled.div`
   @media ${device.tablet} {
     width: 95%;
   }
-  @media ${device.small_screen} {
-  }
+  
 `;
 export const Container4 = styled.div`
 width: 100vw;
   display: flex;
   flex-direction: row;
   justify-content: space-around ;
-  
   border-radius: 5px;
   background-color: rgb(255, 190, 0);
   margin: 1vw;
   padding: 1vh;
-
   @media ${device.mobile} {
     width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   @media ${device.tablet} {
     width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 `;
 
@@ -98,6 +100,15 @@ export const TitleBox4 = styled.h2`
   width: 20%;
   color: white;
   margin-top: 3vh;
+  @media ${device.mobile} {
+   width: 80%;
+  }
+  @media ${device.tablet} {
+    width: 60%;
+  }
+  @media ${device.small_screen} {
+    margin: 1vh; 
+  }
 `;
 export const Text4 = styled.p`
   font-size: 1.2rem;
@@ -107,12 +118,14 @@ export const Text4 = styled.p`
 export const Img = styled.img`
   width: 7vw;
   @media ${device.mobile} {
-    margin-left: 40vw;
-    margin-top: 1vh;
+    width: 20vw;
   }
   @media ${device.tablet} {
-    margin-left: 40vw;
+    width: 12vw;
+  }
+  @media ${device.small_screen} {
     margin-top: 1vh;
+    margin-right: 2vw;
   }
 `;
 export const Text1 = styled.p`
@@ -139,6 +152,13 @@ export const TitleBox3 = styled.h2`
   color: white;
   text-align: center;
   font-size: 1.6rem;
+  @media ${device.mobile} {
+   
+    margin-top: 1vh;
+  }
+  @media ${device.tablet} {
+    width: 90vw;
+  }
   @media ${device.small_screen} {
     height: 11vh;
   }
@@ -152,6 +172,9 @@ export const TitleBox2 = styled.h2`
   @media ${device.small_screen} {
     height: 13vh;
   }
+  @media ${device.tablet} {
+    width: 90vw;
+  }
 `;
 export const TitleBox1 = styled.h2`
   background-color: #005542;
@@ -159,6 +182,9 @@ export const TitleBox1 = styled.h2`
   color: white;
   text-align: center;
   font-size: 1.6rem;
+  @media ${device.tablet} {
+    width: 90vw;
+  }
   @media ${device.small_screen} {
     height: 10.5vh;
   }
@@ -166,12 +192,6 @@ export const TitleBox1 = styled.h2`
 export const BContainer = styled.div`
 display: flex;
 margin-bottom: 3vh;
-  @media ${device.mobile} {
-    width: 100%;
-  }
-  @media ${device.tablet} {
-    width: 100%;
-  }
 `;
 export const Liste = styled.li`
   margin-top: 3vh;
@@ -185,10 +205,20 @@ export const BigLetter = styled.span`
 export const Stage = styled.p`
   margin-top: 2vh ;
   margin-right: 9vw;
+  @media ${device.mobile} {
+    margin-left: 7vw;
+  }
+  @media ${device.tablet} {
+    margin-left: 10vw;
+  }
+  @media ${device.small_screen} {
+    font-size: 1.1rem;
+    margin-top: 2vh;
+  }
 `;
 
 export const Contact = styled.div`
 text-decoration:none;
 font-size: 17px;
-margin-top:3vh;
+margin-top:5vh;
 `;

@@ -115,7 +115,7 @@ const Soutenir = () => {
               </Liste>
               <Liste>Nous avons besoin de vous!</Liste>
               
-              <Contact> <Link to="/contacter">Nous Contacter</Link></Contact>
+              <Link to="/contacter"><Contact>Nous Contacter</Contact></Link>
              
             </ul>
           </Text1>
