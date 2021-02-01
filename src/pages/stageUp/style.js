@@ -1,9 +1,9 @@
-import styled from "styled-components";
-import { device } from "../../layout/Devices";
+import styled from 'styled-components';
+import { device } from '../../layout/Devices';
 
 export const Main = styled.div`
   height: 370vh;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #02523f;
 
   @media ${device.mobile} {
@@ -783,7 +783,7 @@ export const ListL = styled.div`
       margin: 4vh auto;
     }
     li {
-      font-size: 1.4em;
+      font-size: 1.3em;
       width: 90%;
       margin: 2vh auto;
       line-height: 1.25em;
