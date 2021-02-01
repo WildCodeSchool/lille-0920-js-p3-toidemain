@@ -3,6 +3,7 @@ import { device } from "../../layout/Devices";
 
 export const PageContainer = styled.div`
   margin-top: 4vh;
+  margin-left: 1vw;
   @media ${device.mobile} {
     margin-top: 2vh;
   }
