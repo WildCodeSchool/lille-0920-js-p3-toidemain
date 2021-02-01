@@ -26,8 +26,8 @@ export default function Navbar() {
 
           <DropdownItems>
             <Link to="/action/pedagogie">Notre Pédagogie</Link>
-            <Link to="/action/atelier">Nos Ateliers</Link>
             <Link to="/action/stageup">Stage-Up</Link>
+            <Link to="/action/atelier">Nos Ateliers</Link>
           </DropdownItems>
         </NavDropdown>
         |<Link to="/soutenir">Nous Soutenir</Link>|

@@ -50,6 +50,7 @@ export const Button1 = styled.button`
   color: #fff;
   font-size: 1em;
   font-family: "Roboto", sans-serif;
+  outline: none;
   cursor: pointer;
   &:hover {
     -webkit-transform: scale(1.8);
@@ -75,10 +76,10 @@ export const Button2 = styled.button`
   height: 100%;
   background-color: #1c819e;
   border: #1c819e;
-  border-top-left-radius: 10px;
   color: #fff;
   font-size: 1em;
   font-family: "Roboto", sans-serif;
+  outline: none;
   cursor: pointer;
   &:hover {
     -webkit-transform: scale(1.8);
@@ -107,6 +108,7 @@ export const Button3 = styled.button`
   border-bottom-left-radius: 10px;
   color: #fff;
   font-size: 1em;
+  outline: none;
   font-family: "Roboto", sans-serif;
   cursor: pointer;
   &:hover {

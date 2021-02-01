@@ -4,18 +4,18 @@ const portraitItems = [
     description: "Formatrice / ingénieure pédagogique",
     image: "/images/olivia.png",
     motivation:
-      "L’accompagnement des jeunes, la transmission et le partage. Prendre du plaisir dans son métier.",
+      "L’accompagnement, la transmission et le partage. Prendre du plaisir dans son métier.",
     why:
-      "Pour donner aux jeunes l’envie de poursuivre leurs études, d’entreprendre, de rejoindre une entreprise, d’être autonome.",
+      "Donner l’envie aux jeunes de poursuivre leurs études, d’entreprendre, de rejoindre une entreprise, d’être autonome.",
   },
   {
     name: "Emilie Auvray",
     description: "Formatrice / ingénieure pédagogique",
     image: "/images/emilie.png",
     motivation:
-      "Donner de l’énergie aux jeunes pour les faire avancer. Faire partie de projets qui ont du sens.",
+      "Donner de l’énergie aux autres pour les faire avancer. Faire partie de projets qui ont du sens.",
     why:
-      "Pour permettre aux jeunes de se découvrir en découvrant, d’apprendre en expérimentant, de grandir dans un collectif et dans la partage.",
+      "Permettre aux jeunes de se découvrir en découvrant, d’apprendre en expérimentant, de grandir dans un collectif et dans la partage.",
   },
   {
     name: "Christine Jubin",
@@ -32,7 +32,7 @@ const portraitItems = [
     image: "/images/elizabeth.png",
     motivation:
       "Élargir le champ des possibles ! Permettre à des jeunes d'ouvrir leurs horizons en découvrant des entreprises, des équipes, des métiers.",
-    why: "Pour s'investir dans un projet porteur de 'bon' sens.",
+    why: "S'investir dans un projet porteur de 'bon' sens.",
   },
   {
     name: "Romain Mayaud",

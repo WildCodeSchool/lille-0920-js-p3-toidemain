@@ -783,7 +783,7 @@ export const ListL = styled.div`
       margin: 4vh auto;
     }
     li {
-      font-size: 1.4em;
+      font-size: 1.3em;
       width: 90%;
       margin: 2vh auto;
       line-height: 1.25em;

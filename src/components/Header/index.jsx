@@ -4,7 +4,6 @@ import {
   TopBorder,
   HeaderBackground,
   LogoContainer,
-  ContactContainer,
 } from "./style";
 import Navbar from "./Navbar/index";
 import Burger from "./Burger/index";
@@ -24,10 +23,6 @@ const Header = () => {
               <img src="/images/logo_Header.png" alt="ToiDemain logo" />
             </Link>
           </LogoContainer>
-          <ContactContainer>
-            <img src="/images/icons/mail_icon.svg" alt="e-mail icon" />
-            <p>contact@toidemain.fr</p>
-          </ContactContainer>
         </HeaderBackground>
         <Navbar />
       </HeaderContainer>

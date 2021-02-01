@@ -20,7 +20,7 @@ const Footer = () => {
             <span>
               <img src="/images/icons/location-pin.png" alt="gps" />
             </span>
-            &nbsp;&nbsp;59390 Sailly-lez-Lannoy
+            &nbsp;&nbsp;Hem 59510
           </p>
         </Adress>
         <p>
@@ -41,8 +41,20 @@ const Footer = () => {
           <h3>Retrouvez-nous sur</h3>
         </Social>
         <Icons>
-          <img src="/images/icons/instagram.png" alt="instagram" />
-          <img src="/images/icons/facebook.png" alt="facebook" />
+          <a
+            href="https://www.instagram.com/toi.demain/"
+            title="instagram"
+            target="blank"
+          >
+            <img src="/images/icons/instagram.png" alt="instagram" />
+          </a>
+          <a
+            href="https://www.facebook.com/toi.demain.5/"
+            title="facebook"
+            target="blank"
+          >
+            <img src="/images/icons/facebook.png" alt="facebook" />
+          </a>
           <img src="/images/icons/linkedin.png" alt="linkedin" />
         </Icons>
         <p>&#169; 2021 Tous droits réservés Association Toi Demain</p>
