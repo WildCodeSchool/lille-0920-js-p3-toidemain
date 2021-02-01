@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
@@ -11,7 +11,7 @@ export const Container = styled.div`
     width: 90%;
     margin: 10vh auto;
     padding: 2vh;
-    font-family: 'roboto', sans-serif;
+    font-family: "roboto", sans-serif;
     font-size: 36px;
     text-align: center;
     color: white;
@@ -49,7 +49,7 @@ export const ContainerEditDate = styled.div`
   h1,
   input::-webkit-input-placeholder,
   button {
-    font-family: 'roboto', sans-serif;
+    font-family: "roboto", sans-serif;
     transition: all 0.3s ease-in-out;
   }
 

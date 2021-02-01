@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import { device } from '../../layout/Devices';
-import { Link } from 'react-router-dom';
+import styled from "styled-components";
+import { device } from "../../layout/Devices";
+import { Link } from "react-router-dom";
 
 export const Container = styled.div`
   display: flex;
@@ -8,7 +8,7 @@ export const Container = styled.div`
   align-items: center;
   margin-top: 5vh;
   margin-bottom: 5vh;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   @media ${device.mobile} {
     flex-direction: column;
     align-items: center;
@@ -100,7 +100,7 @@ export const PromisesContainer = styled.ul`
   background: #ffbe00;
   font-size: 1.5em;
   line-height: 35px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   @media ${device.mobile} {
     width: 90%;
   }

@@ -1,8 +1,8 @@
-import styled from 'styled-components';
-import { device } from '../../../layout/Devices';
+import styled from "styled-components";
+import { device } from "../../../layout/Devices";
 
 export const Card = styled.div`
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #02523f;
   width: 70%;
   height: 75vh;
@@ -20,6 +20,7 @@ export const Card = styled.div`
   h2 {
     font-size: 2rem;
     color: #1c819e;
+    font-weight: bold;
   }
   h4 {
     font-size: 1.2rem;
@@ -34,9 +35,15 @@ export const Card = styled.div`
     h2,
     h4 {
       margin-left: 4vw;
+      width: 97%;
     }
     h2 {
       margin-top: 2vh;
+      font-size: 1.2rem;
+    }
+    p,
+    h4 {
+      font-size: 1rem;
     }
   }
   @media ${device.tablet} {

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from "../../layout/Devices";
 
 const TitleStyle = styled.div`
   display: flex;
@@ -25,6 +26,11 @@ const TitleStyle = styled.div`
     padding-top: 5px;
     padding-left: 10px;
     padding-right: 10px;
+  }
+  @media ${device.mobile} {
+    h2 {
+      font-size: 1.5em;
+    }
   }
 `;
 

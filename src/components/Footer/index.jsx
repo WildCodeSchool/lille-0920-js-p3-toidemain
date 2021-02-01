@@ -1,6 +1,6 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { FooterContainer, Info, Right, Menu, Social, Icons } from './style';
+import React from "react";
+import { Link } from "react-router-dom";
+import { FooterContainer, Info, Right, Menu, Social, Icons } from "./style";
 
 const Footer = () => {
   return (
