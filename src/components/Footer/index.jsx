@@ -1,28 +1,12 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import {
-  FooterContainer,
-  Info,
-  Adress,
-  Right,
-  Menu,
-  Social,
-  Icons,
-} from "./style";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { FooterContainer, Info, Right, Menu, Social, Icons } from './style';
 
 const Footer = () => {
   return (
     <FooterContainer>
       <Info>
         <h3>Toi Demain</h3>
-        <Adress>
-          <p>
-            <span>
-              <img src="/images/icons/location-pin.png" alt="gps" />
-            </span>
-            &nbsp;&nbsp;59390 Sailly-lez-Lannoy
-          </p>
-        </Adress>
         <p>
           <span>
             <img src="/images/icons/telephone.png" alt="tel" />

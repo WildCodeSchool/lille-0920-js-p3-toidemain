@@ -2,12 +2,11 @@ import styled from "styled-components";
 import { device } from "../../layout/Devices";
 
 export const TextContainer = styled.div`
-  margin-top: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 20vw;
-  height: 50vh;
+  width: 20%;
+  height: 100%;
   z-index: 2;
   @media ${device.mobile} {
     width: 100%;
@@ -21,10 +20,10 @@ export const TextContainer = styled.div`
   }
   p {
     font-family: "Roboto", sans-serif;
-    font-size: 1.6em;
+    font-size: 1.4em;
     color: #005542;
     text-align: justify;
-    line-height: 150%;
+    line-height: 2em;
     background-color: transparent;
     padding-right: 30px;
     padding-left: 30px;

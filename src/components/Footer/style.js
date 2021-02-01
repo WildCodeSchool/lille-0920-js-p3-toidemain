@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { device } from "../../layout/Devices";
+import styled from 'styled-components';
+import { device } from '../../layout/Devices';
 
 export const FooterContainer = styled.div`
   display: flex;
@@ -75,11 +75,7 @@ export const Info = styled.div`
     }
   }
 `;
-export const Adress = styled.div`
-  img {
-    width: 24px;
-  }
-`;
+
 export const Right = styled.div`
   a {
     font-size: 22px;

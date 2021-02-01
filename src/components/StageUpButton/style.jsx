@@ -12,6 +12,7 @@ export const MainButton = styled.button`
   letter-spacing: 1px;
   padding: 15px 10px 15px 10px;
   font-family: "Roboto", sans-serif;
+  margin-top: 2vh;
 
   @media ${device.mobile} {
     display: flex;

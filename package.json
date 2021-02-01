@@ -8,6 +8,7 @@
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.5.0",
     "axios": "^0.21.1",
+    "emailjs-com": "^2.6.4",
     "moment": "^2.29.1",
     "react": "^17.0.1",
     "react-burger-menu": "^3.0.2",
@@ -22,7 +23,7 @@
     "redux-thunk": "^2.3.0",
     "styled-components": "^5.2.1",
     "styled-reset": "^4.3.3",
-    "swiper": "^6.4.9",
+    "swiper": "^6.4.10",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
