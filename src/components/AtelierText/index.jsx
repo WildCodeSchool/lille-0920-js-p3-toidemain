@@ -8,9 +8,8 @@ export default function AtelierText() {
         <Corner className="top" />
       </CornerContainer>
       <p>
-        Toi Demain propose et organise des <Span>ateliers</Span> à destination
-        des élèves afin de les accompagner dans leurs&nbsp;
-        <Span>démarches professionnelles</Span>
+        Toi Demain propose et organise des <Span>Ateliers innovants</Span> clés
+        en main sur mesure adaptés à vos besoins
       </p>
       <CornerContainer>
         <Corner className="bottom" />
