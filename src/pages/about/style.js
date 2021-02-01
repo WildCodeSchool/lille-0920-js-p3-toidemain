@@ -26,6 +26,13 @@ export const AboutContainer = styled.div`
     color: #005542;
     font-weight: bold;
   }
+
+  h5 {
+    font-size: 1.7em;
+    color: #ffbe00;
+    font-weight: bold;
+    font-style: italic;
+  }
 `;
 
 export const Pledge = styled.div`
@@ -36,7 +43,7 @@ export const PledgeBox = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 5vh 10vw;
+  margin: 3vh 10vw;
   padding: 1em;
   border-top: solid 5px #ffbe00;
   border-bottom: solid 5px #ffbe00;
@@ -48,15 +55,18 @@ export const PledgeBox = styled.div`
 
   p {
     font-weight: bold;
-    padding: 4vh 5vw;
-    font-size: 1.2em;
+    padding: 2vh 5vw;
     text-align: left;
-    line-height: 1.3em;
+    line-height: 1.2em;
   }
 
   span {
     color: #ffbe00;
-    font-size: 1.2em;
+    font-size: 1.1em;
+  }
+
+  li {
+    line-height: 1.5em;
   }
 
   li:before {
@@ -67,9 +77,9 @@ export const PledgeBox = styled.div`
   }
 
   img {
-    width: 20vw;
+    width: 30vw;
     @media screen and (max-width: 768px) {
-      width: 50vw;
+      width: 60vw;
     }
   }
 `;
