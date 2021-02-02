@@ -35,6 +35,9 @@ export const List = styled.div`
 
   ul {
     width: 80%;
+    p {
+      font-weight: bold;
+    }
   }
 `;
 export const Edit = styled.div`
