@@ -1,6 +1,8 @@
 import React from "react";
 import AnimStairs from "../Stairs";
 import Title from "../../components/Title/index";
+import Drivers from "../../components/Drivers/index";
+
 import {
   Intro,
   Container1,
@@ -19,6 +21,7 @@ import {
   ColorB,
   Stairs,
 } from "./style";
+
 const Pedagogie = () => {
   return (
     <div>
@@ -35,7 +38,6 @@ const Pedagogie = () => {
             <AnimStairs />
           </Stairs>
         </Container1>
-
         <Container2>
           <Objectif>
             <Title2>TOUT CELA DANS L'OBJECTIF DE ...</Title2>
@@ -68,7 +70,7 @@ const Pedagogie = () => {
             <Color> libres, responsables et heureux.</Color>
           </Slogan>
         </Container2>
-
+        <Drivers />
         <Container3>
           <Orientoi>
             Nous sommes en partenariat avec <ColorB>ORIENTOI</ColorB> qui

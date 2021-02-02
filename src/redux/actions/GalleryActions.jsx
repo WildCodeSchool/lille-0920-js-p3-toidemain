@@ -6,12 +6,13 @@ import {
   SET_LOADING,
 } from "../types";
 import axios from "axios";
+const { backendApi } = require("../../conf");
 
 export const getGalleries = () => async (dispatch) => {
   try {
     setLoading();
 
-    const { data } = await axios.get("http://localhost:5050/auth/evenements");
+    const { data } = await axios.get(`${backendApi}/auth/evenements`);
 
     dispatch({
       type: GET_GALLERIES,
@@ -25,11 +26,14 @@ export const getGalleries = () => async (dispatch) => {
   }
 };
 
-export const AddGallery = (newGallery) => async (dispatch) => {
+export const AddGallery = (newEvenement) => async (dispatch) => {
   try {
     setLoading();
 
-    const { data } = await axios.post("/galleries", newGallery);
+    const { data } = await axios.post(
+      `${backendApi}/auth/evenements`,
+      newEvenement
+    );
 
     dispatch({
       type: ADD_GALLERY,
@@ -47,7 +51,7 @@ export const deleteGallery = (id) => async (dispatch) => {
   try {
     setLoading();
 
-    await axios.delete(`/galleries/${id}`);
+    await axios.delete(`${backendApi}/auth/evenements/${id}`);
 
     dispatch({
       type: DELETE_GALLERY,

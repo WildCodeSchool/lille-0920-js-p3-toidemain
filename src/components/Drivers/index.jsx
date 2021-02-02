@@ -171,11 +171,23 @@ export default function Drivers() {
               fill="pat-12"
             ></Hexagon>
           </Layout>
-          <Pattern id="pat-1" link="images/mission.png" size={hexagonSize} />
-          <Pattern id="pat-3" link="images/game.png" size={hexagonSize} />
-          <Pattern id="pat-5" link="images/idea.png" size={hexagonSize} />
-          <Pattern id="pat-9" link="images/vision.png" size={hexagonSize} />
-          <Pattern id="pat-12" link="images/compas.png" size={hexagonSize} />
+          <Pattern
+            id="pat-1"
+            link="../../images/mission.png"
+            size={hexagonSize}
+          />
+          <Pattern id="pat-3" link="../../images/game.png" size={hexagonSize} />
+          <Pattern id="pat-5" link="../../images/idea.png" size={hexagonSize} />
+          <Pattern
+            id="pat-9"
+            link="../../images/vision.png"
+            size={hexagonSize}
+          />
+          <Pattern
+            id="pat-12"
+            link="../../images/compas.png"
+            size={hexagonSize}
+          />
         </HexGrid>
         {isOpen && <Modal driverItems={driverItems[hexaNumber]} />}
       </DriversStyle>
