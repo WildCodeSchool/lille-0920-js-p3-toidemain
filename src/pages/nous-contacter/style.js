@@ -1,15 +1,13 @@
 import styled from "styled-components";
 import { device } from "../../layout/Devices";
-
-export const ContactContainer = styled.div`
+export const Container = styled.div`
   height: 220vh;
-  background: url("/images/mix2_nb.jpg");
+  background: url("/images/mix_nb.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center;
   @media ${device.mobile} {
     height: 120vh;
     justify-content: flex-start;
@@ -33,42 +31,31 @@ export const ContactContainer = styled.div`
     background-size: 100% 100%;
   }
 `;
-export const Text = styled.div`
-  width: 100%;
-  height: 8vh;
-  margin-top: 20vh;
-  margin-bottom: 10vh;
-  background-color: rgba(0, 0, 0, 0.3);
-  h1 {
-    font-size: 60px;
-    color: white;
-    font-family: "Roboto", sans-serif;
-    font-weight: bold;
-    text-align: center;
-    padding-top: 3vh;
-    margin: auto 0;
+export const ContactContainer = styled.div`
+  height: 220vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  @media ${device.mobile} {
+    height: 120vh;
+    justify-content: flex-start;
   }
-  @media ${device.smallScreen} {
-    padding-bottom: 20px;
-    h1 {
-      font-size: 40px;
-    }
+  @media ${device.small_screen} {
+    min-height: 130vh;
+    max-height: 150vh;
   }
   @media ${device.tablet} {
-    padding-bottom: 20px;
-    h1 {
-      font-size: 36px;
-    }
+    min-height: 100vh;
+    max-height: 140vh;
   }
-  @media ${device.mobile} {
-    height: 8vh;
-    margin: 5vh auto;
-
-    h1 {
-      font-size: 24px;
-      padding-top: 2vh;
-    }
+  @media ${device.desktop} {
+    min-height: 70vh;
+    max-height: 120vh;
   }
+`;
+export const Tit = styled.div`
+  padding: 5vh 0;
 `;
 export const FormContainer = styled.div`
   form {
