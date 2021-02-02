@@ -22,7 +22,7 @@ import {
   BigLetter,
   Stage,
   Contact,
-  Path
+  Path,
 } from "./style";
 
 const Soutenir = () => {
@@ -59,7 +59,7 @@ const Soutenir = () => {
         <Container2>
           <TitleBox2>
             Vous êtes une petite entreprise et vous voulez vous investir auprès
-            des jeunes 
+            des jeunes
           </TitleBox2>
           <Text2>
             <ul>
@@ -87,7 +87,9 @@ const Soutenir = () => {
                 </BigLetter>
               </Liste>
               <Liste>Nous avons besoin de vous !</Liste>
-              <Path to="/contacter"><Contact>Nous Contacter</Contact></Path>
+              <Path to="/contacter">
+                <Contact>Nous Contacter</Contact>
+              </Path>
             </ul>
           </Text2>
         </Container2>
@@ -108,16 +110,17 @@ const Soutenir = () => {
                 <BigLetter>
                   • Travail sur la découverte des métiers et des talents.
                 </BigLetter>
-                </Liste>
-                <Liste>
+              </Liste>
+              <Liste>
                 <BigLetter>
                   • Collaboration avec les associations de la région.
                 </BigLetter>
               </Liste>
               <Liste>Nous avons besoin de vous!</Liste>
-              
-              <Path to="/contacter"><Contact>Nous Contacter</Contact></Path>
-             
+
+              <Path to="/contacter">
+                <Contact>Nous Contacter</Contact>
+              </Path>
             </ul>
           </Text1>
         </Container1>

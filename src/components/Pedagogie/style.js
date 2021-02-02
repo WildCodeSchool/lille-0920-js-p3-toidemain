@@ -46,7 +46,7 @@ export const Container1 = styled.div`
   justify-content: center;
   margin-top: 5vh;
   @media ${device.small_screen} {
-   width:90vw;
+    width: 90vw;
   }
 `;
 export const Container2 = styled.div`
@@ -56,7 +56,7 @@ export const Container2 = styled.div`
   margin-top: 8vh;
   display: flex;
   flex-direction: column;
-  align-items:center;
+  align-items: center;
   @media ${device.mobile} {
     display: flex;
     flex-direction: column;
@@ -71,10 +71,9 @@ export const Objectif = styled.div`
   padding-top: 4vh;
   display: flex;
   flex-direction: column;
-  
 `;
 export const Title2 = styled.h2`
-margin: 3vh;
+  margin: 3vh;
   font-size: 4rem;
   color: #ffbe00;
   display: flex;
@@ -91,8 +90,8 @@ margin: 3vh;
     text-align: center;
   }
   @media ${device.small_screen} {
-   width:90%;
-   margin-left: 3vw;
+    width: 90%;
+    margin-left: 3vw;
   }
 `;
 export const Liste = styled.ul`

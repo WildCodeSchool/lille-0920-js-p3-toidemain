@@ -37,7 +37,6 @@ export const Container2 = styled.div`
   @media ${device.tablet} {
     width: 95%;
   }
-  
 `;
 export const Container3 = styled.div`
   background-color: rgba(255, 255, 255, 0.375);
@@ -54,13 +53,12 @@ export const Container3 = styled.div`
   @media ${device.tablet} {
     width: 95%;
   }
-  
 `;
 export const Container4 = styled.div`
-width: 100vw;
+  width: 100vw;
   display: flex;
   flex-direction: row;
-  justify-content: space-around ;
+  justify-content: space-around;
   border-radius: 5px;
   background-color: rgb(255, 190, 0);
   margin: 1vw;
@@ -102,13 +100,13 @@ export const TitleBox4 = styled.h2`
   color: white;
   margin-top: 3vh;
   @media ${device.mobile} {
-   width: 80%;
+    width: 80%;
   }
   @media ${device.tablet} {
     width: 60%;
   }
   @media ${device.small_screen} {
-    margin: 1vh; 
+    margin: 1vh;
   }
 `;
 export const Text4 = styled.p`
@@ -154,7 +152,6 @@ export const TitleBox3 = styled.h2`
   text-align: center;
   font-size: 1.6rem;
   @media ${device.mobile} {
-   
     margin-top: 1vh;
   }
   @media ${device.tablet} {
@@ -191,8 +188,8 @@ export const TitleBox1 = styled.h2`
   }
 `;
 export const BContainer = styled.div`
-display: flex;
-margin-bottom: 3vh;
+  display: flex;
+  margin-bottom: 3vh;
 `;
 export const Liste = styled.li`
   margin-top: 3vh;
@@ -201,10 +198,9 @@ export const Liste = styled.li`
 export const BigLetter = styled.span`
   margin-top: 4vh;
   font-size: 1rem;
-  
 `;
 export const Stage = styled.p`
-  margin-top: 2vh ;
+  margin-top: 2vh;
   margin-right: 9vw;
   @media ${device.mobile} {
     margin-left: 7vw;
@@ -219,16 +215,14 @@ export const Stage = styled.p`
 `;
 
 export const Contact = styled.div`
-font-size: 1rem;
-margin-top:5vh;
+  font-size: 1rem;
+  margin-top: 5vh;
 `;
-export  const Path = styled(Link)`
-text-decoration: none;
-color: black;
-&:hover{
-  color:#145264;
-  transition: all 0.5s ease;
-
-}
-
-`
+export const Path = styled(Link)`
+  text-decoration: none;
+  color: black;
+  &:hover {
+    color: #145264;
+    transition: all 0.5s ease;
+  }
+`;
