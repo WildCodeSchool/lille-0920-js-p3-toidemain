@@ -4,11 +4,13 @@ import moment from 'moment';
 import 'moment/locale/fr';
 moment.locale('fr');
 
-const DateItem = ({ dat }) => {
+const DateItem = ({ date, datefin, message }) => {
   return (
     <Item>
-      <h3 className="date">{moment(dat.date).format('dddd Do MMMM YYYY')}</h3>
-      <h3>{dat.message}</h3>
+      <h3 className="date">
+        {moment(date).format('dddd Do MMMM YYYY')} à {moment(datefin).format('dddd Do MMMM YYYY')}
+      </h3>
+      <h3>{message}</h3>
     </Item>
   );
 };

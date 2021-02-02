@@ -5,22 +5,25 @@ import { ContainerEditDate } from './style.js';
 
 const EditDate = ({ current, updateDate, AddDate }) => {
   const [date, setDate] = useState('');
+  const [datefin, setDatefin] = useState('');
   const [message, setMessage] = useState('');
 
   useEffect(() => {
     if (current) {
       setMessage(current.message);
       setDate(current.date);
+      setDatefin(current.datefin);
     }
   }, [current]);
 
   const onSubmit = () => {
-    if (message === '' || date === '') {
+    if (message === '' || date === '' || datefin === '') {
       alert('Please enter message and date');
     } else {
       const updDate = {
         id: current.id,
         date,
+        datefin,
         message,
       };
 
@@ -32,11 +35,12 @@ const EditDate = ({ current, updateDate, AddDate }) => {
   };
 
   const onAdd = () => {
-    if (message === '' || date === '') {
+    if (message === '' || date === '' || datefin === '') {
       alert('Please enter message and date');
     } else {
       const newAtelier = {
         date,
+        datefin,
         message,
       };
       AddDate(newAtelier);
@@ -45,6 +49,7 @@ const EditDate = ({ current, updateDate, AddDate }) => {
 
       setMessage('');
       setDate('');
+      setDatefin('');
     }
   };
 
@@ -54,6 +59,8 @@ const EditDate = ({ current, updateDate, AddDate }) => {
         <h1>Enter Infos</h1>
 
         <input type="date" name="date" placeholder="Date" value={date} onChange={(e) => setDate(e.target.value)} />
+
+        <input type="date" name="datefin" placeholder="Date Fin" value={datefin} onChange={(e) => setDatefin(e.target.value)} />
 
         <input type="text" name="message" placeholder="Message" value={message} onChange={(e) => setMessage(e.target.value)} />
 

@@ -137,7 +137,7 @@ export const Unit = styled.li`
     text-decoration: none;
     line-height: 20px;
     h3 {
-      font-size: 22px;
+      font-size: 18px;
       padding: 5px 0;
 
       overflow-wrap: break-word;

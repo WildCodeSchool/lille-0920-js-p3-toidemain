@@ -5,7 +5,6 @@ import { getDates } from '../../redux/actions/DateActions';
 import { useDispatch, useSelector } from 'react-redux';
 import Spiner from '../../layout/spiner/Spiner';
 import { Events, Titl, Container } from './style';
-//import axios from 'axios';
 
 const Dates = () => {
   const dispatch = useDispatch();
@@ -13,7 +12,7 @@ const Dates = () => {
   const { dates, loading } = datesList;
 
   useEffect(() => {
-    dispatch(getDates());    
+    dispatch(getDates());
   }, [dispatch]);
 
   if (loading) {
@@ -27,7 +26,7 @@ const Dates = () => {
         <Titl>
           <h2>Stages et Ateliers à Venir</h2>
         </Titl>
-        <ul>{!loading && dates.length === 0 ? <p>No événements...</p> : dates.map((dat) => <DateItem dat={dat} key={dat.id} />)}</ul>
+        <ul>{!loading && dates.length === 0 ? <p>Pas de événements...</p> : dates.map((dat) => <DateItem {...dat} key={dat.id} />)}</ul>
       </Events>
     </Container>
   );
