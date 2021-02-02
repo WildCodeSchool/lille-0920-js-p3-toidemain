@@ -21,7 +21,8 @@ import {
   Liste,
   BigLetter,
   Stage,
-  Contact
+  Contact,
+  Path
 } from "./style";
 
 const Soutenir = () => {
@@ -86,9 +87,7 @@ const Soutenir = () => {
                 </BigLetter>
               </Liste>
               <Liste>Nous avons besoin de vous !</Liste>
-              <Contact>
-                <Link to="/contacter">Nous Contacter</Link>
-              </Contact>
+              <Path to="/contacter"><Contact>Nous Contacter</Contact></Path>
             </ul>
           </Text2>
         </Container2>
@@ -109,13 +108,15 @@ const Soutenir = () => {
                 <BigLetter>
                   • Travail sur la découverte des métiers et des talents.
                 </BigLetter>
+                </Liste>
+                <Liste>
                 <BigLetter>
                   • Collaboration avec les associations de la région.
                 </BigLetter>
               </Liste>
               <Liste>Nous avons besoin de vous!</Liste>
               
-              <Link to="/contacter"><Contact>Nous Contacter</Contact></Link>
+              <Path to="/contacter"><Contact>Nous Contacter</Contact></Path>
              
             </ul>
           </Text1>

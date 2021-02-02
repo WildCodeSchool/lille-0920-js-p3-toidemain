@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { device } from "../../layout/Devices";
+import { Link } from "react-router-dom";
 
 export const SoutenirContainer = styled.div``;
 
@@ -218,7 +219,16 @@ export const Stage = styled.p`
 `;
 
 export const Contact = styled.div`
-text-decoration:none;
-font-size: 17px;
+font-size: 1rem;
 margin-top:5vh;
 `;
+export  const Path = styled(Link)`
+text-decoration: none;
+color: black;
+&:hover{
+  color:#145264;
+  transition: all 0.5s ease;
+
+}
+
+`
