@@ -3,11 +3,9 @@ import { device } from "../../layout/Devices";
 
 export const ContactContainer = styled.div`
   height: 220vh;
-  background-image: url("/images/5per.jpeg");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background: url("/images/mix2_nb.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -15,18 +13,24 @@ export const ContactContainer = styled.div`
   @media ${device.mobile} {
     height: 120vh;
     justify-content: flex-start;
+    background-size: 100% 50%;
+    background-repeat: repeat;
   }
   @media ${device.small_screen} {
     min-height: 130vh;
     max-height: 150vh;
+    background-size: 100%;
   }
   @media ${device.tablet} {
     min-height: 100vh;
     max-height: 140vh;
+    background-size: 100% 50%;
+    background-repeat: repeat;
   }
   @media ${device.desktop} {
     min-height: 70vh;
     max-height: 120vh;
+    background-size: 100% 100%;
   }
 `;
 export const Text = styled.div`

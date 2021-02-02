@@ -1,19 +1,19 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Reset } from "styled-reset";
-import { AppStyle } from "./style";
 import Contacter from "./pages/nous-contacter/index";
-import About from "./pages/about/index";
-import Footer from "./components/Footer/index";
+import About from "./pages/about";
 import Header from "./components/Header/index";
-import StageUp from "./pages/stageUp/index";
+import Footer from "./components/Footer/index";
 import Pedagogie from "./components/Pedagogie/index";
-import Atelier from "./components/Atelier";
+import Login from "./pages/login";
 import Home from "./pages/home";
-import Soutenir from "./pages/soutenir";
 import Admin from "./pages/admin";
 import Actualite from "./pages/actualite";
-import Login from "./pages/login";
+import { AppStyle } from "./style";
+import StageUp from "./pages/stageUp/index";
+import Atelier from "./components/Atelier";
+import Soutenir from "./pages/soutenir";
 
 function App() {
   return (

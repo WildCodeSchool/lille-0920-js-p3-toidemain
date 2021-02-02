@@ -28,7 +28,7 @@ const Dates = () => {
         </Titl>
         <ul>
           {!loading && dates.length === 0 ? (
-            <p>No événements...</p>
+            <p>Pas des événements...</p>
           ) : (
             dates.map((dat) => <DateItem dat={dat} key={dat.id} />)
           )}
