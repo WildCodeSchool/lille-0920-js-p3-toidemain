@@ -42,11 +42,15 @@ const Soutenir = () => {
                 <BigLetter>Exemple de contenu du programme :</BigLetter>
               </Liste>
               <Liste>
-                • Travail sur la découverte des métiers et des talents.
+                <BigLetter>
+                  • Travail sur la découverte des métiers et des talents.
+                </BigLetter>
               </Liste>
               <Liste>
-                • Nous travaillons en collaboration avec le tissu associatif de
-                la région.
+                <BigLetter>
+                  • Nous travaillons en collaboration avec le tissu associatif
+                  de la région.
+                </BigLetter>
               </Liste>
             </ul>
           </Text1>
@@ -70,15 +74,15 @@ const Soutenir = () => {
                 <BigLetter>Exemple de contenu du programme :</BigLetter>
               </Liste>
               <Liste>
-                • Travail sur la découverte des métiers et des talents.
+              <BigLetter>• Travail sur la découverte des métiers et des talents.</BigLetter>
               </Liste>
               <Liste>
-                • Nous travaillons en collaboration avec les associations de la
-                région.
+              <BigLetter>• Nous travaillons en collaboration avec les associations de la
+                région.</BigLetter>
               </Liste>
               <Liste>
-                • Vous pouvez aussi faire intervenir vos collaborateurs dans ce
-                projet :
+              <BigLetter> • Vous pouvez aussi faire intervenir vos collaborateurs dans ce
+                projet :</BigLetter>
               </Liste>
               <Liste>Nous avons besoin de vous !</Liste>
             </ul>
