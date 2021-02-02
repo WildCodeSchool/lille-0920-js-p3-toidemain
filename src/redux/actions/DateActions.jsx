@@ -33,7 +33,7 @@ export const AddDate = (newAtelier) => async (dispatch) => {
     setLoading();
 
     const { data } = await axios.post(
-      "http://localhost:5050/auth/ateliers",
+      `${backendApi}/auth/ateliers`,
       newAtelier
     );
 
@@ -53,7 +53,7 @@ export const deleteDate = (id) => async (dispatch) => {
   try {
     setLoading();
 
-    await axios.delete(`http://localhost:5050/auth/ateliers/${id}`);
+    await axios.delete(`${backendApi}/auth/ateliers/${id}`);
 
     dispatch({
       type: DELETE_DATE,
@@ -72,7 +72,7 @@ export const updateDate = (updDate) => async (dispatch) => {
     setLoading();
 
     const { data } = await axios.put(
-      `http://localhost:5050/auth/ateliers/${updDate.id}`,
+      `${backendApi}/auth/ateliers/${updDate.id}`,
       updDate
     );
 
