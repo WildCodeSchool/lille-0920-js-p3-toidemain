@@ -13,13 +13,13 @@ const GalleryEditAdmin = ({ AddGallery }) => {
     if (images === "" || date === "" || title === "" || text === "") {
       alert("Please enter all fields");
     } else {
-      const newGallery = {
+      const newEvenement = {
         title,
         date,
         text,
         images,
       };
-      AddGallery(newGallery);
+      AddGallery(newEvenement);
 
       alert("Gallery added");
 

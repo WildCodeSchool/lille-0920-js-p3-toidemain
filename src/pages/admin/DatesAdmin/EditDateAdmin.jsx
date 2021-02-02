@@ -35,11 +35,11 @@ const EditDate = ({ current, updateDate, AddDate }) => {
     if (message === '' || date === '') {
       alert('Please enter message and date');
     } else {
-      const newDate = {
+      const newAtelier = {
         date,
         message,
       };
-      AddDate(newDate);
+      AddDate(newAtelier);
 
       alert('Date added');
 

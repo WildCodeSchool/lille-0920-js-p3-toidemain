@@ -13,11 +13,11 @@ import axios from "axios";
 export const getDates = () => async (dispatch) => {
   try {
     setLoading();
-   const { data } = await axios.get("http://localhost:5050/auth/ateliers");
+    const { data } = await axios.get("http://localhost:5050/auth/ateliers");
 
     dispatch({
       type: GET_DATES,
-      payload: data
+      payload: data,
     });
   } catch (err) {
     dispatch({
@@ -27,11 +27,14 @@ export const getDates = () => async (dispatch) => {
   }
 };
 
-export const AddDate = (newDate) => async (dispatch) => {
+export const AddDate = (newAtelier) => async (dispatch) => {
   try {
     setLoading();
 
-    const { data } = await axios.post("/dates", newDate);
+    const { data } = await axios.post(
+      "http://localhost:5050/auth/ateliers",
+      newAtelier
+    );
 
     dispatch({
       type: ADD_DATE,
@@ -49,7 +52,7 @@ export const deleteDate = (id) => async (dispatch) => {
   try {
     setLoading();
 
-    await axios.delete(`/dates/${id}`);
+    await axios.delete(`http://localhost:5050/auth/ateliers/${id}`);
 
     dispatch({
       type: DELETE_DATE,
@@ -67,7 +70,10 @@ export const updateDate = (updDate) => async (dispatch) => {
   try {
     setLoading();
 
-    const { data } = await axios.put(`/dates/${updDate.id}`, updDate);
+    const { data } = await axios.put(
+      `http://localhost:5050/auth/ateliers/${updDate.id}`,
+      updDate
+    );
 
     dispatch({
       type: UPDATE_DATE,

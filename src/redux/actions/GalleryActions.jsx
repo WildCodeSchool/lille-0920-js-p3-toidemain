@@ -25,11 +25,14 @@ export const getGalleries = () => async (dispatch) => {
   }
 };
 
-export const AddGallery = (newGallery) => async (dispatch) => {
+export const AddGallery = (newEvenement) => async (dispatch) => {
   try {
     setLoading();
 
-    const { data } = await axios.post("/galleries", newGallery);
+    const { data } = await axios.post(
+      "http://localhost:5050/auth/evenements",
+      newEvenement
+    );
 
     dispatch({
       type: ADD_GALLERY,
@@ -47,7 +50,7 @@ export const deleteGallery = (id) => async (dispatch) => {
   try {
     setLoading();
 
-    await axios.delete(`/galleries/${id}`);
+    await axios.delete(`http://localhost:5050/auth/evenements/${id}`);
 
     dispatch({
       type: DELETE_GALLERY,
