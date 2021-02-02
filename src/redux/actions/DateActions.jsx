@@ -9,11 +9,12 @@ import {
   SET_CURRENT,
 } from "../types";
 import axios from "axios";
+const { backendApi } = require("../../conf")
 
 export const getDates = () => async (dispatch) => {
   try {
     setLoading();
-    const { data } = await axios.get("http://localhost:5050/auth/ateliers");
+    const { data } = await axios.get(`${backendApi}/auth/ateliers`);
 
     dispatch({
       type: GET_DATES,
