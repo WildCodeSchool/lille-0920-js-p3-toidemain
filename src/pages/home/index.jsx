@@ -39,10 +39,10 @@ const Home = () => {
       <Trait></Trait>
       <HomeContainer>
         {getTabContent()}
-        <Slider slides={images} autoPlay={50} />
+        <Slider slides={images} />
         <MenuButton activeId={activeId} handleChangeTab={handleChangeTab} />
       </HomeContainer>
-      <Quote />
+      <Quote autoPlay={50} />
       <KeyFacts />
     </PageContainer>
   );
