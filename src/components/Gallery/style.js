@@ -8,5 +8,10 @@ export const Container = styled.div`
     width: 95%;
     display: flex;
     flex-direction: column-reverse;
+    p {
+      text-align: center;
+      padding: 4vh 0;
+      font-weight: bold;
+    }
   }
 `;

@@ -6,7 +6,7 @@ import moment from 'moment';
 import 'moment/locale/fr';
 moment.locale('fr');
 
-const GalleryItemAdmin = ({ id, images, title, date, text, deleteGallery }) => {
+const GalleryItemAdmin = ({ id, images, title, date, datefin, text, deleteGallery }) => {
   const onDelete = () => {
     deleteGallery(id);
     alert('Gallery Deleted');
@@ -19,7 +19,7 @@ const GalleryItemAdmin = ({ id, images, title, date, text, deleteGallery }) => {
           <span>Title:</span> {title}
         </h3>
         <p>
-          <span>Date:</span> {moment(date).format('dddd Do MMMM YYYY')}
+          <span>Date:</span> {moment(date).format('dddd Do MMMM YYYY')} à {moment(datefin).format('dddd Do MMMM YYYY')}
         </p>
         <p>
           <span>Description:</span> {text}
