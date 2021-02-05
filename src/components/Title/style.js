@@ -42,11 +42,9 @@ const TitleStyle = styled.div`
 	}
 
 	h2 {
-		/* height: 40px; */
 		color: #005542;
 		font-size: 2em;
 		background-color: #fff;
-		/* text-align: right; */
 		padding-top: 4px;
 		padding-left: 10px;
 		padding-right: 10px;
