@@ -1,7 +1,7 @@
 import React from "react";
 import Member from "./Member";
 import portraitItems from "./Data";
-import { AboutContainer, Cards, Pledge, PledgeBox, Partners } from "./style";
+import { AboutContainer, Cards, PledgeBox, Partners } from "./style.jsx";
 import Title from "../../components/Title/index";
 
 const About = () => {

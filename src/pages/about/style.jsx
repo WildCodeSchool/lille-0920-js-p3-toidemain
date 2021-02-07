@@ -31,6 +31,7 @@ export const AboutContainer = styled.div`
 		color: #ffbe00;
 		font-weight: bold;
 		font-style: italic;
+		margin-left: 2vw;
 	}
 `;
 
