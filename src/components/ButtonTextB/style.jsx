@@ -8,15 +8,15 @@ export const TextContainer = styled.div`
   z-index: 2;
   @media ${device.mobile} {
     margin-right: 5px;
-    margin-top:5px;
+    margin-top: 5px;
   }
   @media ${device.tablet} {
     margin-right: 5px;
-    margin-top:5px;
+    margin-top: 5px;
   }
   @media ${device.small_screen} {
     margin-right: 5px;
-    margin-top:5px;
+    margin-top: 5px;
   }
   p {
     font-family: "Roboto", sans-serif;

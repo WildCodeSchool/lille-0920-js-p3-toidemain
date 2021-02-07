@@ -32,7 +32,6 @@ export const MainButton = styled.button`
     padding: 10px 5px 10px 5px;
     margin-top: 15px;
   }
-  
 `;
 
 export const Span = styled.span`

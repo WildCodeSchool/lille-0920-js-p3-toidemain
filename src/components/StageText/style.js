@@ -63,6 +63,6 @@ export const Path = styled(Link)`
   color: #005542;
   border: solid 1px #005542;
   &:hover {
-    color: #1c819e
+    color: #1c819e;
   }
 `;

@@ -12,7 +12,6 @@ export const SliderDiv = styled.div`
     height: 60vh;
     width: 90vw;
     margin-top: 2vh;
-
   }
   @media ${device.tablet} {
     height: 60vh;
