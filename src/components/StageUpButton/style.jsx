@@ -10,7 +10,6 @@ export const MainButton = styled.button`
   font-size: 1.2em;
   line-height: 2.5em;
   letter-spacing: 1px;
- 
   padding: 15px 10px 15px 10px;
   font-family: "Roboto", sans-serif;
   margin-top: 2vh;
@@ -26,7 +25,6 @@ export const MainButton = styled.button`
   }
   @media ${device.tablet} {
     display: flex;
-    width: 100%;
     justify-content: center;
     align-items: center;
     font-size: 1em;

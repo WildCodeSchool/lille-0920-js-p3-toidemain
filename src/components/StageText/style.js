@@ -5,22 +5,15 @@ import { Link } from "react-router-dom";
 export const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: auto;
+  justify-content: space-around;
   z-index: 1;
   @media ${device.mobile} {
-    height: 10%;
-    margin-top: 2px;
     margin-right: 5px;
   }
   @media ${device.tablet} {
-    height: 10%;
-    margin-top: 2px;
     margin-right: 5px;
   }
   @media ${device.small_screen} {
-    height: 10%;
-    margin-top: 2px;
     margin-bottom: 30px;
     margin-right: 5px;
   }
