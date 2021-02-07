@@ -2,13 +2,13 @@ import styled from "styled-components";
 import { device } from "../../layout/Devices";
 
 export const ButtonContainer = styled.div`
-  width: 20vw;
+  margin-right: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
   font-family: "Roboto", sans-serif;
-  font-size: 1.5em;
+  font-size: 1.2em;
   color: white;
   @media ${device.mobile} {
     width: 90%;
@@ -18,6 +18,11 @@ export const ButtonContainer = styled.div`
   @media ${device.tablet} {
     width: 80%;
     font-size: 1.3em;
+  }
+  @media ${device.small_screen} {
+    width: 90%;
+    font-size: 1.3em;
+    margin-top: 1vh;
   }
 `;
 
@@ -33,7 +38,7 @@ export const ContainerEntreprise = styled.div`
   height: 10%;
   background-color: #005542;
   border-top-left-radius: 10px;
-  padding: 2px 2px 2px 2px;
+  padding: 2px 5px 2px 2px;
   margin-bottom: 2px;
   @media ${device.tablet} {
     width: 80%;
@@ -63,7 +68,7 @@ export const ContainerEnseignant = styled.div`
   width: 90%;
   height: 10%;
   background-color: #1c819e;
-  padding: 2px 2px 2px 2px;
+  padding: 2px 5px 2px 2px;
   margin-bottom: 2px;
   @media ${device.tablet} {
     width: 80%;
@@ -93,7 +98,7 @@ export const ContainerLyceen = styled.div`
   height: 10%;
   background-color: #ffbe00;
   border-bottom-left-radius: 10px;
-  padding: 2px 2px 2px 2px;
+  padding: 2px 5px 2px 2px;
   @media ${device.tablet} {
     width: 80%;
     font-size: 1.3em;
