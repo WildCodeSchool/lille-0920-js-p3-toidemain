@@ -7,37 +7,37 @@ import Spiner from "../../../layout/spiner/Spiner";
 import { Container, List, Plist } from "./style.jsx";
 
 const GalleryAdmin = () => {
-	const dispatch = useDispatch();
-	const galleriesList = useSelector((state) => state.galleriesList);
-	const { galleries, loading } = galleriesList;
+  const dispatch = useDispatch();
+  const galleriesList = useSelector((state) => state.galleriesList);
+  const { galleries, loading } = galleriesList;
 
-	useEffect(() => {
-		dispatch(getGalleries());
-	}, [dispatch]);
+  useEffect(() => {
+    dispatch(getGalleries());
+  }, [dispatch]);
 
-	if (loading) {
-		<Spiner />;
-	}
+  if (loading) {
+    <Spiner />;
+  }
 
-	return (
-		<Container>
-			<h1>événements Passeé</h1>
-			<div>
-				<List>
-					<Plist>
-						{!loading && galleries.length === 0 ? (
-							<p>No événements...</p>
-						) : (
-							galleries.map((gallery) => (
-								<GalleryItemAdmin {...gallery} key={gallery.id} />
-							))
-						)}
-					</Plist>
-				</List>
-				<GalleryEditAdmin />
-			</div>
-		</Container>
-	);
+  return (
+    <Container>
+      <h1>événements Passeé</h1>
+      <div>
+        <List>
+          <Plist>
+            {!loading && galleries.length === 0 ? (
+              <p>No événements...</p>
+            ) : (
+              galleries.map((gallery) => (
+                <GalleryItemAdmin {...gallery} key={gallery.id} />
+              ))
+            )}
+          </Plist>
+        </List>
+        <GalleryEditAdmin />
+      </div>
+    </Container>
+  );
 };
 
 export default GalleryAdmin;

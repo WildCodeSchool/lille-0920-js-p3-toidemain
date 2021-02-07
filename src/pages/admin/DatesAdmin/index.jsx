@@ -7,37 +7,37 @@ import Spiner from "../../../layout/spiner/Spiner";
 import { Container, List, Edit } from "./style.jsx";
 
 const DatesAdmin = () => {
-	const dispatch = useDispatch();
-	const datesList = useSelector((state) => state.datesList);
-	const { dates, loading } = datesList;
+  const dispatch = useDispatch();
+  const datesList = useSelector((state) => state.datesList);
+  const { dates, loading } = datesList;
 
-	useEffect(() => {
-		dispatch(getDates());
-	}, [dispatch]);
+  useEffect(() => {
+    dispatch(getDates());
+  }, [dispatch]);
 
-	if (loading) {
-		<Spiner />;
-	}
+  if (loading) {
+    <Spiner />;
+  }
 
-	return (
-		<Container>
-			<h1>Stages et Ateliers à Venir</h1>
-			<div>
-				<List>
-					<ul>
-						{!loading && dates.length === 0 ? (
-							<p>No événements...</p>
-						) : (
-							dates.map((info) => <DateItemAdmin info={info} key={info.id} />)
-						)}
-					</ul>
-				</List>
-				<Edit>
-					<EditDate />
-				</Edit>
-			</div>
-		</Container>
-	);
+  return (
+    <Container>
+      <h1>Stages et Ateliers à Venir</h1>
+      <div>
+        <List>
+          <ul>
+            {!loading && dates.length === 0 ? (
+              <p>No événements...</p>
+            ) : (
+              dates.map((info) => <DateItemAdmin info={info} key={info.id} />)
+            )}
+          </ul>
+        </List>
+        <Edit>
+          <EditDate />
+        </Edit>
+      </div>
+    </Container>
+  );
 };
 
 export default DatesAdmin;
