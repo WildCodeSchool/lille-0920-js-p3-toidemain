@@ -2,27 +2,21 @@ import styled from "styled-components";
 import { device } from "../../layout/Devices";
 
 export const TextContainer = styled.div`
-  margin-top: 120px;
-  margin-bottom: 2vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
+  justify-content: space-around;
   z-index: 2;
   @media ${device.mobile} {
-    height: 10%;
-    margin-top: 2px;
     margin-right: 5px;
+    margin-top: 5px;
   }
   @media ${device.tablet} {
-    height: 10%;
-    margin-top: 2px;
     margin-right: 5px;
+    margin-top: 5px;
   }
   @media ${device.small_screen} {
-    height: 10%;
-    margin-top: 2px;
     margin-right: 5px;
+    margin-top: 5px;
   }
   p {
     font-family: "Roboto", sans-serif;
