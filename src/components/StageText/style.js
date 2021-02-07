@@ -6,24 +6,29 @@ export const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 20%;
-  height: 100%;
+  height: auto;
   z-index: 1;
   @media ${device.mobile} {
-    width: 90%;
     height: 10%;
     margin-top: 2px;
+    margin-right: 5px;
   }
   @media ${device.tablet} {
-    width: 90%;
     height: 10%;
     margin-top: 2px;
+    margin-right: 5px;
+  }
+  @media ${device.small_screen} {
+    height: 10%;
+    margin-top: 2px;
+    margin-bottom: 30px;
+    margin-right: 5px;
   }
   p {
     font-family: "Roboto", sans-serif;
-    font-size: 1.2em;
+    font-size: 1.3em;
     color: #005542;
-    text-align: justify;
+    text-align: center;
     line-height: 2em;
     background-color: transparent;
     padding-right: 30px;
