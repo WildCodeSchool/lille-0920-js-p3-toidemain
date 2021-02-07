@@ -8,10 +8,10 @@ export default function StageText() {
         <Corner className="top" />
       </CornerContainer>
       <p>
-        Notre programme phare : <Path to="/action/stageup">Stage up,</Path>
+        Notre programme phare :<br/> <Path to="/action/stageup">Stage up</Path>
         &nbsp;une solution clé en main innovante pour les entreprises afin de
         répondre à la problématique d’accueil des jeunes lors de leur stage de
-        découverte en entreprise. On s’occupe de tout ! Nos autres propositions
+        découverte en entreprise. On s’occupe de tout ! <br/>Nos autres propositions
         : Des&nbsp;<Path to="/action/atelier">Ateliers innovants</Path> clés en
         main sur mesure adaptés à vos besoins. Notre&nbsp;
         <Path to="/action/pedagogie">pédagogie</Path>&nbsp;: Une pédagogie

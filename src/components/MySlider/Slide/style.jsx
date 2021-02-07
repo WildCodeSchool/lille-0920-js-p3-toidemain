@@ -11,11 +11,11 @@ export const SlideDiv = styled.div`
   @media ${device.mobile} {
     height: 100%;
     width: 100vw;
-    margin-top: 2vh;
+    margin-top: 0.5vh;
   }
   @media ${device.tablet} {
     height: 100%;
     width: 100vw;
-    margin-top: 2vh;
+    margin-top: 0.5vh;
   }
 `;

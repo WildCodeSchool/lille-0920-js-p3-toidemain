@@ -10,12 +10,12 @@ export const TextContainer = styled.div`
   height: 100%;
   z-index: 1;
   @media ${device.mobile} {
-    width: 100%;
+    width: 90%;
     height: 10%;
     margin-top: 2px;
   }
   @media ${device.tablet} {
-    width: 100%;
+    width: 90%;
     height: 10%;
     margin-top: 2px;
   }
@@ -29,7 +29,7 @@ export const TextContainer = styled.div`
     padding-right: 30px;
     padding-left: 30px;
     @media ${device.mobile} {
-      font-size: 1em;
+      font-size: 0.8em;
     }
   }
 `;
@@ -63,4 +63,8 @@ export const Corner = styled.div`
 
 export const Path = styled(Link)`
   color: #005542;
+  border: solid 1px #005542;
+  &:hover {
+    color: #1c819e
+  }
 `;

@@ -11,12 +11,12 @@ export const TextContainer = styled.div`
   height: 100%;
   z-index: 2;
   @media ${device.mobile} {
-    width: 100%;
+    width: 90%;
     height: 10%;
     margin-top: 2px;
   }
   @media ${device.tablet} {
-    width: 100%;
+    width: 90%;
     height: 10%;
     margin-top: 2px;
   }
@@ -30,7 +30,10 @@ export const TextContainer = styled.div`
     padding-right: 30px;
     padding-left: 30px;
     @media ${device.mobile} {
-      font-size: 1em;
+      font-size: 0.9em;
+    }
+    @media ${device.tablet} {
+      font-size: 1.2em;
     }
   }
 `;
