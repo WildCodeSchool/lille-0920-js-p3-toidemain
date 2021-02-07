@@ -10,7 +10,7 @@ export const MainButton = styled.button`
   font-size: 1.2em;
   line-height: 2.5em;
   letter-spacing: 1px;
- 
+
   padding: 15px 10px 15px 10px;
   font-family: "Roboto", sans-serif;
   margin-top: 2vh;
@@ -34,7 +34,6 @@ export const MainButton = styled.button`
     padding: 10px 5px 10px 5px;
     margin-top: 15px;
   }
-  
 `;
 
 export const Span = styled.span`

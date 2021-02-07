@@ -13,7 +13,6 @@ export const TextContainer = styled.div`
     height: 10%;
     margin-top: 2px;
     margin-right: 5px;
-
   }
   @media ${device.tablet} {
     height: 10%;

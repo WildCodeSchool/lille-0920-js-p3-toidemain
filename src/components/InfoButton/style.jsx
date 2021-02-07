@@ -15,7 +15,7 @@ export const MainButton = styled.button`
   margin-top: 2vh;
   @media ${device.mobile} {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     font-size: 0.7em;
@@ -25,7 +25,7 @@ export const MainButton = styled.button`
   }
   @media ${device.tablet} {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     font-size: 0.7em;
