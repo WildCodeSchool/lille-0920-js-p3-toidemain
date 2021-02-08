@@ -1,4 +1,10 @@
-import { GET_GALLERIES, ADD_GALLERY, DELETE_GALLERY, GALLERIES_ERROR, SET_LOADING } from '../types';
+import {
+  GET_GALLERIES,
+  ADD_GALLERY,
+  DELETE_GALLERY,
+  GALLERIES_ERROR,
+  SET_LOADING,
+} from "../types";
 
 const initialState = {
   galleries: [],
@@ -23,7 +29,9 @@ const GalleryReducers = (state = initialState, action) => {
     case DELETE_GALLERY:
       return {
         ...state,
-        galleries: state.galleries.filter((gallery) => gallery.id !== action.payload),
+        galleries: state.galleries.filter(
+          (gallery) => gallery.id !== action.payload
+        ),
         loading: false,
       };
     case SET_LOADING:
