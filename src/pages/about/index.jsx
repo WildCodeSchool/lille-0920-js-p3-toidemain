@@ -6,7 +6,7 @@ import {
   Cards,
   PledgeBox,
   Partners,
-  StyledDiv,
+  CommitmentDiv,
 } from "./style.jsx";
 import Title from "../../components/Title/index";
 
@@ -16,13 +16,13 @@ const About = () => {
       <Title titleName="Notre Engagement" />
       <PledgeBox>
         <div>
-          <StyledDiv>
+          <CommitmentDiv>
             <span>Notre mission : accompagner</span> les jeunes des Hauts de
             France dans leur orientation professionnelle, <span>révèler</span>
             leurs talents pour leur permettre d’être
             <span> libres, responsables et heureux</span>.
-          </StyledDiv>
-          <StyledDiv>
+          </CommitmentDiv>
+          <CommitmentDiv>
             <ul>
               <span>Ce qui nous anime :</span>
               <li>
@@ -39,11 +39,11 @@ const About = () => {
               </li>
               <li>Se challenger pour se connatre.</li>
             </ul>
-          </StyledDiv>
-          <StyledDiv>
+          </CommitmentDiv>
+          <CommitmentDiv>
             Surtout, leur permettre de croire que
             <span> TOUT EST POSSIBLE</span>.
-          </StyledDiv>
+          </CommitmentDiv>
         </div>
         <img src="/images/atelierbis.jpg" alt="atelier" />
       </PledgeBox>

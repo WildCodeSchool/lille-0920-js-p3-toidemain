@@ -49,7 +49,7 @@ export const PledgeBox = styled.div`
     flex-direction: column;
   }
 `;
-export const StyledDiv = styled.div`
+export const CommitmentDiv = styled.div`
   font-weight: bold;
   padding: 2vh 3vw;
   text-align: left;
