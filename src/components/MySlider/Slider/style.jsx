@@ -8,5 +8,4 @@ export const SliderDiv = styled.div`
   overflow: hidden;
   margin-left: 20px;
   margin-right: 20px;
- 
 `;
