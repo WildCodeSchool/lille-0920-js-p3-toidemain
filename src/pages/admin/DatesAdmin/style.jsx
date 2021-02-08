@@ -148,4 +148,7 @@ export const Unit = styled.li`
       font-size: 22px;
     }
   }
+  .date {
+    color: #1c819e;
+  }
 `;

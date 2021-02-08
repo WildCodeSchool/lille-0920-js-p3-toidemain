@@ -1,8 +1,8 @@
-import styled from "styled-components";
-import { device } from "../../layout/Devices";
+import styled from 'styled-components';
+import { device } from '../../layout/Devices';
 
 export const Main = styled.div`
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #02523f;
 
   @media ${device.mobile} {
@@ -25,6 +25,7 @@ export const Main = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-top: 5vh;
   }
   @media only screen and (min-width: 1025px) and (max-width: 1280px) {
     height: 350vh;
@@ -49,20 +50,22 @@ export const First = styled.section`
     align-items: center;
   }
   @media ${device.tablet} {
-    min-height: 115vh;
-    max-height: 135vh;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 10vh;
-  }
-  @media ${device.small_screen} {
-    min-height: 100vh;
+    min-height: 105vh;
     max-height: 125vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-top: 10vh;
+    padding-bottom: -30vh;
+  }
+  @media ${device.small_screen} {
+    min-height: 40vh;
+    max-height: 65vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20vh;
+    margin-bottom: -105vh;
   }
   @media only screen and (min-width: 1025px) and (max-width: 1280px) {
     min-height: 30vh;
@@ -334,7 +337,6 @@ export const Second = styled.section`
     }
   }
   @media ${device.tablet} {
-    scroll-snap-align: none;
     min-height: 40vh;
     max-height: 60vh;
     display: block;
@@ -346,13 +348,13 @@ export const Second = styled.section`
     }
   }
   @media ${device.small_screen} {
-    scroll-snap-align: none;
     min-height: 40vh;
-    max-height: 50vh;
+    max-height: 70vh;
     display: block;
     border-top: dotted #d6a002 20px;
     border-bottom: dotted #d6a002 20px;
     margin: auto;
+
     img {
       display: none;
     }
@@ -501,10 +503,10 @@ export const Third = styled.section`
     margin-top: 15vh;
   }
   @media ${device.small_screen} {
-    min-height: 70vh;
-    max-height: 85vh;
+    min-height: 85vh;
+    max-height: 120vh;
+    margin-top: -140vh;
     justify-content: center;
-    margin-top: -15vh;
   }
   @media only screen and (min-width: 1025px) and (max-width: 1280px) {
     height: 70vh;
@@ -677,6 +679,9 @@ export const ListR = styled.div`
       text-decoration: underline;
       text-underline-position: under;
     }
+    li {
+      font-size: 1.8em;
+    }
   }
   @media only screen and (min-width: 1025px) and (max-width: 1280px) {
     height: 95%;
@@ -767,6 +772,9 @@ export const ListL = styled.div`
       text-decoration: underline;
       text-underline-position: under;
     }
+    li {
+      font-size: 1.8em;
+    }
   }
   @media only screen and (min-width: 1025px) and (max-width: 1280px) {
     height: 95%;
@@ -819,9 +827,8 @@ export const Forth = styled.section`
     }
   }
   @media ${device.tablet} {
-    scroll-snap-align: none;
     min-height: 75vh;
-    max-height: 90vh;
+    max-height: 100vh;
     flex-direction: column-reverse;
     justify-content: center;
     margin-bottom: 0;
@@ -831,7 +838,6 @@ export const Forth = styled.section`
     }
   }
   @media ${device.small_screen} {
-    scroll-snap-align: none;
     min-height: 75vh;
     max-height: 90vh;
     flex-direction: column-reverse;
@@ -913,7 +919,8 @@ export const TextR = styled.div`
     font-size: 0.6em;
     height: 30%;
     p {
-      margin: 2vh 3vw;
+      margin: 3vh 3vw;
+      font-size: 2.1em;
     }
     h3 {
       display: block;
@@ -1005,7 +1012,8 @@ export const TextL = styled.div`
     font-size: 0.6em;
     height: 30%;
     p {
-      margin: 2vh 3vw;
+      margin: 3vh 3vw;
+      font-size: 2.1em;
     }
     h3 {
       display: block;

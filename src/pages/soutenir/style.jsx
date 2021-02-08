@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import { device } from "../../layout/Devices";
-import { Link } from "react-router-dom";
+import styled from 'styled-components';
+import { device } from '../../layout/Devices';
+import { Link } from 'react-router-dom';
 
 export const SoutenirContainer = styled.div``;
 
