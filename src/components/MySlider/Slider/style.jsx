@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { device } from "../../../layout/Devices";
 
 export const SliderDiv = styled.div`
   position: relative;
