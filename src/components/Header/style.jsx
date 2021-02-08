@@ -98,6 +98,7 @@ export const HeaderBackground = styled.div`
 export const LogoContainer = styled.div`
   display: flex;
   justify-content: center;
+  align-items: center;
   height: 145px;
   width: 15%;
 
