@@ -1,5 +1,5 @@
 import React from "react";
-import { Item } from "./style";
+import { Item } from "./style.jsx";
 
 const DateItem = ({ date, message }) => {
   return (

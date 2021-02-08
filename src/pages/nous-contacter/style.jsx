@@ -17,55 +17,27 @@ export const ContactContainer = styled.div`
     justify-content: flex-start;
   }
   @media ${device.small_screen} {
-    min-height: 130vh;
-    max-height: 150vh;
+    min-height: 100vh;
+    max-height: 110vh;
   }
   @media ${device.tablet} {
     min-height: 100vh;
-    max-height: 140vh;
+    max-height: 110vh;
   }
   @media ${device.desktop} {
     min-height: 70vh;
     max-height: 120vh;
   }
 `;
-export const Text = styled.div`
-  width: 100%;
-  height: 8vh;
-  margin-top: 20vh;
-  margin-bottom: 10vh;
-  background-color: rgba(0, 0, 0, 0.3);
-  h1 {
-    font-size: 60px;
-    color: white;
-    font-family: "Roboto", sans-serif;
-    font-weight: bold;
-    text-align: center;
-    padding-top: 3vh;
-    margin: auto 0;
-  }
-  @media ${device.smallScreen} {
-    padding-bottom: 20px;
-    h1 {
-      font-size: 40px;
-    }
-  }
-  @media ${device.tablet} {
-    padding-bottom: 20px;
-    h1 {
-      font-size: 36px;
-    }
-  }
-  @media ${device.mobile} {
-    height: 8vh;
-    margin: 5vh auto;
 
-    h1 {
-      font-size: 24px;
-      padding-top: 2vh;
-    }
-  }
+export const ContactTitle = styled.div`
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  margin-top: 3vh;
+  margin-bottom: 5vh;
 `;
+
 export const FormContainer = styled.div`
   form {
     display: flex;

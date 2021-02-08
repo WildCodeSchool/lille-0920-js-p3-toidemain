@@ -5,31 +5,29 @@ import { Link } from "react-router-dom";
 export const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  width: 20%;
-  height: 100%;
+  justify-content: space-around;
   z-index: 1;
   @media ${device.mobile} {
-    width: 100%;
-    height: 10%;
-    margin-top: 2px;
+    margin-right: 5px;
   }
   @media ${device.tablet} {
-    width: 100%;
-    height: 10%;
-    margin-top: 2px;
+    margin-right: 5px;
+  }
+  @media ${device.small_screen} {
+    margin-bottom: 30px;
+    margin-right: 5px;
   }
   p {
     font-family: "Roboto", sans-serif;
-    font-size: 1.2em;
+    font-size: 1.3em;
     color: #005542;
-    text-align: justify;
+    text-align: center;
     line-height: 2em;
     background-color: transparent;
     padding-right: 30px;
     padding-left: 30px;
     @media ${device.mobile} {
-      font-size: 1em;
+      font-size: 0.8em;
     }
   }
 `;
@@ -63,4 +61,8 @@ export const Corner = styled.div`
 
 export const Path = styled(Link)`
   color: #005542;
+  border: solid 1px #005542;
+  &:hover {
+    color: #1c819e;
+  }
 `;

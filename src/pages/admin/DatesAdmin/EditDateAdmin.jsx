@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { connect } from "react-redux";
 import { updateDate, AddDate } from "../../../redux/actions/DateActions";
-import { ContainerEditDate } from "./style.js";
+import { ContainerEditDate } from "./style.jsx";
 
 const EditDate = ({ current, updateDate, AddDate }) => {
   const [date, setDate] = useState("");

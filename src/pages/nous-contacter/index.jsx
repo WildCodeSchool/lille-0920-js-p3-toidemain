@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { ContactContainer, FormContainer, Text } from "./style";
+import { ContactContainer, FormContainer, ContactTitle } from "./style";
+import Title from "../../components/Title/index";
 import { init } from "emailjs-com";
 import * as emailjs from "emailjs-com";
 init("user_Thhn4IaRT3llceNo0OZ6m");
@@ -49,15 +50,15 @@ const Contacter = () => {
 
   return (
     <ContactContainer>
-      <Text>
-        <h1>Nous Contacter</h1>
-      </Text>
+      <ContactTitle>
+        <Title titleName="Nous Contacter"></Title>
+      </ContactTitle>
       <FormContainer>
         <form onSubmit={handleSubmit}>
           <input
             name="name"
             type="text"
-            placeholder="nom complet"
+            placeholder="Nom complet:"
             className="name"
             value={name}
             onChange={handleChange}
@@ -65,7 +66,7 @@ const Contacter = () => {
           />
           <input
             name="email"
-            placeholder="email"
+            placeholder="Email:"
             className="email"
             type="email"
             value={email}
@@ -75,7 +76,7 @@ const Contacter = () => {
           <input
             name="subject"
             type="text"
-            placeholder="Sujet"
+            placeholder="Sujet:"
             className="name"
             value={subject}
             onChange={handleChange}
@@ -99,7 +100,7 @@ const Contacter = () => {
             rows="4"
             cols="50"
             name="message"
-            placeholder="veuillez entrer votre message"
+            placeholder="Veuillez entrer votre message:"
             className="message"
             value={message}
             onChange={handleChange}

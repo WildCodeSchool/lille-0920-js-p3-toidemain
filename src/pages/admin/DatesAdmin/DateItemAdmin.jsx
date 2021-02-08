@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { setCurrent, deleteDate } from "../../../redux/actions/DateActions";
-import { Unit } from "./style";
+import { Unit } from "./style.jsx";
 
 const DateItemAdmin = ({ info, setCurrent, deleteDate }) => {
   const onDelete = () => {

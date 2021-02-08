@@ -4,7 +4,7 @@ import GalleryItemAdmin from "./GalerryItemAdmin";
 import { useDispatch, useSelector } from "react-redux";
 import { getGalleries } from "../../../redux/actions/GalleryActions";
 import Spiner from "../../../layout/spiner/Spiner";
-import { Container, List, Plist } from "./style";
+import { Container, List, Plist } from "./style.jsx";
 
 const GalleryAdmin = () => {
   const dispatch = useDispatch();

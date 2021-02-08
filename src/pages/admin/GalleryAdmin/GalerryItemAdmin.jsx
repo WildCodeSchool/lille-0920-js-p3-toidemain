@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { deleteGallery } from "../../../redux/actions/GalleryActions";
-import { ContainerGalleryItem, Img, Box, Del } from "./style";
+import { ContainerGalleryItem, Img, Box, Del } from "./style.jsx";
 
 const GalleryItemAdmin = ({ id, images, title, date, text, deleteGallery }) => {
   const onDelete = () => {

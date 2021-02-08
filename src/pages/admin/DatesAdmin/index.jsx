@@ -4,7 +4,7 @@ import EditDate from "./EditDateAdmin";
 import { getDates } from "../../../redux/actions/DateActions";
 import { useDispatch, useSelector } from "react-redux";
 import Spiner from "../../../layout/spiner/Spiner";
-import { Container, List, Edit } from "./style";
+import { Container, List, Edit } from "./style.jsx";
 
 const DatesAdmin = () => {
   const dispatch = useDispatch();

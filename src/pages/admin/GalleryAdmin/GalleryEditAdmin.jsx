@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { connect } from "react-redux";
 import { AddGallery } from "../../../redux/actions/GalleryActions";
-import { ContainerEditGallery, Flex } from "./style";
+import { ContainerEditGallery, Flex } from "./style.jsx";
 
 const GalleryEditAdmin = ({ AddGallery }) => {
   const [images, setImages] = useState([""]);

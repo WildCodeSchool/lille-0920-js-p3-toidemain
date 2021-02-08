@@ -15,10 +15,22 @@ export const MainButton = styled.button`
   margin-top: 2vh;
   @media ${device.mobile} {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
-    font-size: 0.8em;
+    align-items: center;
+    font-size: 0.7em;
     letter-spacing: 1px;
-    padding: 15px 10px 15px 10px;
+    padding: 10px 5px 10px 5px;
+    margin-top: 15px;
+  }
+  @media ${device.tablet} {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 0.7em;
+    letter-spacing: 1px;
+    padding: 10px 5px 10px 5px;
     margin-top: 15px;
   }
 

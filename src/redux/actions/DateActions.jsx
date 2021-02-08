@@ -7,7 +7,7 @@ import {
   DATES_ERROR,
   CLEAR_CURRENT,
   SET_CURRENT,
-} from "../types";
+} from "../types.jsx";
 import axios from "axios";
 
 export const getDates = () => async (dispatch) => {

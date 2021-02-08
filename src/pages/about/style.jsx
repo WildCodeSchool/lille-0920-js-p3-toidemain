@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const AboutContainer = styled.div`
   color: #4e4e4e;
-  margin: 2vh 2vw;
 
   h1 {
     font-size: 2em;
@@ -32,11 +31,8 @@ export const AboutContainer = styled.div`
     color: #ffbe00;
     font-weight: bold;
     font-style: italic;
+    margin-left: 2vw;
   }
-`;
-
-export const Pledge = styled.div`
-  margin: 5vh 0;
 `;
 
 export const PledgeBox = styled.div`
