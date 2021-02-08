@@ -8,7 +8,7 @@ export const ButtonContainer = styled.div`
   justify-content: center;
   align-items: flex-end;
   font-family: "Roboto", sans-serif;
-  font-size: 1.2em;
+  font-size: 1.4em;
   color: white;
   @media ${device.mobile} {
     width: 90%;
@@ -34,7 +34,7 @@ export const Title = styled.h1`
 `;
 
 export const ContainerEntreprise = styled.div`
-  width: 90%;
+  width: 100%;
   height: 10%;
   background-color: #005542;
   border-top-left-radius: 10px;
@@ -65,7 +65,7 @@ export const Button1 = styled.button`
 `;
 
 export const ContainerEnseignant = styled.div`
-  width: 90%;
+  width: 100%;
   height: 10%;
   background-color: #1c819e;
   padding: 2px 5px 2px 2px;
@@ -94,7 +94,7 @@ export const Button2 = styled.button`
 `;
 
 export const ContainerLyceen = styled.div`
-  width: 90%;
+  width: 100%;
   height: 10%;
   background-color: #ffbe00;
   border-bottom-left-radius: 10px;
