@@ -15,7 +15,7 @@ export default function StageText() {
         Nos autres propositions : <br />
         Des&nbsp;<Path to="/action/atelier">Ateliers innovants</Path> clés en
         main sur mesure adaptés à vos besoins. Notre&nbsp;
-        <Path to="/action/pedagogie">pédagogie</Path>&nbsp;: Une pédagogie
+        <Path to="/action/pedagogie">Pédagogie</Path>&nbsp;: Une pédagogie
         d’apprentissage basée sur l’expérimentation.
       </p>
       <CornerContainer>
