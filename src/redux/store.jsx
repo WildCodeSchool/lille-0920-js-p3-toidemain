@@ -6,9 +6,9 @@ import GalleryReducers from "./reducers/GalleryReducers";
 import LoginReducer from "./reducers/LoginReducer";
 
 const reducer = combineReducers({
-	datesList: DateReducers,
-	galleriesList: GalleryReducers,
-	user: LoginReducer,
+  datesList: DateReducers,
+  galleriesList: GalleryReducers,
+  user: LoginReducer,
 });
 
 const middleware = [thunk];
@@ -16,9 +16,9 @@ const middleware = [thunk];
 const initialState = {};
 
 const store = createStore(
-	reducer,
-	initialState,
-	composeWithDevTools(applyMiddleware(...middleware))
+  reducer,
+  initialState,
+  composeWithDevTools(applyMiddleware(...middleware))
 );
 
 export default store;
