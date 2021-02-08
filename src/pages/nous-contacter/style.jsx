@@ -1,9 +1,9 @@
-import styled from 'styled-components';
-import { device } from '../../layout/Devices';
+import styled from "styled-components";
+import { device } from "../../layout/Devices";
 
 export const ContactContainer = styled.div`
   height: 220vh;
-  background-image: url('/images/mix_nb.png');
+  background-image: url("/images/mix_nb.png");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -91,7 +91,7 @@ export const FormContainer = styled.div`
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
     display: block;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
     font-size: 18px;
     color: gray;
     padding: 1vh auto;
@@ -142,7 +142,7 @@ export const FormContainer = styled.div`
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
     display: block;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
     font-size: 18px;
     color: gray;
     padding: 5vh auto;
@@ -160,7 +160,7 @@ export const FormContainer = styled.div`
       margin: 1vh auto;
     }
   }
-  input[type='submit'] {
+  input[type="submit"] {
     cursor: pointer;
   }
   input.name {
@@ -210,7 +210,7 @@ export const FormContainer = styled.div`
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
     display: block;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
     font-size: 18px;
     color: gray;
     padding: 5vh auto;
@@ -240,7 +240,13 @@ export const FormContainer = styled.div`
     float: right;
     border: 1px solid #253737;
     background: #727373b5;
-    background: -webkit-gradient(linear, left top, left bottom, from(#727373b5), to(#c5c7c7));
+    background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(#727373b5),
+      to(#c5c7c7)
+    );
     background: -webkit-linear-gradient(top, #c5c7c7, #727373b5);
     background: -moz-linear-gradient(top, #c5c7c7, #727373b5);
     background: -ms-linear-gradient(top, #c5c7c7, #727373b5);
@@ -250,9 +256,12 @@ export const FormContainer = styled.div`
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     border-radius: 6px;
-    -webkit-box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0, inset rgba(255, 255, 255, 0.7) 0 1px 0;
-    -moz-box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0, inset rgba(255, 255, 255, 0.7) 0 1px 0;
-    box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0, inset rgba(255, 255, 255, 0.7) 0 1px 0;
+    -webkit-box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0,
+      inset rgba(255, 255, 255, 0.7) 0 1px 0;
+    -moz-box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0,
+      inset rgba(255, 255, 255, 0.7) 0 1px 0;
+    box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0,
+      inset rgba(255, 255, 255, 0.7) 0 1px 0;
     color: #373838;
   }
   input.btn {
@@ -268,7 +277,13 @@ export const FormContainer = styled.div`
     border: 1px solid #253737;
     text-shadow: #333333 0 1px 0;
     background: #416b68;
-    background: -webkit-gradient(linear, left top, left bottom, from(#77b2b0), to(#416b68));
+    background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(#77b2b0),
+      to(#416b68)
+    );
     background: -webkit-linear-gradient(top, #77b2b0, #416b68);
     background: -moz-linear-gradient(top, #77b2b0, #416b68);
     background: -ms-linear-gradient(top, #77b2b0, #416b68);
@@ -282,15 +297,24 @@ export const FormContainer = styled.div`
     text-shadow: #333333 0 -1px 0;
     border: 1px solid #253737;
     background: #6da5a3;
-    background: -webkit-gradient(linear, left top, left bottom, from(#416b68), to(#416b68));
+    background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(#416b68),
+      to(#416b68)
+    );
     background: -webkit-linear-gradient(top, #416b68, #609391);
     background: -moz-linear-gradient(top, #416b68, #6da5a3);
     background: -ms-linear-gradient(top, #416b68, #6da5a3);
     background: -o-linear-gradient(top, #416b68, #6da5a3);
     background-image: -ms-linear-gradient(top, #416b68 0%, #6da5a3 100%);
     color: #fff;
-    -webkit-box-shadow: rgba(255, 255, 255, 0) 0 1px 0, inset rgba(255, 255, 255, 0.7) 0 1px 0;
-    -moz-box-shadow: rgba(255, 255, 255, 0) 0 1px 0, inset rgba(255, 255, 255, 0.7) 0 1px 0;
-    box-shadow: rgba(255, 255, 255, 0) 0 1px 0, inset rgba(255, 255, 255, 0.7) 0 1px 0;
+    -webkit-box-shadow: rgba(255, 255, 255, 0) 0 1px 0,
+      inset rgba(255, 255, 255, 0.7) 0 1px 0;
+    -moz-box-shadow: rgba(255, 255, 255, 0) 0 1px 0,
+      inset rgba(255, 255, 255, 0.7) 0 1px 0;
+    box-shadow: rgba(255, 255, 255, 0) 0 1px 0,
+      inset rgba(255, 255, 255, 0.7) 0 1px 0;
   }
 `;
