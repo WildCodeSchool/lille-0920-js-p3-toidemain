@@ -31,7 +31,7 @@ const About = () => {
                 S'inspirer et rencontrer des professionnels pour mieux choisir
                 leur orientation.
               </li>
-              <li>Se challenger pour se connaitre.</li>
+              <li>Se challenger pour se connaître.</li>
             </ul>
           </p>
           <p>
