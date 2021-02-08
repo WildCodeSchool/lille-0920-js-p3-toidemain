@@ -9,9 +9,11 @@ export const TextContainer = styled.div`
   z-index: 1;
   @media ${device.mobile} {
     margin-right: 5px;
+    margin-bottom: 5px;
   }
   @media ${device.tablet} {
     margin-right: 5px;
+    margin-bottom: 5px;
   }
   @media ${device.small_screen} {
     margin-bottom: 30px;
