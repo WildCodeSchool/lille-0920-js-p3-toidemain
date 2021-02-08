@@ -159,28 +159,32 @@ export const Social = styled.div`
   }
 `;
 export const Icons = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  img {
-    margin: 1vh 1vw;
-  }
-  @media ${device.mobile} {
-    margin-top: 1vh;
-    img {
-      margin: 1vh 5vw;
-    }
-  }
-  @media ${device.tablet} {
-    img {
-      margin: 1vh 2vw;
-    }
-    @media ${device.small_screen} {
-      img {
-        margin: 1vh 3vw;
-      }
-    }
-  }
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	img {
+		margin: 1vh 1vw;
+		&:hover {
+				transform: scale(1.1);
+			}
+		}
+	}
+	@media ${device.mobile} {
+		margin-top: 1vh;
+		img {
+			margin: 1vh 5vw;
+		}
+	}
+	@media ${device.tablet} {
+		img {
+			margin: 1vh 2vw;
+		}
+		@media ${device.small_screen} {
+			img {
+				margin: 1vh 3vw;
+			}
+		}
+	}
 `;
 export const ButtonContainer = styled.div`
   min-height: 15vh;
