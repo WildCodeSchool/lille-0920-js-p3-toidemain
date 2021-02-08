@@ -26,7 +26,13 @@ const Dates = () => {
         <Titl>
           <h2>Stages et Ateliers à Venir</h2>
         </Titl>
-        <ul>{!loading && dates.length === 0 ? <p>Pas des événements...</p> : dates.map((dat) => <DateItem dat={dat} key={dat.id} />)}</ul>
+        <ul>
+          {!loading && dates.length === 0 ? (
+            <p>Pas des événements...</p>
+          ) : (
+            dates.map((dat) => <DateItem dat={dat} key={dat.id} />)
+          )}
+        </ul>
       </Events>
     </Container>
   );
