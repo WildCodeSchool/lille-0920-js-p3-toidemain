@@ -109,7 +109,7 @@ export const TitleBox4 = styled.h2`
     margin: 1vh;
   }
 `;
-export const Text4 = styled.p`
+export const Text4 = styled.div`
   font-size: 1.2rem;
   margin: 2vw;
   text-align: center;
@@ -127,19 +127,19 @@ export const Img = styled.img`
     margin-right: 2vw;
   }
 `;
-export const Text1 = styled.p`
+export const Text1 = styled.div`
   font-size: 1.2rem;
   margin: 2vw;
   margin-top: 3vh;
   text-align: center;
 `;
-export const Text2 = styled.p`
+export const Text2 = styled.div`
   margin: 2vw;
   margin-top: 3vh;
   font-size: 1.2rem;
   text-align: center;
 `;
-export const Text3 = styled.p`
+export const Text3 = styled.div`
   margin: 2vw;
   font-size: 1.2rem;
   margin-top: 3vh;
