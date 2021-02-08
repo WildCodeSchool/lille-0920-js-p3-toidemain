@@ -8,10 +8,6 @@ export const TextContainer = styled.div`
   z-index: 2;
   @media ${device.mobile} {
     margin-right: 5px;
-<<<<<<< HEAD
-=======
-    margin-top: 5px;
->>>>>>> 3f43a4ac367687104d000226a6ec8c84c0f7a725
   }
   @media ${device.tablet} {
     margin-right: 5px;
