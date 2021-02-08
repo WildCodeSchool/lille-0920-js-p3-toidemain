@@ -48,13 +48,12 @@ export const PledgeBox = styled.div`
   @media screen and (max-width: 768px) {
     flex-direction: column;
   }
-
-  p {
-    font-weight: bold;
-    padding: 2vh 5vw;
-    text-align: left;
-    line-height: 1.2em;
-  }
+`;
+export const CommitmentDiv = styled.div`
+  font-weight: bold;
+  padding: 2vh 3vw;
+  text-align: left;
+  line-height: 1.2em;
 
   span {
     color: #ffbe00;

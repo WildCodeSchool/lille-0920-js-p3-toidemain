@@ -5,7 +5,7 @@ const quotes = {
       "'Ce stage a été très enrichissant, j'ai beaucoup appris, ma curiosité est satisfaite'",
   },
   1: {
-    student: "Amélie, élève de l'institution Sainte-Odile en 2nde, Lmabersart",
+    student: "Amélie, élève de l'institution Sainte-Odile en 2nde, Lambersart",
     quote: "'Ce stage nous a beaucoup appris tout en étant très ludique !'",
   },
   2: {
