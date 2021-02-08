@@ -48,7 +48,15 @@ export const PledgeBox = styled.div`
   @media screen and (max-width: 768px) {
     flex-direction: column;
   }
+
+  img {
+    width: 30vw;
+    @media screen and (max-width: 768px) {
+      width: 60vw;
+    }
+  }
 `;
+
 export const CommitmentDiv = styled.div`
   font-weight: bold;
   padding: 2vh 3vw;
@@ -69,13 +77,6 @@ export const CommitmentDiv = styled.div`
     font-family: "Font Awesome 5 Free";
     display: inline-block;
     width: 1.3em;
-  }
-
-  img {
-    width: 30vw;
-    @media screen and (max-width: 768px) {
-      width: 60vw;
-    }
   }
 `;
 
