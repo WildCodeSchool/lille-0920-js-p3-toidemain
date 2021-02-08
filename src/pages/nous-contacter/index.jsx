@@ -88,7 +88,7 @@ const Contacter = () => {
             value={type}
             onChange={handleChange}
           >
-            <option value="type" selected disabled hidden>
+            <option value="type" defaultValue disabled hidden>
               Vous êtes :
             </option>
             <option value="entreprise">Entreprise</option>

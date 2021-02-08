@@ -3,7 +3,7 @@ import { device } from "../../layout/Devices";
 
 export const ContactContainer = styled.div`
   height: 220vh;
-  background-image: url("/images/5per.jpeg");
+  background-image: url("/images/mix_nb.png");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
