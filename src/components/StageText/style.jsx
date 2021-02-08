@@ -21,10 +21,10 @@ export const TextContainer = styled.div`
   }
   p {
     font-family: "Roboto", sans-serif;
-    font-size: 1.3em;
+    font-size: 1.2em;
     color: #005542;
     text-align: center;
-    line-height: 2em;
+    line-height: 1.8em;
     background-color: transparent;
     padding-right: 30px;
     padding-left: 30px;

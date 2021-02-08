@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { device } from "../../layout/Devices";
 
 export const ButtonContainer = styled.div`
-  margin-right: 20px;
+  margin-right: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
