@@ -1,17 +1,6 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import {
-  Container,
-  FooterContainer,
-  InfoContainer,
-  Info,
-  ButtonContainer,
-  Right,
-  Menu,
-  Social,
-  Icons,
-  Dues,
-} from "./style";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { Container, FooterContainer, InfoContainer, Info, ButtonContainer, Right, Menu, Social, Icons, Dues } from './style';
 
 const Footer = () => {
   return (
@@ -33,25 +22,13 @@ const Footer = () => {
             <h3>Retrouvez-nous:</h3>
           </Social>
           <Icons>
-            <a
-              href="https://www.instagram.com/toi.demain/"
-              title="instagram"
-              target="blank"
-            >
+            <a href="https://www.instagram.com/toi.demain/" title="instagram" target="blank">
               <img src="/images/icons/instagram.png" alt="instagram" />
             </a>
-            <a
-              href="https://www.facebook.com/toi.demain.5/"
-              title="facebook"
-              target="blank"
-            >
+            <a href="https://www.facebook.com/toi.demain.5/" title="facebook" target="blank">
               <img src="/images/icons/facebook.png" alt="facebook" />
             </a>
-            <a
-              href="https://www.linkedin.com/company/toi-demain/"
-              title="linkedin"
-              target="blank"
-            >
+            <a href="https://www.linkedin.com/company/toi-demain/" title="linkedin" target="blank">
               <img src="/images/icons/linkedin.png" alt="linkedin" />
             </a>
           </Icons>

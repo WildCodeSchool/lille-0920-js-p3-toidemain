@@ -1,9 +1,8 @@
-import styled from "styled-components";
-import { device } from "../../layout/Devices";
+import styled from 'styled-components';
+import { device } from '../../layout/Devices';
 
 export const Main = styled.div`
-  height: 370vh;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #02523f;
 
   @media ${device.mobile} {
@@ -31,7 +30,8 @@ export const Main = styled.div`
     height: 350vh;
   }
   @media only screen and (min-width: 1281px) {
-    height: 450vh;
+    min-height: 420vh;
+    max-height: 450vh;
   }
 `;
 
