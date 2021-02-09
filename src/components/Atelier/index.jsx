@@ -20,7 +20,7 @@ export default function Atelier() {
       <Title titleName="Nos Ateliers"></Title>
       <HeaderContainer>
         <AtelierText />
-        <Image src="/images/atelierbis.jpg" alt="atelier" />
+        <Image src="/images/atelierTD.png" alt="atelier" />
       </HeaderContainer>
       <Container>
         <TextContainer>
