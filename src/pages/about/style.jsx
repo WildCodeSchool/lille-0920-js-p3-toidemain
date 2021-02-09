@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const AboutContainer = styled.div`
   color: #4e4e4e;
-  margin: 2vh 2vw;
 
   h1 {
     font-size: 2em;
@@ -26,17 +25,21 @@ export const AboutContainer = styled.div`
     color: #005542;
     font-weight: bold;
   }
-`;
 
-export const Pledge = styled.div`
-  margin: 5vh 0;
+  h5 {
+    font-size: 1.7em;
+    color: #ffbe00;
+    font-weight: bold;
+    font-style: italic;
+    margin-left: 2vw;
+  }
 `;
 
 export const PledgeBox = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 5vh 10vw;
+  margin: 3vh 10vw;
   padding: 1em;
   border-top: solid 5px #ffbe00;
   border-bottom: solid 5px #ffbe00;
@@ -46,17 +49,27 @@ export const PledgeBox = styled.div`
     flex-direction: column;
   }
 
-  p {
-    font-weight: bold;
-    padding: 4vh 5vw;
-    font-size: 1.2em;
-    text-align: left;
-    line-height: 1.3em;
+  img {
+    width: 30vw;
+    @media screen and (max-width: 768px) {
+      width: 60vw;
+    }
   }
+`;
+
+export const CommitmentDiv = styled.div`
+  font-weight: bold;
+  padding: 2vh 3vw;
+  text-align: left;
+  line-height: 1.2em;
 
   span {
     color: #ffbe00;
-    font-size: 1.2em;
+    font-size: 1.1em;
+  }
+
+  li {
+    line-height: 1.5em;
   }
 
   li:before {
@@ -64,13 +77,6 @@ export const PledgeBox = styled.div`
     font-family: "Font Awesome 5 Free";
     display: inline-block;
     width: 1.3em;
-  }
-
-  img {
-    width: 20vw;
-    @media screen and (max-width: 768px) {
-      width: 50vw;
-    }
   }
 `;
 

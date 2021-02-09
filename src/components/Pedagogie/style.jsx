@@ -45,6 +45,9 @@ export const Container1 = styled.div`
   display: flex;
   justify-content: center;
   margin-top: 5vh;
+  @media ${device.small_screen} {
+    width: 90vw;
+  }
 `;
 export const Container2 = styled.div`
   background-color: #145264;
@@ -52,6 +55,8 @@ export const Container2 = styled.div`
   width: 100vw;
   margin-top: 8vh;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   @media ${device.mobile} {
     display: flex;
     flex-direction: column;
@@ -62,45 +67,37 @@ export const Container2 = styled.div`
   }
 `;
 export const Objectif = styled.div`
-  text-align: -webkit-center;
+  text-align: center;
   padding-top: 4vh;
   display: flex;
-  @media ${device.mobile} {
-    display: flex;
-    flex-direction: column;
-  }
-  @media ${device.tablet} {
-    display: flex;
-    flex-direction: column;
-  }
+  flex-direction: column;
 `;
 export const Title2 = styled.h2`
+  margin: 3vh;
   font-size: 4rem;
   color: #ffbe00;
-  width: 20vw;
   display: flex;
   justify-content: center;
-  align-items: -webkit-center;
-  margin: 20px;
   padding-bottom: 5vh;
   @media ${device.mobile} {
     font-size: 3rem;
     width: 80vw;
-    text-align: -webkit-center;
+    text-align: center;
   }
   @media ${device.tablet} {
-    font-size: 4rem;
-    width: 80%;
-    text-align: -webkit-center;
+    font-size: 3.5rem;
+    width: 95%;
+    text-align: center;
+  }
+  @media ${device.small_screen} {
+    width: 90%;
+    margin-left: 3vw;
   }
 `;
 export const Liste = styled.ul`
-  width: 35vw;
-  text-align: -webkit-center;
+  text-align: center;
   display: flex;
   flex-direction: column;
-  margin-top: -2vh;
-  margin-left: 9vw;
   @media ${device.mobile} {
     width: 90vw;
     margin: 3vh;
@@ -118,17 +115,15 @@ export const ListeElement = styled.li`
   margin-top: 6px;
 `;
 export const Slogan = styled.p`
-  width: 20vw;
-  text-align: end;
+  text-align: center;
   color: white;
   font-size: 2.6rem;
   margin: 10vh;
   margin-left: 160px;
   @media ${device.mobile} {
     width: 70vw;
-    text-align: -webkit-center;
-    margin: 10vw;
     font-size: 2.1rem;
+    margin-left: 15vw;
   }
   @media ${device.tablet} {
     width: 80vw;
@@ -150,7 +145,7 @@ export const Container3 = styled.div`
 export const Logo = styled.img`
   width: 20vw;
   @media ${device.mobile} {
-    width: 30vw;
+    width: 35vw;
   }
   @media ${device.tablet} {
     width: 30vw;

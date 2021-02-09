@@ -2,7 +2,8 @@ import styled from "styled-components";
 import { device } from "../../layout/Devices";
 
 export const Box1 = styled.div`
-  background-color: #cfd7d6;
+  background-color: #145264;
+  background: rgba(0, 0, 0, 0.5);
   font-family: "Oswald", Gadget, sans-serif;
   font-size: 15px;
   padding-top: 5px;
@@ -95,6 +96,9 @@ export const Box5 = styled.div`
   &:hover {
     height: 330px;
   }
+  @media ${device.small_screen} {
+    padding: 6px;
+  }
 `;
 export const Box6 = styled.div`
   background-color: white;
@@ -121,6 +125,10 @@ export const Container = styled.div`
   }
   @media ${device.tablet} {
     display: none;
+  }
+  @media ${device.small_screen} {
+    width: 50vw;
+    margin-right: -11vw;
   }
 `;
 export const Stairs = styled.div`

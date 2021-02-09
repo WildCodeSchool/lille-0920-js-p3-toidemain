@@ -4,7 +4,7 @@ import {
   DELETE_GALLERY,
   GALLERIES_ERROR,
   SET_LOADING,
-} from "../types";
+} from "../types.jsx";
 import axios from "axios";
 
 export const getGalleries = () => async (dispatch) => {

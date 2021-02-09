@@ -14,7 +14,7 @@ export const QuoteContainer = styled.div`
     color: #005542;
     font-size: 1.5em;
     @media ${device.mobile} {
-      font-size: 1em;
+      font-size: 0.9em;
     }
   }
 `;

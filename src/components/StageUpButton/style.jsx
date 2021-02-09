@@ -13,13 +13,23 @@ export const MainButton = styled.button`
   padding: 15px 10px 15px 10px;
   font-family: "Roboto", sans-serif;
   margin-top: 2vh;
-
   @media ${device.mobile} {
     display: flex;
-    justify-content: space-around;
-    font-size: 0.8em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7em;
     letter-spacing: 1px;
-    padding: 15px 10px 15px 10px;
+    padding: 5px 5px 5px 5px;
+    margin-top: 20px;
+  }
+  @media ${device.tablet} {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    letter-spacing: 1px;
+    padding: 10px 5px 10px 5px;
     margin-top: 15px;
   }
 `;

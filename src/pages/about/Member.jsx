@@ -1,5 +1,5 @@
 import React from "react";
-import { Card } from "./member.style";
+import { Card } from "./member.style.jsx";
 
 const Member = ({ item }) => {
   return (

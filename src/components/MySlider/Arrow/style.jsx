@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from "../../../layout/Devices";
 
 export const ArrowContainer = styled.div`
   display: flex;
@@ -7,6 +8,10 @@ export const ArrowContainer = styled.div`
   ${(props) => (props.direction === "right" ? `right: 25px` : `left: 25px`)};
   height: 50px;
   width: 50px;
+  @media ${device.mobile} {
+    height: 30px;
+    width: 30px;
+  }
   justify-content: center;
   background: white;
   border-radius: 50%;

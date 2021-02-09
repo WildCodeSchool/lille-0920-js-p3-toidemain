@@ -58,7 +58,8 @@ export const StyledBurgerMenu = styled.div`
     display: inline-block;
     color: #fff;
     font-family: "Roboto", sans-serif;
-    font-size: 1.2em;
+    font-size: 1em;
+    outline: none;
     text-transform: uppercase;
     text-align: left;
     text-decoration: none;

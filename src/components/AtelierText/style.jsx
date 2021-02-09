@@ -14,21 +14,25 @@ export const TextContainer = styled.div`
     height: 10%;
     margin-top: 2px;
     font-size: 1.5em;
+    margin-left: 3px;
   }
   @media ${device.tablet} {
     width: 98%;
     height: 10%;
     margin-top: 2px;
+    margin-left: 3px;
   }
   @media ${device.small_screen} {
     width: 98%;
     height: 10%;
     margin-top: 2px;
+    margin-left: 3px;
   }
   @media only screen and (min-width: 1025px) and (max-width: 1280px) {
     width: 98%;
     height: 10%;
     margin-top: 2px;
+    margin-left: 3px;
   }
   @media only screen and (min-width: 1281px) {
   }
