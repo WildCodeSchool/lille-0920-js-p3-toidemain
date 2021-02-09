@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { ContactContainer, FormContainer, ContactTitle } from "./style";
-import Title from "../../components/Title/index";
+import { ContactContainer, FormContainer, Tit, Container } from "./style";
+import Title from "../../components/Title";
 import { init } from "emailjs-com";
 import * as emailjs from "emailjs-com";
 init("user_Thhn4IaRT3llceNo0OZ6m");
@@ -49,67 +49,74 @@ const Contacter = () => {
   };
 
   return (
-    <ContactContainer>
-      <ContactTitle>
+    <Container>
+      <Tit>
         <Title titleName="Nous Contacter"></Title>
-      </ContactTitle>
-      <FormContainer>
-        <form onSubmit={handleSubmit}>
-          <input
-            name="name"
-            type="text"
-            placeholder="Nom complet:"
-            className="name"
-            value={name}
-            onChange={handleChange}
-            required
-          />
-          <input
-            name="email"
-            placeholder="Email:"
-            className="email"
-            type="email"
-            value={email}
-            onChange={handleChange}
-            required
-          />
-          <input
-            name="subject"
-            type="text"
-            placeholder="Sujet:"
-            className="name"
-            value={subject}
-            onChange={handleChange}
-            required
-          />
-          <select
-            name="type"
-            form="contacter"
-            value={type}
-            onChange={handleChange}
-          >
-            <option value="type" defaultValue disabled hidden>
-              Vous êtes :
-            </option>
-            <option value="entreprise">Entreprise</option>
-            <option value="enseignant">Enseignant</option>
-            <option value="parents-eleve">Parents/élève</option>
-            <option value="autre">Autre</option>
-          </select>
-          <textarea
-            rows="4"
-            cols="50"
-            name="message"
-            placeholder="Veuillez entrer votre message:"
-            className="message"
-            value={message}
-            onChange={handleChange}
-            required
-          ></textarea>
-          <input name="submit" className="btn" type="submit" value="Envoyer" />
-        </form>
-      </FormContainer>
-    </ContactContainer>
+      </Tit>
+      <ContactContainer>
+        <FormContainer>
+          <form onSubmit={handleSubmit}>
+            <input
+              name="name"
+              type="text"
+              placeholder="nom complet"
+              className="name"
+              value={name}
+              onChange={handleChange}
+              required
+            />
+            <input
+              name="email"
+              placeholder="email"
+              className="email"
+              type="email"
+              value={email}
+              onChange={handleChange}
+              required
+            />
+            <input
+              name="subject"
+              type="text"
+              placeholder="Sujet"
+              className="name"
+              value={subject}
+              onChange={handleChange}
+              required
+            />
+            <select
+              name="type"
+              form="contacter"
+              value={type}
+              onChange={handleChange}
+            >
+              <option value="type" selected disabled hidden>
+                Vous êtes :
+              </option>
+              <option value="entreprise">Entreprise</option>
+              <option value="enseignant">Enseignant</option>
+              <option value="parents-eleve">Parents/élève</option>
+              <option value="autre">Autre</option>
+            </select>
+            <textarea
+              rows="4"
+              cols="50"
+              name="message"
+              placeholder="veuillez entrer votre message"
+              className="message"
+              value={message}
+              onChange={handleChange}
+              required
+            ></textarea>
+            <input
+              name="submit"
+              className="btn"
+              type="submit"
+              value="Envoyer"
+            />
+          </form>
+        </FormContainer>
+      </ContactContainer>
+    </Container>
   );
 };
 

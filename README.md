@@ -6,11 +6,11 @@ URL : toidemain.com
 
 # Created at the Wild Code School from the Lille Campus (France) by :
 
-Amélie Macquet - GitHub: https://github.com/AmelMac
-Amjad Alsamman - https://github.com/AmjadLille
-Gaetan Cordonnier - https://github.com/gaetan-cordonnier
-Guy De Messimy - https://github.com/Guy-deMessimy
-Thomas Druart - GitHub: https://github.com/ThomasDruart
+- Amélie Macquet - https://github.com/AmelMac
+- Amjad Alsamman - https://github.com/AmjadLille
+- Gaetan Cordonnier - https://github.com/gaetan-cordonnier
+- Guy De Messimy - https://github.com/Guy-deMessimy
+- Thomas Druart - https://github.com/ThomasDruart
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

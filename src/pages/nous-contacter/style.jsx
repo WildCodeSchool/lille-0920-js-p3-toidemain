@@ -1,13 +1,37 @@
 import styled from "styled-components";
 import { device } from "../../layout/Devices";
-
+export const Container = styled.div`
+  height: 220vh;
+  background: url("/images/mix_nb.png");
+  background-repeat: repeat;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  @media ${device.mobile} {
+    height: 120vh;
+    justify-content: flex-start;
+    background: none;
+  }
+  @media ${device.small_screen} {
+    min-height: 100vh;
+    max-height: 120vh;
+    background-size: 100%;
+    justify-content: none;
+  }
+  @media ${device.tablet} {
+    min-height: 80vh;
+    max-height: 100vh;
+    background: none;
+  }
+  @media ${device.desktop} {
+    min-height: 70vh;
+    max-height: 120vh;
+    background-size: 100% 100%;
+  }
+`;
 export const ContactContainer = styled.div`
   height: 220vh;
-  background-image: url("/images/mix_nb.png");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -17,27 +41,28 @@ export const ContactContainer = styled.div`
     justify-content: flex-start;
   }
   @media ${device.small_screen} {
-    min-height: 100vh;
-    max-height: 110vh;
+    min-height: 130vh;
+    max-height: 150vh;
   }
   @media ${device.tablet} {
     min-height: 100vh;
-    max-height: 110vh;
+    max-height: 140vh;
   }
   @media ${device.desktop} {
     min-height: 70vh;
     max-height: 120vh;
   }
 `;
-
-export const ContactTitle = styled.div`
-  display: flex;
-  justify-content: flex-start;
-  width: 100%;
-  margin-top: 3vh;
-  margin-bottom: 5vh;
+export const Tit = styled.div`
+  padding: 5vh 0;
+  @media ${device.small_screen} {
+    margin-bottom: -20vh;
+  }
+  @media ${device.tablet} {
+    margin-top: 10vh;
+    margin-bottom: -5vh;
+  }
 `;
-
 export const FormContainer = styled.div`
   form {
     display: flex;
@@ -63,8 +88,7 @@ export const FormContainer = styled.div`
     overflow: hidden;
     @media ${device.smallScreen} {
       width: 100%;
-      min-height: 80vh;
-      max-height: 110vh;
+      height: 65vh;
     }
     @media ${device.tablet} {
       margin: 2vh auto 10vh auto;
