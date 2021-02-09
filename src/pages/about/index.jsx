@@ -45,7 +45,7 @@ const About = () => {
             <span> TOUT EST POSSIBLE</span>.
           </CommitmentDiv>
         </div>
-        <img src="/images/atelierbis.jpg" alt="atelier" />
+        <img src="/images/meet2.png" alt="atelier" />
       </PledgeBox>
 
       <div id="equipe">
