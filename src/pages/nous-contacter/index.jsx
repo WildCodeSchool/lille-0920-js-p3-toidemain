@@ -21,7 +21,6 @@ const Contacter = () => {
   } = process.env;
 
   const handleSubmit = (event) => {
-    console.log(process.env);
     event.preventDefault();
     const templateParams = {
       from_name: name,
