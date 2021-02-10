@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import { ContactContainer, FormContainer, Tit, Container } from "./style";
 import Title from "../../components/Title";
-import { init } from "emailjs-com";
 import * as emailjs from "emailjs-com";
-init("user_Thhn4IaRT3llceNo0OZ6m");
+require("dotenv").config();
 
 const Contacter = () => {
   const [data, setData] = useState({
@@ -15,8 +14,13 @@ const Contacter = () => {
   });
 
   const { name, email, subject, message, type } = data;
-
+  const {
+    REACT_APP_SERVICE_ID,
+    REACT_APP_TEMPLATE_ID,
+    REACT_APP_USER_ID,
+  } = process.env;
   const handleSubmit = (event) => {
+    console.log(process.env);
     event.preventDefault();
     const templateParams = {
       from_name: name,
@@ -26,11 +30,12 @@ const Contacter = () => {
       message: message,
       entity: type,
     };
+
     emailjs.send(
-      "service_2etpuqa",
-      "template_v0o2cnd",
+      REACT_APP_SERVICE_ID,
+      REACT_APP_TEMPLATE_ID,
       templateParams,
-      "user_Thhn4IaRT3llceNo0OZ6m"
+      REACT_APP_USER_ID
     );
     resetForm();
   };
