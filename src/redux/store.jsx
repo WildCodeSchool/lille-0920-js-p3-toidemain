@@ -3,10 +3,12 @@ import thunk from "redux-thunk";
 import { composeWithDevTools } from "redux-devtools-extension";
 import DateReducers from "./reducers/DateReducers";
 import GalleryReducers from "./reducers/GalleryReducers";
+import LoginReducer from "./reducers/LoginReducer";
 
 const reducer = combineReducers({
   datesList: DateReducers,
   galleriesList: GalleryReducers,
+  user: LoginReducer,
 });
 
 const middleware = [thunk];
