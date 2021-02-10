@@ -27,10 +27,10 @@ const Contacter = () => {
       entity: type,
     };
     emailjs.send(
-      "service_2etpuqa",
-      "template_v0o2cnd",
+      "service_3o6802p",
+      "template_s63g3r8",
       templateParams,
-      "user_Thhn4IaRT3llceNo0OZ6m"
+      "user_Qozny1C5E0X2AQMD48yVu"
     );
     resetForm();
   };
