@@ -64,6 +64,7 @@ const Footer = () => {
       </FooterContainer>
       <Dues>
         <p>&#169; 2021 Tous droits réservés Association Toi Demain</p>
+        <p>Made with ♡ by Wild Code School</p>
       </Dues>
     </Container>
   );
