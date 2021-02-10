@@ -20,7 +20,7 @@ const About = () => {
             <span>Notre mission : accompagner</span> les jeunes des Hauts de
             France dans leur orientation professionnelle, <span>révèler</span>
             leurs talents pour leur permettre d’être
-            <span> libres, responsables et heureux</span>.
+            <span> en confiance, responsables et heureux</span>.
           </CommitmentDiv>
           <CommitmentDiv>
             <ul>
