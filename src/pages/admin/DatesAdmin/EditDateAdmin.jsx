@@ -6,11 +6,11 @@ import { ContainerEditDate } from "./style.jsx";
 const EditDate = ({ current, updateDate, AddDate }) => {
   const [date, setDate] = useState("");
   const [datefin, setDatefin] = useState("");
-  const [message, setMessage] = useState("");
+  const [text, setText] = useState("");
 
   useEffect(() => {
     if (current) {
-      setMessage(current.message);
+      setText(current.text);
       setDate(current.date);
       setDatefin(current.datefin);
     }
@@ -18,36 +18,36 @@ const EditDate = ({ current, updateDate, AddDate }) => {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    if (message === "" || date === "" || datefin === "") {
+    if (text === "" || date === "" || datefin === "") {
       alert("Please enter message and date");
     } else {
       const updDate = {
         id: current.id,
         date,
         datefin,
-        message,
+        text,
       };
 
       updateDate(updDate);
 
-      setMessage("");
+      setText("");
       setDate("");
     }
   };
 
   const onAdd = (e) => {
     e.preventDefault();
-    if (message === "" || date === "" || datefin === "") {
+    if (text === "" || date === "" || datefin === "") {
       alert("Please enter message and date");
     } else {
       const newAtelier = {
         date,
         datefin,
-        message,
+        text,
       };
       AddDate(newAtelier);
 
-      setMessage("");
+      setText("");
       setDate("");
       setDatefin("");
     }
@@ -78,11 +78,21 @@ const EditDate = ({ current, updateDate, AddDate }) => {
           type="text"
           name="message"
           placeholder="Message"
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
+          value={text}
+          onChange={(e) => setText(e.target.value)}
         />
 
-        <button onClick={current ? onSubmit : onAdd}>
+        <button
+          onClick={
+            current
+              ? (e) => {
+                  onSubmit(e);
+                }
+              : (e) => {
+                  onAdd(e);
+                }
+          }
+        >
           {current ? "Mettre à jour" : "Ajouter"}{" "}
         </button>
       </form>
