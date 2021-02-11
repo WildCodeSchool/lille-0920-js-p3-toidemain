@@ -6,8 +6,20 @@ import moment from "moment";
 import "moment/locale/fr";
 moment.locale("fr");
 
-const GalleryItemAdmin = ({ id, images, title, date, datefin, text, deleteGallery }) => {
-  const onDelete = () => {
+const GalleryItemAdmin = ({
+  id,
+  image1,
+  image2,
+  image3,
+  image4,
+  title,
+  date,
+  datefin,
+  text,
+  deleteGallery,
+}) => {
+  const onDelete = (e) => {
+    e.preventDefault()
     deleteGallery(id);
     alert("Gallery Deleted");
   };
@@ -19,15 +31,17 @@ const GalleryItemAdmin = ({ id, images, title, date, datefin, text, deleteGaller
           <span>Title:</span> {title}
         </h3>
         <p>
-          <span>Date:</span> {moment(date).format('dddd Do MMMM YYYY')} à {moment(datefin).format('dddd Do MMMM YYYY')}
+          <span>Date:</span> {moment(date).format("dddd Do MMMM YYYY")} à{" "}
+          {moment(datefin).format("dddd Do MMMM YYYY")}
         </p>
         <p>
           <span>Description:</span> {text}
         </p>
         <Img>
-          {images.map((img) => (
-            <img src={img} alt="img" />
-          ))}
+          {image1 != null && <img src={image1} alt="img1" />}
+          {image2 != null && <img src={image2} alt="img1" />}
+          {image3 != null && <img src={image3} alt="img1" />}
+          {image4 != null && <img src={image4} alt="img1" />}
         </Img>
       </Box>
       <Del>
