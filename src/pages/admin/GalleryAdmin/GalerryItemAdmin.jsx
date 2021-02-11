@@ -21,14 +21,14 @@ const GalleryItemAdmin = ({
   const onDelete = (e) => {
     e.preventDefault()
     deleteGallery(id);
-    alert("Gallery Deleted");
+    alert("Evenement supprimé");
   };
 
   return (
     <ContainerGalleryItem>
       <Box>
         <h3>
-          <span>Title:</span> {title}
+          <span>Titre:</span> {title}
         </h3>
         <p>
           <span>Date:</span> {moment(date).format("dddd Do MMMM YYYY")} à{" "}

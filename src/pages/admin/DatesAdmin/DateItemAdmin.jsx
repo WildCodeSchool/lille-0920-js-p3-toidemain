@@ -10,7 +10,7 @@ const DateItemAdmin = ({ info, setCurrent, deleteDate }) => {
   const onDelete = (e) => {
     e.preventDefault();
     deleteDate(info.id);
-    alert("Date Deleted");
+    alert("Date supprimée");
   };
   return (
     <Unit>

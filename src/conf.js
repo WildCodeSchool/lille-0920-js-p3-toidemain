@@ -9,5 +9,5 @@ const api = axios.create({
 });
 
 const cookies = new Cookies();
-export { backendApi, api, cookies }
+ export  { backendApi, api, cookies }
 

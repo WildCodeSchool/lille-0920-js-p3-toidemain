@@ -60,7 +60,7 @@ const GalleryEditAdmin = ({ AddGallery }) => {
   return (
     <ContainerEditGallery>
       <form>
-        <h1>Info de événements Passeé </h1>
+        <h1>Evenements passés </h1>
         <input
           type="text"
           name="title"
@@ -118,7 +118,7 @@ const GalleryEditAdmin = ({ AddGallery }) => {
             </Flex>
           );
         })}
-        <button onClick={onAdd}>Submit</button>
+        <button onClick={onAdd}>Soumettre</button>
       </form>
     </ContainerEditGallery>
   );

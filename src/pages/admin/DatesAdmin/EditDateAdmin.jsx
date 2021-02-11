@@ -56,12 +56,12 @@ const EditDate = ({ current, updateDate, AddDate }) => {
   return (
     <ContainerEditDate>
       <form>
-        <h1>Enter Infos</h1>
+        <h1>Entrez les Infos</h1>
 
         <input
           type="date"
           name="date"
-          placeholder="Date"
+          placeholder="Date de début"
           value={date}
           onChange={(e) => setDate(e.target.value)}
         />
@@ -69,7 +69,7 @@ const EditDate = ({ current, updateDate, AddDate }) => {
         <input
           type="date"
           name="datefin"
-          placeholder="Date Fin"
+          placeholder="Date de fin"
           value={datefin}
           onChange={(e) => setDatefin(e.target.value)}
         />
@@ -83,7 +83,7 @@ const EditDate = ({ current, updateDate, AddDate }) => {
         />
 
         <button onClick={current ? onSubmit : onAdd}>
-          {current ? "Update" : "Add"}{" "}
+          {current ? "Mettre à jour" : "Ajouter"}{" "}
         </button>
       </form>
     </ContainerEditDate>
