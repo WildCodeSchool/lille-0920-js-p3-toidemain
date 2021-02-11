@@ -1,8 +1,8 @@
-import styled from "styled-components";
-import { device } from "../../../layout/Devices";
+import styled from 'styled-components';
+import { device } from '../../../layout/Devices';
 
 export const Card = styled.div`
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #02523f;
   width: 70%;
   height: 75vh;
@@ -15,7 +15,7 @@ export const Card = styled.div`
   h2,
   h4 {
     width: 60%;
-    margin: 1vh 1vw;
+    margin: 0.5vh 1vw;
   }
   h2 {
     font-size: 2rem;
@@ -27,7 +27,7 @@ export const Card = styled.div`
   }
   p {
     font-size: 1.5rem;
-    margin: 3vh 1vw;
+    margin: 1.5vh 1vw;
   }
   @media ${device.mobile} {
     width: 95%;
@@ -70,13 +70,13 @@ export const Card = styled.div`
   }
 `;
 export const Img = styled.div`
-  height: 55vh;
+  height: 50vh;
   width: 60%;
   margin: 1vh auto;
   padding: 3vh;
   img {
     width: 100%;
-    height: 50vh;
+    height: 45vh;
     margin: 0 auto;
   }
   @media ${device.mobile} {
