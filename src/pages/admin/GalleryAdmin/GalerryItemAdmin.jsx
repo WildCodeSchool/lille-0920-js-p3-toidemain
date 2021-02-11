@@ -1,15 +1,15 @@
-import React from 'react';
-import { connect } from 'react-redux';
-import { deleteGallery } from '../../../redux/actions/GalleryActions';
-import { ContainerGalleryItem, Img, Box, Del } from './style';
-import moment from 'moment';
-import 'moment/locale/fr';
-moment.locale('fr');
+import React from "react";
+import { connect } from "react-redux";
+import { deleteGallery } from "../../../redux/actions/GalleryActions";
+import { ContainerGalleryItem, Img, Box, Del } from "./style";
+import moment from "moment";
+import "moment/locale/fr";
+moment.locale("fr");
 
 const GalleryItemAdmin = ({ id, images, title, date, datefin, text, deleteGallery }) => {
   const onDelete = () => {
     deleteGallery(id);
-    alert('Gallery Deleted');
+    alert("Gallery Deleted");
   };
 
   return (

@@ -67,5 +67,8 @@ const DateReducers = (state = initialState, action) => {
       return state;
   }
 };
+<<<<<<< HEAD
 
+=======
+>>>>>>> 0066b2a36e81d11eadafffeb56b06f865b3e4a45
 export default DateReducers;

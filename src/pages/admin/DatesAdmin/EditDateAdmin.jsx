@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import { connect } from 'react-redux';
-import { updateDate, AddDate } from '../../../redux/actions/DateActions';
-import { ContainerEditDate } from './style.js';
+import React, { useState, useEffect } from "react";
+import { connect } from "react-redux";
+import { updateDate, AddDate } from "../../../redux/actions/DateActions";
+import { ContainerEditDate } from "./style.jsx";
 
 const EditDate = ({ current, updateDate, AddDate }) => {
   const [date, setDate] = useState('');
@@ -29,8 +29,8 @@ const EditDate = ({ current, updateDate, AddDate }) => {
 
       updateDate(updDate);
 
-      setMessage('');
-      setDate('');
+      setMessage("");
+      setDate("");
     }
   };
 
@@ -45,7 +45,7 @@ const EditDate = ({ current, updateDate, AddDate }) => {
       };
       AddDate(newAtelier);
 
-      alert('Date added');
+      alert("Date added");
 
       setMessage('');
       setDate('');
@@ -58,13 +58,21 @@ const EditDate = ({ current, updateDate, AddDate }) => {
       <form>
         <h1>Enter Infos</h1>
 
-        <input type="date" name="date" placeholder="Date" value={date} onChange={(e) => setDate(e.target.value)} />
+        <input
+          type="date"
+          name="date"
+          placeholder="Date"
+          value={date}
+          onChange={(e) => setDate(e.target.value)}
+        />
 
         <input type="date" name="datefin" placeholder="Date Fin" value={datefin} onChange={(e) => setDatefin(e.target.value)} />
 
         <input type="text" name="message" placeholder="Message" value={message} onChange={(e) => setMessage(e.target.value)} />
 
-        <button onClick={current ? onSubmit : onAdd}>{current ? 'Update' : 'Add'} </button>
+        <button onClick={current ? onSubmit : onAdd}>
+          {current ? "Update" : "Add"}{" "}
+        </button>
       </form>
     </ContainerEditDate>
   );

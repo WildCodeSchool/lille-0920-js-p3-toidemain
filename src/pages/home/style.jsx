@@ -3,6 +3,7 @@ import { device } from "../../layout/Devices";
 
 export const PageContainer = styled.div`
   margin-top: 4vh;
+  margin-left: 1vw;
   @media ${device.mobile} {
     margin-top: 2vh;
   }
@@ -29,14 +30,16 @@ export const Trait = styled.div`
 
 export const HomeContainer = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: center;
   margin-top: 6vh;
   @media ${device.mobile} {
     flex-direction: column;
     margin-top: 3vh;
   }
   @media ${device.tablet} {
+    flex-direction: column;
+    margin-top: 3vh;
+  }
+  @media ${device.small_screen} {
     flex-direction: column;
     margin-top: 3vh;
   }

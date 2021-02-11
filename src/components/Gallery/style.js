@@ -1,4 +1,5 @@
-import styled from 'styled-components';
+import styled from "styled-components";
+import { device } from "../../layout/Devices";
 
 export const Container = styled.div`
   margin-top: 2vh;
@@ -13,5 +14,14 @@ export const Container = styled.div`
       padding: 4vh 0;
       font-weight: bold;
     }
+  }
+  @media ${device.mobile} {
+    width: 97%;
+  }
+  @media ${device.tablet} {
+    width: 97%;
+  }
+  @media ${device.small_screen} {
+    width: 97%;
   }
 `;

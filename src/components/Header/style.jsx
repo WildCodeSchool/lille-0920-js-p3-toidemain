@@ -98,6 +98,7 @@ export const HeaderBackground = styled.div`
 export const LogoContainer = styled.div`
   display: flex;
   justify-content: center;
+  align-items: center;
   height: 145px;
   width: 15%;
 
@@ -139,46 +140,6 @@ export const LogoContainer = styled.div`
     @media ${device.mobile} {
       height: 50px;
       width: auto;
-    }
-  }
-`;
-
-export const ContactContainer = styled.div`
-  display: flex;
-  justify-content: flex-end;
-  width: 70%;
-
-  @media ${device.tablet} {
-    display: none;
-  }
-
-  @media ${device.mobile} {
-    display: none;
-  }
-
-  img {
-    margin-top: 48px;
-    height: 20%;
-    margin-right: 10px;
-    margin-left: 40px;
-
-    @media ${device.small_screen} {
-      height: 20%;
-      margin-top: 25px;
-    }
-  }
-
-  p {
-    margin-top: 50px;
-    height: 20%;
-    margin-right: 20px;
-    font-family: "Roboto", sans-serif;
-    font-size: 1.5em;
-    color: #cfd7d6;
-
-    @media ${device.small_screen} {
-      font-size: 1.2em;
-      margin-top: 25px;
     }
   }
 `;

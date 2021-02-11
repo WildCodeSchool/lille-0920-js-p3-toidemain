@@ -7,6 +7,25 @@ export const Container = styled.div`
   }
 `;
 
+export const Hexagones = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+export const ModalContainer = styled.div`
+  display: inline-block;
+  height: 100px;
+  margin-right: 520px;
+  z-index: 3;
+  @media ${device.small_screen} {
+    margin-right: 320px;
+  }
+  @media ${device.tablet} {
+    margin-right: 200px;
+  }
+`;
+
 export const DriversStyle = styled.div`
   background-image: url(/images/animated_background.svg);
   font-family: "Roboto", sans-serif;
@@ -30,7 +49,7 @@ export const DriversStyle = styled.div`
   }
 
   svg g text {
-    font-size: 0.11em;
+    font-size: 0.13em;
     text-transform: uppercase;
     fill: #fff;
   }

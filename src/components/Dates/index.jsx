@@ -1,10 +1,10 @@
-import React, { useEffect } from 'react';
-import DateItem from './DateItem/index';
-import Title from '../Title';
-import { getDates } from '../../redux/actions/DateActions';
-import { useDispatch, useSelector } from 'react-redux';
-import Spiner from '../../layout/spiner/Spiner';
-import { Events, Titl, Container } from './style';
+import React, { useEffect } from "react";
+import DateItem from "./DateItem/index";
+import Title from "../Title";
+import { getDates } from "../../redux/actions/DateActions";
+import { useDispatch, useSelector } from "react-redux";
+import Spiner from "../../layout/spiner/Spiner";
+import { Events, Titl, Container } from "./style";
 
 const Dates = () => {
   const dispatch = useDispatch();
@@ -26,7 +26,17 @@ const Dates = () => {
         <Titl>
           <h2>Stages et Ateliers à Venir</h2>
         </Titl>
+<<<<<<< HEAD
         <ul>{!loading && dates.length === 0 ? <p>Pas d'événements...</p> : dates.map((dat) => <DateItem {...dat} key={dat.id} />)}</ul>
+=======
+        <ul>
+          {!loading && dates.length === 0 ? (
+            <p>Pas des événements...</p>
+          ) : (
+            dates.map((dat) => <DateItem dat={dat} key={dat.id} />)
+          )}
+        </ul>
+>>>>>>> 0066b2a36e81d11eadafffeb56b06f865b3e4a45
       </Events>
     </Container>
   );
