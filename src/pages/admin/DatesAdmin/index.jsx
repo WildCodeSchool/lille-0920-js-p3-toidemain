@@ -19,7 +19,6 @@ const DatesAdmin = () => {
   if (loading) {
     <Spiner />;
   }
-  console.log(dates)
   return (
     <Container>
       <h1>Stages et Ateliers à Venir</h1>

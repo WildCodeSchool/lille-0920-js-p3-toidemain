@@ -46,6 +46,7 @@ const EditDate = ({ current, updateDate, AddDate }) => {
         text,
       };
       AddDate(newAtelier);
+      console.log(newAtelier)
 
       setText("");
       setDate("");

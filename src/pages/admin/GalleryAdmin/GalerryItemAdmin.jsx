@@ -45,7 +45,8 @@ const GalleryItemAdmin = ({
         </Img>
       </Box>
       <Del>
-        <a href="#!" onClick={onDelete}>
+        <a href="#!" onClick={(e) => {
+          onDelete(e)}}>
           <i class="fas fa-trash-alt"></i>
         </a>
       </Del>
