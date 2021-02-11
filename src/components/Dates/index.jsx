@@ -26,17 +26,7 @@ const Dates = () => {
         <Titl>
           <h2>Stages et Ateliers à Venir</h2>
         </Titl>
-<<<<<<< HEAD
         <ul>{!loading && dates.length === 0 ? <p>Pas d'événements...</p> : dates.map((dat) => <DateItem {...dat} key={dat.id} />)}</ul>
-=======
-        <ul>
-          {!loading && dates.length === 0 ? (
-            <p>Pas des événements...</p>
-          ) : (
-            dates.map((dat) => <DateItem dat={dat} key={dat.id} />)
-          )}
-        </ul>
->>>>>>> 0066b2a36e81d11eadafffeb56b06f865b3e4a45
       </Events>
     </Container>
   );

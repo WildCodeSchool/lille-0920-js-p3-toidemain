@@ -22,19 +22,15 @@ const Gallery = () => {
   return (
     <Container>
       <Title titleName="Nos Evénements"></Title>
-<<<<<<< HEAD
-      <ul>{!loading && galleries.length === 0 ? <p>Pas d'événements...</p> : galleries.map((gallery) => <GalleryItem {...gallery} key={gallery.id} />)}</ul>
-=======
       <ul>
         {!loading && galleries.length === 0 ? (
-          <p>Pas des événements...</p>
+          <p>Pas d'événements...</p>
         ) : (
           galleries.map((gallery) => (
             <GalleryItem {...gallery} key={gallery.id} />
           ))
         )}
       </ul>
->>>>>>> 0066b2a36e81d11eadafffeb56b06f865b3e4a45
     </Container>
   );
 };

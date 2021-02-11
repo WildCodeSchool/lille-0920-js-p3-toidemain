@@ -15,7 +15,6 @@ const GalleryItem = ({ title, text, image1, image2, image3, image4, date, datefi
   return (
     <Card>
       <h2>{title}</h2>
-<<<<<<< HEAD
       <h4>
         {moment(date).format('dddd Do MMMM YYYY')} à {moment(datefin).format('dddd Do MMMM YYYY')}
       </h4>
@@ -34,25 +33,6 @@ const GalleryItem = ({ title, text, image1, image2, image3, image4, date, datefi
           <SwiperSlide>
             <img src={image4} alt="slid" />
           </SwiperSlide>
-=======
-      <h4> {moment(date).format("dddd Do MMMM YYYY")} </h4>
-      <p> {text} </p>
-      <Img>
-        <Swiper
-          spaceBetween={30}
-          slidesPerView={1}
-          navigation
-          pagination={{ clickable: true }}
-          scrollbar={{ draggable: true }}
-          onSwiper={(swiper) => console.log(swiper)}
-          onSlideChange={() => console.log("slide change")}
-        >
-          {images.map((img) => (
-            <SwiperSlide>
-              <img src={img} alt="slid" />
-            </SwiperSlide>
-          ))}
->>>>>>> 0066b2a36e81d11eadafffeb56b06f865b3e4a45
         </Swiper>
       </Img>
     </Card>
