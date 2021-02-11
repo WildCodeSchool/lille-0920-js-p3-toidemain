@@ -8,13 +8,12 @@ import {
   CLEAR_CURRENT,
   SET_CURRENT,
 } from "../types.jsx";
-import axios from "axios";
-const { backendApi } = require("../../conf")
+const { backendApi, api } = require("../../conf");
 
 export const getDates = () => async (dispatch) => {
   try {
     setLoading();
-    const { data } = await axios.get(`${backendApi}/auth/ateliers`);
+    const { data } = await api.get(`${backendApi}/auth/ateliers`);
 
     dispatch({
       type: GET_DATES,
@@ -32,10 +31,7 @@ export const AddDate = (newAtelier) => async (dispatch) => {
   try {
     setLoading();
 
-    const { data } = await axios.post(
-      `${backendApi}/auth/ateliers`,
-      newAtelier
-    );
+    const { data } = await api.post(`${backendApi}/auth/ateliers`, newAtelier);
 
     dispatch({
       type: ADD_DATE,
@@ -53,7 +49,7 @@ export const deleteDate = (id) => async (dispatch) => {
   try {
     setLoading();
 
-    await axios.delete(`${backendApi}/auth/ateliers/${id}`);
+    await api.delete(`${backendApi}/auth/ateliers/${id}`);
 
     dispatch({
       type: DELETE_DATE,
@@ -71,7 +67,7 @@ export const updateDate = (updDate) => async (dispatch) => {
   try {
     setLoading();
 
-    const { data } = await axios.put(
+    const { data } = await api.put(
       `${backendApi}/auth/ateliers/${updDate.id}`,
       updDate
     );

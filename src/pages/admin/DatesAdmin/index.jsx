@@ -13,18 +13,19 @@ const DatesAdmin = () => {
 
   useEffect(() => {
     dispatch(getDates());
+    
   }, [dispatch]);
 
   if (loading) {
     <Spiner />;
   }
-
+  console.log(dates)
   return (
     <Container>
       <h1>Stages et Ateliers à Venir</h1>
       <div>
         <List>
-          <ul>{!loading && dates.length === 0 ? <p>Pas d'événements...</p> : dates.map((info) => <DateItemAdmin info={info} key={info.id} />)}</ul>
+          <ul>{!loading && dates.length === 0 ? <p>Pas d'événements...</p> : dates.map((info) => <DateItemAdmin {...info} key={info.id} />)}</ul>
         </List>
         <Edit>
           <EditDate />
