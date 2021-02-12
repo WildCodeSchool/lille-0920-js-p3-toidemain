@@ -29,7 +29,7 @@ const EditDate = ({ current, updateDate, AddDate }) => {
       };
 
       updateDate(updDate);
-      console.log(updDate)
+      console.log(updDate);
 
       setText("");
       setDate("");
@@ -47,7 +47,7 @@ const EditDate = ({ current, updateDate, AddDate }) => {
         text,
       };
       AddDate(newAtelier);
-      console.log(newAtelier)
+      console.log(newAtelier);
 
       setText("");
       setDate("");
@@ -78,7 +78,7 @@ const EditDate = ({ current, updateDate, AddDate }) => {
 
         <input
           type="text"
-          name="message"
+          name="text"
           placeholder="Message"
           value={text}
           onChange={(e) => setText(e.target.value)}

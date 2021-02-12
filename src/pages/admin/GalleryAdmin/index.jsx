@@ -1,16 +1,16 @@
-import React, { useEffect } from 'react';
-import GalleryEditAdmin from './GalleryEditAdmin';
-import GalleryItemAdmin from './GalerryItemAdmin';
-import { useDispatch, useSelector } from 'react-redux';
-import { getGalleries } from '../../../redux/actions/GalleryActions';
-import Spiner from '../../../layout/spiner/Spiner';
-import { Container, List, Plist } from './style';
+import React, { useEffect } from "react";
+import GalleryEditAdmin from "./GalleryEditAdmin";
+import GalleryItemAdmin from "./GalerryItemAdmin";
+import { useDispatch, useSelector } from "react-redux";
+import { getGalleries } from "../../../redux/actions/GalleryActions";
+import Spiner from "../../../layout/spiner/Spiner";
+import { Container, List, Plist } from "./style";
 
 const GalleryAdmin = () => {
   const dispatch = useDispatch();
   const galleriesList = useSelector((state) => state.galleriesList);
   const { galleries, loading } = galleriesList;
-  console.log(galleries)
+  console.log(galleries);
 
   useEffect(() => {
     dispatch(getGalleries());
@@ -25,7 +25,15 @@ const GalleryAdmin = () => {
       <h1>événements Passeé</h1>
       <div>
         <List>
-          <Plist>{!loading && galleries.length === 0 ? <p>Pas d'événements...</p> : galleries.map((gallery) => <GalleryItemAdmin {...gallery} key={gallery.id} />)}</Plist>
+          <Plist>
+            {!loading && galleries.length === 0 ? (
+              <p>Pas d'événements...</p>
+            ) : (
+              galleries.map((gallery) => (
+                <GalleryItemAdmin {...gallery} key={gallery.id} />
+              ))
+            )}
+          </Plist>
         </List>
         <GalleryEditAdmin />
       </div>

@@ -19,7 +19,7 @@ const GalleryItemAdmin = ({
   deleteGallery,
 }) => {
   const onDelete = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     deleteGallery(id);
     alert("Evenement supprimé");
   };
@@ -45,8 +45,12 @@ const GalleryItemAdmin = ({
         </Img>
       </Box>
       <Del>
-        <a href="#!" onClick={(e) => {
-          onDelete(e)}}>
+        <a
+          href="#!"
+          onClick={(e) => {
+            onDelete(e);
+          }}
+        >
           <i class="fas fa-trash-alt"></i>
         </a>
       </Del>
