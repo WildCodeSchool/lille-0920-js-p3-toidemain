@@ -4,12 +4,13 @@ import GalleryItemAdmin from "./GalerryItemAdmin";
 import { useDispatch, useSelector } from "react-redux";
 import { getGalleries } from "../../../redux/actions/GalleryActions";
 import Spiner from "../../../layout/spiner/Spiner";
-import { Container, List, Plist } from "./style.jsx";
+import { Container, List, Plist } from "./style";
 
 const GalleryAdmin = () => {
   const dispatch = useDispatch();
   const galleriesList = useSelector((state) => state.galleriesList);
   const { galleries, loading } = galleriesList;
+  console.log(galleries);
 
   useEffect(() => {
     dispatch(getGalleries());
@@ -26,7 +27,7 @@ const GalleryAdmin = () => {
         <List>
           <Plist>
             {!loading && galleries.length === 0 ? (
-              <p>No événements...</p>
+              <p>Pas d'événements...</p>
             ) : (
               galleries.map((gallery) => (
                 <GalleryItemAdmin {...gallery} key={gallery.id} />

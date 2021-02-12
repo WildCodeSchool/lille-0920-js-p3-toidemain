@@ -38,6 +38,9 @@ export const Plist = styled.ul`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  p {
+    font-weight: bold;
+  }
 `;
 
 export const ContainerGalleryItem = styled.div`

@@ -24,7 +24,7 @@ const Gallery = () => {
       <Title titleName="Nos Evénements"></Title>
       <ul>
         {!loading && galleries.length === 0 ? (
-          <p>Pas des événements...</p>
+          <p>Pas d'événements...</p>
         ) : (
           galleries.map((gallery) => (
             <GalleryItem {...gallery} key={gallery.id} />

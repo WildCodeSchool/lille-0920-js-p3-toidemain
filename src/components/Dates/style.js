@@ -20,6 +20,11 @@ export const Events = styled.div`
     border-bottom: 0.5px solid;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
+    p {
+      text-align: center;
+      padding: 4vh 0;
+      font-weight: bold;
+    }
   }
   @media ${device.mobile} {
     width: 95%;

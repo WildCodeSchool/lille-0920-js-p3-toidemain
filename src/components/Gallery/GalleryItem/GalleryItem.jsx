@@ -11,11 +11,23 @@ moment.locale("fr");
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
-const GalleryItem = ({ title, text, images, date }) => {
+const GalleryItem = ({
+  title,
+  text,
+  image1,
+  image2,
+  image3,
+  image4,
+  date,
+  datefin,
+}) => {
   return (
     <Card>
       <h2>{title}</h2>
-      <h4> {moment(date).format("dddd Do MMMM YYYY")} </h4>
+      <h4>
+        {moment(date).format("dddd Do MMMM YYYY")} à{" "}
+        {moment(datefin).format("dddd Do MMMM YYYY")}
+      </h4>
       <p> {text} </p>
       <Img>
         <Swiper
@@ -27,11 +39,26 @@ const GalleryItem = ({ title, text, images, date }) => {
           onSwiper={(swiper) => console.log(swiper)}
           onSlideChange={() => console.log("slide change")}
         >
-          {images.map((img) => (
+          {image1 != null && (
             <SwiperSlide>
-              <img src={img} alt="slid" />
+              <img src={image1} alt="img1" />{" "}
             </SwiperSlide>
-          ))}
+          )}
+          {image2 != null && (
+            <SwiperSlide>
+              <img src={image2} alt="img1" />{" "}
+            </SwiperSlide>
+          )}
+          {image3 != null && (
+            <SwiperSlide>
+              <img src={image3} alt="img1" />{" "}
+            </SwiperSlide>
+          )}
+          {image4 != null && (
+            <SwiperSlide>
+              <img src={image4} alt="img1" />{" "}
+            </SwiperSlide>
+          )}
         </Swiper>
       </Img>
     </Card>

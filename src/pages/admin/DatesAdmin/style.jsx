@@ -35,6 +35,9 @@ export const List = styled.div`
 
   ul {
     width: 80%;
+    p {
+      font-weight: bold;
+    }
   }
 `;
 export const Edit = styled.div`
@@ -137,7 +140,7 @@ export const Unit = styled.li`
     text-decoration: none;
     line-height: 20px;
     h3 {
-      font-size: 22px;
+      font-size: 18px;
       padding: 5px 0;
 
       overflow-wrap: break-word;

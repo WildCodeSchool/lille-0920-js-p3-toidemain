@@ -5,13 +5,13 @@ import {
   GALLERIES_ERROR,
   SET_LOADING,
 } from "../types.jsx";
-import axios from "axios";
+const { backendApi, api } = require("../../conf");
 
 export const getGalleries = () => async (dispatch) => {
   try {
     setLoading();
 
-    const { data } = await axios.get("/galleries");
+    const { data } = await api.get(`${backendApi}/auth/evenements`);
 
     dispatch({
       type: GET_GALLERIES,
@@ -25,11 +25,14 @@ export const getGalleries = () => async (dispatch) => {
   }
 };
 
-export const AddGallery = (newGallery) => async (dispatch) => {
+export const AddGallery = (newEvenement) => async (dispatch) => {
   try {
     setLoading();
 
-    const { data } = await axios.post("/galleries", newGallery);
+    const { data } = await api.post(
+      `${backendApi}/auth/evenements`,
+      newEvenement
+    );
 
     dispatch({
       type: ADD_GALLERY,
@@ -47,7 +50,7 @@ export const deleteGallery = (id) => async (dispatch) => {
   try {
     setLoading();
 
-    await axios.delete(`/galleries/${id}`);
+    await api.delete(`${backendApi}/auth/evenements/${id}`);
 
     dispatch({
       type: DELETE_GALLERY,

@@ -6,20 +6,30 @@ import moment from "moment";
 import "moment/locale/fr";
 moment.locale("fr");
 
-const DateItemAdmin = ({ info, setCurrent, deleteDate }) => {
-  const onDelete = () => {
-    deleteDate(info.id);
-    alert("Date Deleted");
+const DateItemAdmin = ({ id, text, date, datefin, setCurrent, deleteDate }) => {
+  const onDelete = (e) => {
+    e.preventDefault();
+    deleteDate(id);
+    alert("Date supprimée");
   };
   return (
     <Unit>
-      <a href="#edit-date" onClick={() => setCurrent(info)}>
+      <a
+        href="#edit-date"
+        onClick={() => setCurrent({ id, text, date, datefin })}
+      >
         <h3 className="date">
-          {moment(info.date).format("dddd Do MMMM YYYY")}
+          {moment(date).format("dddd Do MMMM YYYY")} à{" "}
+          {moment(datefin).format("dddd Do MMMM YYYY")}
         </h3>
-        <h3>{info.message}</h3>
+        <h3>{text}</h3>
       </a>
-      <a href="#!" onClick={onDelete}>
+      <a
+        href="#!"
+        onClick={(e) => {
+          onDelete(e);
+        }}
+      >
         <i class="fas fa-trash-alt"></i>
       </a>
     </Unit>

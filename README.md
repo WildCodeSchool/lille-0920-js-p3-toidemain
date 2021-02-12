@@ -38,6 +38,7 @@ To run this project, install it locally using npm:
 ```
     $ git clone https://github.com/WildCodeSchool/lille-0920-js-p3-toidemain.git
     $ cd lille-0920-js-p3-toidemain
+    $ edit .env file
     $ npm install
     $ npm start
 ```

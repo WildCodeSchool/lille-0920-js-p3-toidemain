@@ -1,32 +1,42 @@
 import React, { useState } from "react";
 import { connect } from "react-redux";
 import { AddGallery } from "../../../redux/actions/GalleryActions";
-import { ContainerEditGallery, Flex } from "./style.jsx";
+import { ContainerEditGallery, Flex } from "./style";
 
 const GalleryEditAdmin = ({ AddGallery }) => {
-  const [images, setImages] = useState([""]);
+  const [images, setImages] = useState([]);
   const [title, setTitle] = useState("");
   const [date, setDate] = useState("");
+  const [datefin, setDatefin] = useState("");
   const [text, setText] = useState("");
 
-  const onAdd = () => {
-    if (images === "" || date === "" || title === "" || text === "") {
+  const onAdd = (e) => {
+    e.preventDefault();
+    if (
+      !images.length ||
+      date === "" ||
+      datefin === "" ||
+      title === "" ||
+      text === ""
+    ) {
       alert("Please enter all fields");
     } else {
-      const newGallery = {
+      const newEvenement = {
         title,
         date,
+        datefin,
         text,
         images,
       };
-      AddGallery(newGallery);
+      AddGallery(newEvenement);
 
       alert("Gallery added");
 
-      setImages([""]);
+      setImages([]);
       setTitle("");
       setText("");
       setDate("");
+      setDatefin("");
     }
   };
 
@@ -50,7 +60,7 @@ const GalleryEditAdmin = ({ AddGallery }) => {
   return (
     <ContainerEditGallery>
       <form>
-        <h1>Info de événements Passeé </h1>
+        <h1>Evenements passés </h1>
         <input
           type="text"
           name="title"
@@ -65,6 +75,14 @@ const GalleryEditAdmin = ({ AddGallery }) => {
           placeholder="Date"
           value={date}
           onChange={(e) => setDate(e.target.value)}
+        />
+
+        <input
+          type="date"
+          name="datefin"
+          placeholder="Date Fin"
+          value={datefin}
+          onChange={(e) => setDatefin(e.target.value)}
         />
 
         <input
@@ -92,15 +110,14 @@ const GalleryEditAdmin = ({ AddGallery }) => {
                     class="fas fa-minus-square"
                   ></i>
                 )}
-                {images.length > 3 ||
-                  (images.length - 1 === i && (
-                    <i onClick={handleAddClick} class="fas fa-plus-square"></i>
-                  ))}
               </div>
             </Flex>
           );
         })}
-        <button onClick={onAdd}>Submit</button>
+        {images.length < 4 && (
+          <i onClick={handleAddClick} class="fas fa-plus-square"></i>
+        )}
+        <button onClick={onAdd}>Soumettre</button>
       </form>
     </ContainerEditGallery>
   );
