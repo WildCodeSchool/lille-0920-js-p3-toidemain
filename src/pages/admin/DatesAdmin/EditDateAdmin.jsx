@@ -29,6 +29,7 @@ const EditDate = ({ current, updateDate, AddDate }) => {
       };
 
       updateDate(updDate);
+      console.log(updDate)
 
       setText("");
       setDate("");
