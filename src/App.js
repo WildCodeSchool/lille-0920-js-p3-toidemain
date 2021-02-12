@@ -47,7 +47,7 @@ function App() {
             <Route exact path="/soutenir" component={Soutenir} />
             <Route exact path="/action/atelier" component={Atelier} />
             <Route exact path="/login" component={Login} />
-            <PrivateRoute path="/admin" component={Admin} />
+            <Route path="/admin" component={Admin} />
             <Route exact path="/actualite" component={Actualite} />
           </Switch>
           <Footer />

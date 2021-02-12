@@ -4,7 +4,7 @@ import { AddGallery } from "../../../redux/actions/GalleryActions";
 import { ContainerEditGallery, Flex } from "./style";
 
 const GalleryEditAdmin = ({ AddGallery }) => {
-  const [images, setImages] = useState([""]);
+  const [images, setImages] = useState([]);
   const [title, setTitle] = useState("");
   const [date, setDate] = useState("");
   const [datefin, setDatefin] = useState("");
@@ -13,7 +13,7 @@ const GalleryEditAdmin = ({ AddGallery }) => {
   const onAdd = (e) => {
     e.preventDefault();
     if (
-      images === "" ||
+      !images.length ||
       date === "" ||
       datefin === "" ||
       title === "" ||
@@ -32,7 +32,7 @@ const GalleryEditAdmin = ({ AddGallery }) => {
 
       alert("Gallery added");
 
-      setImages([""]);
+      setImages([]);
       setTitle("");
       setText("");
       setDate("");
@@ -110,14 +110,13 @@ const GalleryEditAdmin = ({ AddGallery }) => {
                     class="fas fa-minus-square"
                   ></i>
                 )}
-                {images.length > 3 ||
-                  (images.length - 1 === i && (
-                    <i onClick={handleAddClick} class="fas fa-plus-square"></i>
-                  ))}
               </div>
             </Flex>
           );
         })}
+        {images.length < 4 && (
+          <i onClick={handleAddClick} class="fas fa-plus-square"></i>
+        )}
         <button onClick={onAdd}>Soumettre</button>
       </form>
     </ContainerEditGallery>

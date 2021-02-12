@@ -10,6 +10,7 @@ const GalleryAdmin = () => {
   const dispatch = useDispatch();
   const galleriesList = useSelector((state) => state.galleriesList);
   const { galleries, loading } = galleriesList;
+  console.log(galleries)
 
   useEffect(() => {
     dispatch(getGalleries());
